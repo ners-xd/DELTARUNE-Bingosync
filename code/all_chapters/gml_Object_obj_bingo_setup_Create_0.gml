@@ -9,8 +9,12 @@ global.clover_manual = false;
 #elsif CHAPTER_2
 global.failed_pot_balance = false;
 global.teacupshit = false;
+#elsif CHAPTER_3
+global.knight_hits_type = 0;
+global.knight_frame_delay = -1;
 #elsif CHAPTER_4
 global.forcedswords = false;
+global.balthizard_clouds = false;
 #endif
 global.cookie_sessionid = -1;
 httppost = -1;

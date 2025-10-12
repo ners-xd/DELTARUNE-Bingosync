@@ -145,7 +145,10 @@ Watch the Legend: Start watching The Legend in CH1's Castle Town when Ralsei tel
 
 Complete the Dummy Tutorial: Self explanatory. You can do it in any way, you just have to initiate the fight and complete it
 
-Hug Ralsei: Self explanatory. You can either hug him in CH1's dummy tutorial fight or by posing in CH2's Acid Tunnel
+Hug Ralsei: Self explanatory. You can do it in:
+	- CH1: Select the Hug Ralsei act in the Dummy tutorial fight
+	- CH2: Select the Hug Ralsei pose after the Rouxls fight
+	- CH4: Talk to him and select "It's okay not to smile" after the Titan fight
 
 Talk to Lancer In The Epilogue: Self explanatory. You either have to do the True Pacifist Ending in CH1 or perform ARMS after defeating King to go back (if you have no idea what that means, don't worry about it)
 

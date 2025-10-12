@@ -17,7 +17,10 @@ A hit counts as an avoidable loss of HP in battle or in the overworld, including
     - Chapter 2: Being ran over by the overworld cars in Cyber City (including the Toby Fox car in the Egg room), HP depletion due to ThornRing
     - Chapter 3: Getting hit or missing notes in the Cooking and Lightners Live minigames in Boards 1 and 2, Susie taking damage from a bomb after she throws one (it DOES count as a hit if any other character takes damage)
     - Chapter 4: Being pushed by water during the climb sections, taking damage from the unavoidable sword attacks in either Knight chase
-  - In addition, for balancing reasons, in the Chapter 2 basement teacup ride you can only take up to one hit.
+  - In addition, for balancing reasons, you can only take up to one hit in these scenarios:
+    - Taking damage in the Chapter 2 basement teacup ride
+    - Taking damage to the first part of The Knight's sword corridor attack. The part where the swords get launched in random areas counts as a separate hit
+    - Taking damage to Balthizard's clouds that only come up when at least one other enemy is in the battle.
 
 # How to install and use
 - Download [the latest](https://github.com/ners-xd/deltarune-bingosync/releases/latest) version of the mod

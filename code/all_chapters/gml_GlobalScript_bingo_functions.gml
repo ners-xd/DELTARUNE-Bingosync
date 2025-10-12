@@ -2,7 +2,7 @@
 
 function scr_get_mod_version()
 {
-    return "2.13";
+    return "2.14";
 }
 
 function ossafe_http_get(url)
@@ -374,6 +374,7 @@ function scr_load_bingo_data()
         62, 63, 64, 65, 66, 67, 68, 69);
         // Total: 26
     global.hits = 0;
+    global.prev_hits = 0;
     global.num_goals = 132;
     global.room_id = "";
     global.password = "";
@@ -867,11 +868,42 @@ function scr_add_hit()
         global.hits++;
     }
     else if (room != room_dw_mansion_b_west_2f)
+#elsif CHAPTER_3
+    if (instance_exists(obj_knight_enemy))
     {
-        global.hits++;
+        switch (global.knight_hits_type)
+        {
+            case 0:
+                if (instance_exists(obj_sword_tunnel_manager) && obj_sword_tunnel_manager.con == 0)
+                    global.knight_hits_type = 1; // Got hit to a sword in the corridor part of the attack
+
+                break;
+
+            case 1: // Already got hit to the sword corridor, don't count again
+                exit;
+
+            // In the final attack,
+            // there's multiple bullets created in the exact same spots, so when you get hit it counts more than once.
+            // The idea here is when you get hit once, wait a frame to see the difference in the hit count
+            // and if it's greater than 1, only count 1.
+            case 2:
+                if (global.knight_frame_delay == -1)
+                {
+                    global.prev_hits = global.hits;
+                    global.knight_frame_delay = call_later(1, 1, function()
+                    {
+                        if ((global.hits - global.prev_hits) > 1)
+                            global.hits = global.prev_hits + 1;
+
+                        global.knight_frame_delay = -1;
+                    });
+                    break;
+                }
+
+                exit;
+        }
     }
-#else
-    global.hits++;
 #endif
+    global.hits++;
     scr_save_bingo_data();
 }

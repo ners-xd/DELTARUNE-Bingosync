@@ -55,10 +55,18 @@ try
         }
         else if (string_pos("socket_key", info_str) == 0)
         {
-            sel = -1;
-            status_color = c_red;
-            status_text = "Couldn't connect to Bingosync...\nTry again later.";
-            snd_play(snd_hurt1);
+            // Delaying this because sometimes it would show up even if you did successfully connect,
+            // moments before putting you in the intro room
+            call_later(1, 0, function()
+            {
+                if (instance_exists(obj_bingo_setup))
+                {
+                    sel = -1;
+                    status_color = c_red;
+                    status_text = "Couldn't connect to Bingosync...\nTry again later.";
+                    snd_play(snd_hurt1);
+                }
+            });
         }
     }
 }

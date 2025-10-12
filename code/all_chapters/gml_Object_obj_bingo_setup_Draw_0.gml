@@ -5,9 +5,9 @@ draw_set_halign(fa_left);
 draw_set_valign(fa_top);
 draw_set_color(c_yellow);
 #if CHAPTER_1 || CHAPTER_2
-draw_text(0, 0, "Bingosync Mod " + scr_get_mod_version() + " by Chistosito & NERS (Chapter " + string(global.chapter) + ")");
+draw_text(0, 0, "Bingosync Mod " + scr_get_mod_version() + " (Chapter " + string(global.chapter) + ")");
 #else
-draw_text(0, 0, "Bingosync Mod v" + scr_get_mod_version() + " by Chistosito & NERS (Chapter " + string(global.chapter) + ")");
+draw_text(0, 0, "Bingosync Mod v" + scr_get_mod_version() + " (Chapter " + string(global.chapter) + ")");
 #endif
 var base_x = 320;
 var base_y = 70;

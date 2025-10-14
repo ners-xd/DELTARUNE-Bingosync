@@ -1,4 +1,6 @@
-$2000: Accumulate $2000 on one save file slot. You can spend your money at any time, you just have to have gotten at least $2000 on that save slot in that chapter. (Note that if you continue a file from a previous chapter, the amount gets set to what it was on that previous chapter file's slot. If you start a brand new file, the progress on that slot is reset to 0)
+$2000: Accumulate $2000 on one save file slot starting from the beginning of the match (board generation).
+You can spend your money at any time, you just have to have gotten at least $2000 on that save slot in that chapter.
+(Note that if you continue a file from a previous chapter, the amount gets set to what it was on that previous chapter file's slot. If you start a brand new file, the progress on that slot is reset to 0)
 
 Get an Egg (Original Source): Get an Egg without doing the Door Overflow glitch
 
@@ -46,7 +48,7 @@ Get 2 Eggs: Self explanatory
 
 $3000: Same idea as $2000
 
-Use Susie's Ultimate Heal: Self explanatory
+Use Susie's Ultimate Heal: Use Susie's healing spell after it's unlocked in CH2, or at any time in CH3+
 
 Do 'Fix Us' in all possible Chapters: Use the Fix Us option given by Malius in the Bake Sale in CH1 and in Castle Town in CH2 & CH4
 

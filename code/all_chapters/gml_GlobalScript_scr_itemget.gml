@@ -24,8 +24,16 @@
                         }
                         break;
 
+                    case 7:
+                        scr_add_goal_progress(19, 1);
+                        break;
+
                     case 9:
                         scr_add_goal_progress(47, 1);
+                        break;
+
+                    case 3:
+                        scr_add_goal_progress(69, 1);
                         break;
                 }
             }
@@ -81,8 +89,20 @@
                 }
                 break;
 
+            case 7:
+                scr_add_goal_progress(19, 1);
+                break;
+
             case 9:
                 scr_add_goal_progress(47, 1);
+                break;
+
+            case 30:
+                scr_add_goal_progress(56, 1);
+                break;
+
+            case 3:
+                scr_add_goal_progress(69, 1);
                 break;
 
             case 35:

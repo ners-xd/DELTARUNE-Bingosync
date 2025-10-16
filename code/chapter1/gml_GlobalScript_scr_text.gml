@@ -1,14 +1,6 @@
 /// PATCH
 
 /// AFTER
-        case 111:
-            if (global.choice == 0)
-            {
-/// CODE
-                scr_add_goal_progress(69, 1);
-/// END
-
-/// AFTER
                     if (scr_litemcheck(8))
                     {
 /// CODE
@@ -27,19 +19,4 @@
                 global.flag[106] = 1;
 /// CODE
                 scr_add_goal_progress(37, 1);
-/// END
-
-/// AFTER
-                scr_itemremove(6);
-                scr_itemget(7);
-/// CODE
-                scr_add_goal_progress(19, 1);
-/// END
-
-/// AFTER
-            if (global.choice == 0)
-            {
-                scr_itemget(7);
-/// CODE
-                scr_add_goal_progress(19, 1);
 /// END

@@ -13,6 +13,10 @@
 
             switch (arg0)
             {
+                case 2:
+                    scr_add_goal_progress(26, 1);
+                    break;
+
                 case 54:
                     scr_add_goal_progress(108, 1);
                     break;

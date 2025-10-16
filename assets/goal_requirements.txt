@@ -4,7 +4,7 @@ See obj_weirdroute_manipulator: Wrong warp out of Queen's basement in CH2 and tr
 
 Crash With Bagel Overflow: Do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them
 
-WW into 7 unique rooms: Self explanatory (only applies to CH2+ wrong warps)
+WW into 7 unique rooms: Self explanatory (only applies to CH2+ wrong warps. Wrong warping into shops doesn't count)
 
 Z Rank Board 1 or 2: Self explanatory
 

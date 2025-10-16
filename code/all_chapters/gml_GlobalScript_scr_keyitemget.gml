@@ -15,7 +15,8 @@
                     break;
 
                 case 13:
-                    scr_add_goal_progress(121, 1);
+                    if (room != PLACE_MENU)
+                        scr_add_goal_progress(121, 1);
                     break;
             }
 /// END

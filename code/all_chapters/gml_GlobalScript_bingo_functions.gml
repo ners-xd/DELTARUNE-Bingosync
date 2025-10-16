@@ -2,6 +2,10 @@
 
 function scr_get_mod_version()
 {
+    /* todo after tournament group stage finishes
+    change some goal names for clarity (ultimate heal, specify chapters for donate d$1 and get 2 gold items, clarify "item" for get pipis... etc?)
+    bump to 2.15
+    */
     return "2.14";
 }
 

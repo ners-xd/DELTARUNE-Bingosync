@@ -1,3 +1,15 @@
+Die: Self explanatory (losing to Punch-Out, Giga Queen and in the CH3 boards does also count as dying)
+
+See obj_weirdroute_manipulator: Wrong warp out of Queen's basement in CH2 and trigger the cutscene with Ralsei's glasses. If you are on version 1.17 or older you should see frozen Berdly in the top-left corner. That frozen Berdly is an object called obj_weirdroute_manipulator, hence the goal's name
+
+Crash With Bagel Overflow: Do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them
+
+WW into 7 unique rooms: Self explanatory (only applies to CH2+ wrong warps)
+
+Z Rank Board 1 or 2: Self explanatory
+
+Bomberman Key (Board 1): Get the key that spawns after Susie throws a few bombs in the hidden room found down->left of the cacti in Board 1
+
 $2000: Accumulate $2000 on one save file slot starting from the beginning of the match (board generation).
 You can spend your money at any time, you just have to have gotten at least $2000 on that save slot in that chapter.
 (Note that if you continue a file from a previous chapter, the amount gets set to what it was on that previous chapter file's slot. If you start a brand new file, the progress on that slot is reset to 0)
@@ -13,8 +25,6 @@ Bed Inspector: Go right instead of left in the room with the Head Hathies in CH1
 Complete Jevil: Self explanatory
 
 Get the Freeze Ring: Self explanatory
-
-Die: Self explanatory (losing to Punch-Out, Giga Queen and in the CH3 boards does also count as dying)
 
 Buy an item from Seam and Rouxls: Self explanatory. It doesn't matter in what chapter you buy from Seam, as long as you get something from both of the shopkeepers
 
@@ -117,8 +127,6 @@ Get a Lancer Cookie: Self explanatory. You can get it in CH1's Forest Bake Sale 
 
 Build the FLB Duck (PINK): Build the thrash machine that has a duck head, body and shoes AND have all three parts colored with the pinkest pink there is (it is the 5th color from right to left)
 
-See obj_weirdroute_manipulator: Wrong warp out of Queen's basement in CH2 and trigger the cutscene with Ralsei's glasses. If you are on version 1.17 or older you should see frozen Berdly in the top-left corner. That frozen Berdly is an object called obj_weirdroute_manipulator, hence the goal's name
-
 Recruit Mauswheel: Self explanatory
 
 Lose Tasque Manager: Self explanatory
@@ -134,8 +142,6 @@ Beat the Rouxls Fight (CH2/CH3): Self explanatory
 Get ReviveDust: This item is found in the Acid Tunnel after defeating the Werewire found near the top of the room
 
 Talk to the Green Swatchling: After defeating Rouxls, do any of the 3 poses with Ralsei and go back left after getting Susie in your party. Talk to the Green Swatchling
-
-Crash With Bagel Overflow: Do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them
 
 Trigger Milk on the 2nd K.Round fight: Damage K. Round 2 enough so that it drinks milk
 
@@ -161,8 +167,6 @@ Beat Triple Rabbick: Self explanatory
 Build the Cutest Machine: The cutest thrash machine consists of Flame Head, Plain Body and Sneak Shoes (any colors)
 
 Get a Glowshard: Self explanatory. Can be found in CH1 by going down in the Cliffs in the room with the first slide or in CH2 by going up in the Swatchling hallway room in Queen's Mansion and interacting with every platter
-
-WW into 7 unique rooms: Self explanatory (only applies to CH2 wrong warps done with Menu+Cancel held, so this does not apply to CH1 wrong warps or overflow wrong warps)
 
 Recruit 3 different enemies: Recruit different TYPES of enemies in CH2-4. They do NOT have to be on the same save file
 
@@ -198,11 +202,7 @@ Place The Egg In Hometown: Self explanatory. In CH1 if you got the egg, place it
 
 Visit Rudy: Enter Rudy's room in the hospital
 
-Z Rank Board 1 or 2: Self explanatory
-
 Get to the Tropic of Love: Get to the Tropic of Love with the raft (go right immediately) and interact with the tree on the heart-shaped island
-
-Bomberman Key (Board 1): Get the key that spawns after Susie throws a few bombs in the hidden room found down->left of the cacti in Board 1
 
 Beat Fake Gerson: Self explanatory
 

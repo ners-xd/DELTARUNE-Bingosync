@@ -12,11 +12,13 @@
                     if (room == room_dw_city_man)
 #endif
                         scr_add_goal_progress(1, 1);
+
                     break;
 
                 case 13:
                     if (room != PLACE_MENU)
                         scr_add_goal_progress(121, 1);
+
                     break;
             }
 /// END

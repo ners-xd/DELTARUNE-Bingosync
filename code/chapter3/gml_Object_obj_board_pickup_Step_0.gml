@@ -1,5 +1,14 @@
 /// PATCH
 
+/// REPLACE
+                substring = stringsetloc("THE \\cYROUXLS BLOCK\\cW!", "obj_board_pickup_slash_Step_0_gml_272_0");
+/// CODE
+                {
+                    substring = stringsetloc("THE \\cYROUXLS BLOCK\\cW!", "obj_board_pickup_slash_Step_0_gml_272_0");
+                    scr_add_goal_array("shop_items", 1, 8);
+                }
+/// END
+
 /// AFTER
             msgset(0, yougot);
 /// CODE

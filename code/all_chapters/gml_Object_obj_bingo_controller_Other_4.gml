@@ -1,6 +1,6 @@
 /// IMPORT .ignore if CHAPTER_1
 
-if (mainchara_was_in_prev_room && instance_exists(obj_mainchara) && !obj_mainchara.roomenterfreezeend && global.interact == 0)
+if (prev_interact == 0 && mainchara_was_in_prev_room && instance_exists(obj_mainchara) && !obj_mainchara.roomenterfreezeend)
 {
     var room_name = room_get_name(room);
     var len = array_length(global.wrong_warps);

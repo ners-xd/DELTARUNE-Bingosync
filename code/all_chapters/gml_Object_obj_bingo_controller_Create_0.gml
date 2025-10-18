@@ -9,6 +9,7 @@ http_feed = -1;
 console_string = -1;
 mystring = "";
 #if !CHAPTER_1
+prev_interact = 0;
 mainchara_was_in_prev_room = false;
 #endif
 global.goal_name = array_create(25, "");

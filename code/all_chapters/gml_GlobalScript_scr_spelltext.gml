@@ -16,15 +16,9 @@
                             tasques++;
                     }
 
-                    scr_add_goal_progress(2, 1 + tasques);
-                    scr_add_goal_progress(10, 1 + tasques);
-                    scr_add_goal_progress(30, 1 + tasques);
-                    scr_add_goal_progress(80, 1 + tasques);
+                    scr_add_goal_spares(1 + tasques, true);
 #else
-                    scr_add_goal_progress(2, 1);
-                    scr_add_goal_progress(10, 1);
-                    scr_add_goal_progress(30, 1);
-                    scr_add_goal_progress(80, 1);
+                    scr_add_goal_spares(1, true);
 #endif
 #if CHAPTER_1
                     if (global.monstertype[star] == 11)
@@ -58,13 +52,9 @@
                         tasques++;
                 }
 
-                scr_add_goal_progress(2, 1 + tasques);
-                scr_add_goal_progress(10, 1 + tasques);
-                scr_add_goal_progress(30, 1 + tasques);
+                scr_add_goal_spares(1 + tasques);
 #else
-                scr_add_goal_progress(2, 1);
-                scr_add_goal_progress(10, 1);
-                scr_add_goal_progress(30, 1);
+                scr_add_goal_spares(1);
 #endif
 #if CHAPTER_1
                 if (global.monstertype[star] == 11)

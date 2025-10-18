@@ -32,7 +32,5 @@
 /// BEFORE
     defeatanim.sprite_index = sprite_index;
 /// CODE
-    scr_add_goal_progress(3, 1);
-    scr_add_goal_progress(16, 1);
-    scr_add_goal_progress(31, 1);
+    scr_add_goal_kills(1);
 /// END

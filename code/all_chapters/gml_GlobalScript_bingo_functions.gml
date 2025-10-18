@@ -818,6 +818,23 @@ function scr_add_goal_array(array_name, index, slot)
         scr_add_goal_progress(slot, 1);
 }
 
+function scr_add_goal_spares(amount, include_pacify_only = false)
+{
+    scr_add_goal_progress(2, amount);
+    scr_add_goal_progress(10, amount);
+    scr_add_goal_progress(30, amount);
+
+    if (include_pacify_only)
+        scr_add_goal_progress(80, amount);
+}
+
+function scr_add_goal_kills(amount)
+{
+    scr_add_goal_progress(3, amount);
+    scr_add_goal_progress(16, amount);
+    scr_add_goal_progress(31, amount);    
+}
+
 function scr_add_goal_money(amount)
 {
     scr_add_goal_progress(0, amount);

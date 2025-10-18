@@ -8,6 +8,7 @@ http_room_settings = -1;
 http_feed = -1;
 console_string = -1;
 mystring = "";
+update_colors = true;
 #if !CHAPTER_1
 prev_interact = 0;
 mainchara_was_in_prev_room = false;

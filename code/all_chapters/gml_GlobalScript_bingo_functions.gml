@@ -3,7 +3,8 @@
 function scr_get_mod_version()
 {
     /* todo after tournament group stage finishes
-    change some goal names for clarity (ultimate heal, specify chapters for donate d$1 and get 2 gold items, clarify "item" for get pipis... etc?)
+    change some goal names for clarity (ultimate heal, specify chapters for donate d$1 and get 2 gold items, clarify "item" for get pipis, clarify "consumables" for full inventory etc)
+    push "tell jackenstein he's cute" into goal list
     bump to 2.15
     */
     return "2.14";
@@ -379,7 +380,7 @@ function scr_load_bingo_data()
         // Total: 26
     global.hits = 0;
     global.prev_hits = 0;
-    global.num_goals = 132;
+    global.num_goals = 133;
     global.room_id = "";
     global.password = "";
     global.nickname = "";
@@ -402,7 +403,6 @@ function scr_load_bingo_data()
     global.show_colors = true;
     global.show_goal_marks = true;
     global.show_new_cards = true;
-    global.money_files = array_create(12, 0);
     global.shop_items = array_create(2, 0);
     global.bananas = array_create(2, 0);
     global.eggs = array_create(4, 0);
@@ -478,7 +478,6 @@ function scr_load_bingo_data()
 
             if (variable_struct_exists(json.progress, "specific"))
             {
-                if (variable_struct_exists(json.progress.specific, "money_files")) global.money_files = scr_ds_list_to_array(list, json.progress.specific.money_files);
                 if (variable_struct_exists(json.progress.specific, "shop_items")) global.shop_items = scr_ds_list_to_array(list, json.progress.specific.shop_items);
                 if (variable_struct_exists(json.progress.specific, "bananas")) global.bananas = scr_ds_list_to_array(list, json.progress.specific.bananas);
                 if (variable_struct_exists(json.progress.specific, "eggs")) global.eggs = scr_ds_list_to_array(list, json.progress.specific.eggs);
@@ -541,7 +540,6 @@ function scr_save_bingo_data()
     data.filters.new_cards = global.show_new_cards;
     data.progress.general = ds_list_write(scr_array_to_ds_list(list, global.goal_progress));
     data.progress.hits = global.hits;
-    data.progress.specific.money_files = ds_list_write(scr_array_to_ds_list(list, global.money_files));
     data.progress.specific.shop_items = ds_list_write(scr_array_to_ds_list(list, global.shop_items));
     data.progress.specific.bananas = ds_list_write(scr_array_to_ds_list(list, global.bananas));
     data.progress.specific.eggs = ds_list_write(scr_array_to_ds_list(list, global.eggs));
@@ -571,7 +569,6 @@ function scr_reset_bingo_data()
 {
     global.goal_progress = array_create(global.num_goals, 0);
     global.starred_goals = array_create(25, false);
-    global.money_files = array_create(array_length(global.money_files), 0);
     global.shop_items = array_create(array_length(global.shop_items), 0);
     global.bananas = array_create(array_length(global.bananas), 0);
     global.eggs = array_create(array_length(global.eggs), 0);
@@ -615,6 +612,8 @@ function scr_goal_requirements(slot)
 
     switch (slot)
     {
+        case 0: return global.goal_progress[slot] >= 2000;
+
         case 2:
         case 16:
         case 80:
@@ -625,6 +624,7 @@ function scr_goal_requirements(slot)
             return global.goal_progress[slot] >= 5;
 
         case 10: return global.goal_progress[slot] >= 25;
+        case 22: return global.goal_progress[slot] >= 3000;
         case 30: return global.goal_progress[slot] >= 15;
         case 31: return global.goal_progress[slot] >= 20;
         case 42: return global.goal_progress[slot] >= 3;
@@ -769,6 +769,7 @@ function scr_internal_name_from_slot(slot)
         case 129: return "lanino/elnina rematch";
         case 130: return "obtain 5 armors";
         case 131: return "obtain 5 weapons";
+        case 132: return "tell jackenstein he's cute";
         default:  return "none";
     }
 }
@@ -819,15 +820,8 @@ function scr_add_goal_array(array_name, index, slot)
 
 function scr_add_goal_money(amount)
 {
-    var file = ((global.chapter - 1) * 3) + global.filechoice;
-    global.money_files[file] += amount;
-    scr_save_bingo_data();
-
-    if (global.money_files[file] >= 2000)
-        scr_add_goal_progress(0, 1);
-
-    if (global.money_files[file] >= 3000)
-        scr_add_goal_progress(22, 1);
+    scr_add_goal_progress(0, amount);
+    scr_add_goal_progress(22, amount);
 }
 
 function scr_add_goal_progress(slot, amount)
@@ -846,12 +840,14 @@ function scr_add_goal_progress(slot, amount)
             // Prevent goals from triggering multiple times in quick succession (the colors will be updated properly when the board request comes through anyway)
             if (global.goal_colors[board_slot - 1] == "blank")
             {
+                update_colors = false;
                 global.goal_colors[board_slot - 1] = global.color;
                 obj_bingo_controller.alarm[0] = 3 * room_speed;
             }
             // Prevent your color from showing up when you mark a taken goal with Lockout enabled
             else if (global.room_lockout == "Non-Lockout")
             {
+                update_colors = false;
                 global.goal_colors[board_slot - 1] += " " + global.color;
                 obj_bingo_controller.alarm[0] = 3 * room_speed;
             }

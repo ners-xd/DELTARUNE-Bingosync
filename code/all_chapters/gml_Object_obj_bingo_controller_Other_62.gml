@@ -15,8 +15,13 @@ try
                     entry = info[i];
                     global.goal_name[i] = string_trim(entry.name);
                     global.goal_slot[i] = entry.slot;
-                    global.goal_colors[i] = entry.colors;
+
+                    if (update_colors)
+                        global.goal_colors[i] = entry.colors;
                 }
+
+                if (!update_colors)
+                    update_colors = true;
 
                 if (!board_connected)
                     board_connected = true;
@@ -35,7 +40,7 @@ try
 
                 for (var i = array_length(info.events) - 1; i >= 0; i--)
                 {
-                    if (info.events[i].type == "new-card" && info.events[i].is_current == true)
+                    if (info.events[i].type == "new-card" && info.events[i].is_current)
                     {
                         if (info.events[i].timestamp > global.last_card_timestamp)
                         {

@@ -854,8 +854,9 @@ function scr_add_goal_progress(slot, amount)
         {
             // Prevent goals from triggering multiple times in quick succession
             if (global.goal_colors[board_slot - 1] == "blank")
+            {
                 global.goal_colors[board_slot - 1] = global.color;
-
+            }
             // Prevent your color from showing up when you mark a taken goal with Lockout enabled.
             // Also sort the colors in alphabetical order just like how Bingosync stores them
             else if (global.room_lockout == "Non-Lockout")

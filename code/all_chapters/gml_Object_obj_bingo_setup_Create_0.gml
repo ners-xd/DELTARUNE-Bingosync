@@ -4,6 +4,7 @@ scr_load_bingo_data();
 global.ws_client = -1;
 global.ws_key = "{}";
 global.count_once = false;
+global.grazed_at_all = false;
 #if CHAPTER_1
 global.clover_manual = false;
 #elsif CHAPTER_2

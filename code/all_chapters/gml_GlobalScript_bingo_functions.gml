@@ -2,12 +2,7 @@
 
 function scr_get_mod_version()
 {
-    /* todo after tournament group stage finishes
-    change some goal names for clarity (ultimate heal, specify chapters for donate d$1 and get 2 gold items, clarify "item" for get pipis, clarify "consumables" for full inventory etc)
-    push "tell jackenstein he's cute" into goal list
-    bump to 2.15
-    */
-    return "2.14";
+    return "2.15";
 }
 
 function ossafe_http_get(url)
@@ -380,7 +375,7 @@ function scr_load_bingo_data()
         // Total: 26
     global.hits = 0;
     global.prev_hits = 0;
-    global.num_goals = 133;
+    global.num_goals = 135;
     global.room_id = "";
     global.password = "";
     global.nickname = "";
@@ -617,6 +612,7 @@ function scr_goal_requirements(slot)
         case 2:
         case 16:
         case 80:
+        case 133:
             return global.goal_progress[slot] >= 10;
 
         case 3:
@@ -643,7 +639,7 @@ function scr_internal_name_from_slot(slot)
         case 3:   return "kill 5 enemies";
         case 4:   return "bed inspector";
         case 5:   return "complete jevil";
-        case 6:   return "get the freeze ring";
+        case 6:   return "get the freezering";
         case 7:   return "die";
         case 8:   return "buy an item from seam and rouxls";
         case 9:   return "complete the hacker side quest";
@@ -660,13 +656,13 @@ function scr_internal_name_from_slot(slot)
         case 20:  return "fuse an item";
         case 21:  return "get 2 eggs";
         case 22:  return "$3000";
-        case 23:  return "use susie's ultimate heal";
+        case 23:  return "use susie's healing spell";
         case 24:  return "do 'fix us' in all possible chapters";
-        case 25:  return "talk to starwalker";
+        case 25:  return "talk to starwalker (ch1)";
         case 26:  return "get the dice brace";
         case 27:  return "complete all smorgasbords";
         case 28:  return "enter the dark world without using the bed";
-        case 29:  return "get the thorn ring (original source)";
+        case 29:  return "get the thornring (original source)";
         case 30:  return "spare/pacify 15 enemies";
         case 31:  return "kill 20 enemies";
         case 32:  return "complete 3 challenges in party dojo";
@@ -676,9 +672,9 @@ function scr_internal_name_from_slot(slot)
         case 36:  return "get 3 revivemints";
         case 37:  return "eat moss";
         case 38:  return "complete the sweet cap'n cakes battle";
-        case 39:  return "fill up your inventory";
+        case 39:  return "fill up your inventory with 12 consumables";
         case 40:  return "open the balloon chest (city heights)";
-        case 41:  return "abort snowgrave after getting the freeze ring";
+        case 41:  return "abort snowgrave after getting the freezering";
         case 42:  return "hit 3 pipis";
         case 43:  return "complete spamton neo (snowgrave)";
         case 44:  return "complete the spamton encounter (normal)";
@@ -695,8 +691,8 @@ function scr_internal_name_from_slot(slot)
         case 55:  return "beat the rouxls fight (ch2/ch3)";
         case 56:  return "get revivedust";
         case 57:  return "talk to the green swatchling";
-        case 58:  return "crash with bagel overflow";
-        case 59:  return "trigger milk on the 2nd k.round fight";
+        case 58:  return "crash the game with bagel overflow";
+        case 59:  return "trigger milk on the 2nd k. round fight";
         case 60:  return "spare clover without using the manual (ch1)";
         case 61:  return "lose mauswheel";
         case 62:  return "watch the legend";
@@ -707,26 +703,26 @@ function scr_internal_name_from_slot(slot)
         case 67:  return "beat triple rabbick";
         case 68:  return "build the cutest machine";
         case 69:  return "get a glowshard";
-        case 70:  return "ww into 7 unique rooms";
-        case 71:  return "recruit 3 different enemies";
+        case 70:  return "wrong warp into 7 unique rooms";
+        case 71:  return "fully recruit 3 different enemy types";
         case 72:  return "heal in battles 5 times";
         case 73:  return "hit a baby car";
         case 74:  return "full berdly spare";
         case 75:  return "equip white ribbon (ch1/ch3)";
         case 76:  return "pot balance";
-        case 77:  return "donate d$1";
+        case 77:  return "donate d$1 (ch1/ch4)";
         case 78:  return "get both chests on 2 maus 1 maus";
         case 79:  return "use dual heal";
         case 80:  return "pacify 10 enemies";
-        case 81:  return "get ms.pipis";
+        case 81:  return "get ms. pipis";
         case 82:  return "speak to sans";
         case 83:  return "place the egg in hometown";
         case 84:  return "visit rudy";
-        case 85:  return "z rank board 1 or 2";
+        case 85:  return "z rank board 1/2";
         case 86:  return "get to the tropic of love";
         case 87:  return "bomberman key (board 1)";
         case 88:  return "beat fake gerson";
-        case 89:  return "get pipis";
+        case 89:  return "get the pipis item";
         case 90:  return "recruit miss mizzle";
         case 91:  return "lose miss mizzle";
         case 92:  return "recruit watercooler";
@@ -743,7 +739,7 @@ function scr_internal_name_from_slot(slot)
         case 103: return "have a tea party with gerson";
         case 104: return "enter ralsei's room";
         case 105: return "get princessribbon";
-        case 106: return "get 2 gold items";
+        case 106: return "get 2 gold items (ch3)";
         case 107: return "spend 1225 points in the gamble machine";
         case 108: return "get goldwidow";
         case 109: return "get bittertear";
@@ -765,11 +761,13 @@ function scr_internal_name_from_slot(slot)
         case 125: return "lose shuttah";
         case 126: return "lose rabbick (ch3)";
         case 127: return "go to the diner with susie";
-        case 128: return "recruit an enemy in each chapter";
+        case 128: return "fully recruit an enemy in each chapter";
         case 129: return "lanino/elnina rematch";
         case 130: return "obtain 5 armors";
         case 131: return "obtain 5 weapons";
         case 132: return "tell jackenstein he's cute";
+        case 133: return "complete 10 attacks without grazing bullets";
+        case 134: return "complete the sweet cap'n cakes battle without skipping attacks";
         default:  return "none";
     }
 }
@@ -854,21 +852,24 @@ function scr_add_goal_progress(slot, amount)
 
         if (board_slot > 0 && string_pos(global.color, global.goal_colors[board_slot - 1]) == 0)
         {
-            // Prevent goals from triggering multiple times in quick succession (the colors will be updated properly when the board request comes through anyway)
+            // Prevent goals from triggering multiple times in quick succession
             if (global.goal_colors[board_slot - 1] == "blank")
-            {
-                update_colors = false;
                 global.goal_colors[board_slot - 1] = global.color;
-                obj_bingo_controller.alarm[0] = 3 * room_speed;
-            }
-            // Prevent your color from showing up when you mark a taken goal with Lockout enabled
+
+            // Prevent your color from showing up when you mark a taken goal with Lockout enabled.
+            // Also sort the colors in alphabetical order just like how Bingosync stores them
             else if (global.room_lockout == "Non-Lockout")
             {
-                update_colors = false;
-                global.goal_colors[board_slot - 1] += " " + global.color;
-                obj_bingo_controller.alarm[0] = 3 * room_speed;
+                var color_array = string_split(global.goal_colors[board_slot - 1] + " " + global.color, " ", true);
+                array_sort(color_array, true);
+                global.goal_colors[board_slot - 1] = "";
+
+                for (var i = 0; i < array_length(color_array); i++)
+                    global.goal_colors[board_slot - 1] += color_array[i] + " ";
             }
 
+            obj_bingo_controller.update_colors = false;
+            obj_bingo_controller.alarm[0] = 3 * room_speed;
             ossafe_http_post("https://bingosync.com/api/select", "{ \"room\": \"" + scr_escape_string(global.room_id) + "\", \"color\": \"" + global.color + "\", \"slot\": \"" + board_slot + "\", \"remove_color\": false }");
         }
     }

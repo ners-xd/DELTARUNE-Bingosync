@@ -12,14 +12,6 @@ var new_lines = 0;
 var surface_width = surface_get_width(application_surface);
 var surface_height = surface_get_height(application_surface);
 draw_set_alpha(1);
-
-if (global.hit_counter)
-{
-    draw_set_font(fnt_mainbig);
-    draw_set_color(c_yellow);
-    draw_text_outline(5, global.chat_typing ? (surface_height - 80) : (surface_height - 30), "Hits: " + string(global.hits), c_black);
-}
-
 draw_set_font(fnt_main);
 
 if (global.show_board && board_connected)
@@ -79,7 +71,7 @@ if (global.show_board && board_connected)
                 y1 = base_y + (i * (square_size + spacing));
                 x2 = x1 + square_size;
                 y2 = y1 + square_size;
-                colors_array = string_split(global.goal_colors[idx], " ");
+                colors_array = string_split(global.goal_colors[idx], " ", true);
                 num_colors = array_length(colors_array);
                 section_width = square_size / num_colors;
 
@@ -89,7 +81,7 @@ if (global.show_board && board_connected)
                     ossafe_fill_rectangle(x1 + (c * section_width), y1, x1 + ((c + 1) * section_width), y2);
                 }
 
-                if (global.starring_goals && mousex >= x1 && mousex <= x2 && mousey >= y1 && mousey <= y2 && scr_check_mouse_pressed(1, global.input_g[4]))
+                if (global.starring_goals && point_in_rectangle(mousex, mousey, x1, y1, x2, y2) && scr_check_mouse_pressed(mb_left, global.input_g[4]))
                 {
                     global.starred_goals[idx] = !global.starred_goals[idx];
                     scr_save_bingo_data();
@@ -111,7 +103,7 @@ if (global.show_board && board_connected)
                         break;
                 }
 
-                draw_text_ext_transformed((x1 + x2) / 2, (y1 + y2) / 2, shown_str, 14, (x2 - x1) + 15, 0.5, 0.5, 0);
+                draw_text_ext_transformed((x1 + x2) / 2, (y1 + y2) / 2, shown_str, 15, (x2 - x1) + 50, 0.5, 0.5, 0);
                 idx++;
             }
         }
@@ -273,6 +265,15 @@ if (global.chat_typing)
         keyboard_string = "";
         mystring = "";
     }
+}
+
+if (global.hit_counter)
+{
+    draw_set_halign(fa_left);
+    draw_set_valign(fa_top);
+    draw_set_font(fnt_mainbig);
+    draw_set_color(c_yellow);
+    draw_text_outline(5, global.chat_typing ? (surface_height - 80) : (surface_height - 30), "Hits: " + string(global.hits), 0);
 }
 
 draw_set_halign(temp_halign);

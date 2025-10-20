@@ -8,13 +8,19 @@
             
             if (currentphyspoints < 350 && !madesound)
 /// CODE
-            if (floor(rtimer) == 60 && currentphyspoints >= 400)
+            if (currentphyspoints >= 400 && !madesound)
                 scr_add_goal_progress(119, 1);
 /// END
 
-/// BEFORE
-            var rankstring = desiredletter + "-" + roundcompletetext2;
+/// AFTER
+        if (rtimer > 140 && musicstarted == false)
+        {
 /// CODE
-            if (floor(rtimer) == 60 && desiredletter == "Z")
+            var desiredletter = lettergrade;
+
+            if (_lettergrade != "")
+                desiredletter = _lettergrade; // No idea why there's two variables for this but I'm putting them both just like in the original code, just in case I guess
+
+            if (desiredletter == "Z")
                 scr_add_goal_progress(85, 1);
 /// END

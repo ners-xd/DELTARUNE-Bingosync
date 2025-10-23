@@ -11,7 +11,12 @@ var base_y = 1;
 var new_lines = 0;
 var surface_width = surface_get_width(application_surface);
 var surface_height = surface_get_height(application_surface);
-draw_set_alpha(1);
+var cur_alpha = 1;
+
+if (variable_global_exists("submenucoord") && instance_exists(obj_fadeout) && instance_exists(obj_mainchara) && global.submenucoord[34] > 0)
+    cur_alpha = 1 - obj_fadeout.image_alpha;
+
+draw_set_alpha(cur_alpha);
 draw_set_font(fnt_main);
 
 if (global.show_board && board_connected)
@@ -142,7 +147,7 @@ if (global.room_seed != -1)
     else
     {
         draw_text_outline(text_x, final_y + 15, kb_key + ",      : Toggle board");
-        draw_sprite_ext(gp_key, 0, round(text_x - string_width("     : Toggle board")), round(final_y + 17), 1, 1, 0, c_yellow, 1);
+        draw_sprite_ext(gp_key, 0, round(text_x - string_width("     : Toggle board")), round(final_y + 17), 1, 1, 0, c_yellow, cur_alpha);
     }
 
     kb_key = scr_input_name(global.toggle_chat_key);
@@ -155,7 +160,7 @@ if (global.room_seed != -1)
     else
     {
         draw_text_outline(text_x, final_y + 30, kb_key + ",      : Toggle chat");
-        draw_sprite_ext(gp_key, 0, round(text_x - string_width("     : Toggle chat")), round(final_y + 32), 1, 1, 0, c_yellow, 1);
+        draw_sprite_ext(gp_key, 0, round(text_x - string_width("     : Toggle chat")), round(final_y + 32), 1, 1, 0, c_yellow, cur_alpha);
     }
 
     kb_key = scr_input_name(global.chat_key);
@@ -168,15 +173,15 @@ if (global.room_seed != -1)
     else
     {
         draw_text_outline(text_x, final_y + 45, kb_key + ",      : Open chatbox");
-        draw_sprite_ext(gp_key, 0, round(text_x - string_width("     : Open chatbox")), round(final_y + 47), 1, 1, 0, c_yellow, 1);
+        draw_sprite_ext(gp_key, 0, round(text_x - string_width("     : Open chatbox")), round(final_y + 47), 1, 1, 0, c_yellow, cur_alpha);
     }
 
     if (global.starring_goals)
     {
         draw_text_outline(text_x, text_y + 64, "* Click or press      on goals to star them. *");
         draw_text_outline(text_x, text_y + 79, "* ESC,      : Cancel *");
-        draw_sprite_ext(scr_getbuttonsprite(global.input_g[4]), 0, round(text_x - string_width("     on goals to star them. *")), round(text_y + 66), 1, 1, 0, c_yellow, 1);
-        draw_sprite_ext(scr_getbuttonsprite(global.input_g[5]), 0, round(text_x - string_width("     : Cancel *")), round(text_y + 81), 1, 1, 0, c_yellow, 1);
+        draw_sprite_ext(scr_getbuttonsprite(global.input_g[4]), 0, round(text_x - string_width("     on goals to star them. *")), round(text_y + 66), 1, 1, 0, c_yellow, cur_alpha);
+        draw_sprite_ext(scr_getbuttonsprite(global.input_g[5]), 0, round(text_x - string_width("     : Cancel *")), round(text_y + 81), 1, 1, 0, c_yellow, cur_alpha);
     }
 }
 

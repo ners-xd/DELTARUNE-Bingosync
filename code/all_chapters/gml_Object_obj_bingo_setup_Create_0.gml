@@ -37,3 +37,6 @@ function censor_password()
 
     return text;
 }
+
+with (instance_create(0, 0, obj_fadein))
+    fadespeed = -0.25;

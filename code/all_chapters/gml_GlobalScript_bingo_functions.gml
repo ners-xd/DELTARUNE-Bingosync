@@ -51,15 +51,17 @@ function scr_gamepad_lastkey()
     }
     else if (obj_gamecontroller.gamepad_active)
     {
+        var i = 0;
+
         // gp_face1 - gp_padr
-        for (var i = 32769; i <= 32784; i++)
+        for (i = 32769; i <= 32784; i++)
         {
             if (gamepad_button_check_pressed(obj_gamecontroller.gamepad_id, i))
                 return i;
         }
         // Skip axes
         // gp_home - gp_extra6
-        for (var i = 32799; i <= 32810; i++)
+        for (i = 32799; i <= 32810; i++)
         {
             if (gamepad_button_check_pressed(obj_gamecontroller.gamepad_id, i))
                 return i;

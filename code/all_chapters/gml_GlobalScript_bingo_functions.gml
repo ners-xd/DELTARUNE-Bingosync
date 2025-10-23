@@ -557,7 +557,9 @@ function scr_save_bingo_data()
     ds_list_destroy(list);
     file_text_write_string(file, json_stringify(data));
     file_text_close(file);
-    ossafe_savedata_save();
+
+    if (scr_is_switch_os())
+        switch_save_data_commit();
 }
 
 function scr_reset_bingo_data()

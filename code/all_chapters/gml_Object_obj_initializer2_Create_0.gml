@@ -12,6 +12,15 @@ global.starring_goals = false;
 global.starred_goals = array_create(25, false);
 /// END
 
+#if CHAPTER_1 || CHAPTER_2
+/// REPLACE
+    scr_prefetch_textures();
+    scr_load_audio();
+/// CODE
+    scr_load_audio(); // Avoid prefetching textures twice
+/// END
+#endif
+
 #if CHAPTER_1
 /// APPEND
 #else

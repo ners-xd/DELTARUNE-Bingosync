@@ -9,7 +9,7 @@ if (global.show_chat)
     var ypos = 0;
     var message_height = 0;
 
-    if (variable_global_exists("submenucoord") && instance_exists(obj_fadeout) && instance_exists(obj_mainchara) && global.submenucoord[34] > 0)
+    if (global.returning_to_title && instance_exists(obj_fadeout))
         draw_set_alpha(1 - obj_fadeout.image_alpha);
     else
         draw_set_alpha(1);

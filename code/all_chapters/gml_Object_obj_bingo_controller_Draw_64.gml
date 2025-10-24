@@ -13,7 +13,7 @@ var surface_width = surface_get_width(application_surface);
 var surface_height = surface_get_height(application_surface);
 var cur_alpha = 1;
 
-if (variable_global_exists("submenucoord") && instance_exists(obj_fadeout) && instance_exists(obj_mainchara) && global.submenucoord[34] > 0)
+if (global.returning_to_title && instance_exists(obj_fadeout))
     cur_alpha = 1 - obj_fadeout.image_alpha;
 
 draw_set_alpha(cur_alpha);

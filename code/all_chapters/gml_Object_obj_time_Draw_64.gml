@@ -3,6 +3,7 @@
 /// APPEND
 var temp_halign = draw_get_halign();
 var temp_valign = draw_get_valign();
+var temp_font = draw_get_font();
 var temp_alpha = draw_get_alpha();
 
 if (global.show_chat)
@@ -39,5 +40,6 @@ if (global.hit_counter)
 
 draw_set_halign(temp_halign);
 draw_set_valign(temp_valign);
+draw_set_font(temp_font);
 draw_set_alpha(temp_alpha);
 /// END

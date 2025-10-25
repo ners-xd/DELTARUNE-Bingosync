@@ -6,16 +6,15 @@ var temp_valign = draw_get_valign();
 var temp_font = draw_get_font();
 var temp_alpha = draw_get_alpha();
 
+if (global.returning_to_title && instance_exists(obj_fadeout))
+    draw_set_alpha(1 - obj_fadeout.image_alpha);
+else
+    draw_set_alpha(1);
+
 if (global.show_chat)
 {
     var ypos = 0;
     var message_height = 0;
-
-    if (global.returning_to_title && instance_exists(obj_fadeout))
-        draw_set_alpha(1 - obj_fadeout.image_alpha);
-    else
-        draw_set_alpha(1);
-
     draw_set_font(fnt_main);
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);

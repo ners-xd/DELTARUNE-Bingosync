@@ -10,11 +10,6 @@ if (!global.chat_typing && !global.starring_goals)
         global.show_board = !global.show_board;
         scr_save_bingo_data();
     }
-    else if (scr_check_pressed(global.toggle_chat_key, global.toggle_chat_key_gp))
-    {
-        global.show_chat = !global.show_chat;
-        scr_save_bingo_data();
-    }
     else if (scr_check_pressed(global.chat_key, global.chat_key_gp))
     {
         if (keyboard_check(vk_control) || keyboard_check(vk_shift))

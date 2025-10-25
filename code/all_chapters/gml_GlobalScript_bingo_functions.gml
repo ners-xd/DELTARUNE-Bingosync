@@ -626,7 +626,6 @@ function scr_goal_requirements(slot)
         case 30: return global.goal_progress[slot] >= 15;
         case 31: return global.goal_progress[slot] >= 20;
         case 42: return global.goal_progress[slot] >= 3;
-        case 78: return global.goal_progress[slot] >= 2;
         default: return global.goal_progress[slot] >= 1;
     }
 }

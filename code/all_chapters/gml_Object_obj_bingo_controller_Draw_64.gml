@@ -272,15 +272,6 @@ if (global.chat_typing)
     }
 }
 
-if (global.hit_counter)
-{
-    draw_set_halign(fa_left);
-    draw_set_valign(fa_top);
-    draw_set_font(fnt_mainbig);
-    draw_set_color(c_yellow);
-    draw_text_outline(5, global.chat_typing ? (surface_height - 80) : (surface_height - 30), "Hits: " + string(global.hits), 0);
-}
-
 draw_set_halign(temp_halign);
 draw_set_valign(temp_valign);
 draw_set_alpha(temp_alpha);

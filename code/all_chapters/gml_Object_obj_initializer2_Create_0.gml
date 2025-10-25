@@ -10,6 +10,8 @@ global.chat_color = array_create(array_length(global.chat_line), c_white);
 global.chat_typing = false;
 global.starring_goals = false;
 global.starred_goals = array_create(25, false);
+global.hit_counter = false;
+global.hits = 0;
 global.returning_to_title = false;
 /// END
 

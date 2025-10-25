@@ -375,7 +375,6 @@ function scr_load_bingo_data()
         // Chapter 4 (8)
         62, 63, 64, 65, 66, 67, 68, 69);
         // Total: 26
-    global.hits = 0;
     global.prev_hits = 0;
     global.num_goals = 135;
     global.room_id = "";
@@ -384,7 +383,6 @@ function scr_load_bingo_data()
     global.color = "";
     global.last_card_timestamp = 0;
     global.goal_progress = array_create(global.num_goals, 0);
-    global.hit_counter = false;
     global.show_board = true;
     global.board_key = ord("B");
     global.chat_key = ord("T");

@@ -17,7 +17,7 @@ switch(Data?.GeneralInfo?.DisplayName?.Content)
         }
         else
         {
-            ScriptError("Invalid game. Use DELTARUNE Chapter Select or DELTARUNE Chapter 1-7.");
+            goto default;
         }
         return;
 

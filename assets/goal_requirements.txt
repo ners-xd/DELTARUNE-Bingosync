@@ -91,6 +91,7 @@ Get 3 ReviveMints: Get 3 of the mints available throughout CH1-4. They are in:
     - CH2 Cyber Field, in the room with the Virovirokun that shoots arrows, there's a chest at the bottom of the room. Have the enemy shoot it, then open the chest
     - CH2 Queen's Mansion, in the first room with the fire-shooting paintings, go all the way down and there's a painting with a star on it. Interact with it and it transforms the painting on the left into a chest which you can open
     - CH3 Green Room, from Ramb if you get B or A rank in Board 1
+    - CH3 Green Room, by gambling in the B rank room
     - CH3 TV World, by properly completing the puzzle which requires the LancerController (the one that gets you to the egg quest), solution is (dig on the green dots): https://i.imgur.com/p24TP65.png
     - CH4 Right of Gerson's Study, the chest in the pink and green piano puzzle room
     - CH4 Sanctuary 2, the room where you move the piano, smash the orange bookshelf and it'll reveal a chest

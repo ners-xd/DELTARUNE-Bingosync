@@ -1,23 +1,5 @@
 /// IMPORT
 
-/*
-deleted
-obj_darkcontroller
-obj_savemenu
-obj_knight_roaring2
-obj_b1controls
-obj_b1susiedig
-
-- Visual Overhaul: New startup UI that can be navigated with the mouse or controller. Here, you will also be notified if a new version of the mod is available
-- The goal list is now retrieved online (basically, this means any changes to goals' names or progress won't require a mod update)
-- You now stay connected between restarts (NOT chapter switches or otherwise game exits)
-- The mouse is no longer stuck to the game window when using "/star"
-- Added a "Color toggle keybind" which, when pressed, hides every other color on the board except yours. Useful if there's a lot of players and you can't track what you've done
-- Added an "/autoconnect" command which, when enabled, automatically connects you to the last saved room when launching any chapter
-- Fixed some goals (ShadowCrystal, recruits) not working under certain circumstances
-- Fixed some visual bugs regarding improperly colored text.
-*/
-
 function scr_get_mod_version()
 {
     return "2.20";

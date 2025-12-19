@@ -4,17 +4,17 @@
 switch (global.encounterno)
 {
     case 23:
-        scr_add_goal_array("smorg", 0, 27);
+        scr_add_goal_array(27, 0);
         break;
 
     case 25:
         scr_add_goal_progress(5, 1);
-        scr_add_goal_array("secret_bosses", 0, 110);
+        scr_add_goal_array(110, 0);
         break;
 
     case 40:
         scr_add_goal_progress(12, 1);
-        scr_add_goal_array("main_bosses", 0, 111);
+        scr_add_goal_array(111, 0);
         break;
 
     case 8:

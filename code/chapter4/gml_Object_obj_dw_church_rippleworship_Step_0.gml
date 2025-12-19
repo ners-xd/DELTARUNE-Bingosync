@@ -4,5 +4,5 @@
     if (trig)
     {
 /// CODE
-        scr_add_goal_array("golden_sheets", 1, 102);
+        scr_add_goal_array(102, 1);
 /// END

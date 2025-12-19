@@ -6,3 +6,9 @@ if (instance_exists(obj_border_controller))
 // Removes the condition entirely
 if (true)
 /// END
+
+/// REPLACE
+    else
+/// CODE
+    else if (variable_global_exists("num_goals"))
+/// END

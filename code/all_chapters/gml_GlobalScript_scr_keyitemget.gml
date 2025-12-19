@@ -6,7 +6,7 @@
             switch (arg0)
             {
                 case 2:
-                    scr_add_goal_array("eggs", global.chapter - 1, 21);
+                    scr_add_goal_array(21, global.chapter - 1);
 
 #if CHAPTER_2
                     if (room == room_dw_city_man)

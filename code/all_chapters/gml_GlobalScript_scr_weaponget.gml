@@ -9,5 +9,5 @@
         {
 #endif
 /// CODE
-            scr_add_goal_array("weapons_got", arg0, 131);
+            scr_add_goal_array(131, arg0);
 /// END

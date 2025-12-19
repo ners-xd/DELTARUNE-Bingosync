@@ -3,5 +3,5 @@
 /// AFTER
                         snd_play(snd_locker);
 /// CODE
-                        scr_add_goal_array("shop_items", 0, 8);
+                        scr_add_goal_array(8, 0);
 /// END

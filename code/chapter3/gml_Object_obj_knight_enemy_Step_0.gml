@@ -3,5 +3,5 @@
 /// BEFORE
         endcon = 1;
 /// CODE
-        global.knight_hits_type = 0;
+        global.knight_swords_hit = false;
 /// END

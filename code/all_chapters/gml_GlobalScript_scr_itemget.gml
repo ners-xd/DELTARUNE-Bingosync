@@ -5,8 +5,9 @@
             global.item[i] = arg0;
 /// CODE
             if (i == 11)
+            {
                 scr_add_goal_progress(39, 1);
-
+            }
             else
             {
                 switch (arg0)
@@ -15,11 +16,11 @@
                         switch (room)
                         {
                             case room_forest_dancers1:
-                                scr_add_goal_array("revivemints", 0, 36);
+                                scr_add_goal_array(36, 0);
                                 break;
 
                             case room_cc_4f:
-                                scr_add_goal_array("revivemints", 1, 36);
+                                scr_add_goal_array(36, 1);
                                 break;
                         }
                         break;
@@ -56,35 +57,35 @@
                 switch (room_get_name(room))
                 {
                     case "room_dw_cyber_viro_ring":
-                        scr_add_goal_array("revivemints", 2, 36);
+                        scr_add_goal_array(36, 2);
                         break;
 
                     case "room_dw_mansion_fire_paintings":
-                        scr_add_goal_array("revivemints", 3, 36);
+                        scr_add_goal_array(36, 3);
                         break;
 
                     case "room_dw_green_room":
-                        scr_add_goal_array("revivemints", 4, 36);
+                        scr_add_goal_array(36, 4);
                         break;
 
                     case "room_dw_ranking_b":
-                        scr_add_goal_array("revivemints", 5, 36);
+                        scr_add_goal_array(36, 5);
                         break;
 
                     case "room_dw_b3bs_mysterypuzzle":
-                        scr_add_goal_array("revivemints", 6, 36);
+                        scr_add_goal_array(36, 6);
                         break;
 
                     case "room_dw_church_pianopiece_right":
-                        scr_add_goal_array("revivemints", 7, 36);
+                        scr_add_goal_array(36, 7);
                         break;
 
                     case "room_dw_churchb_library":
-                        scr_add_goal_array("revivemints", 8, 36);
+                        scr_add_goal_array(36, 8);
                         break;
 
                     case "room_dw_churchb_moneyfountain":
-                        scr_add_goal_array("revivemints", 9, 36);
+                        scr_add_goal_array(36, 9);
                         break;
                 }
                 break;

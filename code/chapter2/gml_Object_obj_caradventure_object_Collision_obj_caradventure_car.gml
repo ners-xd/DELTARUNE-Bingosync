@@ -3,5 +3,5 @@
 /// AFTER
     snd_play(snd_swallow);
 /// CODE
-    scr_add_goal_array("bananas", 0, 18);
+    scr_add_goal_array(18, 0);
 /// END

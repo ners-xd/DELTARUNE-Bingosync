@@ -11,8 +11,8 @@
                 if (global.flag[654] >= 1)
                 {
                     global.flag[654] = 1;
-                    scr_add_goal_array("recruits", 10, 71);
-                    scr_add_goal_array("chapter_recruits", 1, 128);
+                    scr_add_goal_array(71, 10);
+                    scr_add_goal_array(128, 1);
                 }
 /// END
 
@@ -27,8 +27,8 @@
         if (global.flag[654] >= 1)
         {
             global.flag[654] = 1;
-            scr_add_goal_array("recruits", 10, 71);
-            scr_add_goal_array("chapter_recruits", 1, 128);
+            scr_add_goal_array(71, 10);
+            scr_add_goal_array(128, 1);
         }
 /// END
 
@@ -47,7 +47,7 @@
         if (global.flag[654] >= 1)
         {
             global.flag[654] = 1;
-            scr_add_goal_array("recruits", 10, 71);
-            scr_add_goal_array("chapter_recruits", 1, 128);
+            scr_add_goal_array(71, 10);
+            scr_add_goal_array(128, 1);
         }
 /// END

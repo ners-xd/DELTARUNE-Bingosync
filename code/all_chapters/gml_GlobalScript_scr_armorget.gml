@@ -9,7 +9,7 @@
         {
 #endif
 /// CODE
-            scr_add_goal_array("armors_got", arg0, 130);
+            scr_add_goal_array(130, arg0);
 
             switch (arg0)
             {
@@ -22,20 +22,20 @@
                     break;
 
                 case 4:
-                    scr_add_goal_array("ribbons", 0, 114);
+                    scr_add_goal_array(114, 0);
                     break;
 
                 case 3:
-                    scr_add_goal_array("ribbons", 1, 114);
+                    scr_add_goal_array(114, 1);
                     break;
 
                 case 26:
-                    scr_add_goal_array("ribbons", 2, 114);
+                    scr_add_goal_array(114, 2);
                     break;
 
                 case 53:
                     scr_add_goal_progress(105, 1);
-                    scr_add_goal_array("ribbons", 3, 114);
+                    scr_add_goal_array(114, 3);
                     break;
             }
 /// END

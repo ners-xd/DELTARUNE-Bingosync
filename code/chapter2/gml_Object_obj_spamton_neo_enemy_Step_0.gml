@@ -12,5 +12,5 @@
             snd_free(global.batmusic[0]);
 /// CODE
             scr_add_goal_progress(33, 1);
-            scr_add_goal_array("secret_bosses", 1, 110);
+            scr_add_goal_array(110, 1);
 /// END

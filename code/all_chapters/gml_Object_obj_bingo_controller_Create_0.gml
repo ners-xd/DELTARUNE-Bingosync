@@ -17,8 +17,9 @@ global.goal_colors = array_create(25, "blank");
 global.room_seed = -1;
 global.room_lockout = "";
 
-if (os_is_network_connected())
+if (obj_time.internet)
 {
     global.ws_client = network_create_socket(network_socket_wss);
     network_connect_raw_async(global.ws_client, "wss://sockets.bingosync.com/broadcast", 443);
+    mus_volume(global.currentsong[1], 0, 8);
 }

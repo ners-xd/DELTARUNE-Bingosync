@@ -4,7 +4,7 @@
 switch (global.encounterno)
 {
     case 189:
-        scr_add_goal_array("smorg", 2, 27);
+        scr_add_goal_array(27, 2);
         break;
 
     case 183:
@@ -13,7 +13,7 @@ switch (global.encounterno)
         else
             scr_add_goal_progress(91, 1);
 
-        scr_add_goal_array("golden_sheets", 2, 102);
+        scr_add_goal_array(102, 2);
         break;
 }
 /// END

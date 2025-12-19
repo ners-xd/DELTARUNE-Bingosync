@@ -4,5 +4,5 @@
 if (con == 7)
 {
 /// CODE
-    scr_add_goal_array("berdly_encounters", 1, 34);
+    scr_add_goal_array(34, 1);
 /// END

@@ -1,15 +1,11 @@
 /// PATCH
 
 /// APPEND
-var temp_halign = draw_get_halign();
-var temp_valign = draw_get_valign();
-var temp_font = draw_get_font();
-var temp_alpha = draw_get_alpha();
+if (mouse_visible)
+    draw_sprite_ext(spr_maus_cursor, 0, mousex, mousey, 0.5, 0.5, 0, c_white, 1);
 
-if (global.returning_to_title && instance_exists(obj_fadeout))
-    draw_set_alpha(1 - obj_fadeout.image_alpha);
-else
-    draw_set_alpha(1);
+scr_get_temp_draw();
+draw_set_alpha(1);
 
 if (global.show_chat)
 {
@@ -28,17 +24,14 @@ if (global.show_chat)
     }
 }
 
-if (global.hit_counter)
+if (room != ROOM_INITIALIZE && !instance_exists(obj_screen_loading) && global.hit_counter)
 {
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
     draw_set_font(fnt_mainbig);
     draw_set_color(c_yellow);
-    draw_text_outline(5, global.chat_typing ? (surface_get_height(application_surface) - 80) : (surface_get_height(application_surface) - 30), "Hits: " + string(global.hits), c_black);
+    draw_text_outline(5, global.chat_typing ? (surface_get_height(application_surface) - 80) : (surface_get_height(application_surface) - 30), "Hits: " + string(global.hits));
 }
 
-draw_set_halign(temp_halign);
-draw_set_valign(temp_valign);
-draw_set_font(temp_font);
-draw_set_alpha(temp_alpha);
+scr_set_temp_draw();
 /// END

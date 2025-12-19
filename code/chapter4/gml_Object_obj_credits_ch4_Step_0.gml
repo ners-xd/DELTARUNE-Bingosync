@@ -1,4 +1,4 @@
-/// PATCH .ignore if CHAPTER_1 || CHAPTER_2
+/// PATCH
 
 /// REPLACE
 game_restart();

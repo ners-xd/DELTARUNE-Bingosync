@@ -14,7 +14,7 @@ if (ds_map_find_value(async_load, "id") == async_string)
         {
             var ch = ord(string_char_at(input_str, i));
             var ok = false;
-            
+
             if ((ch >= 32 && ch <= 126) || (ch >= 12288 && ch <= 12290) || (ch >= 12300 && ch <= 12305) || (ch >= 12353 && ch <= 12435) || (ch >= 12449 && ch <= 12531) || (ch == 12539 || ch == 12540) || ch == 65374 || (ch >= 65377 && ch <= 65439))
             {
                 ok = true;

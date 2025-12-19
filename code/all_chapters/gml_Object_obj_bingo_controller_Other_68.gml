@@ -6,7 +6,7 @@ try
     {
         switch (ds_map_find_value(async_load, "type"))
         {
-            case 4:
+            case network_type_non_blocking_connect:
                 if (!ds_map_find_value(async_load, "succeeded"))
                 {
                     obj_time.mouse_visible = true;
@@ -34,7 +34,7 @@ try
                 room_goto(obj_initializer2.roomchoice);
                 exit;
 
-            case 3:
+            case network_type_data:
                 var data = ds_map_find_value(async_load, "buffer");
                 buffer_seek(data, buffer_seek_start, 0);
                 var json = json_parse(buffer_read(data, buffer_text));

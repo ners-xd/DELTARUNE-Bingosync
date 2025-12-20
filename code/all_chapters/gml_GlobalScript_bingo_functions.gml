@@ -2,7 +2,7 @@
 
 function scr_get_mod_version()
 {
-    return "2.20";
+    return "2.21";
 }
 
 function scr_get_temp_draw()
@@ -574,8 +574,8 @@ function scr_reset_bingo_data()
 
     for (var i = 0; i < global.num_goals; i++)
     {
-        if (is_array(global.goal_progress[i]))
-            global.goal_progress[i] = array_create(array_length(global.goal_progress[i]), 0);
+        if (global.goal_list[i].array_size > 0)
+            global.goal_progress[i] = array_create(global.goal_list[i].array_size, 0);
         else
             global.goal_progress[i] = 0;
     }

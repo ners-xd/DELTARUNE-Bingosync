@@ -1,8 +1,7 @@
 /// PATCH
 
 /// AFTER
-function scr_gamestart()
-{
+    audio_set_master_gain(0, global.flag[17]);
 /// CODE
     randomize();
 /// END

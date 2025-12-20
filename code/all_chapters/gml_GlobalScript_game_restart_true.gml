@@ -27,15 +27,13 @@
         roomchoice = possible_rooms[1];
 
     if (roomchoice == room_legend)
-    {
-        global.plot = 0;
         global.tempflag[10] = 1;
-    }
 
     if (global.is_console)
         global.screen_border_alpha = roomchoice == room_legend;
     else
         io_clear();
 
+    scr_gamestart();
     room_goto(roomchoice);
 /// END

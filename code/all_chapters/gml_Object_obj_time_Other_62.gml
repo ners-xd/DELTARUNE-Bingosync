@@ -18,10 +18,14 @@ try
                     {
                         name: info[i].name,
                         max_progress: info[i].mod_progress_threshold
+                        array_size: 0;
                     };
 
                     if (variable_struct_exists(info[i], "mod_array_size"))
+                    {
+                        global.goal_list[info[i].mod_slot].array_size = info[i].mod_array_size;
                         global.goal_progress[info[i].mod_slot] = array_create(info[i].mod_array_size, 0);
+                    }
                 }
 
                 break;

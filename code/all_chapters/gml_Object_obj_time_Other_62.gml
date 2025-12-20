@@ -17,8 +17,8 @@ try
                     global.goal_list[info[i].mod_slot] = 
                     {
                         name: info[i].name,
-                        max_progress: info[i].mod_progress_threshold
-                        array_size: 0;
+                        max_progress: info[i].mod_progress_threshold,
+                        array_size: 0
                     };
 
                     if (variable_struct_exists(info[i], "mod_array_size"))

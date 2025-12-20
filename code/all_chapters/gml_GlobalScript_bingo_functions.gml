@@ -687,7 +687,7 @@ function scr_add_goal_progress(slot, amount)
                 alarm[0] = 3 * room_speed;
             }
 
-            ossafe_http_post("https://bingosync.com/api/select", "{ \"room\": \"" + scr_escape_string(global.room_id) + "\", \"color\": \"" + global.color + "\", \"slot\": \"" + board_slot + "\", \"remove_color\": false }");
+            ossafe_http_post("https://bingosync.com/api/select", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\", \"slot\": \"" + board_slot + "\", \"remove_color\": false }");
         }
     }
 

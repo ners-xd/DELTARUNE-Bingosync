@@ -4,7 +4,7 @@
   {"name": "Crash the game with Bagel Overflow", "mod_slot": 58, "mod_progress_threshold": 1},
   {"name": "Wrong Warp into 7 unique rooms", "mod_slot": 70, "mod_progress_threshold": 1},
   {"name": "Z Rank Board 1/2", "mod_slot": 85, "mod_progress_threshold": 1},
-  {"name": "Bomberman Key (Board 1)", "mod_slot": 87, "mod_progress_threshold": 1},
+  {"name": "Get Bomberman Key (Board 1)", "mod_slot": 87, "mod_progress_threshold": 1},
 
   {"name": "$2000", "mod_slot": 0, "mod_progress_threshold": 2000},
   {"name": "Get an Egg (Original Source)", "mod_slot": 1, "mod_progress_threshold": 1},
@@ -130,8 +130,8 @@
   {"name": "Go to the diner with Susie", "mod_slot": 127, "mod_progress_threshold": 1},
   {"name": "Fully recruit an enemy in each chapter", "mod_slot": 128, "mod_progress_threshold": 3, "mod_array_size": 3},
   {"name": "Lanino/Elnina Rematch", "mod_slot": 129, "mod_progress_threshold": 1},
-  {"name": "Obtain 5 Armors", "mod_slot": 130, "mod_progress_threshold": 5, "mod_array_size": 55},
-  {"name": "Obtain 5 Weapons", "mod_slot": 131, "mod_progress_threshold": 5, "mod_array_size": 55},
+  {"name": "Obtain 5 unique armors", "mod_slot": 130, "mod_progress_threshold": 5, "mod_array_size": 55},
+  {"name": "Obtain 5 unique weapons", "mod_slot": 131, "mod_progress_threshold": 5, "mod_array_size": 55},
   {"name": "Tell Jackenstein he's cute", "mod_slot": 132, "mod_progress_threshold": 1},
   {"name": "Complete 10 attacks without grazing bullets", "mod_slot": 133, "mod_progress_threshold": 10},
   {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks", "mod_slot": 134, "mod_progress_threshold": 1}

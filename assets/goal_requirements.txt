@@ -8,7 +8,7 @@ Wrong Warp into 7 unique rooms: Self explanatory (works in all chapters. Wrong w
 
 Z Rank Board 1/2: Self explanatory
 
-Bomberman Key (Board 1): Get the key that spawns after Susie throws a few bombs in the hidden room found down->left of the cacti in Board 1
+Get Bomberman Key (Board 1): Get the key that spawns after Susie throws a few bombs in the hidden room found down->left of the cacti in Board 1
 
 $2000: Accumulate $2000 since the start of the match (cumulative across all chapters and all save files). You can spend the money at any time
 
@@ -298,9 +298,9 @@ Fully recruit an enemy in each chapter: Self explanatory
 
 Lanino/Elnina Rematch: Beat the only available dojo challenge in CH4
 
-Obtain 5 Armors: Get this many UNIQUE armors. Note that the starting equipment does NOT count. You have to buy or find things
+Obtain 5 unique armors: Get this many UNIQUE armors. Note that the starting equipment does NOT count. You have to buy or find things
 
-Obtain 5 Weapons: Get this many UNIQUE weapons. Same conditions as above apply
+Obtain 5 unique weapons: Get this many UNIQUE weapons. Same conditions as above apply
 
 Tell Jackenstein he's cute: After his fight you can find him in Gerson's study. Interact with him and select "Cute..."
 

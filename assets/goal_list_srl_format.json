@@ -9,7 +9,7 @@
   ],
   [
     {"name": "Watch the Legend", "type": ["ech1"]},
-    {"name": "Bomberman Key (Board 1)", "type": ["eb1ch3"]},
+    {"name": "Get Bomberman Key (Board 1)", "type": ["eb1ch3"]},
     {"name": "Complete the Dummy Tutorial", "type": ["ech1"]},
     {"name": "Fuse an Item", "type": ["misc2"]},
     {"name": "Get a Lancer Cookie", "type": ["misc2"]}
@@ -97,7 +97,7 @@
     {"name": "Beat the Rouxls Fight (CH2/CH3)", "type": ["boss"]},
     {"name": "Eat Moss", "type": ["misc1"]},
     {"name": "Kill 20 Enemies", "type": ["kill"]},
-    {"name": "Obtain 5 Weapons", "type": ["kill"]},
+    {"name": "Obtain 5 unique weapons", "type": ["kill"]},
     {"name": "Tell Jackenstein he's cute", "type": ["es1ch4"]},
     {"name": "Watch the Lesbian Cutscene", "type": ["mmch2"]}
   ],
@@ -111,7 +111,7 @@
     {"name": "Bed Inspector", "type": ["mch1"]},
     {"name": "Buy an item from Seam and Rouxls", "type": ["lch1"]},
     {"name": "Get the ThornRing (Original Source)", "type": ["exch2"]},
-    {"name": "Obtain 5 Armors", "type": ["misc1"]},
+    {"name": "Obtain 5 unique armors", "type": ["misc1"]},
     {"name": "Talk to the Green Swatchling", "type": ["mmch2"]},
     {"name": "Trigger Milk on the 2nd K. Round fight", "type": ["lch1"]},
     {"name": "Use Dual Heal", "type": ["boss"]}

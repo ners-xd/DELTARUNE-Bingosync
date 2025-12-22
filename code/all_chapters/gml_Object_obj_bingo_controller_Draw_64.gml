@@ -203,7 +203,7 @@ if (global.chat_typing)
         draw_set_halign(fa_left);
         draw_set_valign(fa_top);
         draw_set_color(c_ltgray);
-        draw_text_outline(1, surface_height - 48, "Typing in chat. Press ESC or      to cancel. Commands: /color, /star, /autoconnect.");
+        draw_text_outline(1, surface_height - 48, "Typing in chat. Press ESC or      to cancel. Commands: " + command_list + ".");
         draw_sprite_ext(scr_getbuttonsprite(global.input_g[5]), 0, round(0.5 + string_width("Typing in chat. Press ESC or ")), round(surface_height - 46), 1, 1, 0, c_ltgray, 1);
         draw_set_color(c_dkgray);
         ossafe_fill_rectangle(0, surface_height - 30, surface_width, surface_height);
@@ -222,63 +222,77 @@ if (global.chat_typing)
 
         if (string_length(str) > 0)
         {
-            var str_lower = string_lower(str);
+            var split_string = string_split(string_lower(str), " ", true);
 
-            if (string_pos("/color", str_lower) == 1 || string_pos("/colour", str_lower) == 1)
+            switch (split_string[0])
             {
-                var split_string = string_split(str_lower, " ");
-                var chosen_color = "blank";
+                case "/color":
+                case "/colour":
+                    var chosen_color = (array_length(split_string) > 1) ? split_string[1] : "blank";
 
-                if (array_length(split_string) > 1)
-                    chosen_color = split_string[1];
+                    if (chosen_color == "blank" || scr_color_from_name(chosen_color) == 16777215)
+                    {
+                        scr_chat_message(c_red, "Invalid color. Use orange, red, blue, green, purple, navy, teal, brown, pink or yellow.");
+                    }
+                    else if (chosen_color == global.color)
+                    {
+                        scr_chat_message(c_red, "You are already " + chosen_color + ".");
+                    }
+                    else
+                    {
+                        global.color = chosen_color;
+                        scr_save_bingo_data();
+                        ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\" }");
+                    }
+                    break;
 
-                if (chosen_color == "blank" || scr_color_from_name(chosen_color) == c_white)
-                {
-                    scr_chat_message(c_red, "Invalid color. Use orange, red, blue, green, purple, navy, teal, brown, pink or yellow.");
-                }
-                else
-                {
-                    global.color = chosen_color;
+                case "/star":
+                    if (!global.show_board || !board_connected || !board_revealed)
+                    {
+                        scr_chat_message(c_red, "You can't star goals while the board is hidden.");
+                    }
+                    else
+                    {
+                        global.starring_goals = true;
+                        scr_show_mouse_at(window_get_width() / 2, window_get_height() / 2);
+                    }
+                    break;
+
+                case "/autoconnect":
+                    if (!global.autoconnect)
+                    {
+                        global.autoconnect = true;
+                        scr_chat_message(c_yellow, "You will now automatically connect to this room when starting the game.");
+                    }
+                    else
+                    {
+                        global.autoconnect = false;
+                        scr_chat_message(c_yellow, "You will no longer automatically connect to this room when starting the game.");
+                    }
+
                     scr_save_bingo_data();
-                    ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\" }");
-                }
-            }
-            else if (string_pos("/star", str_lower) == 1)
-            {
-                if (!global.show_board || !board_connected || !board_revealed)
-                {
-                    scr_chat_message(c_red, "You can't star goals while the board is hidden.");
-                }
-                else
-                {
-                    global.starring_goals = true;
-                    scr_show_mouse_at(window_get_width() / 2, window_get_height() / 2);
-                }
-            }
-            else if (string_pos("/autoconnect", str_lower) == 1)
-            {
-                if (!global.autoconnect)
-                {
-                    global.autoconnect = true;
-                    scr_chat_message(c_yellow, "You will now automatically connect to this room when starting the game.");
-                }
-                else
-                {
-                    global.autoconnect = false;
-                    scr_chat_message(c_yellow, "You will no longer automatically connect to this room when starting the game.");
-                }
+                    break;
 
-                scr_save_bingo_data();
-            }
-            else
-            {
-                ossafe_http_post("https://bingosync.com/api/chat", "{ \"room\": \"" + global.room_id + "\", \"text\": \"" + str + "\" }");
+                case "/quit":
+                    mus_volume(global.currentsong[1], 0, 6);
+
+                    with (instance_create(0, 0, obj_fadeout))
+                        fadespeed = 0.16;
+
+                    call_later(8, 1, function()
+                    {
+                        scr_chapterswitch(0);
+                    });
+                    break;
+
+                default:
+                    ossafe_http_post("https://bingosync.com/api/chat", "{ \"room\": \"" + global.room_id + "\", \"text\": \"" + str + "\" }");
+                    break;
             }
         }
 
         global.chat_typing = false;
         keyboard_clear(vk_enter);
-        keyboard_string = "";
         mystring = "";
     }
 }

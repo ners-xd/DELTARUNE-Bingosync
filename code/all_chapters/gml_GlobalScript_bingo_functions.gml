@@ -2,7 +2,7 @@
 
 function scr_get_mod_version()
 {
-    return "2.21";
+    return "2.22";
 }
 
 function scr_get_temp_draw()
@@ -267,20 +267,14 @@ function scr_check_mouse_pressed(mb_key, gp_key)
     return false;
 }
 
-function scr_show_mouse_at(_x, _y)
+function scr_show_mouse_at(arg0, arg1)
 {
-    _x /= obj_time.window_size_multiplier;
-    _y /= obj_time.window_size_multiplier;
-    obj_time.mousex = _x;
-    obj_time.mousey = _y;
+    obj_time.mousex = arg0;
+    obj_time.mousey = arg1;
+    obj_time.mouse_visible = true;
 
     if (!global.is_console && window_has_focus())
-        window_mouse_set(_x, _y);
-
-    call_later(1, 1, function()
-    {
-        obj_time.mouse_visible = true;
-    });
+        window_mouse_set(arg0, arg1);
 }
 
 function scr_escape_string(str)

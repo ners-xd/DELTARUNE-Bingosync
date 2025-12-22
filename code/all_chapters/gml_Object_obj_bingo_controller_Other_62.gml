@@ -25,7 +25,6 @@ try
 
                 if (!board_connected)
                     board_connected = true;
-
                 break;
 
             case http_room_settings:
@@ -53,7 +52,6 @@ try
                         break;
                     }
                 }
-
                 break;
         }
     }

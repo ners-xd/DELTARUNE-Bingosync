@@ -55,16 +55,17 @@ if (ds_map_find_value(async_load, "id") == async_string)
         {
             case room_id_button:
                 global.room_id = string_copy(string_trim(str), 1, 22);
-                clicked_button.text = "Room ID:\n" + global.room_id;
+                clicked_button.text = "Room ID:" + (global.room_id == "" ? " [Empty]" : ("\n" + global.room_id));
                 break;
 
             case room_password_button:
                 global.password = str;
+                clicked_button.text = "Room Password:" + (global.password == "" ? " [Empty]" : "\nClick to view");
                 break;
 
             case nickname_button:
                 global.nickname = string_copy(string_trim(str), 1, 50);
-                clicked_button.text = "Nickname:\n" + global.nickname;
+                clicked_button.text = "Nickname:" + (global.nickname == "" ? " [Empty]" : ("\n" + global.nickname));
                 break;
         }
 
@@ -74,4 +75,5 @@ if (ds_map_find_value(async_load, "id") == async_string)
     async_string = -1;
     clicked_button = noone;
     obj_time.mouse_visible = true;
+    cursor_sprite = -1;
 }

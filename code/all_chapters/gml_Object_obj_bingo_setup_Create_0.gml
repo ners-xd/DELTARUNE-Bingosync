@@ -143,7 +143,12 @@ function draw_main_buttons()
                     "YOUR LONG",
                     "It's been " + string(floor(date_day_span(date_create_datetime(2018, 10, 31, 0, 0, 0), date_current_datetime()))) + " days since Chapter 1!",
                     "It's been " + string(floor(date_day_span(date_create_datetime(2021, 9, 17, 0, 0, 0), date_current_datetime()))) + " days since Chapter 2!",
-                    "It's been " + string(floor(date_day_span(date_create_datetime(2025, 6, 4, 0, 0, 0), date_current_datetime()))) + " days since Chapters 3+4!"
+                    "It's been " + string(floor(date_day_span(date_create_datetime(2025, 6, 4, 0, 0, 0), date_current_datetime()))) + " days since Chapters 3+4!",
+                    "I am a fast little boy!",
+                    global.is_console ? "Controller is based." : "Keyboard is based.",
+                    global.is_console ? "Keyboard is not based." : "Controller is not based.",
+                    "There's a friend inside me.",
+                    "There's a friend inside you."
                 );
 
                 bg_draw = function()
@@ -166,10 +171,11 @@ function draw_main_buttons()
                 {
                     x2 = x + 357;
                     y2 = y + 50;
-                    text = "Room ID:\n" + global.room_id;
+                    text = "Room ID:" + (global.room_id == "" ? " [Empty]" : ("\n" + global.room_id));
 
                     on_click = function()
                     {
+                        cursor_sprite = spr_maus_cursor;
                         obj_time.mouse_visible = false;
                         obj_bingo_setup.clicked_button = id;
                         obj_bingo_setup.mystring = "";
@@ -181,10 +187,11 @@ function draw_main_buttons()
                 {
                     x2 = x + 357;
                     y2 = y + 50;
-                    text = "Room Password:\nClick to view";
+                    text = "Room Password:" + (global.password == "" ? " [Empty]" : "\nClick to view");
 
                     on_click = function()
                     {
+                        cursor_sprite = spr_maus_cursor;
                         obj_time.mouse_visible = false;
                         obj_bingo_setup.clicked_button = id;
                         obj_bingo_setup.mystring = "";
@@ -196,10 +203,11 @@ function draw_main_buttons()
                 {
                     x2 = x + 357;
                     y2 = y + 50;
-                    text = "Nickname:\n" + global.nickname;
+                    text = "Nickname:" + (global.nickname == "" ? " [Empty]" : ("\n" + global.nickname));
 
                     on_click = function()
                     {
+                        cursor_sprite = spr_maus_cursor;
                         obj_time.mouse_visible = false;
                         obj_bingo_setup.clicked_button = id;
                         obj_bingo_setup.mystring = "";

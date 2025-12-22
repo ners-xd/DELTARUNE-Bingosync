@@ -44,31 +44,26 @@ try
                     case "connection":
                         if (global.show_connections)
                             scr_chat_message(c_white, string(json.player.name + " " + json.event_type + "."));
-
                         break;
 
                     case "revealed":
                         if (global.show_reveals)
                             scr_chat_message(c_white, string(json.player.name + " revealed the card."));
-
                         break;
 
                     case "chat":
                         if (global.show_chats)
                             scr_chat_message(scr_color_from_name(json.player.color), string(json.player.name + ": " + string_copy(json.text, 1, 100)));
-
                         break;
 
                     case "color":
                         if (global.show_colors)
                             scr_chat_message(scr_color_from_name(json.player.color), string(json.player.name + " changed color to " + json.player.color + "."));
-
                         break;
 
                     case "goal":
                         if (global.show_goal_marks)
                             scr_chat_message(c_white, string(json.player.name + (json.remove ? " cleared " : " marked ") + "\"" + json.square.name + "\"."));
-
                         break;
 
                     case "new-card":
@@ -82,7 +77,6 @@ try
                         scr_reset_bingo_data();
                         break;
                 }
-
                 exit;
         }
     }

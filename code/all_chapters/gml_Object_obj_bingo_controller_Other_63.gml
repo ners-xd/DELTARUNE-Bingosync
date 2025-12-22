@@ -49,7 +49,7 @@ if (ds_map_find_value(async_load, "id") == console_string)
                 str += chr(ch);
         }
 
-        mystring = " " + str;
+        mystring = str;
     }
     else
     {

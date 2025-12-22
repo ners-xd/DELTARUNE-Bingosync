@@ -23,7 +23,7 @@ if (!global.chat_typing && !global.starring_goals)
             if (global.is_console)
             {
                 mystring = "";
-                console_string = get_string_async("Typing in chat. Commands: /color, /star, /autoconnect.", "");
+                console_string = get_string_async("Typing in chat. Commands: " + command_list + ".", "");
             }
             else
             {
@@ -63,6 +63,5 @@ else if (scr_check_pressed(vk_escape, global.input_g[5]))
     global.chat_typing = false;
     global.starring_goals = false;
     obj_time.mouse_visible = false;
-    keyboard_string = "";
     keyboard_clear(vk_escape);
 }

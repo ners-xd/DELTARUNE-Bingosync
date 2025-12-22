@@ -267,14 +267,14 @@ function scr_check_mouse_pressed(mb_key, gp_key)
     return false;
 }
 
-function scr_show_mouse_at(arg0, arg1)
+function scr_show_mouse_at(_x, _y)
 {
-    obj_time.mousex = arg0;
-    obj_time.mousey = arg1;
+    obj_time.mousex = _x;
+    obj_time.mousey = _y;
     obj_time.mouse_visible = true;
 
     if (!global.is_console && window_has_focus())
-        window_mouse_set(arg0, arg1);
+        window_mouse_set(_x, _y);
 }
 
 function scr_escape_string(str)

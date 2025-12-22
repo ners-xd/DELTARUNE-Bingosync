@@ -11,6 +11,7 @@
 This mod connects your game to [Bingosync](https://bingosync.com) and it can automatically mark goals from:
 - [this list](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_list.json)
 - or [this list (SRL format)](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_list_srl_format.json) - this one is separated into 25 categories and only one goal from each category can show up on the board.
+
 You can find a little guide on how to complete most goals [here](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_requirements.txt). You can also chat with other players, see the board update live and so on.
 
 # How to install and use

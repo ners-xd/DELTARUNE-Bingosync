@@ -10,6 +10,17 @@
 
 This mod connects your game to [Bingosync](https://bingosync.com) and it can automatically mark goals from [this list](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_list.json). You can find a little guide on how to complete each goal [here](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_requirements.txt). You can also chat with other players, see the board update live, star goals and change your name color.
 
+# How to install and use
+- Download [the latest](https://github.com/ners-xd/deltarune-bingosync/releases/latest) version of the mod
+- **For Switch:** Use nxdumptool to dump the game files (INCLUDING the update, not just the base application) to your computer **(make sure to use layeredfs dir)**. A tutorial can be found [here](https://www.youtube.com/watch?v=-azK1yjPGQg) if you don't know how
+- **Extract the archive anywhere**, run "Bingosync Patcher.bat" and follow its instructions. **On Switch, the game files will be in atmosphere\contents\0100A0D022A68000\romfs**
+- Create or join a room on Bingosync, open the game and obtain the room ID from the end of the link (bingosync.com/room/XXXXXXXXXXXXXXXXXXXXXX) and the room's password. Go to "Room & User Info" and fill everything out. Finally, go back and press "Connect to room"
+- Having the chat open automatically progresses text if you're in a cutscene!
+
+# Potential errors while patching
+- Couldn't read ROM - The vanilla file couldn't be found, make sure it's named exactly "data.win" (Windows) / "game.win" (Console)
+- This patch is not intended for this ROM - The file that's trying to be patched is either not vanilla or not supported. Make sure there's no mods already applied on that file and make sure it's on the list of supported versions (found near the top of this page).
+
 # Hit counter rules
 A hit counts as an avoidable loss of HP in battle or in the overworld, including the arcade minigame in Chapter 2 and the Legend of Tenna and Sword boards in Chapter 3.
   - The following do NOT count as hits:
@@ -21,18 +32,6 @@ A hit counts as an avoidable loss of HP in battle or in the overworld, including
     - Taking damage in the Chapter 2 basement teacup ride
     - Taking damage to the first part of The Knight's sword corridor attack. The part where the swords get launched in random areas counts as a separate hit
     - Taking damage to Balthizard's clouds that only come up when at least one other enemy is in the battle.
-
-# How to install and use
-- Download [the latest](https://github.com/ners-xd/deltarune-bingosync/releases/latest) version of the mod
-- **For Switch:** Use nxdumptool to dump the game files (INCLUDING the update, not just the base application) to your computer **(make sure to use layeredfs dir)**. A tutorial can be found [here](https://www.youtube.com/watch?v=-azK1yjPGQg) if you don't know how
-- **Extract the archive anywhere**, run "Bingosync Patcher.bat" and follow its instructions. **On Switch, the game files will be in atmosphere\contents\0100A0D022A68000\romfs**
-- Create or join a room on Bingosync, open the game and obtain the room ID from the end of the link (bingosync.com/room/XXXXXXXXXXXXXXXXXXXXXX) and the room's password. Choose a nickname and a color (orange, red, blue, green, purple, navy, teal, brown, pink or yellow) and press "Connect to room"
-- In this menu you can also reset your goal progress if needed (in case there's a bug or you just want to reset it, for some reason) and change your preferences.
-- Having the chat open automatically progresses text if you're in a cutscene!
-
-# Potential errors while patching
-- Couldn't read ROM - The vanilla file couldn't be found, make sure it's named exactly "data.win" (Windows) / "game.win" (Console)
-- This patch is not intended for this ROM - The file that's trying to be patched is either not vanilla or not supported. Make sure there's no mods already applied on that file and make sure it's on the list of supported versions (found near the top of this page).
 
 # Contributing
 How to contribute to the mod:

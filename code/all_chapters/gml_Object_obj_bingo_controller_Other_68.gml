@@ -9,13 +9,20 @@ try
             case network_type_non_blocking_connect:
                 if (!ds_map_find_value(async_load, "succeeded"))
                 {
-                    obj_time.mouse_visible = true;
-                    
                     with (obj_bingo_setup)
-                        error_show("Couldn't connect to Bingosync...\nTry again later.");
-                    
+                        error_show("The connection has timed out...\nBingosync may be down or your internet may be too slow.\nTry again later.");
+
                     network_destroy(global.ws_client);
                     global.ws_client = -1;
+
+                    if (instance_exists(obj_fadeout))
+                    {
+                        instance_destroy(obj_fadeout);
+
+                        with (instance_create(0, 0, obj_fadein))
+                            fadespeed = -0.16;
+                    }
+
                     instance_destroy();
                     exit;
                 }

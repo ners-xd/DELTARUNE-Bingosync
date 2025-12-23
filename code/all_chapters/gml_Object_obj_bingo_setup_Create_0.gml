@@ -1,6 +1,7 @@
 /// IMPORT
 
 scr_load_bingo_data();
+network_set_config(network_config_connect_timeout, 10000);
 global.ws_client = -1;
 global.ws_key = "{}";
 global.count_once = false;
@@ -38,6 +39,7 @@ random_text = "";
 
 function error_show(msg)
 {
+    obj_time.mouse_visible = true;
     status_color = c_red;
     status_text = msg;
     snd_play(snd_hurt1);
@@ -65,6 +67,10 @@ function connect_to_room()
     else if (global.nickname == "")
     {
         error_show("No nickname set!");
+    }
+    else if (global.color == "")
+    {
+        error_show("No color set!");
     }
     else
     {
@@ -719,6 +725,7 @@ function draw_main_buttons()
         x2 = x + 200;
         y2 = y + 51;
         sprite = spr_chapter_icon;
+
 #if CHAPTER_1 || CHAPTER_2
         sprite_frame = global.chapter - 1;
 #elsif CHAPTER_3
@@ -726,6 +733,7 @@ function draw_main_buttons()
 #else
         sprite_frame = global.chapter;
 #endif
+
         text = "Chapter Select";
         hover_text = "Exit the game and return to the Chapter Select menu.";
 
@@ -804,7 +812,7 @@ with (instance_create(0, 0, obj_fadein))
 if (global.autoconnect && obj_time.internet)
 {
     connect_to_room();
-    status_text = "Please wait...\n(Autoconnect)";
+    status_text += "\n(Autoconnect)";
 }
 else
 {

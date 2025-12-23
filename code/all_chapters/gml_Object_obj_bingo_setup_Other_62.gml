@@ -14,8 +14,7 @@ try
 
             if (!ds_exists(headers, ds_type_map) || ds_map_empty(headers))
             {
-                obj_time.mouse_visible = true;
-                error_show("Couldn't connect to Bingosync...\nTry again later.");
+                error_show("Couldn't retrieve any response...\nTry again later.");
             }
             else
             {
@@ -33,12 +32,10 @@ try
         }
         else if (string_pos("Sorry, that page doesn't exist!", info_str) > 0)
         {
-            obj_time.mouse_visible = true;
             error_show("Invalid room ID!");
         }
         else if (string_pos("Incorrect Password", info_str) > 0)
         {
-            obj_time.mouse_visible = true;
             error_show("Incorrect password!");
         }
         else if (string_pos("socket_key", info_str) == 0)
@@ -47,10 +44,8 @@ try
             // moments before putting you in the intro room
             call_later(1, 0, function()
             {
-                obj_time.mouse_visible = true;
-
                 with (obj_bingo_setup)
-                    error_show("Couldn't connect to Bingosync...\nTry again later.");
+                    error_show("Couldn't find a socket key...\nBingosync may be down.\nTry again later.");
             });
         }
     }

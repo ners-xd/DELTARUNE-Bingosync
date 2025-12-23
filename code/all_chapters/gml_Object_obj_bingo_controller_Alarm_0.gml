@@ -3,6 +3,9 @@
 if (!obj_time.internet)
 {
     scr_chat_message(c_red, "Your internet connection has timed out! Restart the game to attempt a reconnection.");
+    global.chat_typing = false;
+    global.starring_goals = false;
+    obj_time.mouse_visible = false;
     instance_destroy();
     exit;
 }

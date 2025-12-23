@@ -8,7 +8,7 @@ if (ds_map_find_value(async_load, "id") == async_string)
     if (ds_map_find_value(async_load, "status"))
     {
         var input_str = ds_map_find_value(async_load, "result");
-        var input_len = strlen(input_str);
+        var input_len = string_length(input_str);
 
         for (var i = 1; i <= input_len; i++)
         {

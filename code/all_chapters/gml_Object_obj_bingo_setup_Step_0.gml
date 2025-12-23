@@ -77,3 +77,26 @@ else if (draw_close_x != -1 && draw_close_y != -1 && async_string == -1 && scr_c
     keyboard_clear(vk_escape);
     snd_play(snd_swing);
 }
+
+if (httppost != -1 && !obj_time.internet)
+{
+    httppost = -1;
+    error_show("Can't connect without internet!");
+
+    if (instance_exists(obj_bingo_controller))
+        instance_destroy(obj_bingo_controller);
+
+    if (global.ws_client != -1)
+    {
+        network_destroy(global.ws_client);
+        global.ws_client = -1;
+    }
+
+    if (instance_exists(obj_fadeout))
+    {
+        instance_destroy(obj_fadeout);
+
+        with (instance_create(0, 0, obj_fadein))
+            fadespeed = -0.16;
+    }
+}

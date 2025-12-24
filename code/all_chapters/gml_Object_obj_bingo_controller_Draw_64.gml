@@ -274,8 +274,6 @@ if (global.chat_typing)
                     break;
 
                 case "/quit":
-                    mus_volume(global.currentsong[1], 0, 6);
-
                     with (instance_create(0, 0, obj_fullscreen_fadeout))
                         fadespeed = 0.16;
 

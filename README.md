@@ -18,7 +18,9 @@ You can find a little guide on how to complete most goals [here](https://raw.git
 - Download [the latest](https://github.com/ners-xd/deltarune-bingosync/releases/latest) version of the mod
 - **For Switch:** Use nxdumptool to dump the game files (INCLUDING the update, not just the base application) to your computer **(make sure to use layeredfs dir)**. A tutorial can be found [here](https://www.youtube.com/watch?v=-azK1yjPGQg) if you don't know how
 - **Extract the archive anywhere**, run "Bingosync Patcher.bat" and follow its instructions. **On Switch, the game files will be in atmosphere\contents\0100A0D022A68000\romfs**
-- Create or join a room on Bingosync, open the game and obtain the room ID from the end of the link (bingosync.com/room/XXXXXXXXXXXXXXXXXXXXXX) and the room's password. Go to "Room & User Info" and fill everything out. Finally, go back and press "Connect to room"
+- Create or join a room on Bingosync, open the game and obtain the room ID from the end of the link (bingosync.com/room/XXXXXXXXXXXXXXXXXXXXXX) and the room's password. Go to "Room & User Info" in the mod and fill everything out
+  - If you're creating a room, set the game to **Custom (Advanced)** and the mode to **Randomized** or **SRL** depending on which list you want to use
+  - Copy and paste the list into the **Board** section
 - Having the chat open automatically progresses text if you're in a cutscene!
 
 # Potential errors while patching

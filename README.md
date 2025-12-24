@@ -18,6 +18,8 @@ You can find a little guide on how to complete most goals [here](https://raw.git
 - Easiest way: Download [Deltamod](https://gamebanana.com/tools/20575), browse for Bingosync Mod, download it
 - OR:
 - Download [the latest](https://github.com/ners-xd/deltarune-bingosync/releases/latest) version of the mod
+- Import it manually in Deltamod if you downloaded the Deltamod archive
+- OR:
 - **For Switch:** Use nxdumptool to dump the game files (INCLUDING the update, not just the base application) to your computer **(make sure to use layeredfs dir)**. A tutorial can be found [here](https://www.youtube.com/watch?v=-azK1yjPGQg) if you don't know how
 - **Extract the archive anywhere**, run "Bingosync Patcher.bat" and follow its instructions. **On Switch, the game files will be in atmosphere\contents\0100A0D022A68000\romfs**
 - Create or join a room on Bingosync, open the game and obtain the room ID from the end of the link (bingosync.com/room/XXXXXXXXXXXXXXXXXXXXXX) and the room's password. Go to "Room & User Info" in the mod and fill everything out

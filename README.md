@@ -15,6 +15,8 @@ This mod connects your game to [Bingosync](https://bingosync.com) and it can aut
 You can find a little guide on how to complete most goals [here](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_requirements.txt). You can also chat with other players, see the board update live and so on.
 
 # How to install and use
+- Easiest way: Download [Deltamod](https://gamebanana.com/tools/20575), browse for Bingosync Mod, download it
+OR
 - Download [the latest](https://github.com/ners-xd/deltarune-bingosync/releases/latest) version of the mod
 - **For Switch:** Use nxdumptool to dump the game files (INCLUDING the update, not just the base application) to your computer **(make sure to use layeredfs dir)**. A tutorial can be found [here](https://www.youtube.com/watch?v=-azK1yjPGQg) if you don't know how
 - **Extract the archive anywhere**, run "Bingosync Patcher.bat" and follow its instructions. **On Switch, the game files will be in atmosphere\contents\0100A0D022A68000\romfs**

@@ -276,10 +276,10 @@ if (global.chat_typing)
                 case "/quit":
                     mus_volume(global.currentsong[1], 0, 6);
 
-                    with (instance_create(0, 0, obj_fadeout))
+                    with (instance_create(0, 0, obj_fullscreen_fadeout))
                         fadespeed = 0.16;
 
-                    call_later(8, 1, function()
+                    call_later(12, 1, function()
                     {
                         scr_chapterswitch(0);
                     });

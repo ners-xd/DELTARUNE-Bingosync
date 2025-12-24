@@ -14,7 +14,7 @@ using ImageMagick.Drawing;
 
 EnsureDataLoaded();
 
-string packagerDirPath = Path.Combine(ExePath, "Packager");
+string packagerDirPath = Path.Combine(ExePath, "Packager_2");
 string sourcePath = Path.GetDirectoryName(ScriptPath);
 string searchPattern = "*.png";
 string outName = Path.Combine(packagerDirPath, "atlas.txt");
@@ -449,4 +449,5 @@ public class Packer
 
         return atlas;
     }
+
 }

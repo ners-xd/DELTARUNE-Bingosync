@@ -272,9 +272,7 @@ function scr_show_mouse_at(_x, _y)
     obj_time.mousex = _x;
     obj_time.mousey = _y;
     obj_time.mouse_visible = true;
-
-    if (!global.is_console && window_has_focus())
-        window_mouse_set(_x, _y);
+    window_mouse_set(_x, _y);
 }
 
 function scr_escape_string(str)

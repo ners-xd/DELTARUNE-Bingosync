@@ -1,5 +1,6 @@
 /// IMPORT
 
+persistent = true;
 sprite_index = spr_pixel_white;
 image_blend = c_black;
 image_alpha = 0;

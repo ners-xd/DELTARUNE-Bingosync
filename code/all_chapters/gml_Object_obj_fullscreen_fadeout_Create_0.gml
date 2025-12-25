@@ -8,3 +8,4 @@ depth = -16000;
 x = -display_get_width();
 y = -display_get_height();
 fadespeed = (os_type == os_macosx) ? 0.14 : 0.08;
+global.inv = 9999;

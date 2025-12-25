@@ -3,7 +3,7 @@
 </p>
 
 # DELTARUNE Bingosync Mod
-<b>NOTE</b>: This mod is only supported on:
+<b>NOTE</b>: The non-Deltamod installations are only supported on:
 - Windows Chapters 1-4 v1.04 (CH1 1.40 / CH2 1.46 / CH3 v0.0.098 / CH4 v0.0.098)
 - Windows Chapters 1-4 v1.05 Beta (CH1 1.41 / CH2 1.47 / CH3 v0.0.099 / CH4 v0.0.100)
 - Switch Chapters 1-4 v1.04 (CH1 1.28 / CH2 1.34 / CH3 v0.0.095 / CH4 v0.0.096).

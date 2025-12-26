@@ -8,7 +8,11 @@ if (obj_time.newest_mod_version != "")
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     draw_set_color(c_red);
-    draw_text_outline(width / 2, 10, ">> Your mod is outdated. Check the GitHub page for the latest release (" + obj_time.newest_mod_version + "). <<");
+#if CHAPTER_1 || CHAPTER_2
+    draw_text_outline(width / 2, 10, ">> Your mod is outdated. The latest release is " + obj_time.newest_mod_version + ". <<");
+#else
+    draw_text_outline(width / 2, 10, ">> Your mod is outdated. The latest release is v" + obj_time.newest_mod_version + ". <<");
+#endif
 }
 
 draw_set_halign(fa_center);

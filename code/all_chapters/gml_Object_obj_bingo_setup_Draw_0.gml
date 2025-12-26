@@ -1,4 +1,5 @@
 /// IMPORT
+
 scr_get_temp_draw();
 draw_set_font(fnt_main);
 draw_sprite(spr_bingosync_menu, 0, 0, 0);

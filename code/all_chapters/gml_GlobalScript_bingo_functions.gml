@@ -710,7 +710,7 @@ function scr_add_hit()
     if (global.hits_frame_delay == -1)
     {
         global.prev_hits = global.hits;
-        global.hits_frame_delay = call_later(1, 1, function()
+        global.hits_frame_delay = call_later(1, time_source_units_frames, function()
         {
             global.hits = global.prev_hits + 1;
             global.hits_frame_delay = -1;

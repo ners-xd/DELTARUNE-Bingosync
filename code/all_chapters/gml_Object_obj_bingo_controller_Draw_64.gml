@@ -277,7 +277,7 @@ if (global.chat_typing)
                     with (instance_create(0, 0, obj_fullscreen_fadeout))
                         fadespeed = 0.16;
 
-                    call_later(12, 1, function()
+                    call_later(12, time_source_units_frames, function()
                     {
                         scr_chapterswitch(0);
                     });

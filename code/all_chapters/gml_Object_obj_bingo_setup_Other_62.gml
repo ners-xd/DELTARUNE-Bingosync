@@ -42,7 +42,7 @@ try
         {
             // Delaying this because sometimes it would show up even if you did successfully connect,
             // moments before putting you in the intro room
-            call_later(1, 0, function()
+            call_later(1, time_source_units_seconds, function()
             {
                 with (obj_bingo_setup)
                     error_show("Couldn't find a socket key...\nBingosync may be down.\nTry again later.");

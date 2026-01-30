@@ -693,6 +693,7 @@ function scr_add_hit()
     {
         global.teacupshit = true;
         global.hits++;
+        scr_save_bingo_data();
     }
     else if (room != room_dw_mansion_b_west_2f)
 #elsif CHAPTER_3
@@ -700,6 +701,7 @@ function scr_add_hit()
     {
         global.knight_swords_hit = true;
         global.hits++;
+        scr_save_bingo_data();
     }
     else if (!global.knight_swords_hit)
 #endif
@@ -714,8 +716,7 @@ function scr_add_hit()
         {
             global.hits = global.prev_hits + 1;
             global.hits_frame_delay = -1;
+            scr_save_bingo_data();
         });
     }
-
-    scr_save_bingo_data();
 }

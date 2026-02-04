@@ -1,7 +1,8 @@
 /// PATCH
 
-/// BEFORE
-var _damage = floor((global.hp[1] - 1) / 2);
+/// AFTER
+if (cutoffpoint == 1)
+{
 /// CODE
-global.forcedswords = true;
+    global.forcedswords = true;
 /// END

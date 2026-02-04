@@ -91,10 +91,10 @@ function scr_gamepad_lastkey()
 
 // This function already exists in Chapter 2+ but we have to add it for Chapter 1
 #if CHAPTER_1
-function draw_text_outline(text_x, text_y, text, text_color = c_black)
+function draw_text_outline(text_x, text_y, text, outline_color = c_black)
 {
     var reset_color = draw_get_color();
-    draw_set_color(text_color);
+    draw_set_color(outline_color);
     draw_text(text_x - 1, text_y, text);
     draw_text(text_x - 1, text_y - 1, text);
     draw_text(text_x - 1, text_y + 1, text);
@@ -108,10 +108,10 @@ function draw_text_outline(text_x, text_y, text, text_color = c_black)
 }
 #endif
 
-function draw_text_outline_ext(text_x, text_y, text, text_sep, text_w, text_color = c_black)
+function draw_text_outline_ext(text_x, text_y, text, text_sep, text_w, outline_color = c_black)
 {
     var reset_color = draw_get_color();
-    draw_set_color(text_color);
+    draw_set_color(outline_color);
     draw_text_ext(text_x - 1, text_y, text, text_sep, text_w);
     draw_text_ext(text_x - 1, text_y - 1, text, text_sep, text_w);
     draw_text_ext(text_x - 1, text_y + 1, text, text_sep, text_w);
@@ -124,10 +124,10 @@ function draw_text_outline_ext(text_x, text_y, text, text_sep, text_w, text_colo
     draw_text_ext(text_x, text_y, text, text_sep, text_w);
 }
 
-function draw_text_outline_ext_transformed(text_x, text_y, text, text_sep, text_w, text_xscale, text_yscale, text_angle, text_color = c_black)
+function draw_text_outline_ext_transformed(text_x, text_y, text, text_sep, text_w, text_xscale, text_yscale, text_angle, outline_color = c_black)
 {
     var reset_color = draw_get_color();
-    draw_set_color(text_color);
+    draw_set_color(outline_color);
     draw_text_ext_transformed(text_x - 1, text_y, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
     draw_text_ext_transformed(text_x - 1, text_y - 1, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
     draw_text_ext_transformed(text_x - 1, text_y + 1, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
@@ -704,6 +704,9 @@ function scr_add_hit()
         scr_save_bingo_data();
     }
     else if (!global.knight_swords_hit)
+#elsif CHAPTER_4
+    if (global.forcedswords)
+        exit;
 #endif
 
     // The idea here is when you get hit, wait a frame to see the difference in hits

@@ -424,7 +424,7 @@ function scr_load_bingo_data()
             {
                 global.color = string_lower(string_trim(json.last_saved_room.color));
 
-                if (global.color == "blank" || scr_color_from_name(global.color) == 16777215)
+                if (global.color == "blank" || scr_color_from_name(global.color) == c_white)
                     global.color = "";
             }
 
@@ -708,7 +708,7 @@ function scr_add_hit()
     }
     else if (!global.knight_swords_hit)
 #elsif CHAPTER_4
-    if (global.forcedswords)
+    if (global.forcedswords || (instance_exists(obj_ghosthouse_jackolantern) && obj_ghosthouse_jackolantern.hits > 1))
         exit;
 #endif
 

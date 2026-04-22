@@ -230,7 +230,7 @@ if (global.chat_typing)
                 case "/colour":
                     var chosen_color = (array_length(split_string) > 1) ? split_string[1] : "blank";
 
-                    if (chosen_color == "blank" || scr_color_from_name(chosen_color) == 16777215)
+                    if (chosen_color == "blank" || scr_color_from_name(chosen_color) == c_white)
                     {
                         scr_chat_message(c_red, "Invalid color. Use orange, red, blue, green, purple, navy, teal, brown, pink or yellow.");
                     }

@@ -61,9 +61,9 @@ void BuildMod(int chapter)
     loader.Load();
 
     List<UndertaleCode> toDump = Data.Code.Where(c => c.ParentEntry is null).ToList();
-    foreach (UndertaleCode code in toDump)
+    foreach(UndertaleCode code in toDump)
     {
-        if (code is null || code.Name.Content == "gml_GlobalScript_game_restart_true")
+        if(code is null || code.Name.Content == "gml_GlobalScript_game_restart_true")
             continue;
 
         importGroup.QueueFindReplace(code, "game_restart(", "game_restart_true(", true);

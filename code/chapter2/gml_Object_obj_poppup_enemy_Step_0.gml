@@ -9,3 +9,9 @@
 /// CODE
             scr_add_goal_spares(1);
 /// END
+
+/// REPLACE
+        if (button3_p() && blockbuffer == 0)
+/// CODE
+        if (button3_p(false) && blockbuffer == 0)
+/// END

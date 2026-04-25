@@ -449,6 +449,4 @@ public class Packer
 
         return atlas;
     }
-
 }
-

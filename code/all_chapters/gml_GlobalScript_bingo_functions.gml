@@ -379,6 +379,7 @@ function scr_load_bingo_data()
     global.nickname = "";
     global.color = "";
     global.last_card_timestamp = 0;
+    global.last_connected_room = "";
     global.hits = 0;
     global.hit_counter = false;
     global.show_board = true;
@@ -430,6 +431,7 @@ function scr_load_bingo_data()
 
             if (variable_struct_exists(json.last_saved_room, "starred_goals")) global.starred_goals = json.last_saved_room.starred_goals;
             if (variable_struct_exists(json.last_saved_room, "last_card_timestamp")) global.last_card_timestamp = json.last_saved_room.last_card_timestamp;
+            if (variable_struct_exists(json.last_saved_room, "last_connected_room")) global.last_connected_room = json.last_saved_room.last_connected_room;
         }
 
         if (variable_struct_exists(json, "preferences"))
@@ -518,6 +520,7 @@ function scr_save_bingo_data()
     data.last_saved_room.color = global.color;
     data.last_saved_room.starred_goals = global.starred_goals;
     data.last_saved_room.last_card_timestamp = global.last_card_timestamp;
+    data.last_saved_room.last_connected_room = global.last_connected_room;
     data.preferences.hit_counter = global.hit_counter;
     data.preferences.show_chat = global.show_chat;
     data.preferences.show_board = global.show_board;

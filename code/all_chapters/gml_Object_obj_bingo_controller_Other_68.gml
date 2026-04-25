@@ -37,6 +37,24 @@ try
                 http_feed = ossafe_http_get("https://bingosync.com/room/" + global.room_id + "/feed");
                 draw_set_halign(fa_left);
                 draw_set_valign(fa_top);
+
+                if (global.room_id != global.last_connected_room)
+                {
+                    var first_time = (global.last_connected_room == "");
+                    global.last_connected_room = global.room_id;
+
+                    if (!first_time)
+                    {
+                        global.last_card_timestamp = 0;
+                        scr_chat_message(c_yellow, "Your progress was reset because you changed the room you're playing in.");
+                        scr_reset_bingo_data();
+                    }
+                    else
+                    {
+                        scr_save_bingo_data();
+                    }
+                }
+
                 audio_stop_all();
                 room_goto(obj_initializer2.roomchoice);
                 exit;

@@ -107,7 +107,7 @@ function draw_main_buttons()
                 connect_to_room();
 
             with (obj_bingoscreen_button)
-                hovering = id == other.id;
+                hovering = (id == other.id);
         };
     }
 

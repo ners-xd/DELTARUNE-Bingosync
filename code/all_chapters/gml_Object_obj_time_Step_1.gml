@@ -6,7 +6,10 @@ internet = os_is_network_connected();
 if (internet)
 {
     if (goal_list_request == -1)
-        goal_list_request = http_get("https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_list.json");
+        goal_list_request = http_get("https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/" + scr_get_branch_name() + "/assets/goal_list.json");
+
+    if (srl_list_request == -1)
+        srl_list_request = http_get("https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/" + scr_get_branch_name() + "/assets/goal_list_srl_format.json");
     
     if (update_check_request == -1)
         update_check_request = http_get("https://api.github.com/repos/ners-xd/deltarune-bingosync/releases/latest");

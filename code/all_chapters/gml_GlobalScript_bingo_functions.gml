@@ -5,6 +5,24 @@ function scr_get_mod_version()
     return "2.22";
 }
 
+function scr_get_branch_name()
+{
+    return "ch1-4";
+}
+
+function array_contains_temp(array, value)
+{
+    var len = array_length(array);
+    
+    for (var i = 0; i < len; i++)
+    {
+        if (array[i] == value)
+            return true;
+    }
+    
+    return false;
+}
+
 function scr_get_temp_draw()
 {
     temp_halign = draw_get_halign();
@@ -362,6 +380,31 @@ function scr_chat_message(msg_color, msg_text)
     global.chat_line[len] = msg_text;
 }
 
+function scr_is_goal_marked(slot)
+{
+    return string_pos(global.color, global.goal_colors[slot]) > 0;
+}
+
+function scr_is_goal_visible(slot)
+{
+    if (!global.fog_of_war || scr_is_goal_marked(slot) || array_contains_temp(global.tier1_goals, string_lower(global.goal_name[slot])))
+        return true;
+
+    if (slot >= 5 && scr_is_goal_marked(slot - 5))
+        return true;
+
+    if ((slot % 5) != 4 && scr_is_goal_marked(slot + 1))
+        return true;
+
+    if (slot < 20 && scr_is_goal_marked(slot + 5))
+        return true;
+
+    if ((slot % 5) != 0 && scr_is_goal_marked(slot - 1))
+        return true;
+
+    return false;
+}
+
 function scr_load_bingo_data()
 {
     global.recruits_list = ds_list_create();
@@ -381,6 +424,7 @@ function scr_load_bingo_data()
     global.last_card_timestamp = 0;
     global.last_connected_room = "";
     global.hits = 0;
+    global.queued_goals = array_create(25, false);
     global.hit_counter = false;
     global.show_board = true;
     global.board_key = ord("B");
@@ -402,6 +446,7 @@ function scr_load_bingo_data()
     global.hit_counter = false;
     global.autoconnect = false;
     global.show_other_colors = true;
+    global.fog_of_war = false;
     global.wrong_warps = array_create(7, "");
 
     if (file_exists("bingo_data.json"))
@@ -441,6 +486,7 @@ function scr_load_bingo_data()
             if (variable_struct_exists(json.preferences, "show_board")) global.show_board = json.preferences.show_board;
             if (variable_struct_exists(json.preferences, "autoconnect")) global.autoconnect = json.preferences.autoconnect;
             if (variable_struct_exists(json.preferences, "show_other_colors")) global.show_other_colors = json.preferences.show_other_colors;
+            if (variable_struct_exists(json.preferences, "fog_of_war")) global.fog_of_war = json.preferences.fog_of_war;
         }
 
         if (variable_struct_exists(json, "keybinds"))
@@ -470,6 +516,7 @@ function scr_load_bingo_data()
         if (variable_struct_exists(json, "progress"))
         {
             if (variable_struct_exists(json.progress, "hits")) global.hits = json.progress.hits;
+            if (variable_struct_exists(json.progress, "queued_goals")) global.queued_goals = json.progress.queued_goals;
 
             var list = ds_list_create();
 
@@ -526,6 +573,7 @@ function scr_save_bingo_data()
     data.preferences.show_board = global.show_board;
     data.preferences.autoconnect = global.autoconnect;
     data.preferences.show_other_colors = global.show_other_colors;
+    data.preferences.fog_of_war = global.fog_of_war;
     data.keybinds.board = global.board_key;
     data.keybinds.chat = global.chat_key;
     data.keybinds.reveal = global.reveal_key;
@@ -543,6 +591,7 @@ function scr_save_bingo_data()
     data.filters.goal_marks = global.show_goal_marks;
     data.filters.new_cards = global.show_new_cards;
     data.progress.hits = global.hits;
+    data.progress.queued_goals = global.queued_goals;
 
     for (var i = 0; i < array_length(global.goal_progress); i++)
         ds_list_add(list, global.goal_progress[i]);
@@ -564,6 +613,7 @@ function scr_save_bingo_data()
 function scr_reset_bingo_data()
 {
     global.starred_goals = array_create(25, false);
+    global.queued_goals = array_create(25, false);
     global.hits = 0;
     global.wrong_warps = array_create(7, "");
 
@@ -585,10 +635,41 @@ function scr_goal_slot_from_name(name)
     for (var i = 0; i < 25; i++)
     {
         if (string_lower(global.goal_name[i]) == name)
-            return string_digits(global.goal_slot[i]);
+            return real(string_digits(global.goal_slot[i]));
     }
 
     return 0;
+}
+
+function scr_mark_goal(slot)
+{
+    if (slot > 0 && !scr_is_goal_marked(slot - 1))
+    {
+        // Prevent goals from triggering multiple times in quick succession
+        if (global.goal_colors[slot - 1] == "blank")
+        {
+            global.goal_colors[slot - 1] = global.color;
+        }
+        // Prevent your color from showing up when you mark a taken goal with Lockout enabled.
+        // Also sort the colors in alphabetical order just like how Bingosync stores them
+        else if (global.room_lockout == "Non-Lockout")
+        {
+            var color_array = string_split(global.goal_colors[slot - 1] + " " + global.color, " ", true);
+            array_sort(color_array, true);
+            global.goal_colors[slot - 1] = "";
+
+            for (var i = 0; i < array_length(color_array); i++)
+                global.goal_colors[slot - 1] += color_array[i] + " ";
+        }
+
+        with (obj_bingo_controller)
+        {
+            update_colors = false;
+            alarm[0] = 3 * room_speed;
+        }
+
+        ossafe_http_post("https://bingosync.com/api/select", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\", \"slot\": \"" + string(slot) + "\", \"remove_color\": false }");
+    }
 }
 
 function scr_goal_requirements(slot)
@@ -657,33 +738,10 @@ function scr_add_goal_progress(slot, amount)
     {
         var board_slot = scr_goal_slot_from_name(global.goal_list[slot].name);
 
-        if (board_slot > 0 && string_pos(global.color, global.goal_colors[board_slot - 1]) == 0)
-        {
-            // Prevent goals from triggering multiple times in quick succession
-            if (global.goal_colors[board_slot - 1] == "blank")
-            {
-                global.goal_colors[board_slot - 1] = global.color;
-            }
-            // Prevent your color from showing up when you mark a taken goal with Lockout enabled.
-            // Also sort the colors in alphabetical order just like how Bingosync stores them
-            else if (global.room_lockout == "Non-Lockout")
-            {
-                var color_array = string_split(global.goal_colors[board_slot - 1] + " " + global.color, " ", true);
-                array_sort(color_array, true);
-                global.goal_colors[board_slot - 1] = "";
-
-                for (var i = 0; i < array_length(color_array); i++)
-                    global.goal_colors[board_slot - 1] += color_array[i] + " ";
-            }
-
-            with (obj_bingo_controller)
-            {
-                update_colors = false;
-                alarm[0] = 3 * room_speed;
-            }
-
-            ossafe_http_post("https://bingosync.com/api/select", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\", \"slot\": \"" + board_slot + "\", \"remove_color\": false }");
-        }
+        if (scr_is_goal_visible(board_slot - 1))
+            scr_mark_goal(board_slot);
+        else
+            global.queued_goals[board_slot - 1] = true;
     }
 
     scr_save_bingo_data();

@@ -10,5 +10,5 @@ if (true)
 /// REPLACE
     else
 /// CODE
-    else if (variable_global_exists("num_goals"))
+    else if (variable_global_exists("num_goals") && variable_global_exists("tier1_goals"))
 /// END

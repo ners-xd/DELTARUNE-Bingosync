@@ -67,10 +67,11 @@ if (global.show_board && board_connected)
                 y1 = base_y + (i * (square_size + spacing));
                 x2 = x1 + square_size;
                 y2 = y1 + square_size;
-                colors_array = string_split(global.goal_colors[idx], " ", true);
 
-                if (!global.show_other_colors)
-                    colors_array = (string_pos(global.color, global.goal_colors[idx]) > 0) ? [global.color] : ["blank"];
+                if (global.show_other_colors)
+                    colors_array = string_split(global.goal_colors[idx], " ", true);
+                else
+                    colors_array = scr_is_goal_marked(idx) ? [global.color] : ["blank"];
 
                 num_colors = array_length(colors_array);
                 section_width = square_size / num_colors;
@@ -92,15 +93,22 @@ if (global.show_board && board_connected)
 
                 draw_set_color(c_white);
 
-                switch (string_lower(global.goal_name[idx]))
+                if (scr_is_goal_visible(idx))
                 {
-                    case "see obj_weirdroute_manipulator":
-                        shown_str = string_insert("\n", global.goal_name[idx], 20);
-                        break;
+                    switch (string_lower(global.goal_name[idx]))
+                    {
+                        case "see obj_weirdroute_manipulator":
+                            shown_str = string_insert("\n", global.goal_name[idx], 20);
+                            break;
 
-                    default:
-                        shown_str = global.goal_name[idx];
-                        break;
+                        default:
+                            shown_str = global.goal_name[idx];
+                            break;
+                    }
+                }
+                else
+                {
+                    shown_str = "???";
                 }
 
                 draw_text_ext_transformed((x1 + x2) / 2, (y1 + y2) / 2, shown_str, 15, (x2 - x1) + 50, 0.5, 0.5, 0);
@@ -203,8 +211,8 @@ if (global.chat_typing)
         draw_set_halign(fa_left);
         draw_set_valign(fa_top);
         draw_set_color(c_ltgray);
-        draw_text_outline(1, surface_height - 48, "Typing in chat. Press ESC or      to cancel. Commands: " + command_list + ".");
-        draw_sprite_ext(scr_getbuttonsprite(global.input_g[5]), 0, round(0.5 + string_width("Typing in chat. Press ESC or ")), round(surface_height - 46), 1, 1, 0, c_ltgray, 1);
+        draw_text_outline_ext(1, surface_height - 63, "Typing in chat. Press ESC or      to cancel.\nCommands: " + command_list + ".", 15, surface_width);
+        draw_sprite_ext(scr_getbuttonsprite(global.input_g[5]), 0, round(string_width("Typing in chat. Press ESC or ")), round(surface_height - 61), 1, 1, 0, c_ltgray, 1);
         draw_set_color(c_dkgray);
         ossafe_fill_rectangle(0, surface_height - 30, surface_width, surface_height);
         draw_set_color(c_white);
@@ -268,6 +276,21 @@ if (global.chat_typing)
                     {
                         global.autoconnect = false;
                         scr_chat_message(c_yellow, "You will no longer automatically connect to this room when starting the game.");
+                    }
+
+                    scr_save_bingo_data();
+                    break;
+
+                case "/fogofwar":
+                    if (!global.fog_of_war)
+                    {
+                        global.fog_of_war = true;
+                        scr_chat_message(c_yellow, "Fog of War mode enabled. You will only see tier 1 goals and goals around those that are marked.");
+                    }
+                    else
+                    {
+                        global.fog_of_war = false;
+                        scr_chat_message(c_yellow, "Fog of War mode disabled.");
                     }
 
                     scr_save_bingo_data();

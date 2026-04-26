@@ -27,7 +27,15 @@ try
                         global.goal_progress[info[i].mod_slot] = array_create(info[i].mod_array_size, 0);
                     }
                 }
+                break;
 
+            case srl_list_request:
+                var info = json_parse(ds_map_find_value(async_load, "result"));
+                var len = array_length(info[0]);
+                global.tier1_goals = array_create(len, "");
+
+                for (var i = 0; i < len; i++)
+                    global.tier1_goals[i] = string_lower(info[0][i].name);
                 break;
 
             case update_check_request:
@@ -35,7 +43,6 @@ try
 
                 if (real(scr_get_mod_version()) < real(info.tag_name))
                     newest_mod_version = info.tag_name;
-
                 break;
         }
     }

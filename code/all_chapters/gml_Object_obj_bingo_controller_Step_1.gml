@@ -65,3 +65,18 @@ else if (scr_check_pressed(vk_escape, global.input_g[5]))
     obj_time.mouse_visible = false;
     keyboard_clear(vk_escape);
 }
+
+var save = false;
+
+for (var i = 0; i < 25; i++)
+{
+    if (global.queued_goals[i] && scr_is_goal_visible(i))
+    {
+        global.queued_goals[i] = false;
+        scr_mark_goal(i + 1);
+        save = true;
+    }
+}
+
+if (save)
+    scr_save_bingo_data();

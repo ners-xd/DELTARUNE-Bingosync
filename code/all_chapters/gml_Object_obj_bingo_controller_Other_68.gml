@@ -87,7 +87,7 @@ try
                         break;
 
                     case "goal":
-                        if (global.show_goal_marks)
+                        if (global.show_goal_marks && !global.fog_of_war)
                             scr_chat_message(c_white, json.player.name + (json.remove ? " cleared " : " marked ") + "\"" + json.square.name + "\".");
                         break;
 

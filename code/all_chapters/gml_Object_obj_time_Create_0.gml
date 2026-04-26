@@ -11,6 +11,7 @@ controller_used = false;
 mouse_visible = false;
 internet = false;
 goal_list_request = -1;
+srl_list_request = -1;
 update_check_request = -1;
 newest_mod_version = "";
 /// END

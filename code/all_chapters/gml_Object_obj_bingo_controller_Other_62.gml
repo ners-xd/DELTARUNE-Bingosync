@@ -20,11 +20,7 @@ try
                         global.goal_colors[i] = entry.colors;
                 }
 
-                if (!update_colors)
-                    update_colors = true;
-
-                if (!board_connected)
-                    board_connected = true;
+                update_colors = true;
                 break;
 
             case http_room_settings:
@@ -52,6 +48,8 @@ try
                         break;
                     }
                 }
+
+                board_connected = true;
                 break;
         }
     }

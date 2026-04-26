@@ -27,5 +27,5 @@
 /// REPLACE
                 game_change("chapter" + chapstring + "_mac", parameters);
 /// CODE
-                game_change("chapter" + chapstring + "_mac", "-game game_bingosync.ios" + parameters);
+                game_change("chapter" + chapstring + "_mac", "-game \"" + working_directory + "chapter" + chapstring + "_mac/game_bingosync.ios\"" + parameters);
 /// END

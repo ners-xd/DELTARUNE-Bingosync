@@ -273,7 +273,7 @@ function scr_check_pressed(kb_key, gp_key)
 
 function scr_check_mouse_pressed(mb_key, gp_key)
 {
-    if (device_mouse_check_button_pressed(0, mb_key))
+    if (mouse_check_button_pressed(mb_key))
         return true;
 
     if (instance_exists(obj_gamecontroller))

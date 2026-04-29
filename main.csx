@@ -4,7 +4,6 @@ using System.Linq;
 using System.Drawing;
 using UndertaleModLib.Util;
 
-SyncBinding("Strings, Variables, Functions", true);
 UndertaleModLib.Compiler.CodeImportGroup importGroup = new(Data);
 
 class BingoLoader : UMPLoader
@@ -69,7 +68,6 @@ void BuildMod(int chapter)
         importGroup.QueueFindReplace(code, "game_restart(", "game_restart_true(", true);
     }
     importGroup.Import();
-    DisableAllSyncBindings();
 
     ScriptMessage(chapter == 0 ? "Bingosync Mod for DELTARUNE Chapter Select was imported!" : $"Bingosync Mod for DELTARUNE Chapter {chapter} was imported!");
 }

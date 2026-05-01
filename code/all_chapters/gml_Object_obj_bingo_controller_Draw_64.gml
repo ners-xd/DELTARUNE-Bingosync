@@ -195,10 +195,10 @@ if (global.room_seed != -1)
 
     if (global.starring_goals)
     {
-        draw_text_outline(text_x, text_y + 85, "* Click or press      on goals to star them. *");
-        draw_text_outline(text_x, text_y + 100, "* ESC,      : Cancel *");
-        draw_sprite_ext(scr_getbuttonsprite(global.input_g[4]), 0, round(text_x - string_width("     on goals to star them. *")), round(text_y + 87), 1, 1, 0, c_yellow, 1);
-        draw_sprite_ext(scr_getbuttonsprite(global.input_g[5]), 0, round(text_x - string_width("     : Cancel *")), round(text_y + 102), 1, 1, 0, c_yellow, 1);
+        draw_text_outline(text_x, final_y + 90, "* Click or press      on goals to star them. *");
+        draw_text_outline(text_x, final_y + 105, "* ESC,      : Cancel *");
+        draw_sprite_ext(scr_getbuttonsprite(global.input_g[4]), 0, round(text_x - string_width("     on goals to star them. *")), round(final_y + 92), 1, 1, 0, c_yellow, 1);
+        draw_sprite_ext(scr_getbuttonsprite(global.input_g[5]), 0, round(text_x - string_width("     : Cancel *")), round(final_y + 107), 1, 1, 0, c_yellow, 1);
     }
 }
 

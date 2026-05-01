@@ -125,7 +125,7 @@ if (global.room_seed != -1)
     draw_set_valign(fa_top);
     var text_x = (base_x + ((square_size + spacing) * grid_size)) - 1;
     var text_y = ((base_y + ((square_size + spacing) * grid_size)) - (2 * spacing)) + 2;
-    var text_y_offset = (instance_exists(obj_darkcontroller) && global.interact == 5) ? obj_darkcontroller.tp : 0;
+    var text_y_offset = (instance_exists(obj_darkcontroller) && variable_global_exists("menuno") && global.menuno > -1) ? obj_darkcontroller.tp : 0;
     var final_y = (global.show_board && board_connected) ? text_y : text_y_offset;
     draw_text_outline(text_x, final_y, "Seed: " + (board_revealed ? string(global.room_seed) : "Hidden") + " / " + global.room_lockout);
 
@@ -179,6 +179,19 @@ if (global.room_seed != -1)
         draw_text_outline(text_x, final_y + 60, kb_key + ",      : " + toggle_text);
         draw_sprite_ext(gp_key, 0, round(text_x - string_width("     : " + toggle_text)), round(final_y + 62), 1, 1, 0, c_yellow, 1);
     }
+
+#if CHAPTER_1 || CHAPTER_2
+    var room_name = room_get_name(room);
+
+    if (global.egg_attempts > 0 && (room_name == "room_forest_starwalker" || room_name == "room_forest_area5" || room_name == "room_man" || room_name == "room_dw_city_traffic_3" || room_name == "room_dw_city_moss" || room_name == "room_dw_city_man"))
+    {
+        if (room_name != "room_man" && room_name != "room_dw_city_man")
+            draw_set_color(c_white);
+
+        draw_text_outline(text_x, final_y + 75, "Egg Attempts: " + string(global.egg_attempts));
+        draw_set_color(c_yellow);
+    }
+#endif
 
     if (global.starring_goals)
     {

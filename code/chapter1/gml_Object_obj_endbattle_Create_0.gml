@@ -22,7 +22,6 @@ switch (global.encounterno)
             scr_add_goal_progress(60, 1);
         else
             global.clover_manual = false;
-
         break;
 
     case 3:

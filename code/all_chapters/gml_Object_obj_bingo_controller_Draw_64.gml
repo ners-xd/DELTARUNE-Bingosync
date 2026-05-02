@@ -180,15 +180,29 @@ if (global.room_seed != -1)
         draw_sprite_ext(gp_key, 0, round(text_x - string_width("     : " + toggle_text)), round(final_y + 62), 1, 1, 0, c_yellow, 1);
     }
 
-#if CHAPTER_1 || CHAPTER_2
-    var room_name = room_get_name(room);
-
-    if (global.egg_attempts > 0 && (room_name == "room_forest_starwalker" || room_name == "room_forest_area5" || room_name == "room_man" || room_name == "room_dw_city_traffic_3" || room_name == "room_dw_city_moss" || room_name == "room_dw_city_man"))
+#if CHAPTER_1
+    if (global.egg_attempts > 0 && (room == room_forest_starwalker || room == room_forest_area5 || room == room_man))
     {
-        if (room_name != "room_man" && room_name != "room_dw_city_man")
+        if (room != room_man)
+#elsif CHAPTER_2
+    if (global.egg_attempts > 0 && (room == room_dw_city_traffic_3 || room == room_dw_city_moss || room == room_dw_city_man))
+    {
+        if (room != room_dw_city_man)
+#endif
+#if CHAPTER_1 || CHAPTER_2
             draw_set_color(c_white);
 
         draw_text_outline(text_x, final_y + 75, "Egg Attempts: " + string(global.egg_attempts));
+        draw_set_color(c_yellow);
+    }
+#endif
+#if CHAPTER_2
+    else if (global.mspipis_attempts > 0 && room == room_dw_mansion_dining3 && scr_sideb_get_phase() >= 3)
+    {
+        if (!global.mspipis_encountered)
+            draw_set_color(c_white);
+        
+        draw_text_outline(text_x, final_y + 75, "Ms. Pipis Attempts: " + string(global.mspipis_attempts));
         draw_set_color(c_yellow);
     }
 #endif

@@ -30,7 +30,7 @@
         global.tempflag[10] = 1;
 
     if (global.is_console)
-        global.screen_border_alpha = roomchoice == room_legend;
+        global.screen_border_alpha = (roomchoice == room_legend);
     else
         io_clear();
 

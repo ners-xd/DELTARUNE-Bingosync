@@ -8,4 +8,9 @@
 #if CHAPTER_1 || CHAPTER_2
     global.egg_attempts = 0;
 #endif
+
+#if CHAPTER_2
+    global.mspipis_attempts = 0;
+    global.mspipis_encountered = false;
+#endif
 /// END

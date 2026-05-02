@@ -16,7 +16,6 @@ switch (global.encounterno)
             scr_add_goal_progress(50, 1);
         else
             scr_add_goal_progress(61, 1);
-
         break;
 
     case 81:
@@ -24,13 +23,16 @@ switch (global.encounterno)
             scr_add_goal_progress(52, 1);
         else
             scr_add_goal_progress(53, 1);
-
         break;
 
     case 56:
         if (room == room_dw_mansion_potBalance && !global.failed_pot_balance)
             global.failed_pot_balance = true;
+        break;
 
+    case 102:
+        if (global.mspipis_encountered)
+            global.mspipis_attempts = 0;
         break;
 }
 /// END

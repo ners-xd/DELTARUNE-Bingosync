@@ -37,6 +37,8 @@ try
                 http_feed = ossafe_http_get("https://bingosync.com/room/" + global.room_id + "/feed");
                 draw_set_halign(fa_left);
                 draw_set_valign(fa_top);
+                snd_free_all();
+                audio_stop_all();
 
                 if (global.room_id != global.last_connected_room)
                 {
@@ -55,7 +57,9 @@ try
                     }
                 }
 
-                audio_stop_all();
+                if (global.is_console)
+                    application_surface_draw_enable(false);
+
                 room_goto(obj_initializer2.roomchoice);
                 exit;
 

@@ -824,3 +824,6 @@ else
 
 global.currentsong[0] = snd_init("greenroom_detune.ogg");
 global.currentsong[1] = mus_loop_ext(global.currentsong[0], 0.7, 1);
+
+if (global.is_console)
+    application_surface_draw_enable(true);

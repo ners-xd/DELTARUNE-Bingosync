@@ -602,7 +602,7 @@ function scr_save_bingo_data()
 
     for (var i = 0; i < array_length(global.goal_custom_vars); i++)
     {
-        for (var j = 0; j < array_length(global.goal_custom_vars[i].size); j++)
+        for (var j = 0; j < global.goal_custom_vars[i].size; j++)
             ds_list_add(list, array_get(variable_global_get(global.goal_custom_vars[i].name), j));
 
         variable_struct_set(data.progress, global.goal_custom_vars[i].name, ds_list_write(list));

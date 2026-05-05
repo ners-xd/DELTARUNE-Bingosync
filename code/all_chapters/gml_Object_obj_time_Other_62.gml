@@ -11,6 +11,7 @@ try
                 global.num_goals = array_length(info);
                 global.goal_list = array_create(global.num_goals);
                 global.goal_progress = array_create(global.num_goals, 0);
+                global.goal_custom_vars = [];
 
                 for (var i = 0; i < global.num_goals; i++)
                 {
@@ -25,6 +26,17 @@ try
                     {
                         global.goal_list[info[i].mod_slot].array_size = info[i].mod_array_size;
                         global.goal_progress[info[i].mod_slot] = array_create(info[i].mod_array_size, 0);
+                    }
+
+                    if (variable_struct_exists(info[i], "mod_global_var_name"))
+                    {
+                        global.goal_custom_vars[array_length(global.goal_custom_vars)] =
+                        {
+                            name: info[i].mod_global_var_name,
+                            size: info[i].mod_global_var_size
+                        };
+
+                        variable_global_set(info[i].mod_global_var_name, array_create(info[i].mod_global_var_size, ""));
                     }
                 }
                 break;

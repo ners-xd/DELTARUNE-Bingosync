@@ -2,17 +2,16 @@
   <img src="assets/deltarune_x_bingosync_logo.png" title="DELTARUNE x Bingosync">
 </p>
 
-# DELTARUNE Bingosync Mod
+# DELTARUNE Bingosync Mod (This branch was made to prepare for Chapter 5's release)
 <b>NOTE</b>: The non-Deltamod installations are only supported on:
-- Windows Chapters 1-4 v1.04 (CH1 1.40 / CH2 1.46 / CH3 v0.0.098 / CH4 v0.0.098)
-- Windows Chapters 1-4 v1.05 Beta (CH1 1.41 / CH2 1.47 / CH3 v0.0.099 / CH4 v0.0.100)
-- Switch Chapters 1-4 v1.04 (CH1 1.28 / CH2 1.34 / CH3 v0.0.095 / CH4 v0.0.096).
+- Windows Chapters 1-5 vX (CH1 X / CH2 X / CH3 vX / CH4 vX / CH5 vX)
+- Switch Chapters 1-5 vX (CH1 X / CH2 X / CH3 vX / CH4 vX / CH5 vX).
 
 This mod connects your game to [Bingosync](https://bingosync.com) and it can automatically mark goals from:
-- [this list](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_list.json)
-- or [this list (SRL format)](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_list_srl_format.json) - this one is separated into 25 categories and only one goal from each category can show up on the board.
+- [this list](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-5/assets/goal_list.json)
+- or [this list (SRL format)](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-5/assets/goal_list_srl_format.json) - this one is separated into 25 categories and only one goal from each category can show up on the board.
 
-You can find a little guide on how to complete most goals [here](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-4/assets/goal_requirements.txt). You can also chat with other players, see the board update live and so on.
+You can find a little guide on how to complete most goals [here](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-5/assets/goal_requirements.txt). You can also chat with other players, see the board update live and so on.
 
 # How to install and use
 - Easiest way: Download [Deltamod](https://gamebanana.com/tools/20575), browse for Bingosync Mod, download it

@@ -2,12 +2,12 @@
 
 function scr_get_mod_version()
 {
-    return "2.22";
+    return "3.00";
 }
 
 function scr_get_branch_name()
 {
-    return "ch1-4";
+    return "ch1-5";
 }
 
 function array_contains_temp(array, value)
@@ -447,7 +447,6 @@ function scr_load_bingo_data()
     global.autoconnect = false;
     global.show_other_colors = true;
     global.fog_of_war = false;
-    global.wrong_warps = array_create(7, "");
 
     if (file_exists("bingo_data.json"))
     {
@@ -533,16 +532,19 @@ function scr_load_bingo_data()
                 }
             }
 
-            if (variable_struct_exists(json.progress, "wrong_warps"))
+            for (var i = 0; i < array_length(global.goal_custom_vars); i++)
             {
-                ds_list_read(list, json.progress.wrong_warps);
-                var size = ds_list_size(list);
-                var value = 0;
-
-                for (var i = 0; i < size; i++)
+                if (variable_struct_exists(json.progress, global.goal_custom_vars[i].name))
                 {
-                    value = ds_list_find_value(list, i);
-                    global.wrong_warps[i] = is_undefined(value) ? "" : value;
+                    ds_list_read(list, variable_struct_get(json.progress, global.goal_custom_vars[i].name));
+                    var size = ds_list_size(list);
+                    var value = 0;
+
+                    for (var j = 0; j < size; j++)
+                    {
+                        value = ds_list_find_value(list, j);
+                        array_set(variable_global_get(global.goal_custom_vars[i].name), j, is_undefined(value) ? "" : value);
+                    }
                 }
             }
 
@@ -596,11 +598,16 @@ function scr_save_bingo_data()
     for (var i = 0; i < array_length(global.goal_progress); i++)
         ds_list_add(list, global.goal_progress[i]);
     data.progress.general = ds_list_write(list);
-
     ds_list_clear(list);
-    for (var i = 0; i < array_length(global.wrong_warps); i++)
-        ds_list_add(list, global.wrong_warps[i]);
-    data.progress.wrong_warps = ds_list_write(list);
+
+    for (var i = 0; i < array_length(global.goal_custom_vars); i++)
+    {
+        for (var j = 0; j < array_length(global.goal_custom_vars[i].size); j++)
+            ds_list_add(list, array_get(variable_global_get(global.goal_custom_vars[i].name), j));
+
+        variable_struct_set(data.progress, global.goal_custom_vars[i].name, ds_list_write(list));
+        ds_list_clear(list);
+    }
 
     ds_list_destroy(list);
     file_text_write_string(file, json_stringify(data));
@@ -615,7 +622,6 @@ function scr_reset_bingo_data()
     global.starred_goals = array_create(25, false);
     global.queued_goals = array_create(25, false);
     global.hits = 0;
-    global.wrong_warps = array_create(7, "");
 
     for (var i = 0; i < global.num_goals; i++)
     {
@@ -624,6 +630,9 @@ function scr_reset_bingo_data()
         else
             global.goal_progress[i] = 0;
     }
+
+    for (var i = 0; i < array_length(global.goal_custom_vars); i++)
+        variable_global_set(global.goal_custom_vars[i].name, array_create(global.goal_custom_vars[i].size, ""));
 
     scr_save_bingo_data();
 }
@@ -680,6 +689,36 @@ function scr_goal_requirements(slot)
     return global.goal_progress[slot] >= global.goal_list[slot].max_progress;
 }
 
+function scr_add_goal_custom_array(slot, arr_name, str)
+{
+    if (global.ws_client == -1)
+        exit;
+
+    var len = array_length(variable_global_get(arr_name));
+    var value = "";
+
+    for (var i = 0; i < len; i++)
+    {
+        value = array_get(variable_global_get(arr_name), i);
+
+        if (value == str)
+        {
+            exit;
+        }
+        else if (value == "")
+        {
+            array_set(variable_global_get(arr_name), i, str);
+
+            if (i == (len - 1))
+                scr_add_goal_progress(slot, 1);
+            else
+                scr_save_bingo_data();
+
+            exit;
+        }
+    }
+}
+
 function scr_add_goal_array(slot, index)
 {
     if (global.ws_client == -1)
@@ -718,12 +757,6 @@ function scr_add_goal_kills(amount)
     scr_add_goal_progress(3, amount);
     scr_add_goal_progress(16, amount);
     scr_add_goal_progress(31, amount);    
-}
-
-function scr_add_goal_money(amount)
-{
-    scr_add_goal_progress(0, amount);
-    scr_add_goal_progress(22, amount);
 }
 
 function scr_add_goal_progress(slot, amount)

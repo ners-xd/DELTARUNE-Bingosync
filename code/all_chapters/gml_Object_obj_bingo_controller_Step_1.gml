@@ -66,6 +66,17 @@ else if (scr_check_pressed(vk_escape, global.input_g[5]))
     keyboard_clear(vk_escape);
 }
 
+if (global.gold != money_amount)
+{
+    if (global.gold >= 2000)
+        scr_add_goal_progress(0, 1);
+
+    if (global.gold >= 3000)
+        scr_add_goal_progress(22, 1);
+
+    money_amount = global.gold;
+}
+
 var save = false;
 
 for (var i = 0; i < 25; i++)

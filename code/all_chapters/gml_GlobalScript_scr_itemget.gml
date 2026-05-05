@@ -13,16 +13,7 @@
                 switch (arg0)
                 {
                     case 2:
-                        switch (room)
-                        {
-                            case room_forest_dancers1:
-                                scr_add_goal_array(36, 0);
-                                break;
-
-                            case room_cc_4f:
-                                scr_add_goal_array(36, 1);
-                                break;
-                        }
+                        scr_add_goal_custom_array(36, "revivemints_obtained", room_get_name(room));
                         break;
 
                     case 7:
@@ -31,10 +22,6 @@
 
                     case 9:
                         scr_add_goal_progress(47, 1);
-                        break;
-
-                    case 3:
-                        scr_add_goal_progress(69, 1);
                         break;
                 }
             }
@@ -54,56 +41,12 @@
         switch (arg0)
         {
             case 2:
-                switch (room_get_name(room))
-                {
-                    case "room_dw_cyber_viro_ring":
-                        scr_add_goal_array(36, 2);
-                        break;
-
-                    case "room_dw_mansion_fire_paintings":
-                        scr_add_goal_array(36, 3);
-                        break;
-
-                    case "room_dw_green_room":
-                        scr_add_goal_array(36, 4);
-                        break;
-
-                    case "room_dw_ranking_b":
-                        scr_add_goal_array(36, 5);
-                        break;
-
-                    case "room_dw_b3bs_mysterypuzzle":
-                        scr_add_goal_array(36, 6);
-                        break;
-
-                    case "room_dw_church_pianopiece_right":
-                        scr_add_goal_array(36, 7);
-                        break;
-
-                    case "room_dw_churchb_library":
-                        scr_add_goal_array(36, 8);
-                        break;
-
-                    case "room_dw_churchb_moneyfountain":
-                        scr_add_goal_array(36, 9);
-                        break;
-                }
-                break;
-
-            case 7:
-                scr_add_goal_progress(19, 1);
-                break;
-
-            case 9:
-                scr_add_goal_progress(47, 1);
+                if (!global.fighting)
+                    scr_add_goal_custom_array(36, "revivemints_obtained", room_get_name(room));
                 break;
 
             case 30:
                 scr_add_goal_progress(56, 1);
-                break;
-
-            case 3:
-                scr_add_goal_progress(69, 1);
                 break;
 
             case 35:

@@ -10,8 +10,7 @@
 /// BEFORE
                         global.gold -= 1997;
 /// CODE
-                        if (room == room_dw_city_moss)
-                            scr_add_goal_progress(29, 1);
+                        scr_add_goal_progress(29, 1);
 /// END
 
 /// AFTER

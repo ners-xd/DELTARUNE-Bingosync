@@ -12,6 +12,7 @@ update_colors = true;
 prev_interact = 0;
 mainchara_was_in_prev_room = false;
 command_list = "/color or /colour, /star, /autoconnect, /fogofwar, /quit";
+money_amount = global.gold;
 global.goal_name = array_create(25, "");
 global.goal_slot = array_create(25, "");
 global.goal_colors = array_create(25, "blank");

@@ -4,7 +4,6 @@ scr_load_bingo_data();
 network_set_config(network_config_connect_timeout, 10000);
 global.ws_client = -1;
 global.ws_key = "{}";
-global.count_once = false;
 global.grazed_at_all = false;
 global.hits_frame_delay = -1;
 #if CHAPTER_1
@@ -446,7 +445,7 @@ function draw_main_buttons()
         y2 = y + 51;
         sprite = spr_settings_icon;
         text = "Settings & Keybinds";
-        hover_text = "Change various settings and keybinds here.";
+        hover_text = "Change various settings, keybinds and\nalter your save files here.";
 
         on_click = function()
         {
@@ -477,11 +476,13 @@ function draw_main_buttons()
             var show_goal_marks_button = instance_create_depth(_width - 270, _height + 40, depth, obj_bingoscreen_button);
             var show_new_cards_button = instance_create_depth(_width - 270, _height + 90, depth, obj_bingoscreen_button);
             var show_hits_button = instance_create_depth(_width - 270, _height + 140, depth, obj_bingoscreen_button);
-            var card_toggle_button = instance_create_depth(_width + 69, _height - 135, depth, obj_bingoscreen_button);
-            var chat_button = instance_create_depth(_width + 69, _height - 75, depth, obj_bingoscreen_button);
-            var card_reveal_button = instance_create_depth(_width + 69, _height - 15, depth, obj_bingoscreen_button);
-            var chat_toggle_button = instance_create_depth(_width + 69, _height + 45, depth, obj_bingoscreen_button);
-            var color_hide_button = instance_create_depth(_width + 69, _height + 105, depth, obj_bingoscreen_button);
+            var card_toggle_button = instance_create_depth(_width + 69, _height - 160, depth, obj_bingoscreen_button);
+            var chat_button = instance_create_depth(_width + 69, _height - 100, depth, obj_bingoscreen_button);
+            var card_reveal_button = instance_create_depth(_width + 69, _height - 40, depth, obj_bingoscreen_button);
+            var chat_toggle_button = instance_create_depth(_width + 69, _height + 20, depth, obj_bingoscreen_button);
+            var color_hide_button = instance_create_depth(_width + 69, _height + 80, depth, obj_bingoscreen_button);
+            var import_saves_button = instance_create_depth(_width + 69, _height + 140, depth, obj_bingoscreen_button);
+            var delete_saves_button = instance_create_depth(_width + 172, _height + 140, depth, obj_bingoscreen_button);
 
             with (show_connections_button)
             {
@@ -720,6 +721,159 @@ function draw_main_buttons()
                     obj_time.mouse_visible = false;
                 };
             }
+
+            with (import_saves_button)
+            {
+                x2 = x + 97;
+                y2 = y + 40;
+                text = "Import\nvanilla files";
+
+                on_click = function()
+                {
+                    if (!vanilla_directory_exists())
+                    {
+                        with (obj_bingo_setup)
+                            error_show("\n\n\nNo vanilla DELTARUNE\nsave data found.");
+
+                        exit;
+                    }
+
+                    with (obj_bingoscreen_button)
+                        instance_destroy();
+
+                    with (obj_bingo_setup)
+                    {
+                        draw_close_x = width / 2;
+                        draw_close_y = (height / 2) + 87;
+                        status_text = "";
+
+                        bg_draw = function()
+                        {
+                            draw_set_font(fnt_main);
+                            draw_set_color(c_white);
+                            draw_text_outline(width / 2, (height / 2) - 63, "Are you sure you want to replace your current\nsave data with your vanilla DELTARUNE data?");
+                            draw_set_color(c_red);
+                            draw_text_outline(width / 2, (height / 2) - 39, "This applies to every chapter and can not be undone!");
+                        };
+                    }
+
+                    var _width = obj_bingo_setup.width / 2;
+                    var _height = obj_bingo_setup.height / 2;
+                    var yes_button = instance_create_depth(_width - 60, _height - 10, depth, obj_bingoscreen_button);
+                    var no_button = instance_create_depth(_width - 60, _height + 30, depth, obj_bingoscreen_button);
+
+                    with (yes_button)
+                    {
+                        x2 = x + 120;
+                        y2 = y + 30;
+                        text = "Yes";
+
+                        on_click = function()
+                        {
+                            if (!vanilla_directory_exists())
+                            {
+                                with (obj_bingo_setup)
+                                    error_show("\n\n\nNo vanilla DELTARUNE\nsave data found.");
+
+                                exit;
+                            }
+
+                            scr_import_vanilla_files();
+
+                            with (obj_initializer2)
+                                roomchoice = scr_get_starting_room();
+
+                            with (obj_bingo_setup)
+                                go_to_settings();
+
+                        #if CHAPTER_1
+                            scr_windowcaption("DELTARUNE Chapter 1");
+                        #endif
+                            snd_stop(AUDIO_APPEARANCE);
+                            snd_play(AUDIO_APPEARANCE);
+                        };
+                    }
+
+                    with (no_button)
+                    {
+                        x2 = x + 120;
+                        y2 = y + 30;
+                        text = "No";
+
+                        on_click = function()
+                        {
+                            with (obj_bingo_setup)
+                                go_to_settings();
+                        };
+                    }
+                };
+            }
+
+            with (delete_saves_button)
+            {
+                x2 = x + 97;
+                y2 = y + 40;
+                text = "Erase all\nsave files";
+                text_color = c_red;
+
+                on_click = function()
+                {
+                    with (obj_bingoscreen_button)
+                        instance_destroy();
+
+                    with (obj_bingo_setup)
+                    {
+                        draw_close_x = width / 2;
+                        draw_close_y = (height / 2) + 87;
+                        status_text = "";
+
+                        bg_draw = function()
+                        {
+                            draw_set_font(fnt_main);
+                            draw_set_color(c_white);
+                            draw_text_outline(width / 2, (height / 2) - 63, "Are you sure you want to erase all of your\nsave files, not including completion data?");
+                            draw_set_color(c_red);
+                            draw_text_outline(width / 2, (height / 2) - 39, "This applies to every chapter and can not be undone!");
+                        };
+                    }
+
+                    var _width = obj_bingo_setup.width / 2;
+                    var _height = obj_bingo_setup.height / 2;
+                    var yes_button = instance_create_depth(_width - 60, _height - 10, depth, obj_bingoscreen_button);
+                    var no_button = instance_create_depth(_width - 60, _height + 30, depth, obj_bingoscreen_button);
+
+                    with (yes_button)
+                    {
+                        x2 = x + 120;
+                        y2 = y + 30;
+                        text = "Yes";
+
+                        on_click = function()
+                        {
+                            scr_delete_save_files();
+                            
+                            with (obj_bingo_setup)
+                                go_to_settings();
+                            
+                            snd_stop(AUDIO_APPEARANCE);
+                            snd_play(AUDIO_APPEARANCE);
+                        };
+                    }
+
+                    with (no_button)
+                    {
+                        x2 = x + 120;
+                        y2 = y + 30;
+                        text = "No";
+
+                        on_click = function()
+                        {
+                            with (obj_bingo_setup)
+                                go_to_settings();
+                        };
+                    }
+                };
+            }
         };
     }
 
@@ -804,6 +958,23 @@ function draw_main_buttons()
                 };
             }
         };
+    }
+}
+
+function go_to_settings()
+{
+    with (obj_bingoscreen_button)
+        instance_destroy();
+    
+    draw_main_buttons();
+    
+    with (obj_bingoscreen_button)
+    {
+        if (sprite == spr_settings_icon)
+        {
+            on_click();
+            break;
+        }
     }
 }
 

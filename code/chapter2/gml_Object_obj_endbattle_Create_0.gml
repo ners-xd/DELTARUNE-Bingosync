@@ -3,10 +3,6 @@
 /// PREPEND
 switch (global.encounterno)
 {
-    case 74:
-        scr_add_goal_array(27, 1);
-        break;
-
     case 58:
         scr_add_goal_array(34, 0);
         break;

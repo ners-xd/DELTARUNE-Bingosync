@@ -4,6 +4,8 @@
             scr_wincombat();
 /// CODE
             scr_add_goal_progress(43, 1);
+            scr_add_goal_array(110, 1);
+            scr_add_goal_array(135, 4);
 /// END
 
 /// AFTER
@@ -13,4 +15,5 @@
 /// CODE
             scr_add_goal_progress(33, 1);
             scr_add_goal_array(110, 1);
+            scr_add_goal_array(135, 4);
 /// END

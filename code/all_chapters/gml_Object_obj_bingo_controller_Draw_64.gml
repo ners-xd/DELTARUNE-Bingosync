@@ -55,7 +55,6 @@ if (global.show_board && board_connected)
         var colors_array = [];
         var num_colors = 0;
         var section_width = 0;
-        var shown_str = "";
         draw_set_color(c_black);
         ossafe_fill_rectangle(base_x - 1, base_y - 1, base_x + len + 1, base_y + len + 1);
 
@@ -92,26 +91,7 @@ if (global.show_board && board_connected)
                     draw_sprite(spr_goal_star, 0, x1, y1);
 
                 draw_set_color(c_white);
-
-                if (scr_is_goal_visible(idx))
-                {
-                    switch (string_lower(global.goal_name[idx]))
-                    {
-                        case "see obj_weirdroute_manipulator":
-                            shown_str = string_insert("\n", global.goal_name[idx], 20);
-                            break;
-
-                        default:
-                            shown_str = global.goal_name[idx];
-                            break;
-                    }
-                }
-                else
-                {
-                    shown_str = "???";
-                }
-
-                draw_text_ext_transformed((x1 + x2) / 2, (y1 + y2) / 2, shown_str, 15, (x2 - x1) + 50, 0.5, 0.5, 0);
+                draw_text_ext_transformed((x1 + x2) / 2, (y1 + y2) / 2, scr_is_goal_visible(idx) ? global.goal_name[idx] : "???", 15, (x2 - x1) + 50, 0.5, 0.5, 0);
                 idx++;
             }
         }

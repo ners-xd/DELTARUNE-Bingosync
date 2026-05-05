@@ -1,10 +1,13 @@
 /// PATCH
 
+#if !CHAPTER_1
 /// AFTER
-        global.gold += global.monstergold[3];
+                if (_tensionhealed)
+                {
 /// CODE
-        scr_add_goal_money(global.monstergold[3]);
+                    used_item_count++;
 /// END
+#endif
 
 /// BEFORE
         if (noreturn == 0)

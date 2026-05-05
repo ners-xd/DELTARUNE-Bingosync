@@ -30,7 +30,7 @@ class BingoLoader : UMPLoader
         List<string> entries = new List<string>();
         string fileName = Path.GetFileNameWithoutExtension(filePath);
 
-        if((chnum > 0 && filePath.Contains("all_chapters")) || filePath.Contains(chnum == 0 ? "chapter_select" : $"chapter{chnum}"))
+        if(filePath.Contains("universal") || (chnum > 0 && filePath.Contains("all_chapters")) || filePath.Contains(chnum == 0 ? "chapter_select" : $"chapter{chnum}"))
             entries.Add(fileName);
 
         return entries.ToArray();
@@ -42,10 +42,18 @@ class BingoLoader : UMPLoader
     }
 
     public int chnum { get; set; }
+
+    public enum DR
+    {
+        MaxChapter = 4
+    }
 }
 
 void BuildMod(int chapter)
 {
+    // Change save file location (PC)
+    Data.GeneralInfo.Name = Data.Strings.MakeString("DELTARUNE_bingosync_mod");
+
     BingoLoader loader = new BingoLoader(UMP_WRAPPER, chapter);
     string scriptPath = Path.GetDirectoryName(ScriptPath);
 
@@ -62,10 +70,15 @@ void BuildMod(int chapter)
     List<UndertaleCode> toDump = Data.Code.Where(c => c.ParentEntry is null).ToList();
     foreach(UndertaleCode code in toDump)
     {
-        if(code is null || code.Name.Content == "gml_GlobalScript_game_restart_true")
+        if(code is null)
             continue;
 
-        importGroup.QueueFindReplace(code, "game_restart(", "game_restart_true(", true);
+        if(code.Name.Content != "gml_GlobalScript_game_restart_true")
+            importGroup.QueueFindReplace(code, "game_restart(", "game_restart_true(", true);
+
+        // Change save file location (Console)
+        if(code.Name.Content != "gml_GlobalScript_bingo_save_file_functions")
+            importGroup.QueueFindReplace(code, "deltarune.sav", "DELTARUNE_bingosync_mod.sav", true);
     }
     importGroup.Import();
 

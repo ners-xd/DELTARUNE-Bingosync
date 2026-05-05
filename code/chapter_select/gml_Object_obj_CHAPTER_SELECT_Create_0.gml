@@ -58,17 +58,14 @@ init = function()
             if (event_value == 1001)
                 scr_import_vanilla_files();
 
-            if (global.is_console)
-            {
-                _restart_room = true;
-            }
-            else
+            if (!global.is_console)
             {
                 ini_open("true_config.ini");
                 ini_write_real("BINGOSYNC_MOD", "START_SCREEN_CLOSED", true);
                 ini_close("true_config.ini");
-                room_restart();
             }
+
+            room_restart();
             break;
 /// END
 

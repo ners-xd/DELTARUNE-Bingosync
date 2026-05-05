@@ -10,5 +10,17 @@
 #else
     if (sprite_index == spr_treasurebox && (!variable_instance_exists(id, "noroom") || !noroom))
 #endif
-        scr_add_goal_custom_array(114, "chests_opened", room_get_name(room) + "-" + string(x) + "-" + string(y));
+    {
+    #if CHAPTER_3
+        var room_obj_name = room_get_name(room);
+
+        // The ice key chest can spawn at random coordinates,
+        // and we don't want it to count multiple times
+        if (object_index != obj_board_swordroute_icekey)
+            room_obj_name += ("-" + string(x) + "-" + string(y));
+    #else
+        var room_obj_name = room_get_name(room) + "-" + string(x) + "-" + string(y);
+    #endif
+        scr_add_goal_custom_array(114, "chests_opened", room_obj_name);
+    }
 /// END

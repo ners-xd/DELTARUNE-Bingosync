@@ -114,7 +114,7 @@
   {"name": "Defeat 2 Final Bosses", "mod_slot": 111, "mod_progress_threshold": 2, "mod_array_size": 4},
   {"name": "Get Ice Key", "mod_slot": 112, "mod_progress_threshold": 1},
   {"name": "Get Shelter Key", "mod_slot": 113, "mod_progress_threshold": 1},
-  {"name": "Open 12 unique chests", "mod_slot": 114, "mod_progress_threshold": 1, "mod_global_var_name": "chests_opened", "mod_global_var_size": 12},
+  {"name": "Interact with 12 unique chests", "mod_slot": 114, "mod_progress_threshold": 1, "mod_global_var_name": "chests_opened", "mod_global_var_size": 12},
   {"name": "Kill a Titan Spawn", "mod_slot": 115, "mod_progress_threshold": 1},
   {"name": "Show Compassion to Ralsei", "mod_slot": 116, "mod_progress_threshold": 1},
   {"name": "Get 4 Photos (Board 2)", "mod_slot": 117, "mod_progress_threshold": 4, "mod_array_size": 4},

@@ -161,7 +161,7 @@
   [
     {"name": "Get 3 ReviveMints", "type": ["lmultich"]},
     {"name": "Get Annoying Dog on Rouxls", "type": ["mch3"]},
-    {"name": "Open 12 unique chests", "type": ["lmultich"]},
+    {"name": "Interact with 12 unique chests", "type": ["lmultich"]},
     {"name": "Lose Rabbick (CH3)", "type": ["mch3"]},
     {"name": "Open the Balloon Chest (City Heights)", "type": ["mcch2"]}
   ],

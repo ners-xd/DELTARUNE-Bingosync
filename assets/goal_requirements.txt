@@ -2,7 +2,7 @@ Die: Normal game overs, Losing to Punch-Out, Giga Queen and in the CH3 boards co
 
 See frozen Berdly when leaving Queen's basement: Wrong warp out of Queen's basement in CH2 and trigger the cutscene with Ralsei's glasses. You should see frozen Berdly in the top-left corner
 
-Crash the game with Bagel Overflow: Do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them
+Crash the game with Bagel Overflow: Do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them. Tutorial: https://youtube.com/watch?v=HVMQFhg1T-s
 
 Wrong Warp into 15 unique rooms: Works in all chapters. Wrong warping into shops doesn't count
 

@@ -97,28 +97,11 @@ function scr_delete_save_files()
 
         for (var chapter = 1; chapter <= #DR.MaxChapter; chapter++)
         {
+            ini_section_delete(scr_ini_chapter(chapter, slot));
             var save_file = "filech" + string(chapter) + "_" + string(slot);
             
             if (ossafe_file_exists(save_file))
                 ossafe_file_delete(save_file);
-            
-            var ini = scr_ini_chapter(chapter, slot);
-            ini_write_string(ini, "Name", "[EMPTY]");
-            ini_write_real(ini, "Level", 0);
-            ini_write_real(ini, "Love", 0);
-            ini_write_real(ini, "Time", 0);
-            ini_write_real(ini, "Room", 0);
-            ini_write_real(ini, "Date", 0);
-            ini_write_real(ini, "UraBoss", 0);
-            ini_write_string(ini, "Version", "0");
-            
-            if (chapter >= 3)
-            {
-                ini_write_real(ini, "SideB", 0);
-                
-                if (chapter == 4)
-                    ini_write_real(ini, "Ch4Boss", 0);
-            }
         }
     }
 

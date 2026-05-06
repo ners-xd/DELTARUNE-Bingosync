@@ -5,7 +5,7 @@
 /// CODE
                 {
                     substring = stringsetloc("THE \\cYROUXLS BLOCK\\cW!", "obj_board_pickup_slash_Step_0_gml_272_0");
-                    scr_add_goal_array(8, 1);
+                    scr_add_goal_array(8, "shop_items", "rouxls");
                 }
 /// END
 

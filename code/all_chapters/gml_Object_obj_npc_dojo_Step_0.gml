@@ -4,7 +4,7 @@
     if (global.flag[36] == 0)
     {
 /// CODE
-        scr_add_goal_array(32, dojoFlag - 810);
+        scr_add_goal_array(32, "dojo_challenges_done", "challenge" + string(dojoFlag - 810));
 
         if (dojoFlag == 815)
             scr_add_goal_progress(129, 1);

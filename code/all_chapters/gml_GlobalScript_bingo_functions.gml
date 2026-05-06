@@ -1,10 +1,5 @@
 /// IMPORT
 
-function scr_get_mod_version()
-{
-    return "3.00";
-}
-
 function scr_get_branch_name()
 {
     return "ch1-5";
@@ -407,15 +402,6 @@ function scr_is_goal_visible(slot)
 
 function scr_load_bingo_data()
 {
-    global.recruits_list = ds_list_create();
-    ds_list_add(global.recruits_list,
-        // Chapter 2 (10)
-        30, 31, 32, 33, 34, 35, 36, 40, 42, 44,
-        // Chapter 3 (8)
-        54, 55, 56, 57, 58, 59, 60, 61,
-        // Chapter 4 (8)
-        62, 63, 64, 65, 66, 67, 68, 69);
-        // Total: 26
     global.prev_hits = 0;
     global.room_id = "";
     global.password = "";
@@ -619,17 +605,10 @@ function scr_save_bingo_data()
 
 function scr_reset_bingo_data()
 {
+    global.goal_progress = array_create(global.num_goals, 0);
     global.starred_goals = array_create(25, false);
     global.queued_goals = array_create(25, false);
     global.hits = 0;
-
-    for (var i = 0; i < global.num_goals; i++)
-    {
-        if (global.goal_list[i].array_size > 0)
-            global.goal_progress[i] = array_create(global.goal_list[i].array_size, 0);
-        else
-            global.goal_progress[i] = 0;
-    }
 
     for (var i = 0; i < array_length(global.goal_custom_vars); i++)
         variable_global_set(global.goal_custom_vars[i].name, array_create(global.goal_custom_vars[i].size, ""));
@@ -689,7 +668,7 @@ function scr_goal_requirements(slot)
     return global.goal_progress[slot] >= global.goal_list[slot].max_progress;
 }
 
-function scr_add_goal_custom_array(slot, arr_name, str)
+function scr_add_goal_array(slot, arr_name, str)
 {
     if (global.ws_client == -1)
         exit;
@@ -719,29 +698,6 @@ function scr_add_goal_custom_array(slot, arr_name, str)
     }
 }
 
-function scr_add_goal_array(slot, index)
-{
-    if (global.ws_client == -1)
-        exit;
-
-    if (!is_array(global.goal_progress[slot]))
-        exit;
-
-    global.goal_progress[slot][index]++;
-    var total = 0;
-
-    for (var i = 0; i < array_length(global.goal_progress[slot]); i++)
-    {
-        if (global.goal_progress[slot][i] >= 1)
-            total++;
-    }
-
-    if (total >= global.goal_list[slot].max_progress)
-        scr_add_goal_progress(slot, 1);
-    else
-        scr_save_bingo_data();
-}
-
 function scr_add_goal_spares(amount, include_pacify_only = false)
 {
     scr_add_goal_progress(2, amount);
@@ -764,10 +720,9 @@ function scr_add_goal_progress(slot, amount)
     if (global.ws_client == -1)
         exit;
 
-    if (!is_array(global.goal_progress[slot]))
-        global.goal_progress[slot] += amount;
+    global.goal_progress[slot] += amount;
 
-    if (is_array(global.goal_progress[slot]) || scr_goal_requirements(slot))
+    if (scr_goal_requirements(slot))
     {
         var board_slot = scr_goal_slot_from_name(global.goal_list[slot].name);
 

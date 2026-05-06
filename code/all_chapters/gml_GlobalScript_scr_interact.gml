@@ -14,8 +14,8 @@
         // The ice key chest can spawn at random coordinates,
         // and it shouldn't be counted multiple times
         if (object_index == obj_board_swordroute_icekey)
-            scr_add_goal_custom_array(114, "chests_opened", room_get_name(room));
+            scr_add_goal_array(114, "chests_opened", room_get_name(room));
         else
     #endif
-            scr_add_goal_custom_array(114, "chests_opened", room_get_name(room) + "-" + string(x) + "-" + string(y));
+            scr_add_goal_array(114, "chests_opened", room_get_name(room) + "-" + string(x) + "-" + string(y));
 /// END

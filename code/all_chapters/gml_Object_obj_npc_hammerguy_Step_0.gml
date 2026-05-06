@@ -3,11 +3,7 @@
 /// AFTER
         con = 18;
 /// CODE
-#if CHAPTER_1 || CHAPTER_2
-        scr_add_goal_array(24, global.chapter - 1);
-#else
-        scr_add_goal_array(24, global.chapter - 2);
-#endif
+        scr_add_goal_array(24, "fix_us_chapters", "chapter" + string(global.chapter));
 /// END
 
 #if !CHAPTER_1

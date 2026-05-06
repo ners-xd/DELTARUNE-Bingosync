@@ -10,7 +10,7 @@
 /// AFTER
     con = 74;
 /// CODE
-    scr_add_goal_array(71, 16);
-    scr_add_goal_array(71, 17);
-    scr_add_goal_array(128, 1);
+    scr_add_goal_array(71, "enemies_recruited", "enemy60");
+    scr_add_goal_array(71, "enemies_recruited", "enemy61");
+    scr_add_goal_array(128, "recruit_chapters", "chapter3");
 /// END

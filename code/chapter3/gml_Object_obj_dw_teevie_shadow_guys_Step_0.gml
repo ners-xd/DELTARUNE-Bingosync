@@ -11,8 +11,8 @@
                 if (global.flag[654] >= 1)
                 {
                     global.flag[654] = 1;
-                    scr_add_goal_array(71, 10);
-                    scr_add_goal_array(128, 1);
+                    scr_add_goal_array(71, "enemies_recruited", "enemy54");
+                    scr_add_goal_array(128, "recruit_chapters", "chapter3");
                 }
 /// END
 
@@ -27,8 +27,8 @@
         if (global.flag[654] >= 1)
         {
             global.flag[654] = 1;
-            scr_add_goal_array(71, 10);
-            scr_add_goal_array(128, 1);
+            scr_add_goal_array(71, "enemies_recruited", "enemy54");
+            scr_add_goal_array(128, "recruit_chapters", "chapter3");
         }
 /// END
 
@@ -47,7 +47,7 @@
         if (global.flag[654] >= 1)
         {
             global.flag[654] = 1;
-            scr_add_goal_array(71, 10);
-            scr_add_goal_array(128, 1);
+            scr_add_goal_array(71, "enemies_recruited", "enemy54");
+            scr_add_goal_array(128, "recruit_chapters", "chapter3");
         }
 /// END

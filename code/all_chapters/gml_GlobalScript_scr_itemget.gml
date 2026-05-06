@@ -13,7 +13,7 @@
                 switch (arg0)
                 {
                     case 2:
-                        scr_add_goal_custom_array(36, "revivemints_obtained", room_get_name(room));
+                        scr_add_goal_array(36, "revivemints_obtained", room_get_name(room));
                         break;
 
                     case 7:
@@ -42,7 +42,7 @@
         {
             case 2:
                 if (!global.fighting)
-                    scr_add_goal_custom_array(36, "revivemints_obtained", room_get_name(room));
+                    scr_add_goal_array(36, "revivemints_obtained", room_get_name(room));
                 break;
 
             case 30:

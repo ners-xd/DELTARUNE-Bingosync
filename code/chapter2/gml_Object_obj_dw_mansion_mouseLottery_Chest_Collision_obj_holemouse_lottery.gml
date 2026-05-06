@@ -1,7 +1,7 @@
 /// PATCH
 
 /// PREPEND
-scr_add_goal_custom_array(114, "chests_opened", room_get_name(room) + "-" + string(x) + "-" + string(y));
+scr_add_goal_array(114, "chests_opened", room_get_name(room) + "-" + string(x) + "-" + string(y));
 /// END
 
 /// AFTER

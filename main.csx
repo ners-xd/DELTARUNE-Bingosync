@@ -77,7 +77,7 @@ void BuildMod(int chapter)
             importGroup.QueueFindReplace(code, "game_restart(", "game_restart_true(", true);
 
         // Change save file location (Console)
-        if(code.Name.Content != "gml_GlobalScript_bingo_save_file_functions")
+        if(code.Name.Content != "gml_GlobalScript_universal_bingo_functions")
             importGroup.QueueFindReplace(code, "deltarune.sav", "DELTARUNE_bingosync_mod.sav", true);
     }
     importGroup.Import();

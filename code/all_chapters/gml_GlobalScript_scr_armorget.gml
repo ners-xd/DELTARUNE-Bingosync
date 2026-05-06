@@ -9,7 +9,7 @@
         {
 #endif
 /// CODE
-            scr_add_goal_array(130, arg0);
+            scr_add_goal_array(130, "armors_obtained", "armor" + string(arg0));
 
             switch (arg0)
             {

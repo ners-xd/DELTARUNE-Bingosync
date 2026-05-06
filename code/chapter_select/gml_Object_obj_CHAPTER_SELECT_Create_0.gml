@@ -29,7 +29,7 @@ create_bingo_start_screen = function()
 init = function()
 {
 /// CODE
-    if (vanilla_directory_exists() && !ossafe_file_exists("true_config.ini"))
+    if (vanilla_directory_exists() && !file_exists("bingosync_mod_first_launch"))
     {
         change_state(1000);
         exit;
@@ -58,12 +58,12 @@ init = function()
             if (event_value == 1001)
                 scr_import_vanilla_files();
 
-            if (!global.is_console)
-            {
-                ini_open("true_config.ini");
-                ini_write_real("BINGOSYNC_MOD", "START_SCREEN_CLOSED", true);
-                ini_close("true_config.ini");
-            }
+            var file = file_text_open_write("bingosync_mod_first_launch");
+            file_text_write_string(file, "The existence of this file makes the Chapter Select save import prompt not appear.");
+            file_text_close(file);
+
+            if (scr_is_switch_os())
+                switch_save_data_commit();
 
             room_restart();
             break;

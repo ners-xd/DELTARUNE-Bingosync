@@ -18,25 +18,22 @@ try
                     global.goal_list[info[i].mod_slot] = 
                     {
                         name: info[i].name,
-                        max_progress: info[i].mod_progress_threshold,
-                        array_size: 0
+                        max_progress: 1
                     };
-
-                    if (variable_struct_exists(info[i], "mod_array_size"))
-                    {
-                        global.goal_list[info[i].mod_slot].array_size = info[i].mod_array_size;
-                        global.goal_progress[info[i].mod_slot] = array_create(info[i].mod_array_size, 0);
-                    }
 
                     if (variable_struct_exists(info[i], "mod_global_var_name"))
                     {
                         global.goal_custom_vars[array_length(global.goal_custom_vars)] =
                         {
                             name: info[i].mod_global_var_name,
-                            size: info[i].mod_global_var_size
+                            size: info[i].mod_progress_threshold
                         };
 
-                        variable_global_set(info[i].mod_global_var_name, array_create(info[i].mod_global_var_size, ""));
+                        variable_global_set(info[i].mod_global_var_name, array_create(info[i].mod_progress_threshold, ""));
+                    }
+                    else
+                    {
+                        global.goal_list[info[i].mod_slot].max_progress = info[i].mod_progress_threshold;
                     }
                 }
                 break;

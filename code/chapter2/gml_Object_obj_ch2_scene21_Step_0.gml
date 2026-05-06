@@ -4,5 +4,5 @@
 if (got_banana && !d_ex())
 {
 /// CODE
-    scr_add_goal_array(18, 1);
+    scr_add_goal_array(18, "bananas_obtained", room_get_name(room));
 /// END

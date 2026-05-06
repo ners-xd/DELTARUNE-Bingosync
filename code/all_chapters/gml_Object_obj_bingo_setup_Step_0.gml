@@ -94,6 +94,7 @@ if (httppost != -1 && !obj_time.internet)
 
     if (instance_exists(obj_fadeout))
     {
+        mus_volume(global.currentsong[1], 0.7, 8);
         instance_destroy(obj_fadeout);
 
         with (instance_create(0, 0, obj_fadein))

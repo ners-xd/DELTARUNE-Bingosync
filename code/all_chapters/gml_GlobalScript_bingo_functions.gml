@@ -18,6 +18,33 @@ function array_contains_temp(array, value)
     return false;
 }
 
+function scr_pad_zero(value, amount)
+{
+    var s = string(value);
+
+    while (string_length(s) < amount)
+        s = "0" + s;
+
+    return s;
+}
+
+function scr_format_seconds(amount)
+{
+    amount = max(0, amount);
+    var days = floor(amount / 86400);
+    var hours = floor((amount % 86400) / 3600);
+    var minutes = floor((amount % 3600) / 60);
+    var seconds = round(amount % 60);
+    var str = scr_pad_zero(minutes, 2) + ":" + scr_pad_zero(seconds, 2);
+
+    if (days > 0)
+        str = string(days) + ":" + scr_pad_zero(hours, 2) + ":" + str;
+    else if (hours > 0)
+        str = string(hours) + ":" + str;
+
+    return str;
+}
+
 function scr_get_temp_draw()
 {
     temp_halign = draw_get_halign();
@@ -82,17 +109,15 @@ function scr_gamepad_lastkey()
     }
     else if (obj_gamecontroller.gamepad_active)
     {
-        var i = 0;
-
         // gp_face1 - gp_padr
-        for (i = 32769; i <= 32784; i++)
+        for (var i = 32769; i <= 32784; i++)
         {
             if (gamepad_button_check_pressed(obj_gamecontroller.gamepad_id, i))
                 return i;
         }
         // Skip axes
         // gp_home - gp_extra6
-        for (i = 32799; i <= 32810; i++)
+        for (var i = 32799; i <= 32810; i++)
         {
             if (gamepad_button_check_pressed(obj_gamecontroller.gamepad_id, i))
                 return i;

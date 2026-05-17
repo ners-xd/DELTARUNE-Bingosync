@@ -31,7 +31,7 @@ try
                 buffer_write(buffer, buffer_text, global.ws_key);
                 network_send_raw(global.ws_client, buffer, 40);
                 buffer_delete(buffer);
-                alarm[0] = 1;
+                event_perform(ev_alarm, 0);
                 ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\" }");
                 http_room_settings = http_get("https://bingosync.com/room/" + global.room_id + "/room-settings");
                 http_feed = ossafe_http_get("https://bingosync.com/room/" + global.room_id + "/feed");
@@ -101,7 +101,7 @@ try
                         
                         global.room_seed = -1;
                         http_room_settings = http_get("https://bingosync.com/room/" + global.room_id + "/room-settings");
-                        alarm[0] = 3 * room_speed;
+                        event_perform(ev_alarm, 0);
                         global.last_card_timestamp = json.timestamp;
                         scr_reset_bingo_data();
                         break;

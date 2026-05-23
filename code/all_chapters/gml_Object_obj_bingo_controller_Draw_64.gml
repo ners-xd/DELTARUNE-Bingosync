@@ -104,16 +104,20 @@ if (global.room_seed != -1)
     var text_y = ((base_y + ((square_size + spacing) * grid_size)) - (2 * spacing)) + 2;
     var text_y_offset = (instance_exists(obj_darkcontroller) && variable_global_exists("menuno") && global.menuno > -1) ? obj_darkcontroller.tp : 0;
     var final_y = (global.show_board && board_connected) ? text_y : text_y_offset;
-    var timezone = date_get_timezone();
-    date_set_timezone(timezone_utc);
     draw_set_color(c_yellow);
-    draw_set_halign(fa_left);
     draw_set_valign(fa_top);
-    draw_text_outline(base_x, final_y, scr_format_seconds(date_second_span(date_create_datetime(1970, 1, 2, 0, 0, global.last_card_timestamp - 86400), date_current_datetime())));
-    date_set_timezone(timezone);
+
+    if (global.show_board && board_connected)
+    {
+        var timezone = date_get_timezone();
+        date_set_timezone(timezone_utc);
+        draw_set_halign(fa_left);
+        draw_text_outline(base_x, final_y, scr_format_seconds(date_second_span(date_create_datetime(1970, 1, 2, 0, 0, global.last_card_timestamp - 86400), date_current_datetime())));
+        date_set_timezone(timezone);
+    }
+
     draw_set_halign(fa_right);
     draw_text_outline(text_x, final_y, "Seed: " + (board_revealed ? string(global.room_seed) : "Hidden") + " / " + global.room_lockout);
-
     var kb_key = scr_input_name(global.board_key);
     var gp_key = scr_input_name_gp(global.board_key_gp);
     var toggle_text = global.show_board ? "Hide board" : "Show board";

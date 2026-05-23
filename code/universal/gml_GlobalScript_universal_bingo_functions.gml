@@ -67,6 +67,13 @@ function scr_import_vanilla_files()
         
         if (scr_is_switch_os())
             switch_save_data_commit();
+
+    #if !CHAPTER_SELECT
+        var buffer = buffer_load("Deltarune/DELTARUNE_bingosync_mod.sav");
+        var json = buffer_read(buffer, buffer_string);
+        global.savedata = json_decode(json);
+        buffer_delete(buffer);
+    #endif
     }
     else
     {

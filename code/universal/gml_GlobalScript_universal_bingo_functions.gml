@@ -80,7 +80,17 @@ function scr_import_vanilla_files()
             for (var chapter = 1; chapter <= #DR.MaxChapter; chapter++)
                 vanilla_file_copy("filech" + string(chapter) + "_" + string(slot));
         }
+
+    #if !CHAPTER_SELECT
+        ini_open("true_config.ini");
+        window_set_fullscreen(ini_read_real("SCREEN", "FULLSCREEN", window_get_fullscreen()));
+        ini_close();
+    #endif
     }
+
+#if !CHAPTER_SELECT
+    scr_84_init_localization();
+#endif
 }
 
 #if !CHAPTER_SELECT

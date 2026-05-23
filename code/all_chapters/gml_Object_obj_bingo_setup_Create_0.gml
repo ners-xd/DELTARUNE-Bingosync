@@ -19,10 +19,7 @@ global.balthizard_clouds = false;
 #endif
 global.cookie_sessionid = -1;
 httppost = -1;
-pos = 0;
-max_pos = 16;
-sel = -1;
-status_color = 0;
+status_color = c_ltgray;
 status_text = "";
 async_string = -1;
 width = surface_get_width(application_surface);

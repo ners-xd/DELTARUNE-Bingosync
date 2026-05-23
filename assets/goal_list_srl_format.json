@@ -10,7 +10,7 @@
     {"name": "Watch the Legend (Castle Town)", "type": ["ech1"]},
     {"name": "Get Bomberman Key (Board 1)", "type": ["eb1ch3"]},
     {"name": "Complete the Dummy Tutorial", "type": ["ech1"]},
-    {"name": "Fuse an Item", "type": ["misc2"]},
+    {"name": "Fuse an item (CH2+)", "type": ["misc2"]},
     {"name": "Get a Lancer Cookie (CH1)", "type": ["misc2"]}
   ],
   [
@@ -39,7 +39,7 @@
     {"name": "Fill up your inventory with 12 consumables", "type": ["misc1"]},
     {"name": "Find the Among Us Reference", "type": ["eps1ch4"]},
     {"name": "Pacify 10 Enemies", "type": ["spare"]},
-    {"name": "Spare Ponman", "type": ["ech1"]}
+    {"name": "Spare/Pacify Ponman", "type": ["ech1"]}
   ],
   [
     {"name": "Crash the game with Bagel Overflow", "type": ["ech2"]},

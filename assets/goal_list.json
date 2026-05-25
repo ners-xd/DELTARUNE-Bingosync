@@ -74,7 +74,7 @@
   {"name": "Build the cutest Thrash Machine", "mod_slot": 68, "mod_progress_threshold": 1},
   {"name": "Lose 3 recruited enemies", "mod_slot": 69, "mod_progress_threshold": 3, "mod_global_var_name": "recruits_lost"},
   {"name": "Fully recruit 3 different enemy types", "mod_slot": 71, "mod_progress_threshold": 3, "mod_global_var_name": "enemies_recruited"},
-  {"name": "Use 5 items in battle", "mod_slot": 72, "mod_progress_threshold": 5},
+  {"name": "Use 5 unique items in battle", "mod_slot": 72, "mod_progress_threshold": 5, "mod_global_var_name": "items_in_battle"},
   {"name": "Hit a baby car", "mod_slot": 73, "mod_progress_threshold": 1},
   {"name": "Full Berdly Spare", "mod_slot": 74, "mod_progress_threshold": 1},
   {"name": "Equip White Ribbon (CH1/CH3)", "mod_slot": 75, "mod_progress_threshold": 1},
@@ -135,5 +135,8 @@
   {"name": "Tell Jackenstein he's cute in the study", "mod_slot": 132, "mod_progress_threshold": 1},
   {"name": "Complete 10 attacks without grazing bullets", "mod_slot": 133, "mod_progress_threshold": 10},
   {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks", "mod_slot": 134, "mod_progress_threshold": 1},
-  {"name": "Defeat 3 Bosses", "mod_slot": 135, "mod_progress_threshold": 3, "mod_global_var_name": "bosses_fought"}
+  {"name": "Defeat 3 Bosses", "mod_slot": 135, "mod_progress_threshold": 3, "mod_global_var_name": "bosses_fought"},
+  {"name": "Finish Doom Board", "mod_slot": 136, "mod_progress_threshold": 1},
+  {"name": "Complete any Lightners Live song", "mod_slot": 137, "mod_progress_threshold": 1},
+  {"name": "Watch all of Tenna's Feature Presentation", "mod_slot": 138, "mod_progress_threshold": 1}
 ]

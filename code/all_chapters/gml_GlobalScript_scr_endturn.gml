@@ -11,9 +11,12 @@ function scr_endturn()
     {
 /// CODE
 #endif
-        if (used_item_count > 0)
+        for (var i = 0; i < array_length(used_items); i++)
         {
-            scr_add_goal_progress(72, used_item_count);
-            used_item_count = 0;
+            if (used_items[i] != "")
+            {
+                scr_add_goal_array(72, "items_in_battle", used_items[i]);
+                used_items[i] = "";
+            }
         }
 /// END

@@ -1,5 +1,5 @@
 /// PATCH
 
 /// PREPEND
-used_item_count = 0;
+used_items = array_create(3, "");
 /// END

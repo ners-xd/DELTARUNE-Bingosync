@@ -2,21 +2,23 @@
   [
     {"name": "Complete 10 attacks without grazing bullets", "type": ["misc1"]},
     {"name": "Die", "type": ["kill"]},
-    {"name": "Use 5 items in battle", "type": ["misc1"]},
+    {"name": "Use 5 unique items in battle", "type": ["misc1"]},
     {"name": "Use Susie's healing spell (CH2)", "type": ["misc2"]},
-    {"name": "Wrong Warp into 15 unique rooms", "type": ["misc3"]}
+    {"name": "Wrong Warp into 15 unique rooms", "type": ["misc3"]},
+    {"name": "Watch all of Tenna's Feature Presentation", "type": ["eb1ch3"]}
   ],
   [
     {"name": "Watch the Legend (Castle Town)", "type": ["ech1"]},
     {"name": "Get Bomberman Key (Board 1)", "type": ["eb1ch3"]},
-    {"name": "Complete the Dummy Tutorial", "type": ["ech1"]},
     {"name": "Fuse an item (CH2+)", "type": ["misc2"]},
-    {"name": "Get a Lancer Cookie (CH1)", "type": ["misc2"]}
+    {"name": "Get a Lancer Cookie (CH1)", "type": ["misc2"]},
+    {"name": "Complete any Lightners Live song", "type": ["misc2"]}
   ],
   [
     {"name": "Complete 3 Challenges in Party Dojo", "type": ["ech2"]},
     {"name": "Get Quiz Key (Board 1)", "type": ["eb1ch3"]},
     {"name": "Hug Ralsei", "type": ["misc2"]},
+    {"name": "Complete the Dummy Tutorial", "type": ["ech1"]},
     {"name": "Reach the Knight at the start of CH4", "type": ["eps1ch4"]},
     {"name": "Have $2000 on one save file", "type": ["misc3"]}
   ],
@@ -63,6 +65,7 @@
     {"name": "Z-Rank Board 1 or 2", "type": ["eb1ch3"]}
   ],
   [
+    {"name": "Get the Spin Cake (CH1)", "type": ["mch1"]},
     {"name": "Beat the Mike trio", "type": ["es1ch4"]},
     {"name": "Lose Watercooler", "type": ["epb1ch3"]},
     {"name": "Recruit Watercooler", "type": ["epb1ch3"]},
@@ -75,6 +78,7 @@
     {"name": "Talk to Starwalker (CH1)", "type": ["mch1"]}
   ],
   [
+    {"name": "Get 3 ReviveMints", "type": ["lmultich"]},
     {"name": "B or better rank Susiezilla", "type": ["epb1ch3"]},
     {"name": "Beat Triple Rabbick", "type": ["mch1"]},
     {"name": "Build the cutest Thrash Machine", "type": ["mch1"]},
@@ -139,10 +143,10 @@
     {"name": "Get 4 Photos (Board 2)", "type": ["mb2ch3"]},
     {"name": "Get a Shadow Crystal", "type": ["boss"]},
     {"name": "Get Ms. Pipis", "type": ["exch2"]},
-    {"name": "Hit 3 Pipis", "type": ["exch2"]}
+    {"name": "Hit 3 Pipis", "type": ["exch2"]},
+    {"name": "Finish Doom Board", "type": ["mb3ch3"]}
   ],
   [
-    {"name": "Get the Spin Cake (CH1)", "type": ["mch1"]},
     {"name": "Beat Gerson", "type": ["mch4"]},
     {"name": "Complete Jevil", "type": ["lch1"]},
     {"name": "Complete Spamton NEO (Snowgrave)", "type": ["exch2"]},
@@ -159,7 +163,6 @@
     {"name": "Place The Egg In Hometown", "type": ["misc3"]}
   ],
   [
-    {"name": "Get 3 ReviveMints", "type": ["lmultich"]},
     {"name": "Get Annoying Dog on Rouxls", "type": ["mch3"]},
     {"name": "Interact with 12 unique chests", "type": ["lmultich"]},
     {"name": "Lose Rabbick (CH3)", "type": ["mch3"]},

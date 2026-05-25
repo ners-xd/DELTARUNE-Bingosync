@@ -46,7 +46,7 @@ Complete 3 Challenges in Party Dojo: They have to be DIFFERENT challenges
 
 Complete Both Berdly Encounters: They do NOT have to be on the same save file, but you have to complete both encounters separately, you can't do two of the same one
 
-Get 3 ReviveMints: Get 3 of the mints available throughout CH1-4. They are in:
+Get 3 ReviveMints: Get 3 of the mints available throughout the game. They are in:
     - CH1: Forest, in the room with the scissor dancers you go down-left and there's a chest
     - CH1: Card Castle, in the room with the scissor dancers after the Head Hathies there's 3 paintings. Interact with all of them then open the chest that's down-left under the door shaped like a clover
     - CH2: Cyber Field, in the room with the Virovirokun that shoots arrows, there's a chest at the bottom of the room. Have the enemy shoot it, then open the chest
@@ -96,9 +96,9 @@ Talk to Lancer In The Epilogue: You either have to do the True Pacifist Ending i
 
 Build the cutest Thrash Machine: On the right side of the thrash machine creator there's a cuteness stat, the maximum of which is 3 stars (what you need for this goal). The cutest thrash machine consists of Flame Head, Plain Body and Sneak Shoes (any colors).
 
-Fully recruit 3 different enemy types: Recruit different TYPES of enemies in CH2-4. They do NOT have to be on the same save file
+Fully recruit 3 different enemy types: Recruit different TYPES of enemies in CH2+. They do NOT have to be on the same save file
 
-Use 5 items in battle: Progress for this goal counts once you end your turn
+Use 5 unique items in battle: Progress for this goal counts once you end your turn
 
 Hit a baby car: Get lucky in the room after Berdly 2 in Cyber City and have a baby car spawn. Run it over
 

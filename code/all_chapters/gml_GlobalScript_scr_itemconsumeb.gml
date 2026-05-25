@@ -4,5 +4,5 @@
 function scr_itemconsumeb()
 {
 /// CODE
-    used_item_count++;
+    used_items[global.charturn] = "item" + string(tempitem[global.bmenucoord[4][global.charturn]][global.charturn]);
 /// END

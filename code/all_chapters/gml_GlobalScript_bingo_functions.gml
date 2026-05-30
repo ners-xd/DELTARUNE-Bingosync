@@ -291,6 +291,20 @@ function scr_check_pressed(kb_key, gp_key)
     return false;
 }
 
+function scr_check_held(kb_key, gp_key)
+{
+    if (keyboard_check(kb_key))
+        return true;
+
+    if (instance_exists(obj_gamecontroller))
+    {
+        if (obj_gamecontroller.gamepad_active && gamepad_button_check(obj_gamecontroller.gamepad_id, gp_key))
+            return true;
+    }
+
+    return false;
+}
+
 function scr_check_mouse_pressed(mb_key, gp_key)
 {
     if (mouse_check_button_pressed(mb_key))

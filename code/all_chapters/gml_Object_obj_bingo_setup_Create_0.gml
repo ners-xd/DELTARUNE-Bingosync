@@ -976,22 +976,26 @@ function go_to_settings()
 }
 
 draw_main_buttons();
-
-with (instance_create(0, 0, obj_fadein))
-    fadespeed = -0.25;
+scr_show_mouse_at(window_get_width() / 2, window_get_height() / 2);
 
 if (global.autoconnect && obj_time.internet)
 {
-    connect_to_room();
-    status_text += "\n(Autoconnect)";
-}
-else
-{
-    scr_show_mouse_at(window_get_width() / 2, window_get_height() / 2);
+    if (scr_check_held(ord("C"), gp_face4))
+    {
+        status_text = "Autoconnect cancelled.";
+    }
+    else
+    {
+        connect_to_room();
+        status_text += "\n(Autoconnect)";
+    }
 }
 
 global.currentsong[0] = snd_init("greenroom_detune.ogg");
 global.currentsong[1] = mus_loop_ext(global.currentsong[0], 0.7, 1);
+
+with (instance_create(0, 0, obj_fadein))
+    fadespeed = -0.25;
 
 if (global.is_console)
     application_surface_draw_enable(true);

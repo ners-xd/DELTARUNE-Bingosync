@@ -1,0 +1,3 @@
+/// IMPORT
+
+window_center();

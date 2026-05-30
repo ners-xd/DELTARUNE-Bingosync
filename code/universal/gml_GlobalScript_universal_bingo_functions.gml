@@ -70,8 +70,7 @@ function scr_import_vanilla_files()
 
     #if !CHAPTER_SELECT
         var buffer = buffer_load("Deltarune/DELTARUNE_bingosync_mod.sav");
-        var json = buffer_read(buffer, buffer_string);
-        global.savedata = json_decode(json);
+        global.savedata = json_decode(buffer_read(buffer, buffer_string));
         buffer_delete(buffer);
     #endif
     }

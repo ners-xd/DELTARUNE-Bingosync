@@ -15,3 +15,11 @@ srl_list_request = -1;
 update_check_request = -1;
 newest_mod_version = "";
 /// END
+
+#if !CHAPTER_1
+/// REPLACE
+        alarm[2] = 1;
+/// CODE
+        alarm[2] = 10;
+/// END
+#endif

@@ -61,7 +61,7 @@ Get 3 ReviveMints: Get 3 of the mints available throughout the game. They are in
 
 Eat Moss: Found in:
     - CH1: Top right of the cell you're in after the forest chase
-    - CH2: The room where you get the ThornRing in snowgrave, interact with it on the top left while on Main Route
+    - CH2: The room where you get the ThornRing in Snowgrave, interact with it on the top left while on Main Route
     - CH3: Board 2 after exiting the room with the antlions, it's right above the room transition (you'll see the green on the wall)
     - CH4: The really long hallway that brings you to the egg room, it's at the very end of it
 
@@ -147,9 +147,9 @@ Get GoldWidow: Found by donating 9999+ D$ in the fountain in Sanctuary 1 and com
 
 Get BitterTear: Found by donating 2000-9998 D$ in the fountain or by embezzling Miss Mizzle
 
-Defeat 2 Shadow Item Holders: The bosses who count for this are Jevil, Spamton NEO, ERAM, The Knight and Hammer of Justice
+Defeat 2 Shadow Item Holders: The bosses who count for this are Jevil, Spamton NEO (both variants count as the same boss), ERAM, The Knight and Hammer of Justice
 
-Defeat 2 Final Bosses: The bosses who count for this are King, Giga Queen, Tenna and Titan
+Defeat 2 Final Bosses: The bosses who count for this are King, Giga Queen, Snowgrave Spamton NEO, Tenna and Titan
 
 Defeat 3 Bosses: The bosses who count for this are all of the above + Queen + the Mike trio
 

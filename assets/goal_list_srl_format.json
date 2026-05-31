@@ -9,14 +9,14 @@
   ],
   [
     {"name": "Watch the Legend (Castle Town)", "type": ["ech1"]},
-    {"name": "Get Bomberman Key (Board 1)", "type": ["eb1ch3"]},
+    {"name": "Get the Bomberman Key (Board 1)", "type": ["eb1ch3"]},
     {"name": "Fuse an item (CH2+)", "type": ["misc2"]},
     {"name": "Get a Lancer Cookie (CH1)", "type": ["misc2"]},
     {"name": "Complete any Lightners Live song", "type": ["misc2"]}
   ],
   [
-    {"name": "Complete 3 Challenges in Party Dojo", "type": ["ech2"]},
-    {"name": "Get Quiz Key (Board 1)", "type": ["eb1ch3"]},
+    {"name": "Complete 3 unique dojo challenges", "type": ["ech2"]},
+    {"name": "Get the Quiz Key (Board 1)", "type": ["eb1ch3"]},
     {"name": "Hug Ralsei", "type": ["misc2"]},
     {"name": "Complete the Dummy Tutorial", "type": ["ech1"]},
     {"name": "Reach the Knight at the start of CH4", "type": ["eps1ch4"]},
@@ -27,30 +27,30 @@
     {"name": "Equip White Ribbon (CH1/CH3)", "type": ["misc3"]},
     {"name": "Go to the diner with Susie", "type": ["eps1ch4"]},
     {"name": "Speak to Sans", "type": ["misc3"]},
-    {"name": "Visit Rudy", "type": ["misc3"]}
+    {"name": "Visit Rudy in the hospital", "type": ["misc3"]}
   ],
   [
     {"name": "Enter Ralsei's Room", "type": ["eps1ch4"]},
     {"name": "Kill 5 Enemies", "type": ["kill"]},
-    {"name": "Lanino/Elnina Rematch", "type": ["eps1ch4"]},
+    {"name": "Beat the Lanino/Elnina rematch", "type": ["eps1ch4"]},
     {"name": "Show Compassion to Ralsei", "type": ["es1ch4"]},
     {"name": "Spare/Pacify 10 Enemies", "type": ["spare"]}
   ],
   [
     {"name": "Donate D$1 (CH1/CH4)", "type": ["misc3"]},
     {"name": "Fill up your inventory with 12 consumables", "type": ["misc1"]},
-    {"name": "Find the Among Us Reference", "type": ["eps1ch4"]},
+    {"name": "Find the Among Us reference", "type": ["eps1ch4"]},
     {"name": "Pacify 10 Enemies", "type": ["spare"]},
     {"name": "Spare/Pacify Ponman", "type": ["ech1"]}
   ],
   [
     {"name": "Crash the game with Bagel Overflow", "type": ["ech2"]},
-    {"name": "Complete the GIASFELFEBREHBER Puzzle", "type": ["ech2"]},
-    {"name": "Complete the Hacker Side Quest", "type": ["ech2"]},
-    {"name": "Complete the Spelling Bee Cutscene (Mansion)", "type": ["emch2"]}
+    {"name": "Complete the GIASFELFEBREHBER puzzle", "type": ["ech2"]},
+    {"name": "Complete the Hacker's side quest", "type": ["ech2"]},
+    {"name": "Complete the spelling bee cutscene", "type": ["emch2"]}
   ],
   [
-    {"name": "Buy the Royal Pin (CH2 Mansion Shop)", "type": ["emch2"]},
+    {"name": "Buy the Royal Pin from Swatch", "type": ["emch2"]},
     {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks", "type": ["ech2"]},
     {"name": "Kill 10 Enemies", "type": ["kill"]},
     {"name": "Lose Tasque Manager", "type": ["emch2"]},
@@ -67,15 +67,15 @@
   [
     {"name": "Get the Spin Cake (CH1)", "type": ["mch1"]},
     {"name": "Beat the Mike trio", "type": ["es1ch4"]},
-    {"name": "Lose Watercooler", "type": ["epb1ch3"]},
-    {"name": "Recruit Watercooler", "type": ["epb1ch3"]},
+    {"name": "Lose the Watercooler", "type": ["epb1ch3"]},
+    {"name": "Recruit the Watercooler", "type": ["epb1ch3"]},
     {"name": "Spare/Pacify 25 Enemies", "type": ["spare"]}
   ],
   [
     {"name": "Have $3000 on one save file", "type": ["misc3"]},
     {"name": "Get 2 Gold Items (CH3)", "type": ["epb1ch3"]},
-    {"name": "Spend 1225 Points in the Gamble Machine", "type": ["epb1ch3"]},
-    {"name": "Talk to Starwalker (CH1)", "type": ["mch1"]}
+    {"name": "Spend 1225 points at once in the B-Rank room", "type": ["epb1ch3"]},
+    {"name": "Talk to Starwalker in the forest (CH1)", "type": ["mch1"]}
   ],
   [
     {"name": "Get 3 ReviveMints", "type": ["lmultich"]},
@@ -83,21 +83,21 @@
     {"name": "Beat Triple Rabbick", "type": ["mch1"]},
     {"name": "Build the cutest Thrash Machine", "type": ["mch1"]},
     {"name": "Build the FLB Duck (PINK)", "type": ["mch1"]},
-    {"name": "Get an Egg (Original Source)", "type": ["misc1"]},
-    {"name": "Get Ice Key", "type": ["epb1ch3"]}
+    {"name": "Get an egg (Original Source)", "type": ["misc1"]},
+    {"name": "Get the Ice Key", "type": ["epb1ch3"]}
   ],
   [
     {"name": "Reach the Ice Door without the Ice Key (CH3)", "type": ["epb1ch3"]},
     {"name": "Abort Snowgrave after getting the FreezeRing", "type": ["exch2"]},
-    {"name": "Complete Both Berdly Encounters", "type": ["mcch2"]},
+    {"name": "Complete both Berdly encounters", "type": ["mcch2"]},
     {"name": "Fully recruit 3 different enemy types", "type": ["spare"]},
     {"name": "Get a Dog Dollar", "type": ["misc2"]},
-    {"name": "Get Both Chests On 2 Maus 1 Maus", "type": ["mmch2"]},
-    {"name": "Get ReviveDust", "type": ["mmch2"]},
+    {"name": "Get both chests on 2 Maus 1 Maus", "type": ["mmch2"]},
+    {"name": "Get the ReviveDust", "type": ["mmch2"]},
     {"name": "Get the FreezeRing", "type": ["mcch2"]}
   ],
   [
-    {"name": "Beat the Rouxls Fight (CH2/CH3)", "type": ["boss"]},
+    {"name": "Beat the Rouxls fight (CH2/CH3)", "type": ["boss"]},
     {"name": "Eat Moss", "type": ["misc1"]},
     {"name": "Kill 20 Enemies", "type": ["kill"]},
     {"name": "Lose 3 recruited enemies", "type": ["kill"]},
@@ -112,7 +112,7 @@
     {"name": "Get 2 unique eggs", "type": ["lmultich"]}
   ],
   [
-    {"name": "Bed Inspector", "type": ["mch1"]},
+    {"name": "Get the Bed Inspector title (CH1)", "type": ["mch1"]},
     {"name": "Buy an item from Seam and Rouxls", "type": ["lch1"]},
     {"name": "Get the ThornRing", "type": ["exch2"]},
     {"name": "Obtain 5 unique armors", "type": ["misc1"]},
@@ -122,70 +122,72 @@
   ],
   [
     {"name": "Defeat Giga Queen", "type": ["mmch2"]},
-    {"name": "Complete the Spamton Encounter (Normal)", "type": ["mcch2"]},
+    {"name": "Complete the normal Spamton encounter", "type": ["mcch2"]},
     {"name": "Fully recruit an enemy in each chapter", "type": ["spare"]},
     {"name": "Get to the Tropic of Love", "type": ["mb2ch3"]},
     {"name": "Lose Miss Mizzle", "type": ["es1ch4"]},
     {"name": "Recruit Miss Mizzle", "type": ["es1ch4"]}
   ],
   [
-    {"name": "Get BitterTear", "type": ["mch4"]},
+    {"name": "Get the BitterTear", "type": ["mch4"]},
     {"name": "Hit a baby car", "type": ["mcch2"]},
     {"name": "Lose Shuttah", "type": ["mb2ch3"]},
-    {"name": "Play MEGALOVANIA on the Big Piano", "type": ["mch4"]},
-    {"name": "Get Captured in Chapter 2", "type": ["lch2"]},
+    {"name": "Play MEGALOVANIA on the organ", "type": ["mch4"]},
+    {"name": "Get captured in Chapter 2", "type": ["lch2"]},
     {"name": "Defeat 3 Bosses", "type": ["boss"]}
   ],
   [
     {"name": "Do 'Fix Us' in all possible chapters", "type": ["lmultich"]},
     {"name": "Defeat King", "type": ["lch1"]},
     {"name": "Defeat 2 Final Bosses", "type": ["boss"]},
-    {"name": "Get 4 Photos (Board 2)", "type": ["mb2ch3"]},
+    {"name": "Take 4 photos (Board 2)", "type": ["mb2ch3"]},
     {"name": "Get a Shadow Crystal", "type": ["boss"]},
-    {"name": "Get Ms. Pipis", "type": ["exch2"]},
+    {"name": "Find Ms. Pipis", "type": ["exch2"]},
     {"name": "Hit 3 Pipis", "type": ["exch2"]},
     {"name": "Finish Doom Board", "type": ["mb3ch3"]}
   ],
   [
     {"name": "Beat Gerson", "type": ["mch4"]},
     {"name": "Complete Jevil", "type": ["lch1"]},
-    {"name": "Complete Spamton NEO (Snowgrave)", "type": ["exch2"]},
+    {"name": "Beat Spamton NEO (Snowgrave)", "type": ["exch2"]},
     {"name": "Watch the Weird Route hospital cutscene (CH2)", "type": ["exch2"]},
-    {"name": "Have a Tea Party With Gerson", "type": ["mch4"]},
-    {"name": "Talk to Lancer In The Epilogue", "type": ["lch1"]},
+    {"name": "Have a tea party with Gerson", "type": ["mch4"]},
+    {"name": "Talk to Lancer in the epilogue", "type": ["lch1"]},
     {"name": "Recruit Shuttah", "type": ["mch3"]}
   ],
   [
     {"name": "Get the Pipis item", "type": ["mch3"]},
     {"name": "Find the 3 Golden Sheets", "type": ["mch4"]},
     {"name": "Finish any chapter", "type": ["lch1"]},
-    {"name": "Get Shelter Key", "type": ["mb2ch3"]},
-    {"name": "Place The Egg In Hometown", "type": ["misc3"]}
+    {"name": "Get the Shelter Key", "type": ["mb2ch3"]},
+    {"name": "Place an egg in Hometown", "type": ["misc3"]}
   ],
   [
-    {"name": "Get Annoying Dog on Rouxls", "type": ["mch3"]},
+    {"name": "Get the Annoying Dog on Rouxls", "type": ["mch3"]},
     {"name": "Interact with 12 unique chests", "type": ["lmultich"]},
     {"name": "Lose Rabbick (CH3)", "type": ["mch3"]},
-    {"name": "Open the Balloon Chest (City Heights)", "type": ["mcch2"]}
+    {"name": "Open the Balloon Chest (City Heights)", "type": ["mcch2"]},
+    {"name": "Get the TripTicket", "type": ["mch3"]},
+    {"name": "Crash the console on the 000000 puzzle (CH3)", "type": ["mch3"]}
   ],
   [
     {"name": "Beat Fake Gerson", "type": ["lch4"]},
-    {"name": "Buy something from Spamton's Shop", "type": ["mcch2"]},
-    {"name": "Collect 2 Bananas", "type": ["lch2"]},
-    {"name": "Get PrincessRibbon", "type": ["lch4"]},
+    {"name": "Buy something from Spamton's shop", "type": ["mcch2"]},
+    {"name": "Collect both bananas", "type": ["lch2"]},
+    {"name": "Get the PrincessRibbon", "type": ["lch4"]},
     {"name": "See frozen Berdly when leaving Queen's basement", "type": ["lch2"]}
   ],
   [
     {"name": "Beat Tenna", "type": ["lch3"]},
-    {"name": "Complete Spamton NEO (Basement)", "type": ["lch2"]},
+    {"name": "Beat Spamton NEO (Basement)", "type": ["lch2"]},
     {"name": "Defeat 2 Shadow Item Holders", "type": ["boss"]},
-    {"name": "Get GoldWidow", "type": ["lch4"]},
+    {"name": "Get the GoldWidow", "type": ["lch4"]},
     {"name": "Kill a Titan Spawn", "type": ["lch4"]}
   ],
   [
     {"name": "Beat ERAM", "type": ["lch3"]},
     {"name": "Beat The Knight", "type": ["lch3"]},
-    {"name": "Beat Titan", "type": ["lch4"]},
+    {"name": "Beat The Titan", "type": ["lch4"]},
     {"name": "Full Berdly Spare", "type": ["lch2"]}
   ]
 ]

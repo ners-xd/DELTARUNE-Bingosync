@@ -6,45 +6,37 @@ Crash the game with Bagel Overflow: Do bagel overflow but intentionally mess it 
 
 Wrong Warp into 15 unique rooms: Works in all chapters. Wrong warping into shops doesn't count
 
-Get Bomberman Key (Board 1): Get the key that spawns after Susie throws a few bombs in the hidden room found down->left of the cacti in Board 1
+Get the Bomberman Key (Board 1): Get the key that spawns after Susie throws a few bombs in the hidden room found down->left of the cacti in Board 1 (only available after having already beaten the chapter)
 
 $2000/$3000: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
 
-Get an Egg (Original Source): Get an Egg without doing the Bagel Overflow glitch
+Get an egg (Original Source): Get an egg without doing the Bagel Overflow glitch
 
 Spare/Pacify 10 Enemies: Note that you have to press the Spare or Pacify buttons on the enemies for them to count (in other words, most bosses do not count because their fights end automatically. The only exception is Jevil since you have to manually pacify him)
 
 Kill 5 Enemies: Defeat enemies with violence (that's attacking until they run away or freezing. Bosses don't count. CH1 enemies count except for Lancer and C. Round).
 
-Bed Inspector: Go right instead of left in the room with the Head Hathys in CH1 and interact with every bed to get the Bed Inspector title
+Get the Bed Inspector title (CH1): Go right instead of left in the room with the Head Hathys in CH1 and interact with every bed to get the Bed Inspector title
 
 Buy an item from Seam and Rouxls: It doesn't matter in what chapter you do so, as long as you get something from both of the shopkeepers
 
-Complete the Hacker Side Quest: Get all 3 checkmarks in the Cyber Field and talk to Hacker afterwards. They are in:
+Complete the Hacker's side quest: Get all 3 checkmarks in the Cyber Field and talk to Hacker afterwards. They are in:
     - The room with the Tasques between the falling bars in the long hallway before the AGREE2ALL puzzle. There is a chest in the bottom-right corner with a GlowWrist and a checkmark
     - The first and second teacups unlocked after completing the AGREE2ALL puzzle, before the Sweet Cap'n Cakes fight. For the first one, you have to complete the GIASFELFEBREHBER puzzle
 
-Buy the Royal Pin (CH2 Mansion Shop): Buy the Royal Pin from Swatch in the Mansion Entrance
-
-Collect 2 Bananas: Collect the bananas from Cyber City and Acid Tunnel (they do NOT have to be on the same save file, but you have to collect each of them, you can't collect two of the same one)
+Collect both bananas: Collect the bananas from Cyber City and the Acid Tunnel (they do NOT have to be on the same save file, but you have to collect each of them, you can't collect two of the same one)
 
 Get the Spin Cake (CH1): You get it by taking the broken cake piece from TopChef, having Malius fix it in the bake sale, and bringing the TopCake back to the chef
 
-Fuse an Item: Fuse any item in CH2+'s Castle Town
-
-Use Susie's healing spell: Use Susie's healing spell after it's unlocked in CH2, or at any time in CH3+
-
 Do 'Fix Us' in all possible chapters: Use the Fix Us option given by Malius in the Bake Sale in CH1 and in Castle Town in CH2 & CH4
 
-Talk to Starwalker (CH1): Talk to Starwalker for the first time in the Scarlet Forest by hitting the bell at the end of the room and going back
+Talk to Starwalker in the forest (CH1): Talk to Starwalker for the first time in the Scarlet Forest by hitting the bell at the end of the room and going back
 
 Get the Dice Brace: In the room with the first Bloxer in CH1 there is a puzzle on the upper wall. The solution is Black, Red, Switch, Black, Switch. The room above has a chest with the Dice Brace in it
 
 Kill 20 Enemies: Same idea as Kill 5 Enemies
 
-Complete 3 Challenges in Party Dojo: They have to be DIFFERENT challenges
-
-Complete Both Berdly Encounters: They do NOT have to be on the same save file, but you have to complete both encounters separately, you can't do two of the same one
+Complete both Berdly encounters: They do NOT have to be on the same save file, but you have to complete both encounters separately, you can't do two of the same one
 
 Get 3 ReviveMints: Get 3 of the mints available throughout the game. They are in:
     - CH1: Forest, in the room with the scissor dancers you go down-left and there's a chest
@@ -52,7 +44,7 @@ Get 3 ReviveMints: Get 3 of the mints available throughout the game. They are in
     - CH2: Cyber Field, in the room with the Virovirokun that shoots arrows, there's a chest at the bottom of the room. Have the enemy shoot it, then open the chest
     - CH2: Queen's Mansion, in the first room with the fire-shooting paintings, go all the way down and there's a painting with a star on it. Interact with it and it transforms the painting on the left into a chest which you can open
     - CH3: Green Room, from Ramb if you get B or A rank in Board 1
-    - CH3: Green Room, by gambling in the B rank room
+    - CH3: Green Room, by gambling in the B-rank room
     - CH3: TV World, by properly completing the puzzle which requires the LancerController (the one that gets you to the egg quest), solution is (dig on the green dots): https://i.imgur.com/p24TP65.png
     - CH4: Right of Gerson's Study, the chest in the pink and green piano puzzle room
     - CH4: Using the Embezzle act on Mizzle (this only counts once)
@@ -69,7 +61,7 @@ Fill up your inventory with 12 consumables: Have 12 CONSUMABLE items in your inv
 
 Open the Balloon Chest (City Heights): In the giant City Heights room, after getting Noelle to step on the switch, go down and ride the teacups. Go back up and the forcefield which blocks a chest in the top-left corner is gone. Interact with it to release the balloons
 
-Get Captured in Chapter 2: Get captured by Queen in City Heights and get taken to your room in her mansion
+Get captured in Chapter 2: Get captured by Queen in City Heights and get taken to your room in her mansion
 
 Get a Lancer Cookie (CH1): You can get it in the Forest Bake Sale from his stand
 
@@ -77,7 +69,7 @@ Build the FLB Duck (PINK): Build the thrash machine that has a duck head, body a
 
 Watch the Suselle Cutscene (Queen's Mansion): Hold left after the Rouxls fight when Ralsei wonders about what Susie is doing
 
-Get ReviveDust: This item is found in the Acid Tunnel after defeating the Werewire found near the top of the room
+Get the ReviveDust: This item is found in the Acid Tunnel after defeating the Werewire found near the top of the room
 
 Talk to the Green Swatchling: After defeating Rouxls, do any of the 3 poses with Ralsei and go back left after getting Susie in your party. Talk to the Green Swatchling
 
@@ -92,7 +84,7 @@ Hug Ralsei: You can do it in:
     - CH2: Select the Hug Ralsei pose after the Rouxls fight
     - CH4: Talk to him and select "It's okay not to smile" after the Titan fight
 
-Talk to Lancer In The Epilogue: You either have to do the True Pacifist Ending in CH1 or perform ARMS after defeating King to go back (if you have no idea what that means, don't worry about it)
+Talk to Lancer in the epilogue: You either have to do the True Pacifist Ending in CH1 or perform ARMS after defeating King to go back (if you have no idea what that means, don't worry about it)
 
 Build the cutest Thrash Machine: On the right side of the thrash machine creator there's a cuteness stat, the maximum of which is 3 stars (what you need for this goal). The cutest thrash machine consists of Flame Head, Plain Body and Sneak Shoes (any colors).
 
@@ -114,19 +106,17 @@ Donate D$1 (CH1/CH4):
     - CH1: Talk to the Jigsawry in front of Seam's shop, go to the donation hole and donate One Dark Dollar
     - CH4: Donate at least One Dark Dollar to the water fountain in Sanctuary 1 (left of the Bibliox room above Gerson's study)
 
-Get Both Chests On 2 Maus 1 Maus: After the room in Acid Tunnel with the house maze, there is a room where you can release the maice into 2 chests or 2 houses. Get both chests
+Get both chests on 2 Maus 1 Maus: After the room in Acid Tunnel with the house maze, there is a room where you can release the maice into 2 chests or 2 houses. Get both chests
     - For the first chest, turn the first house blue
     - For the second chest, leave all the houses red
 
-Get Ms. Pipis: When you hit a Pipis in the Snowgrave route, there is a 1/100 chance for each enemy to become Ms. Pipis. Get lucky
-
-Visit Rudy: Enter Rudy's room in the hospital
+Find Ms. Pipis: When you hit a Pipis in the Snowgrave route, there is a 1/100 chance for each enemy to become Ms. Pipis. Get lucky
 
 Get to the Tropic of Love: Get to the Tropic of Love with the raft (go right immediately) and interact with the tree on the heart-shaped island
 
 Get the Pipis item: Watch the bonus cutscene in CH3 found in the secret entrance in the bottom left of the second-to-last room of TV World (before the Rouxls battle) if you're starting from a fresh CH3 file OR don't have Spamton NEO defeated OR you're on Weird Route
 
-Play MEGALOVANIA on the Big Piano: The notes are CL CL L DR (C = hold C/Ctrl, L = Left, D = Down, R = Right)
+Play MEGALOVANIA on the organ: The notes are CL CL L DR (C = hold C/Ctrl, L = Left, D = Down, R = Right)
 
 Reach the Knight at the start of CH4: Go all the way up on the climb up to the fountain
 
@@ -135,17 +125,17 @@ Find the 3 Golden Sheets: They are all found in Sanctuary 1:
     - Go to the Lower Right room (where you initially meet Gerson) and climb up the middle wall, go in, interact with the golden ripple towards the right and the northern path will unlock. Press the blue button
     - Beat Miss Mizzle
 
-Have a Tea Party With Gerson: See above
+Have a tea party with Gerson: See above
 
 Enter Ralsei's Room: You need to have watched the tea party cutscene in Kris & Susie's room first
 
-Get PrincessRibbon: It's found in CH4 by completing the climbing challenge to the right of the Biblioxes room in Sanctuary 3
+Get the PrincessRibbon: It's found in CH4 by completing the climbing challenge to the right of the Biblioxes room in Sanctuary 3
 
 Get 2 Gold Items (CH3): This is referring to the rare items you can get by gambling in the B rank room (Blue Ribbon, ExecBuffet, ReviveMint, TennaTie, TensionMax)
 
-Get GoldWidow: Found by donating 9999+ D$ in the fountain in Sanctuary 1 and coming back to get it in Sanctuary 2
+Get the GoldWidow: Found by donating 9999+ D$ in the fountain in Sanctuary 1 and coming back to get it in Sanctuary 2
 
-Get BitterTear: Found by donating 2000-9998 D$ in the fountain or by embezzling Miss Mizzle
+Get the BitterTear: Found by donating 2000-9998 D$ in the fountain or by embezzling Miss Mizzle
 
 Defeat 2 Shadow Item Holders: The bosses who count for this are Jevil, Spamton NEO (both variants count as the same boss), ERAM, The Knight and Hammer of Justice
 
@@ -155,26 +145,26 @@ Defeat 3 Bosses: The bosses who count for this are all of the above + Queen + th
 
 Show Compassion to Ralsei: Say Yes to showing him compassion after Susie hops on him to grab the green book for Gerson
 
-Get 4 Photos (Board 2): The bonus photo is from buying Lancer from the bottom right (take a picture of the price to bring it down to 9 POINTs) and bringing him up to the tunnel (right entrance in the spawn area). Take a photo of the green bath
+Take 4 photos (Board 2): The bonus photo is from buying Lancer from the bottom right (take a picture of the price to bring it down to 9 POINTs) and bringing him up to the tunnel (right entrance in the spawn area). Take a photo of the green bath
 
-Get Quiz Key (Board 1): Get the two Qs from answering the quizzes, then bring them to the sphinx to unlock the key that's to the left
+Get the Quiz Key (Board 1): Get the two Qs from answering the quizzes, then bring them to the sphinx to unlock the key that's to the left
 
 B or better rank Susiezilla: Susiezilla is unlocked by going to the special A-rank room and paying the Pippins 500 POINTs
 
-Find the Among Us Reference: Inspect all the giftboxes in Noelle's house in the room with the vent
+Find the Among Us reference: Inspect all the giftboxes in Noelle's house in the room with the vent
 
 Get a Dog Dollar: They are found in:
     - CH2: The room where Spamton's dumpster and the moss is. In Main Route it first brings you to the room with the dog that runs you over
     - CH3: Gambling
     - CH4: In Sanctuary 3 go back to Gerson's study, go through the upstairs center door and open the chest
 
-Get Annoying Dog on Rouxls: Wait for Lancer to be unlocked in the CH3 Rouxls fight and wait on your turn for ~33 seconds
+Get the Annoying Dog on Rouxls: Wait for Lancer to be unlocked in the CH3 Rouxls fight and wait on your turn for ~33 seconds
 
 Lose Rabbick (CH3): Have Ribbick fully recruited, then encounter the double Ribbick in the room with the trashcans. One of them will be disguised as a Rabbick, just attack them both
 
 Go to the diner with Susie: Have a seat with Susie at the diner in CH4's Light World (you need to have stolen Asriel's money from his nightstand first)
 
-Lanino/Elnina Rematch: Beat the only available dojo challenge in CH4
+Beat the Lanino/Elnina rematch: Beat the only available dojo challenge in CH4
 
 Obtain 5 unique armors: Get this many UNIQUE armors. Note that the starting equipment does NOT count. You have to buy or find things
 
@@ -184,4 +174,6 @@ Tell Jackenstein he's cute in the study: After his fight you can find him in Ger
 
 Complete 10 attacks without grazing bullets: Do any 10 attacks without grazing any bullets (a.k.a without having the graze box show up around your soul). Green soul attacks and Jackenstein UNLEASH turns don't count for this goal at all
 
-Complete the Sweet Cap'n Cakes battle without skipping attacks: Complete the fight without having Kris dead and without dancing and damaging them in the same turn to skip attacks.
+Complete the Sweet Cap'n Cakes battle without skipping attacks: Complete the fight without having Kris dead and without dancing and damaging them in the same turn to skip attacks
+
+Crash the console on the 000000 puzzle (CH3): After finishing TV World, go to the puzzle area next to the Green Room WITHOUT HAVING GOTTEN THE SHADOW MANTLE, turn on the console WITHOUT HAVING UNLOCKED THE DOOR, get the camera and take 8 photos.

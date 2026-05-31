@@ -75,8 +75,6 @@ Talk to the Green Swatchling: After defeating Rouxls, do any of the 3 poses with
 
 Trigger Milk on the 2nd K. Round fight: Damage K. Round 2 enough so that it drinks milk
 
-Complete the Dummy Tutorial: You can do it in any way, you just have to initiate the fight and complete it
-
 Hug Ralsei: You can do it in:
     - CH1: Select the Hug Ralsei act in the Dummy tutorial fight
     - CH2: Select the Hug Ralsei pose after the Rouxls fight
@@ -160,7 +158,7 @@ Get the Annoying Dog on Rouxls: Wait for Lancer to be unlocked in the CH3 Rouxls
 
 Lose Rabbick (CH3): Have Ribbick fully recruited, then encounter the double Ribbick in the room with the trashcans. One of them will be disguised as a Rabbick, just attack them both
 
-Go to the diner with Susie: Have a seat with Susie at the diner in CH4's Light World (you need to have stolen Asriel's money from his nightstand first)
+Go to the diner with Susie (CH4): Have a seat with Susie at the diner in CH4's Light World (you need to have stolen Asriel's money from his nightstand first)
 
 Beat the Lanino/Elnina rematch: Beat the only available dojo challenge in CH4
 
@@ -176,4 +174,8 @@ Complete the Sweet Cap'n Cakes battle without skipping attacks: Complete the fig
 
 Crash the console on the 000000 puzzle (CH3): After finishing TV World, go to the puzzle area next to the Green Room WITHOUT HAVING GOTTEN THE SHADOW MANTLE, turn on the console WITHOUT HAVING UNLOCKED THE DOOR, get the camera and take 8 photos
 
-Complete the Susie bridge puzzle in TV World: In the room with the 20 Shadowguys, go up, left and there will be a console puzzle. Solve it and step on the switch.
+Complete the Susie bridge puzzle in TV World: In the room with the 20 Shadowguys, go up, left and there will be a console puzzle. Solve it and step on the switch
+
+Find the third piano's full solution (CH4): When you reach the long horizontal hallway below the third piano in Sanctuary 1, go left and right to find each half of the solution
+
+Beat the Club Apatheia encounter: In Sanctuary 2, when you reach Club Apatheia (the room with the GALLERY prophecy), interact with the sign in the middle to start the Wicabel/Organikk fight.

@@ -8,17 +8,13 @@ switch (global.encounterno)
         break;
 
     case 83:
-        if (global.flag[644] == 1)
-            scr_add_goal_progress(50, 1);
-        else
+        if (global.flag[644] != 1)
             scr_add_goal_progress(61, 1);
         break;
 
     case 81:
         if (global.flag[640] == 1)
             scr_add_goal_progress(52, 1);
-        else
-            scr_add_goal_progress(53, 1);
         break;
 
     case 56:

@@ -75,8 +75,6 @@ Talk to the Green Swatchling: After defeating Rouxls, do any of the 3 poses with
 
 Trigger Milk on the 2nd K. Round fight: Damage K. Round 2 enough so that it drinks milk
 
-Watch the Legend (Castle Town): Start watching The Legend in CH1's Castle Town when Ralsei tells you about it
-
 Complete the Dummy Tutorial: You can do it in any way, you just have to initiate the fight and complete it
 
 Hug Ralsei: You can do it in:
@@ -131,7 +129,7 @@ Enter Ralsei's Room: You need to have watched the tea party cutscene in Kris & S
 
 Get the PrincessRibbon: It's found in CH4 by completing the climbing challenge to the right of the Biblioxes room in Sanctuary 3
 
-Get 2 Gold Items (CH3): This is referring to the rare items you can get by gambling in the B rank room (Blue Ribbon, ExecBuffet, ReviveMint, TennaTie, TensionMax)
+Get 2 gold items (CH3): This is referring to the rare items you can get by gambling in the B rank room (Blue Ribbon, ExecBuffet, ReviveMint, TennaTie, TensionMax)
 
 Get the GoldWidow: Found by donating 9999+ D$ in the fountain in Sanctuary 1 and coming back to get it in Sanctuary 2
 
@@ -176,4 +174,6 @@ Complete 10 attacks without grazing bullets: Do any 10 attacks without grazing a
 
 Complete the Sweet Cap'n Cakes battle without skipping attacks: Complete the fight without having Kris dead and without dancing and damaging them in the same turn to skip attacks
 
-Crash the console on the 000000 puzzle (CH3): After finishing TV World, go to the puzzle area next to the Green Room WITHOUT HAVING GOTTEN THE SHADOW MANTLE, turn on the console WITHOUT HAVING UNLOCKED THE DOOR, get the camera and take 8 photos.
+Crash the console on the 000000 puzzle (CH3): After finishing TV World, go to the puzzle area next to the Green Room WITHOUT HAVING GOTTEN THE SHADOW MANTLE, turn on the console WITHOUT HAVING UNLOCKED THE DOOR, get the camera and take 8 photos
+
+Complete the Susie bridge puzzle in TV World: In the room with the 20 Shadowguys, go up, left and there will be a console puzzle. Solve it and step on the switch.

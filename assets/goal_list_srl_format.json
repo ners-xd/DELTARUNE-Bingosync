@@ -8,7 +8,7 @@
     {"name": "Watch all of Tenna's Feature Presentation", "type": ["eb1ch3"]}
   ],
   [
-    {"name": "Watch the Legend (Castle Town)", "type": ["ech1"]},
+    {"name": "Watch The Legend (Castle Town)", "type": ["ech1"]},
     {"name": "Get the Bomberman Key (Board 1)", "type": ["eb1ch3"]},
     {"name": "Fuse an item (CH2+)", "type": ["misc2"]},
     {"name": "Get a Lancer Cookie (CH1)", "type": ["misc2"]},
@@ -73,7 +73,7 @@
   ],
   [
     {"name": "Have $3000 on one save file", "type": ["misc3"]},
-    {"name": "Get 2 Gold Items (CH3)", "type": ["epb1ch3"]},
+    {"name": "Get 2 gold items (CH3)", "type": ["epb1ch3"]},
     {"name": "Spend 1225 points at once in the B-Rank room", "type": ["epb1ch3"]},
     {"name": "Talk to Starwalker in the forest (CH1)", "type": ["mch1"]}
   ],
@@ -147,6 +147,7 @@
     {"name": "Finish Doom Board", "type": ["mb3ch3"]}
   ],
   [
+    {"name": "Complete the Susie bridge puzzle in TV World", "type": ["mch3"]},
     {"name": "Beat Gerson", "type": ["mch4"]},
     {"name": "Complete Jevil", "type": ["lch1"]},
     {"name": "Beat Spamton NEO (Snowgrave)", "type": ["exch2"]},

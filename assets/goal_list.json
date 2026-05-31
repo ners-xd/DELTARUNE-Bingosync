@@ -65,7 +65,7 @@
   {"name": "Trigger Milk on the 2nd K. Round fight", "mod_slot": 59, "mod_progress_threshold": 1},
   {"name": "Spare Clover without using the Manual (CH1)", "mod_slot": 60, "mod_progress_threshold": 1},
   {"name": "Lose Mauswheel", "mod_slot": 61, "mod_progress_threshold": 1},
-  {"name": "Watch the Legend (Castle Town)", "mod_slot": 62, "mod_progress_threshold": 1},
+  {"name": "Watch The Legend (Castle Town)", "mod_slot": 62, "mod_progress_threshold": 1},
   {"name": "Complete the Dummy Tutorial", "mod_slot": 63, "mod_progress_threshold": 1},
   {"name": "Hug Ralsei", "mod_slot": 64, "mod_progress_threshold": 1},
   {"name": "Talk to Lancer in the epilogue", "mod_slot": 65, "mod_progress_threshold": 1},
@@ -106,7 +106,7 @@
   {"name": "Have a tea party with Gerson", "mod_slot": 103, "mod_progress_threshold": 1},
   {"name": "Enter Ralsei's Room", "mod_slot": 104, "mod_progress_threshold": 1},
   {"name": "Get the PrincessRibbon", "mod_slot": 105, "mod_progress_threshold": 1},
-  {"name": "Get 2 Gold Items (CH3)", "mod_slot": 106, "mod_progress_threshold": 2, "mod_global_var_name": "gold_items_found"},
+  {"name": "Get 2 gold items (CH3)", "mod_slot": 106, "mod_progress_threshold": 2, "mod_global_var_name": "gold_items_found"},
   {"name": "Spend 1225 points at once in the B-Rank room", "mod_slot": 107, "mod_progress_threshold": 1},
   {"name": "Get the GoldWidow", "mod_slot": 108, "mod_progress_threshold": 1},
   {"name": "Get the BitterTear", "mod_slot": 109, "mod_progress_threshold": 1},
@@ -140,5 +140,6 @@
   {"name": "Complete any Lightners Live song", "mod_slot": 137, "mod_progress_threshold": 1},
   {"name": "Watch all of Tenna's Feature Presentation", "mod_slot": 138, "mod_progress_threshold": 1},
   {"name": "Get the TripTicket", "mod_slot": 139, "mod_progress_threshold": 1},
-  {"name": "Crash the console on the 000000 puzzle (CH3)", "mod_slot": 140, "mod_progress_threshold": 1}
+  {"name": "Crash the console on the 000000 puzzle (CH3)", "mod_slot": 140, "mod_progress_threshold": 1},
+  {"name": "Complete the Susie bridge puzzle in TV World", "mod_slot": 141, "mod_progress_threshold": 1}
 ]

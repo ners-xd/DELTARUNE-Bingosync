@@ -623,15 +623,15 @@ function scr_save_bingo_data()
     for (var i = 0; i < array_length(global.goal_progress); i++)
         ds_list_add(list, global.goal_progress[i]);
     data.progress.general = ds_list_write(list);
-    ds_list_clear(list);
 
     for (var i = 0; i < array_length(global.goal_custom_vars); i++)
     {
+        ds_list_clear(list);
+
         for (var j = 0; j < global.goal_custom_vars[i].size; j++)
             ds_list_add(list, array_get(variable_global_get(global.goal_custom_vars[i].name), j));
 
         variable_struct_set(data.progress, global.goal_custom_vars[i].name, ds_list_write(list));
-        ds_list_clear(list);
     }
 
     ds_list_destroy(list);

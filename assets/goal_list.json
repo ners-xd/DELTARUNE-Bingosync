@@ -136,8 +136,8 @@
   {"name": "Complete 10 attacks without grazing bullets", "mod_slot": 133, "mod_progress_threshold": 10},
   {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks", "mod_slot": 134, "mod_progress_threshold": 1},
   {"name": "Defeat 3 Bosses", "mod_slot": 135, "mod_progress_threshold": 3, "mod_global_var_name": "bosses_fought"},
-  {"name": "Crash the console on the 000000 puzzle (CH3)", "mod_slot": 140, "mod_progress_threshold": 1},
-  {"name": "Complete the Susie bridge puzzle in TV World", "mod_slot": 141, "mod_progress_threshold": 1},
-  {"name": "Find the third piano's full solution (CH4)", "mod_slot": 142, "mod_progress_threshold": 2, "mod_global_var_name": "piano3_sheets"},
-  {"name": "Beat the Club Apatheia encounter", "mod_slot": 143, "mod_progress_threshold": 1}
+  {"name": "Crash the console on the 000000 puzzle (CH3)", "mod_slot": 136, "mod_progress_threshold": 1},
+  {"name": "Complete the Susie bridge puzzle in TV World", "mod_slot": 137, "mod_progress_threshold": 1},
+  {"name": "Find the third piano's full solution (CH4)", "mod_slot": 138, "mod_progress_threshold": 2, "mod_global_var_name": "piano3_sheets"},
+  {"name": "Beat the Club Apatheia encounter", "mod_slot": 139, "mod_progress_threshold": 1}
 ]

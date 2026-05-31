@@ -13,7 +13,7 @@ switch (global.encounterno)
         break;
 
     case 157:
-        scr_add_goal_progress(143, 1);
+        scr_add_goal_progress(139, 1);
         break;
 }
 /// END

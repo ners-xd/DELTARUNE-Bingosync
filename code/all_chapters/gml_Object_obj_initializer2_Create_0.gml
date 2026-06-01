@@ -2,9 +2,9 @@
 
 /// PREPEND
 #if CHAPTER_3
-var vars_to_remove = ["elninalosscount", "board4ilovetvcount", "shadow_mantle_losses", "firstknightbattle", "knight_battle_losses"];
+var vars_to_remove = ["elninalosscount", "shadow_mantle_losses", "firstknightbattle", "knight_battle_losses"];
 
-for(var i = 0; i < array_length(vars_to_remove); i++)
+for (var i = 0; i < array_length(vars_to_remove); i++)
 {
     if (variable_global_exists(vars_to_remove[i]))
         variable_struct_remove(global, vars_to_remove[i]);

@@ -1,6 +1,16 @@
 /// PATCH
 
 /// PREPEND
+#if CHAPTER_3
+var vars_to_remove = ["elninalosscount", "board4ilovetvcount", "shadow_mantle_losses", "firstknightbattle", "knight_battle_losses"];
+
+for(var i = 0; i < array_length(vars_to_remove); i++)
+{
+    if (variable_global_exists(vars_to_remove[i]))
+        variable_struct_remove(global, vars_to_remove[i]);
+}
+#endif
+
 global.show_chat = true;
 global.chat_line = array_create(5, "");
 global.chat_color = array_create(array_length(global.chat_line), c_white);

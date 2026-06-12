@@ -178,4 +178,6 @@ Complete the Susie bridge puzzle in TV World: In the room with the 20 Shadowguys
 
 Find the third piano's full solution (CH4): When you reach the long horizontal hallway below the third piano in Sanctuary 1, go left and right to find each half of the solution
 
-Beat the Club Apatheia encounter: In Sanctuary 2, when you reach Club Apatheia (the room with the GALLERY prophecy), interact with the sign in the middle to start the Wicabel/Organikk fight.
+Beat the Club Apatheia encounter: In Sanctuary 2, when you reach Club Apatheia (the room with the GALLERY prophecy), interact with the sign in the middle to start the Wicabel/Organikk fight
+
+Interact with the Dark Sanctuary climbing trophy: In the room to the right of the TensionGem chest (before the big organ), there are 2 timed climbs. If you get below ~6.1 and ~10.1 seconds respectively (both climbs on the same save file), a trophy spawns at the bottom of the room. Interact with it.

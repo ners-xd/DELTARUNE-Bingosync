@@ -139,5 +139,6 @@
   {"name": "Crash the console on the 000000 puzzle (CH3)", "mod_slot": 136, "mod_progress_threshold": 1},
   {"name": "Complete the Susie bridge puzzle in TV World", "mod_slot": 137, "mod_progress_threshold": 1},
   {"name": "Find the third piano's full solution (CH4)", "mod_slot": 138, "mod_progress_threshold": 2, "mod_global_var_name": "piano3_sheets"},
-  {"name": "Beat the Club Apatheia encounter", "mod_slot": 139, "mod_progress_threshold": 1}
+  {"name": "Beat the Club Apatheia encounter", "mod_slot": 139, "mod_progress_threshold": 1},
+  {"name": "Interact with the Dark Sanctuary climbing trophy", "mod_slot": 140, "mod_progress_threshold": 1}
 ]

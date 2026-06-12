@@ -106,7 +106,8 @@
     {"name": "Recruit Werewerewire", "type": ["mmch2"]},
     {"name": "Lose 3 recruited enemies", "type": ["kill"]},
     {"name": "Obtain 5 unique weapons", "type": ["kill"]},
-    {"name": "Get 2 unique eggs", "type": ["lmultich"]}
+    {"name": "Get 2 unique eggs", "type": ["lmultich"]},
+    {"name": "Interact with the Dark Sanctuary climbing trophy", "type": ["es1ch4"]}
   ],
   [
     {"name": "Get the Bed Inspector title (CH1)", "type": ["mch1"]},

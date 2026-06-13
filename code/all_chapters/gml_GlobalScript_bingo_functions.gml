@@ -162,22 +162,6 @@ function draw_text_outline_ext(text_x, text_y, text, text_sep, text_w, outline_c
     draw_text_ext(text_x, text_y, text, text_sep, text_w);
 }
 
-function draw_text_outline_ext_transformed(text_x, text_y, text, text_sep, text_w, text_xscale, text_yscale, text_angle, outline_color = c_black)
-{
-    var reset_color = draw_get_color();
-    draw_set_color(outline_color);
-    draw_text_ext_transformed(text_x - 1, text_y, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-    draw_text_ext_transformed(text_x - 1, text_y - 1, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-    draw_text_ext_transformed(text_x - 1, text_y + 1, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-    draw_text_ext_transformed(text_x + 1, text_y, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-    draw_text_ext_transformed(text_x + 1, text_y + 1, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-    draw_text_ext_transformed(text_x + 1, text_y - 1, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-    draw_text_ext_transformed(text_x, text_y + 1, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-    draw_text_ext_transformed(text_x, text_y - 1, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-    draw_set_color(reset_color);
-    draw_text_ext_transformed(text_x, text_y, text, text_sep, text_w, text_xscale, text_yscale, text_angle);
-}
-
 function scr_input_name(input)
 {
     switch (input)

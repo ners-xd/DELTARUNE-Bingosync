@@ -58,6 +58,9 @@ init = function()
             if (event_value == 1001)
                 scr_import_vanilla_files();
 
+            if (variable_global_exists("first_launch"))
+                variable_struct_remove(global, "first_launch");
+
             var file = file_text_open_write("bingosync_mod_first_launch");
             file_text_write_string(file, "The existence of this file makes the Chapter Select save import prompt not appear.");
             file_text_close(file);

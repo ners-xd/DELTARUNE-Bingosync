@@ -99,6 +99,7 @@
     {"name": "Eat Moss", "type": ["misc1"]},
     {"name": "Kill 20 Enemies", "type": ["kill"]},
     {"name": "Tell Jackenstein he's cute in the study", "type": ["es1ch4"]},
+    {"name": "Get to the Tropic of Love", "type": ["mb2ch3"]},
     {"name": "Watch the Suselle Cutscene (Queen's Mansion)", "type": ["mmch2"]}
   ],
   [
@@ -106,6 +107,7 @@
     {"name": "Recruit Werewerewire", "type": ["mmch2"]},
     {"name": "Lose 3 recruited enemies", "type": ["kill"]},
     {"name": "Obtain 5 unique weapons", "type": ["kill"]},
+    {"name": "Lose Shuttah", "type": ["mb2ch3"]},
     {"name": "Get 2 unique eggs", "type": ["lmultich"]},
     {"name": "Interact with the Dark Sanctuary climbing trophy", "type": ["es1ch4"]}
   ],
@@ -115,28 +117,26 @@
     {"name": "Buy an item from Seam and Rouxls", "type": ["lch1"]},
     {"name": "Obtain 5 unique armors", "type": ["misc1"]},
     {"name": "Trigger Milk on the 2nd K. Round fight", "type": ["lch1"]},
-    {"name": "Reach the Ice Door without the Ice Key (CH3)", "type": ["epb1ch3"]},
     {"name": "Use Dual Heal", "type": ["boss"]}
   ],
   [
     {"name": "Defeat Giga Queen", "type": ["mmch2"]},
     {"name": "Complete the normal Spamton encounter", "type": ["mcch2"]},
+    {"name": "Take 4 photos (Board 2)", "type": ["mb2ch3"]},
     {"name": "Fully recruit an enemy in each chapter", "type": ["spare"]},
-    {"name": "Get to the Tropic of Love", "type": ["mb2ch3"]},
     {"name": "Recruit Miss Mizzle", "type": ["es1ch4"]}
   ],
   [
     {"name": "Get the BitterTear", "type": ["mch4"]},
     {"name": "Hit a baby car", "type": ["mcch2"]},
-    {"name": "Lose Shuttah", "type": ["mb2ch3"]},
     {"name": "Play MEGALOVANIA on the organ", "type": ["mch4"]},
+    {"name": "Reach the Ice Door without the Ice Key (CH3)", "type": ["epb1ch3"]},
     {"name": "Get captured in Chapter 2", "type": ["lch2"]},
     {"name": "Defeat 3 Bosses", "type": ["boss"]}
   ],
   [
     {"name": "Do 'Fix Us' in all possible chapters", "type": ["lmultich"]},
     {"name": "Complete Jevil", "type": ["lch1"]},
-    {"name": "Take 4 photos (Board 2)", "type": ["mb2ch3"]},
     {"name": "Get a Shadow Crystal", "type": ["boss"]},
     {"name": "Find Ms. Pipis", "type": ["exch2"]},
     {"name": "Hit 3 Pipis", "type": ["exch2"]},

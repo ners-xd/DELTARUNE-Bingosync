@@ -453,7 +453,6 @@ function scr_load_bingo_data()
     global.show_goal_marks = true;
     global.show_new_cards = true;
     global.hit_counter = false;
-    global.autoconnect = false;
     global.show_other_colors = true;
     global.fog_of_war = false;
 
@@ -492,7 +491,6 @@ function scr_load_bingo_data()
             if (variable_struct_exists(json.preferences, "hit_counter")) global.hit_counter = json.preferences.hit_counter;
             if (variable_struct_exists(json.preferences, "show_chat")) global.show_chat = json.preferences.show_chat;
             if (variable_struct_exists(json.preferences, "show_board")) global.show_board = json.preferences.show_board;
-            if (variable_struct_exists(json.preferences, "autoconnect")) global.autoconnect = json.preferences.autoconnect;
             if (variable_struct_exists(json.preferences, "show_other_colors")) global.show_other_colors = json.preferences.show_other_colors;
             if (variable_struct_exists(json.preferences, "fog_of_war")) global.fog_of_war = json.preferences.fog_of_war;
         }

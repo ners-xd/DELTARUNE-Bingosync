@@ -47,6 +47,11 @@ class BingoLoader : UMPLoader
     {
         MaxChapter = 4
     }
+
+    public string GetBingoFile()
+    {
+        return "\"bingo_data.json\"";
+    }
 }
 
 void BuildMod(int chapter)

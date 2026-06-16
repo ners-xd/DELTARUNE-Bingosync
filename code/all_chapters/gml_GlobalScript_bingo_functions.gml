@@ -457,9 +457,9 @@ function scr_load_bingo_data()
     global.show_other_colors = true;
     global.fog_of_war = false;
 
-    if (file_exists("bingo_data.json"))
+    if (file_exists(#GetBingoFile()))
     {
-        var file = file_text_open_read("bingo_data.json");
+        var file = file_text_open_read(#GetBingoFile());
         var json = json_parse(file_text_read_string(file));
         file_text_close(file);
 
@@ -565,7 +565,7 @@ function scr_load_bingo_data()
 function scr_save_bingo_data()
 {
     var list = ds_list_create();
-    var file = file_text_open_write("bingo_data.json");
+    var file = file_text_open_write(#GetBingoFile());
     var data = {};
     data.last_saved_room = {};
     data.preferences = {};

@@ -90,8 +90,31 @@ if (global.show_board && board_connected)
                 if (global.starred_goals[idx])
                     draw_sprite(spr_goal_star, 0, x1, y1);
 
+                var shown_str = global.goal_name[idx];
+                var goal_name_lower = string_lower(global.goal_name[idx]);
+                var slot = ds_map_find_value(global.goal_indexes, goal_name_lower);
+                var var_slot = ds_map_find_value(global.goal_vars_indexes, goal_name_lower);
+
+                if (!is_undefined(var_slot) && global.goal_custom_vars[var_slot].size > 1)
+                {
+                    var arr_len = array_length(variable_global_get(global.goal_custom_vars[var_slot].name));
+                    var filled_amount = 0;
+
+                    for (c = 0; c < arr_len; c++)
+                    {
+                        if (array_get(variable_global_get(global.goal_custom_vars[var_slot].name), c) != "")
+                            filled_amount++;
+                    }
+
+                    shown_str += (" [" + string(min(filled_amount, global.goal_custom_vars[var_slot].size)) + "/" + string(global.goal_custom_vars[var_slot].size) + "]");
+                }
+                else if (!is_undefined(slot) && global.goal_list[slot].max_progress > 1)
+                {
+                    shown_str += (" [" + string(min(global.goal_progress[slot], global.goal_list[slot].max_progress)) + "/" + string(global.goal_list[slot].max_progress) + "]");
+                }
+
                 draw_set_color(c_white);
-                draw_text_ext_transformed((x1 + x2) / 2, (y1 + y2) / 2, scr_is_goal_visible(idx) ? global.goal_name[idx] : "???", 15, (x2 - x1) + 50, 0.5, 0.5, 0);
+                draw_text_outline_ext_transformed((x1 + x2) / 2, (y1 + y2) / 2, scr_is_goal_visible(idx) ? shown_str : "???", 15, (x2 - x1) + 50, 0.5, 0.5, 0);
                 idx++;
             }
         }

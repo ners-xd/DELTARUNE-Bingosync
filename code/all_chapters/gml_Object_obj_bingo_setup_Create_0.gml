@@ -149,6 +149,7 @@ function draw_main_buttons()
                     "It's been " + string(floor(date_day_span(date_create_datetime(2018, 10, 31, 0, 0, 0), date_current_datetime()))) + " days since Chapter 1!",
                     "It's been " + string(floor(date_day_span(date_create_datetime(2021, 9, 17, 0, 0, 0), date_current_datetime()))) + " days since Chapter 2!",
                     "It's been " + string(floor(date_day_span(date_create_datetime(2025, 6, 4, 0, 0, 0), date_current_datetime()))) + " days since Chapters 3+4!",
+                    "It's been " + string(floor(date_day_span(date_create_datetime(2026, 6, 24, 0, 0, 0), date_current_datetime()))) + " days since Chapter 5!",
                     "I am a fast little boy!",
                     global.is_console ? "Controller is based." : "Keyboard is based.",
                     global.is_console ? "Keyboard is not based." : "Controller is not based.",

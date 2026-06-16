@@ -162,6 +162,26 @@ function draw_text_outline_ext(text_x, text_y, text, text_sep, text_w, outline_c
     draw_text_ext(text_x, text_y, text, text_sep, text_w);
 }
 
+function draw_text_outline_ext_transformed(text_x, text_y, text, text_sep, text_w, xscale, yscale, text_angle, outline_color = c_black)
+{
+    var reset_color = draw_get_color();
+    draw_set_color(outline_color);
+    var cos_r = dcos(text_angle);
+    var sin_r = dsin(text_angle);
+    var dirs = [
+        [-xscale, 0],       [xscale, 0],
+        [0, -yscale],       [0, yscale],
+        [-xscale, -yscale], [xscale, -yscale],
+        [-xscale, yscale],  [xscale, yscale]
+    ];
+
+    for (var i = 0; i < array_length(dirs); i++)
+        draw_text_ext_transformed(text_x + ((dirs[i][0] * cos_r) - (dirs[i][1] * sin_r)), text_y + ((dirs[i][0] * sin_r) + (dirs[i][1] * cos_r)), text, text_sep, text_w, xscale, yscale, text_angle);
+
+    draw_set_color(reset_color);
+    draw_text_ext_transformed(text_x, text_y, text, text_sep, text_w, xscale, yscale, text_angle);
+}
+
 function scr_input_name(input)
 {
     switch (input)

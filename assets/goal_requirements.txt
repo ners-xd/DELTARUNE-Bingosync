@@ -8,13 +8,13 @@ Wrong Warp into 15 unique rooms: Works in all chapters. Wrong warping into shops
 
 Get the Bomberman Key (Board 1): Get the key that spawns after Susie throws a few bombs in the hidden room found down->left of the cacti in Board 1 (only available after having already beaten the chapter)
 
-$2000/$3000: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
+Have money on one save file: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
 
 Get an egg (Original Source): Get an egg without doing the Bagel Overflow glitch
 
-Spare/Pacify 10 Enemies: Note that you have to press the Spare or Pacify buttons on the enemies for them to count (in other words, most bosses do not count because their fights end automatically. The only exception is Jevil since you have to manually pacify him)
+Spare/Pacify enemies: Note that you have to press the Spare or Pacify buttons on the enemies for them to count (in other words, most bosses do not count because their fights end automatically. The only exception is Jevil since you have to manually pacify him)
 
-Kill 5 Enemies: Defeat enemies with violence (that's attacking until they run away or freezing. Bosses don't count. CH1 enemies count except for Lancer and C. Round).
+Kill enemies: Defeat enemies with violence (that's attacking until they run away or freezing. Bosses don't count. CH1 enemies count except for Lancer and C. Round).
 
 Get the Bed Inspector title (CH1): Go right instead of left in the room with the Head Hathys in CH1 and interact with every bed to get the Bed Inspector title
 
@@ -33,8 +33,6 @@ Do 'Fix Us' in all possible chapters: Use the Fix Us option given by Malius in t
 Talk to Starwalker in the forest (CH1): Talk to Starwalker for the first time in the Scarlet Forest by hitting the bell at the end of the room and going back
 
 Get the Dice Brace: In the room with the first Bloxer in CH1 there is a puzzle on the upper wall. The solution is Black, Red, Switch, Black, Switch. The room above has a chest with the Dice Brace in it
-
-Kill 20 Enemies: Same idea as Kill 5 Enemies
 
 Complete both Berdly encounters: They do NOT have to be on the same save file, but you have to complete both encounters separately, you can't do two of the same one
 
@@ -139,7 +137,7 @@ Defeat 2 Final Bosses: The bosses who count for this are King, Giga Queen, Snowg
 
 Defeat 3 Bosses: The bosses who count for this are all of the above + Queen + the Mike trio
 
-Show Compassion to Ralsei: Say Yes to showing him compassion after Susie hops on him to grab the green book for Gerson
+Show compassion to Ralsei: Say Yes to showing him compassion after Susie hops on him to grab the green book for Gerson
 
 Take 4 photos (Board 2): The bonus photo is from buying Lancer from the bottom right (take a picture of the price to bring it down to 9 POINTs) and bringing him up to the tunnel (right entrance in the spawn area). Take a photo of the green bath
 

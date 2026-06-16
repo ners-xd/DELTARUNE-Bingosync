@@ -6,4 +6,6 @@ if (global.ws_client != -1)
 if (global.is_console)
     ds_map_destroy(global.cookie_sessionid);
 
+ds_map_destroy(global.goal_indexes);
+ds_map_destroy(global.goal_vars_indexes);
 instance_destroy();

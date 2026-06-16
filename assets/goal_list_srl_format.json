@@ -27,17 +27,17 @@
   ],
   [
     {"name": "Enter Ralsei's Room", "type": ["eps1ch4"]},
-    {"name": "Kill 5 Enemies", "type": ["kill"]},
+    {"name": "Kill 5 enemies", "type": ["kill"]},
     {"name": "Beat the Lanino/Elnina rematch", "type": ["eps1ch4"]},
     {"name": "Complete any Lightners Live song", "type": ["eps1ch4"]},
-    {"name": "Show Compassion to Ralsei", "type": ["es1ch4"]},
+    {"name": "Show compassion to Ralsei", "type": ["es1ch4"]},
     {"name": "Watch all of Tenna's Feature Presentation", "type": ["eb1ch3"]},
-    {"name": "Spare/Pacify 10 Enemies", "type": ["spare"]}
+    {"name": "Spare/Pacify 10 enemies", "type": ["spare"]}
   ],
   [
     {"name": "Fill up your inventory with 12 consumables", "type": ["misc1"]},
     {"name": "Find the Among Us reference", "type": ["eps1ch4"]},
-    {"name": "Pacify 10 Enemies", "type": ["spare"]},
+    {"name": "Pacify 10 enemies", "type": ["spare"]},
     {"name": "Spare/Pacify Ponman", "type": ["ech1"]}
   ],
   [
@@ -49,7 +49,7 @@
   [
     {"name": "Buy the Royal Pin from Swatch", "type": ["emch2"]},
     {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks", "type": ["ech2"]},
-    {"name": "Kill 10 Enemies", "type": ["kill"]},
+    {"name": "Kill 10 enemies", "type": ["kill"]},
     {"name": "Lose Tasque Manager", "type": ["emch2"]},
     {"name": "Pot Balance", "type": ["emch2"]}
   ],
@@ -57,7 +57,7 @@
     {"name": "Get the Dice Brace", "type": ["ech1"]},
     {"name": "Lose Mauswheel", "type": ["emch2"]},
     {"name": "Spare Clover without using the Manual (CH1)", "type": ["ech1"]},
-    {"name": "Spare/Pacify 15 Enemies", "type": ["spare"]},
+    {"name": "Spare/Pacify 15 enemies", "type": ["spare"]},
     {"name": "Z-Rank Board 1 or 2", "type": ["eb1ch3"]}
   ],
   [
@@ -66,7 +66,7 @@
     {"name": "Get a Lancer Cookie (CH1)", "type": ["mch1"]},
     {"name": "Use 5 unique items in battle", "type": ["misc1"]},
     {"name": "Get the ThornRing", "type": ["exch2"]},
-    {"name": "Spare/Pacify 25 Enemies", "type": ["spare"]}
+    {"name": "Spare/Pacify 25 enemies", "type": ["spare"]}
   ],
   [
     {"name": "Have $3000 on one save file", "type": ["misc3"]},
@@ -97,7 +97,7 @@
   [
     {"name": "Beat the Rouxls fight (CH2/CH3)", "type": ["boss"]},
     {"name": "Eat Moss", "type": ["misc1"]},
-    {"name": "Kill 20 Enemies", "type": ["kill"]},
+    {"name": "Kill 20 enemies", "type": ["kill"]},
     {"name": "Tell Jackenstein he's cute in the study", "type": ["es1ch4"]},
     {"name": "Get to the Tropic of Love", "type": ["mb2ch3"]},
     {"name": "Watch the Suselle Cutscene (Queen's Mansion)", "type": ["mmch2"]}

@@ -76,7 +76,7 @@
   {"name": "Fully recruit 3 different enemy types", "mod_slot": 71, "mod_progress_threshold": 3, "mod_global_var_name": "enemies_recruited"},
   {"name": "Use 5 unique items in battle", "mod_slot": 72, "mod_progress_threshold": 5, "mod_global_var_name": "items_in_battle"},
   {"name": "Hit a baby car", "mod_slot": 73, "mod_progress_threshold": 1},
-  {"name": "Full Berdly Spare", "mod_slot": 74, "mod_progress_threshold": 1},
+  {"name": "Defeat Queen without frying Berdly's arm", "mod_slot": 74, "mod_progress_threshold": 1},
   {"name": "Equip White Ribbon (CH1/CH3)", "mod_slot": 75, "mod_progress_threshold": 1},
   {"name": "Pot Balance", "mod_slot": 76, "mod_progress_threshold": 1},
   {"name": "Donate D$1 (CH1/CH4)", "mod_slot": 77, "mod_progress_threshold": 1},

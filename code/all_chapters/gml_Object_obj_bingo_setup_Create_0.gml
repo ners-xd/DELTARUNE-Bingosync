@@ -128,6 +128,8 @@ function draw_main_buttons()
                 draw_close_x = width / 2;
                 draw_close_y = height - 10;
                 status_text = "";
+                var timezone = date_get_timezone();
+                date_set_timezone(timezone_utc);
                 random_text = choose(
                     "Hello everyone.",
                     "No one plays Chapter 4!",
@@ -146,16 +148,17 @@ function draw_main_buttons()
                     "YOUR TAKING TOO TOO",
                     "your taking too long IS TAKING TOO LONG",
                     "YOUR LONG",
-                    "It's been " + string(floor(date_day_span(date_create_datetime(2018, 10, 31, 0, 0, 0), date_current_datetime()))) + " days since Chapter 1!",
-                    "It's been " + string(floor(date_day_span(date_create_datetime(2021, 9, 17, 0, 0, 0), date_current_datetime()))) + " days since Chapter 2!",
-                    "It's been " + string(floor(date_day_span(date_create_datetime(2025, 6, 4, 0, 0, 0), date_current_datetime()))) + " days since Chapters 3+4!",
-                    "It's been " + string(floor(date_day_span(date_create_datetime(2026, 6, 24, 0, 0, 0), date_current_datetime()))) + " days since Chapter 5!",
+                    "It's been " + string(floor(date_day_span(date_create_datetime(2018, 10, 31, 13, 0, 0), date_current_datetime()))) + " days since Chapter 1!",
+                    "It's been " + string(floor(date_day_span(date_create_datetime(2021, 9, 18, 0, 0, 0), date_current_datetime()))) + " days since Chapter 2!",
+                    "It's been " + string(floor(date_day_span(date_create_datetime(2025, 6, 4, 15, 0, 0), date_current_datetime()))) + " days since Chapters 3+4!",
+                    "It's been " + string(floor(date_day_span(date_create_datetime(2026, 6, 24, 15, 0, 0), date_current_datetime()))) + " days since Chapter 5!",
                     "I am a fast little boy!",
                     global.is_console ? "Controller is based." : "Keyboard is based.",
                     global.is_console ? "Keyboard is not based." : "Controller is not based.",
                     "There's a friend inside me.",
                     "There's a friend inside you."
                 );
+                date_set_timezone(timezone);
 
                 bg_draw = function()
                 {

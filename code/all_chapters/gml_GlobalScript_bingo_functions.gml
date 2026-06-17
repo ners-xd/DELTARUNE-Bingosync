@@ -1,10 +1,5 @@
 /// IMPORT
 
-function scr_get_branch_name()
-{
-    return "ch1-5";
-}
-
 function array_contains_temp(array, value)
 {
     var len = array_length(array);

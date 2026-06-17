@@ -1,10 +1,5 @@
 /// IMPORT
 
-function scr_get_mod_version()
-{
-    return "3.00";
-}
-
 function vanilla_directory_exists()
 {
     if (global.is_console)

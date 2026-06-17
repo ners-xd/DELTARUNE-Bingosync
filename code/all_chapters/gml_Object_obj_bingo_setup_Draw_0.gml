@@ -61,8 +61,8 @@ draw_set_halign(fa_right);
 draw_set_valign(fa_top);
 draw_set_color(c_yellow);
 #if CHAPTER_1 || CHAPTER_2
-draw_text_outline(width, height - 33, "Bingosync Mod (" + scr_get_mod_version() + ")\nDELTARUNE Chapter " + string(global.chapter) + " (" + global.version + ")");
+draw_text_outline(width, height - 33, "Bingosync Mod (" + #GetModVersion() + ")\nDELTARUNE Chapter " + string(global.chapter) + " (" + global.version + ")");
 #else
-draw_text_outline(width, height - 33, "Bingosync Mod (v" + scr_get_mod_version() + ")\nDELTARUNE Chapter " + string(global.chapter) + " (" + global.versionno + ")");
+draw_text_outline(width, height - 33, "Bingosync Mod (v" + #GetModVersion() + ")\nDELTARUNE Chapter " + string(global.chapter) + " (" + global.versionno + ")");
 #endif
 scr_set_temp_draw();

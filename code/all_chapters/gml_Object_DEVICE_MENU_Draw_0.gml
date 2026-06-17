@@ -5,9 +5,9 @@
         draw_set_color(c_white);
 /// CODE
 #if CHAPTER_1 || CHAPTER_2
-        draw_text_transformed(10, 230, "Bingosync Mod " + scr_get_mod_version(), 0.5, 0.5, 0);
+        draw_text_transformed(10, 230, "Bingosync Mod " + #GetModVersion(), 0.5, 0.5, 0);
 #else
-        draw_text_transformed(9, 228, "Bingosync Mod v" + scr_get_mod_version(), 0.5, 0.5, 0);
+        draw_text_transformed(9, 228, "Bingosync Mod v" + #GetModVersion(), 0.5, 0.5, 0);
 #endif
 /// END
 
@@ -17,6 +17,6 @@
     {
         draw_set_color(COL_A);
 /// CODE
-        draw_text_transformed(60.5, 230, "BINGOSYNC MOD " + scr_get_mod_version(), 0.5, 0.5, 0);
+        draw_text_transformed(60.5, 230, "BINGOSYNC MOD " + #GetModVersion(), 0.5, 0.5, 0);
 /// END
 #endif

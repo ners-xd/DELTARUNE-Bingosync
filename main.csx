@@ -48,6 +48,16 @@ class BingoLoader : UMPLoader
         MaxChapter = 4
     }
 
+    public string GetModVersion()
+    {
+        return "\"3.00\"";
+    }
+
+    public string GetBranchName()
+    {
+        return "\"ch1-5\"";
+    }
+
     public string GetBingoFile()
     {
         return "\"bingo_data.json\"";

@@ -57,7 +57,7 @@ try
             case update_check_request:
                 var info = json_parse(ds_map_find_value(async_load, "result"));
 
-                if (real(scr_get_mod_version()) < real(info.tag_name))
+                if (real(#GetModVersion()) < real(info.tag_name))
                     newest_mod_version = info.tag_name;
                 break;
         }

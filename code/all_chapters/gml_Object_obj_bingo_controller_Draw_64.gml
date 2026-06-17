@@ -114,7 +114,7 @@ if (global.show_board && board_connected)
                 }
 
                 draw_set_color(c_white);
-                draw_text_outline_ext_transformed((x1 + x2) / 2, (y1 + y2) / 2, scr_is_goal_visible(idx) ? shown_str : "???", 15, (x2 - x1) + 50, 0.5, 0.5, 0);
+                draw_text_outline_ext_transformed(((x1 + x2) / 2) + 1.25, ((y1 + y2) / 2) + 1.25, scr_is_goal_visible(idx) ? shown_str : "???", 15, (x2 - x1) + 50, 0.5, 0.5, 0);
                 idx++;
             }
         }

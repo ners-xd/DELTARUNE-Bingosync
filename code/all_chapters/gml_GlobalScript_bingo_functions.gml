@@ -30,11 +30,11 @@ function scr_pad_zero(value, amount)
 
 function scr_format_seconds(amount)
 {
-    amount = max(0, amount);
-    var days = floor(amount / 86400);
-    var hours = floor((amount % 86400) / 3600);
-    var minutes = floor((amount % 3600) / 60);
-    var seconds = round(amount % 60);
+    amount = max(0, round(amount));
+    var days = amount div 86400;
+    var hours = (amount % 86400) div 3600;
+    var minutes = (amount % 3600) div 60;
+    var seconds = amount % 60;
     var str = scr_pad_zero(minutes, 2) + ":" + scr_pad_zero(seconds, 2);
 
     if (days > 0)
@@ -133,14 +133,16 @@ function draw_text_outline(text_x, text_y, text, outline_color = c_black)
 {
     var reset_color = draw_get_color();
     draw_set_color(outline_color);
-    draw_text(text_x - 1, text_y, text);
-    draw_text(text_x - 1, text_y - 1, text);
-    draw_text(text_x - 1, text_y + 1, text);
-    draw_text(text_x + 1, text_y, text);
-    draw_text(text_x + 1, text_y + 1, text);
-    draw_text(text_x + 1, text_y - 1, text);
-    draw_text(text_x, text_y + 1, text);
-    draw_text(text_x, text_y - 1, text);
+    var dirs = [
+        [-1, 0],  [1, 0],
+        [0, -1],  [0, 1],
+        [-1, -1], [1, -1],
+        [-1, 1],  [1, 1]
+    ];
+
+    for (var i = 0; i < array_length(dirs); i++)
+        draw_text(text_x + dirs[i][0], text_y + dirs[i][1], text);
+
     draw_set_color(reset_color);
     draw_text(text_x, text_y, text);
 }
@@ -150,14 +152,16 @@ function draw_text_outline_ext(text_x, text_y, text, text_sep, text_w, outline_c
 {
     var reset_color = draw_get_color();
     draw_set_color(outline_color);
-    draw_text_ext(text_x - 1, text_y, text, text_sep, text_w);
-    draw_text_ext(text_x - 1, text_y - 1, text, text_sep, text_w);
-    draw_text_ext(text_x - 1, text_y + 1, text, text_sep, text_w);
-    draw_text_ext(text_x + 1, text_y, text, text_sep, text_w);
-    draw_text_ext(text_x + 1, text_y + 1, text, text_sep, text_w);
-    draw_text_ext(text_x + 1, text_y - 1, text, text_sep, text_w);
-    draw_text_ext(text_x, text_y + 1, text, text_sep, text_w);
-    draw_text_ext(text_x, text_y - 1, text, text_sep, text_w);
+    var dirs = [
+        [-1, 0],  [1, 0],
+        [0, -1],  [0, 1],
+        [-1, -1], [1, -1],
+        [-1, 1],  [1, 1]
+    ];
+
+    for (var i = 0; i < array_length(dirs); i++)
+        draw_text_ext(text_x + dirs[i][0], text_y + dirs[i][1], text, text_sep, text_w);
+
     draw_set_color(reset_color);
     draw_text_ext(text_x, text_y, text, text_sep, text_w);
 }

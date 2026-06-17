@@ -771,10 +771,13 @@ function scr_add_goal_progress(slot, amount)
     {
         var board_slot = scr_goal_slot_from_name(global.goal_list[slot].name);
 
-        if (scr_is_goal_visible(board_slot - 1))
-            scr_mark_goal(board_slot);
-        else
-            global.queued_goals[board_slot - 1] = true;
+        if (board_slot > 0)
+        {
+            if (scr_is_goal_visible(board_slot - 1))
+                scr_mark_goal(board_slot);
+            else
+                global.queued_goals[board_slot - 1] = true;
+        }
     }
 
     scr_save_bingo_data();

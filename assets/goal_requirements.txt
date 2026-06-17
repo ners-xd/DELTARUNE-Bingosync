@@ -8,7 +8,7 @@ Wrong Warp into 15 unique rooms: Works in all chapters. Wrong warping into shops
 
 Get the Bomberman Key (Board 1): Get the key that spawns after Susie throws a few bombs in the hidden room found down->left of the cacti in Board 1 (only available after having already beaten the chapter)
 
-Have money on one save file: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
+Have money at one time: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
 
 Get an egg (Original Source): Get an egg without doing the Bagel Overflow glitch
 
@@ -100,7 +100,7 @@ Donate D$1 (CH1/CH4):
     - CH1: Talk to the Jigsawry in front of Seam's shop, go to the donation hole and donate One Dark Dollar
     - CH4: Donate at least One Dark Dollar to the water fountain in Sanctuary 1 (left of the Bibliox room above Gerson's study)
 
-Get both chests on 2 Maus 1 Maus: After the room in Acid Tunnel with the house maze, there is a room where you can release the maice into 2 chests or 2 houses. Get both chests
+Get both chests on the Maus puzzle (Acid Lake): After the room in Acid Tunnel with the house maze, there is a room where you can release the maice into 2 chests or 2 houses. Get both chests
     - For the first chest, turn the first house blue
     - For the second chest, leave all the houses red
 
@@ -121,7 +121,7 @@ Find the 3 Golden Sheets: They are all found in Sanctuary 1:
 
 Have a tea party with Gerson: See above
 
-Enter Ralsei's Room: You need to have watched the tea party cutscene in Kris & Susie's room first
+Enter Ralsei's room: You need to have watched the tea party cutscene in Kris & Susie's room first
 
 Get the PrincessRibbon: It's found in CH4 by completing the climbing challenge to the right of the Biblioxes room in Sanctuary 3
 
@@ -131,11 +131,11 @@ Get the GoldWidow: Found by donating 9999+ D$ in the fountain in Sanctuary 1 and
 
 Get the BitterTear: Found by donating 2000-9998 D$ in the fountain or by embezzling Miss Mizzle
 
-Defeat 2 Shadow Item Holders: The bosses who count for this are Jevil, Spamton NEO (both variants count as the same boss), ERAM, The Knight and Hammer of Justice
+Defeat 2 shadow item holders: The bosses who count for this are Jevil, Spamton NEO (both variants count as the same boss), ERAM, The Knight and Hammer of Justice
 
-Defeat 2 Final Bosses: The bosses who count for this are King, Giga Queen, Snowgrave Spamton NEO, Tenna and Titan
+Defeat 2 final bosses: The bosses who count for this are King, Giga Queen, Snowgrave Spamton NEO, Tenna and Titan
 
-Defeat 3 Bosses: The bosses who count for this are all of the above + Queen + the Mike trio
+Defeat 3 bosses: The bosses who count for this are all of the above + Queen + the Mike trio
 
 Show compassion to Ralsei: Say Yes to showing him compassion after Susie hops on him to grab the green book for Gerson
 
@@ -143,7 +143,7 @@ Take 4 photos (Board 2): The bonus photo is from buying Lancer from the bottom r
 
 Get the Quiz Key (Board 1): Get the two Qs from answering the quizzes, then bring them to the sphinx to unlock the key that's to the left
 
-B or better rank Susiezilla: Susiezilla is unlocked by going to the special A-rank room and paying the Pippins 500 POINTs
+Get B or better rank Susiezilla: Susiezilla is unlocked by going to the special A-rank room and paying the Pippins 500 POINTs
 
 Find the Among Us reference: Inspect all the giftboxes in Noelle's house in the room with the vent
 
@@ -178,4 +178,5 @@ Find the third piano's full solution (CH4): When you reach the long horizontal h
 
 Beat the Club Apatheia encounter: In Sanctuary 2, when you reach Club Apatheia (the room with the GALLERY prophecy), interact with the sign in the middle to start the Wicabel/Organikk fight
 
-Interact with the Dark Sanctuary climbing trophy: In the room to the right of the TensionGem chest (before the big organ), there are 2 timed climbs. If you get below ~6.1 and ~10.1 seconds respectively (both climbs on the same save file), a trophy spawns at the bottom of the room. Interact with it.
+Interact with the Dark Sanctuary climbing trophy: In the room to the right of the TensionGem chest (before the big organ), there are 2 timed climbs. If you get below 6.3 and 10.3 seconds respectively (both climbs on the same save file), a trophy spawns at the bottom of the room. Interact with it.
+NOTE: The times are nerfed from the vanilla game because we considered it too difficult (it's normally 6.1 and 10.1 seconds).

@@ -15,23 +15,23 @@
     {"name": "Complete 3 unique dojo challenges", "type": ["ech2"]},
     {"name": "Get the Quiz Key (Board 1)", "type": ["eb1ch3"]},
     {"name": "Complete the Dummy tutorial", "type": ["ech1"]},
-    {"name": "Have $2000 on one save file", "type": ["misc3"]}
+    {"name": "Have $2000 at one time", "type": ["misc3"]}
   ],
   [
     {"name": "Don't sleep to skip the start of a chapter", "type": ["misc2"]},
     {"name": "Crash the game with Bagel Overflow", "type": ["ech2"]},
     {"name": "Go to the diner with Susie (CH4)", "type": ["eps1ch4"]},
-    {"name": "Speak to Sans", "type": ["misc3"]},
+    {"name": "Talk to Sans", "type": ["misc3"]},
     {"name": "Equip White Ribbon (CH1/CH3)", "type": ["ech1"]},
     {"name": "Visit Rudy in the hospital", "type": ["misc3"]}
   ],
   [
-    {"name": "Enter Ralsei's Room", "type": ["eps1ch4"]},
+    {"name": "Enter Ralsei's room", "type": ["eps1ch4"]},
     {"name": "Kill 5 enemies", "type": ["kill"]},
     {"name": "Beat the Lanino/Elnina rematch", "type": ["eps1ch4"]},
     {"name": "Complete any Lightners Live song", "type": ["eps1ch4"]},
     {"name": "Show compassion to Ralsei", "type": ["es1ch4"]},
-    {"name": "Watch all of Tenna's Feature Presentation", "type": ["eb1ch3"]},
+    {"name": "Watch Tenna's Feature Presentation", "type": ["eb1ch3"]},
     {"name": "Spare/Pacify 10 enemies", "type": ["spare"]}
   ],
   [
@@ -47,7 +47,7 @@
     {"name": "Complete the spelling bee cutscene", "type": ["emch2"]}
   ],
   [
-    {"name": "Buy the Royal Pin from Swatch", "type": ["emch2"]},
+    {"name": "Buy the RoyalPin from Swatch", "type": ["emch2"]},
     {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks", "type": ["ech2"]},
     {"name": "Kill 10 enemies", "type": ["kill"]},
     {"name": "Lose Tasque Manager", "type": ["emch2"]},
@@ -58,7 +58,7 @@
     {"name": "Lose Mauswheel", "type": ["emch2"]},
     {"name": "Spare Clover without using the Manual (CH1)", "type": ["ech1"]},
     {"name": "Spare/Pacify 15 enemies", "type": ["spare"]},
-    {"name": "Z-Rank Board 1 or 2", "type": ["eb1ch3"]}
+    {"name": "Get Z-Rank on Board 1 or 2", "type": ["eb1ch3"]}
   ],
   [
     {"name": "Beat the Mike trio", "type": ["es1ch4"]},
@@ -69,7 +69,7 @@
     {"name": "Spare/Pacify 25 enemies", "type": ["spare"]}
   ],
   [
-    {"name": "Have $3000 on one save file", "type": ["misc3"]},
+    {"name": "Have $3000 at one time", "type": ["misc3"]},
     {"name": "Find the third piano's full solution (CH4)", "type": ["es1ch4"]},
     {"name": "Get 2 gold items (CH3)", "type": ["epb1ch3"]},
     {"name": "Get the Spin Cake (CH1)", "type": ["mch1"]},
@@ -78,7 +78,7 @@
   ],
   [
     {"name": "Get 3 ReviveMints", "type": ["lmultich"]},
-    {"name": "B or better rank Susiezilla", "type": ["epb1ch3"]},
+    {"name": "Get B or better rank Susiezilla", "type": ["epb1ch3"]},
     {"name": "Build the cutest Thrash Machine", "type": ["mch1"]},
     {"name": "Build the FLB Duck (PINK)", "type": ["mch1"]},
     {"name": "Talk to Starwalker in the forest (CH1)", "type": ["mch1"]},
@@ -90,7 +90,7 @@
     {"name": "Complete both Berdly encounters", "type": ["mcch2"]},
     {"name": "Fully recruit 3 different enemy types", "type": ["spare"]},
     {"name": "Get a Dog Dollar", "type": ["misc2"]},
-    {"name": "Get both chests on 2 Maus 1 Maus", "type": ["mmch2"]},
+    {"name": "Get both chests on the Maus puzzle (Acid Lake)", "type": ["mmch2"]},
     {"name": "Get the ReviveDust", "type": ["mmch2"]},
     {"name": "Get the FreezeRing", "type": ["mcch2"]}
   ],
@@ -132,7 +132,7 @@
     {"name": "Play MEGALOVANIA on the organ", "type": ["mch4"]},
     {"name": "Reach the Ice Door without the Ice Key (CH3)", "type": ["epb1ch3"]},
     {"name": "Get captured in Chapter 2", "type": ["lch2"]},
-    {"name": "Defeat 3 Bosses", "type": ["boss"]}
+    {"name": "Defeat 3 bosses", "type": ["boss"]}
   ],
   [
     {"name": "Do 'Fix Us' in all possible chapters", "type": ["lmultich"]},
@@ -172,7 +172,7 @@
     {"name": "Beat Fake Gerson", "type": ["lch4"]},
     {"name": "Collect both bananas", "type": ["lch2"]},
     {"name": "Get the PrincessRibbon", "type": ["lch4"]},
-    {"name": "Defeat 2 Final Bosses", "type": ["boss"]},
+    {"name": "Defeat 2 Final bosses", "type": ["boss"]},
     {"name": "Get the TripTicket", "type": ["mch3"]},
     {"name": "Crash the console on the 000000 puzzle (CH3)", "type": ["mch3"]},
     {"name": "See frozen Berdly when leaving Queen's basement", "type": ["lch2"]}
@@ -180,7 +180,7 @@
   [
     {"name": "Beat Tenna", "type": ["lch3"]},
     {"name": "Beat Spamton NEO (Basement)", "type": ["lch2"]},
-    {"name": "Defeat 2 Shadow Item Holders", "type": ["boss"]},
+    {"name": "Defeat 2 shadow item holders", "type": ["boss"]},
     {"name": "Get the GoldWidow", "type": ["lch4"]},
     {"name": "Kill a Titan Spawn", "type": ["lch4"]}
   ],

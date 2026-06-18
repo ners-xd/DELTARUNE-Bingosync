@@ -13,6 +13,19 @@ function array_contains_temp(array, value)
     return false;
 }
 
+function array_find_index_temp(array, check_function)
+{
+    var len = array_length(array);
+
+    for (var i = 0; i < len; i++)
+    {
+        if (check_function(array[i], i))
+            return i;
+    }
+
+    return -1;
+}
+
 function scr_pad_zero(value, amount)
 {
     var s = string(value);
@@ -474,12 +487,16 @@ function scr_load_bingo_data()
     global.hit_counter = false;
     global.show_other_colors = true;
     global.fog_of_war = false;
+    global.room_history = [];
 
     if (file_exists(#GetBingoFile()))
     {
         var file = file_text_open_read(#GetBingoFile());
         var json = json_parse(file_text_read_string(file));
         file_text_close(file);
+
+        if (variable_struct_exists(json, "room_history"))
+            global.room_history = json.room_history;
 
         if (variable_struct_exists(json, "last_saved_room"))
         {
@@ -584,6 +601,7 @@ function scr_save_bingo_data()
     var list = ds_list_create();
     var file = file_text_open_write(#GetBingoFile());
     var data = {};
+    data.room_history = global.room_history;
     data.last_saved_room = {};
     data.preferences = {};
     data.keybinds = {};

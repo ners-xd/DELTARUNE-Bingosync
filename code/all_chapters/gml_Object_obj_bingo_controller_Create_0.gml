@@ -1,11 +1,15 @@
 /// IMPORT
 
 persistent = true;
-board_connected = false;
 board_revealed = false;
 http_board = -1;
 http_room_settings = -1;
 http_feed = -1;
+http_room_base = -1;
+board_done = false;
+room_settings_done = false;
+feed_done = false;
+room_base_done = false;
 console_string = -1;
 mystring = "";
 update_colors = true;

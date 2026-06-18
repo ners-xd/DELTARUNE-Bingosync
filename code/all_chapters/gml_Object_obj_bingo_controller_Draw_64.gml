@@ -1,5 +1,8 @@
 /// IMPORT
 
+if (!board_done || !room_settings_done || !feed_done || !room_base_done)
+    exit;
+
 scr_get_temp_draw();
 var grid_size = 5;
 var square_size = 58;
@@ -12,7 +15,7 @@ var surface_height = surface_get_height(application_surface);
 draw_set_alpha(1);
 draw_set_font(fnt_main);
 
-if (global.show_board && board_connected)
+if (global.show_board)
 {
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
@@ -126,11 +129,11 @@ if (global.room_seed != -1)
     var text_x = (base_x + ((square_size + spacing) * grid_size)) - 1;
     var text_y = ((base_y + ((square_size + spacing) * grid_size)) - (2 * spacing)) + 2;
     var text_y_offset = (instance_exists(obj_darkcontroller) && variable_global_exists("menuno") && global.menuno > -1) ? obj_darkcontroller.tp : 0;
-    var final_y = (global.show_board && board_connected) ? text_y : text_y_offset;
+    var final_y = global.show_board ? text_y : text_y_offset;
     draw_set_color(c_yellow);
     draw_set_valign(fa_top);
 
-    if (global.show_board && board_connected)
+    if (global.show_board)
     {
         var timezone = date_get_timezone();
         date_set_timezone(timezone_utc);
@@ -294,7 +297,7 @@ if (global.chat_typing)
                     break;
 
                 case "/star":
-                    if (!global.show_board || !board_connected || !board_revealed)
+                    if (!global.show_board || !board_revealed)
                     {
                         scr_chat_message(c_red, "You can't star goals while the board is hidden.");
                     }

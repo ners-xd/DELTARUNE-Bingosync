@@ -1,6 +1,6 @@
 /// IMPORT
 
-if (!board_connected)
+if (!board_done || !room_settings_done || !feed_done || !room_base_done)
     exit;
 
 if (!global.chat_typing && !global.starring_goals)

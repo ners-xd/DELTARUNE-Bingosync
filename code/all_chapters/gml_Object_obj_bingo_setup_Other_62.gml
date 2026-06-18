@@ -6,7 +6,6 @@ try
     {
         var http_status = ds_map_find_value(async_load, "http_status");
         var info = ds_map_find_value(async_load, "result");
-        var info_str = string(info);
 
         if (global.is_console && http_status == 302)
         {
@@ -30,15 +29,15 @@ try
             if (!instance_exists(obj_bingo_controller))
                 instance_create_depth(0, 0, 0, obj_bingo_controller);
         }
-        else if (string_pos("Sorry, that page doesn't exist!", info_str) > 0)
+        else if (string_pos("Sorry, that page doesn't exist!", info) > 0)
         {
             error_show("Invalid room ID!");
         }
-        else if (string_pos("Incorrect Password", info_str) > 0)
+        else if (string_pos("Incorrect Password", info) > 0)
         {
             error_show("Incorrect password!");
         }
-        else if (string_pos("socket_key", info_str) == 0)
+        else if (string_pos("socket_key", info) == 0)
         {
             // Delaying this because sometimes it would show up even if you did successfully connect,
             // moments before putting you in the intro room

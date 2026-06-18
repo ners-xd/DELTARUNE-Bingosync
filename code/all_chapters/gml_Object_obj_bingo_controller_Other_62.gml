@@ -21,6 +21,7 @@ try
                 }
 
                 update_colors = true;
+                board_done = true;
                 break;
 
             case http_room_settings:
@@ -28,6 +29,7 @@ try
                 global.room_seed = info.settings.seed;
                 global.room_lockout = info.settings.lockout_mode;
                 board_revealed = !info.settings.hide_card;
+                room_settings_done = true;
                 break;
 
             case http_feed:
@@ -49,7 +51,51 @@ try
                     }
                 }
 
-                board_connected = true;
+                feed_done = true;
+                break;
+
+            case http_room_base:
+                var info = ds_map_find_value(async_load, "result");
+                var search_start = "<a href=\"/\">Bingosync</a> - ";
+                var search_start_len = string_length(search_start);
+                var pos_start = string_pos(search_start, info);
+
+                if (pos_start > 0)
+                {
+                    var pos_end = string_pos_ext("</h1>", info, pos_start);
+
+                    if (pos_end > 0)
+                    {
+                        var room_name = string_copy(info, pos_start + search_start_len, pos_end - pos_start - search_start_len);
+                        var arr_index = array_find_index_temp(global.room_history, function(element)
+                        {
+                            return element.room_id == global.room_id;
+                        });
+
+                        if (arr_index == -1)
+                        {
+                            global.room_history[array_length(global.room_history)] = 
+                            {
+                                name: room_name,
+                                room_id: global.room_id,
+                                password: global.password,
+                                last_accessed: date_current_datetime()
+                            };
+                        }
+                        else
+                        {
+                            global.room_history[arr_index].last_accessed = date_current_datetime();
+                        }
+
+                        array_sort(global.room_history, function(current, next)
+                        {
+                            return (next.last_accessed - current.last_accessed) > 0;
+                        });
+                        scr_save_bingo_data();
+                    }
+                }
+
+                room_base_done = true;
                 break;
         }
     }

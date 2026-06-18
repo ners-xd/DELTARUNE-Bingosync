@@ -227,6 +227,7 @@ function draw_main_buttons()
 
             var _width = obj_bingo_setup.width / 2;
             var _height = obj_bingo_setup.height / 2;
+            var room_history_button = instance_create_depth(_width + 185, _height - 160, depth, obj_bingoscreen_button);
             var orange_button = instance_create_depth(_width - 95, _height + 50, depth, obj_bingoscreen_button);
             var red_button = instance_create_depth(_width - 55, _height + 50, depth, obj_bingoscreen_button);
             var blue_button = instance_create_depth(_width - 15, _height + 50, depth, obj_bingoscreen_button);
@@ -237,6 +238,145 @@ function draw_main_buttons()
             var brown_button = instance_create_depth(_width - 15, _height + 90, depth, obj_bingoscreen_button);
             var pink_button = instance_create_depth(_width + 25, _height + 90, depth, obj_bingoscreen_button);
             var yellow_button = instance_create_depth(_width + 65, _height + 90, depth, obj_bingoscreen_button);
+
+            with (room_history_button)
+            {
+                x2 = x + 60;
+                y2 = y + 50;
+                text = "Room\nHistory";
+                obj_bingo_setup.history_len = array_length(global.room_history);
+
+                if (obj_bingo_setup.history_len < 1)
+                {
+                    outline_color = c_gray;
+                    text_color = c_gray;
+                }
+
+                on_click = function()
+                {
+                    with (obj_bingo_setup)
+                    {
+                        if (history_len < 1)
+                        {
+                            error_show("There is no room history to show.");
+                            exit;
+                        }
+
+                        with (obj_bingoscreen_button)
+                            instance_destroy();
+
+                        history_page = 0;
+                        max_history_entries = 5;
+                        max_history_page = history_len div max_history_entries;
+                        draw_close_x = width / 2;
+                        draw_close_y = height - 10;
+
+                        bg_draw = function()
+                        {
+                            draw_set_font(fnt_mainbig);
+                            draw_set_color(c_white);
+                            draw_text_outline(width / 2, 40, "ROOM HISTORY");
+                            draw_set_font(fnt_main);
+                            draw_text_outline(width / 2, height - 50, "Click on any room to import its ID and password.");
+
+                            if (history_len > max_history_entries)
+                            {
+                                draw_text_outline(width / 2, height - 35, "Press LEFT and RIGHT to switch pages.");
+                                draw_set_font(fnt_mainbig);
+                                var left = left_p();
+                                var right = right_p();
+
+                                if (left)
+                                {
+                                    if (--history_page < 0)
+                                        history_page = max_history_page;
+
+                                    draw_set_color(c_yellow);
+                                    snd_play(snd_menumove);
+                                }
+                                else
+                                {
+                                    draw_set_color(c_white);
+                                }
+                                draw_text_outline((width / 2) - 220, height / 2, "<");
+
+                                if (right && !left)
+                                {
+                                    if (++history_page > max_history_page)
+                                        history_page = 0;
+
+                                    draw_set_color(c_yellow);
+                                    snd_play(snd_menumove);
+                                }
+                                else
+                                {
+                                    draw_set_color(c_white);
+                                }
+                                draw_text_outline((width / 2) + 223, height / 2, ">");
+                                draw_set_font(fnt_main);
+                            }
+                        };
+
+                        for (var i = 0; i < max_history_entries; i++)
+                        {
+                            with (instance_create_depth((width / 2) - 190, 95 + (i * 60), depth - 1, obj_bingoscreen_button))
+                            {
+                                x2 = x + 380;
+                                y2 = y + 50;
+                                start_index = i;
+                                current_index = i;
+                                outline_color = (obj_bingo_setup.history_len <= start_index) ? c_gray : c_white;
+
+                                draw_on_top = function()
+                                {
+                                    draw_set_font(fnt_main);
+                                    draw_set_halign(fa_center);
+                                    draw_set_valign(fa_middle);
+                                    current_index = (obj_bingo_setup.history_page * obj_bingo_setup.max_history_entries) + start_index;
+                                    var mid_x = (x + x2) / 2;
+                                    var mid_y = (y + y2) / 2;
+
+                                    if (obj_bingo_setup.history_len <= current_index)
+                                    {
+                                        outline_color = c_gray;
+                                        draw_set_color(hovering ? c_yellow : c_gray);
+                                        draw_text_outline(mid_x, mid_y, "[Empty]");
+                                    }
+                                    else
+                                    {
+                                        outline_color = c_white;
+                                        draw_set_color(hovering ? c_yellow : c_white);
+                                        var current_name = global.room_history[current_index].name;
+
+                                        if (string_length(current_name) > 50)
+                                            current_name = string_copy(current_name, 1, 50) + "...";
+
+                                        draw_text_outline_ext(mid_x, mid_y, current_name + "\n(" + global.room_history[current_index].room_id + ")\nLast joined on " + date_datetime_string(global.room_history[current_index].last_accessed), 15, 400);
+                                    }
+                                };
+
+                                on_click = function()
+                                {
+                                    if (obj_bingo_setup.history_len <= current_index)
+                                    {
+                                        snd_play(snd_hurt1);
+                                    }
+                                    else
+                                    {
+                                        with (obj_bingo_setup)
+                                        {
+                                            global.room_id = global.room_history[other.current_index].room_id;
+                                            global.password = global.room_history[other.current_index].password;
+                                            scr_save_bingo_data();
+                                            go_to_main_page(spr_room_user_info_icon);
+                                        }
+                                    }
+                                };
+                            }
+                        }
+                    }
+                };
+            }
 
             with (orange_button)
             {
@@ -785,7 +925,7 @@ function draw_main_buttons()
                                 roomchoice = scr_get_starting_room();
 
                             with (obj_bingo_setup)
-                                go_to_settings();
+                                go_to_main_page(spr_settings_icon);
 
                         #if CHAPTER_1
                             scr_windowcaption("DELTARUNE Chapter 1");
@@ -804,7 +944,7 @@ function draw_main_buttons()
                         on_click = function()
                         {
                             with (obj_bingo_setup)
-                                go_to_settings();
+                                go_to_main_page(spr_settings_icon);
                         };
                     }
                 };
@@ -854,7 +994,7 @@ function draw_main_buttons()
                             scr_delete_save_files();
                             
                             with (obj_bingo_setup)
-                                go_to_settings();
+                                go_to_main_page(spr_settings_icon);
                             
                             snd_stop(AUDIO_APPEARANCE);
                             snd_play(AUDIO_APPEARANCE);
@@ -870,7 +1010,7 @@ function draw_main_buttons()
                         on_click = function()
                         {
                             with (obj_bingo_setup)
-                                go_to_settings();
+                                go_to_main_page(spr_settings_icon);
                         };
                     }
                 };
@@ -962,16 +1102,16 @@ function draw_main_buttons()
     }
 }
 
-function go_to_settings()
+function go_to_main_page(spr)
 {
     with (obj_bingoscreen_button)
         instance_destroy();
-    
+
     draw_main_buttons();
-    
+
     with (obj_bingoscreen_button)
     {
-        if (sprite == spr_settings_icon)
+        if (sprite == spr)
         {
             on_click();
             break;

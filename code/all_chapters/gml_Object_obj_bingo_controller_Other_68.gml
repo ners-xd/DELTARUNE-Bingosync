@@ -35,6 +35,7 @@ try
                 ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\" }");
                 http_room_settings = http_get("https://bingosync.com/room/" + global.room_id + "/room-settings");
                 http_feed = ossafe_http_get("https://bingosync.com/room/" + global.room_id + "/feed");
+                http_room_base = http_get("https://bingosync.com/room/" + global.room_id);
                 draw_set_halign(fa_left);
                 draw_set_valign(fa_top);
                 snd_free_all();

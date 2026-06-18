@@ -153,8 +153,8 @@ function draw_main_buttons()
                     "It's been " + string(floor(date_day_span(date_create_datetime(2025, 6, 4, 15, 0, 0), date_current_datetime()))) + " days since Chapters 3+4!",
                     "It's been " + string(floor(date_day_span(date_create_datetime(2026, 6, 24, 15, 0, 0), date_current_datetime()))) + " days since Chapter 5!",
                     "I am a fast little boy!",
-                    global.is_console ? "Controller is based." : "Keyboard is based.",
-                    global.is_console ? "Keyboard is not based." : "Controller is not based.",
+                    obj_time.controller_used ? "Controller is based." : "Keyboard is based.",
+                    obj_time.controller_used ? "Keyboard is not based." : "Controller is not based.",
                     "There's a friend inside me.",
                     "There's a friend inside you."
                 );
@@ -281,10 +281,11 @@ function draw_main_buttons()
 
                             if (history_len > max_history_entries)
                             {
-                                draw_text_outline(width / 2, height - 35, "Press LEFT and RIGHT to switch pages.");
+                                draw_text_outline(width / 2, 60, "Page " + string(history_page + 1) + "/" + string(max_history_page + 1));
+                                draw_text_outline(width / 2, height - 35, obj_time.controller_used ? "Press LEFT and RIGHT (D-Pad) to switch pages." : "Press LEFT and RIGHT to switch pages.");
                                 draw_set_font(fnt_mainbig);
-                                var left = left_p();
-                                var right = right_p();
+                                var left = scr_check_pressed(vk_left, gp_padl);
+                                var right = scr_check_pressed(vk_right, gp_padr);
 
                                 if (left)
                                 {

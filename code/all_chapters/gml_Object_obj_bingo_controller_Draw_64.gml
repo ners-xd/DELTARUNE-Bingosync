@@ -21,7 +21,7 @@ if (global.show_board && board_connected)
     if (!board_revealed)
     {
         draw_set_color(c_navy);
-        ossafe_fill_rectangle(base_x, base_y, base_x + len, base_y + len);
+        ossafe_fill_rectangle(base_x - 1, base_y - 1, base_x + len + 1, base_y + len + 1);
         draw_set_color(c_white);
         var text_x = ((2 * base_x) + len) / 2;
         var text_y = ((2 * base_y) + len) / 2;

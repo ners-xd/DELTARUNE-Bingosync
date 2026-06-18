@@ -246,12 +246,6 @@ function draw_main_buttons()
                 text = "Room\nHistory";
                 obj_bingo_setup.history_len = array_length(global.room_history);
 
-                if (obj_bingo_setup.history_len < 1)
-                {
-                    outline_color = c_gray;
-                    text_color = c_gray;
-                }
-
                 on_click = function()
                 {
                     with (obj_bingo_setup)

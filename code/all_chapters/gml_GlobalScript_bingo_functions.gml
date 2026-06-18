@@ -371,6 +371,16 @@ function scr_escape_string(str)
     return escaped;
 }
 
+function scr_html_decode(str)
+{
+    str = string_replace_all(str, "&lt;", "<");
+    str = string_replace_all(str, "&gt;", ">");
+    str = string_replace_all(str, "&amp;", "&");
+    str = string_replace_all(str, "&quot;", "\"");
+    str = string_replace_all(str, "&#x27;", "'");
+    return str;
+}
+
 function scr_color_from_name(color_str)
 {
     switch (color_str)

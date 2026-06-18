@@ -1,6 +1,10 @@
 /// IMPORT
 
 persistent = true;
+var timezone = date_get_timezone();
+date_set_timezone(timezone_utc);
+start_timestamp = date_second_span(date_create_datetime(1970, 1, 2, 0, 0, 0), date_current_datetime());
+date_set_timezone(timezone);
 board_revealed = false;
 http_board = -1;
 http_room_settings = -1;

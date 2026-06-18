@@ -138,7 +138,7 @@ if (global.room_seed != -1)
         var timezone = date_get_timezone();
         date_set_timezone(timezone_utc);
         draw_set_halign(fa_left);
-        draw_text_outline(base_x, final_y, scr_format_seconds(date_second_span(date_create_datetime(1970, 1, 2, 0, 0, global.last_card_timestamp - 86400), date_current_datetime())));
+        draw_text_outline(base_x, final_y, scr_format_seconds(date_second_span(date_create_datetime(1970, 1, 2, 0, 0, (global.last_card_timestamp == 0) ? (start_timestamp) : (global.last_card_timestamp - 86400)), date_current_datetime())));
         date_set_timezone(timezone);
     }
 

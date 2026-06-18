@@ -175,7 +175,8 @@
     {"name": "Defeat 2 Final bosses", "type": ["boss"]},
     {"name": "Get the TripTicket", "type": ["mch3"]},
     {"name": "Crash the console on the 000000 puzzle (CH3)", "type": ["mch3"]},
-    {"name": "See frozen Berdly when leaving Queen's basement", "type": ["lch2"]}
+    {"name": "See frozen Berdly when leaving Queen's basement", "type": ["lch2"]},
+    {"name": "Find The Angel's prophecy panel", "type": ["lch4"]}
   ],
   [
     {"name": "Beat Tenna", "type": ["lch3"]},

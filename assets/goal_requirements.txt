@@ -179,4 +179,6 @@ Find the third piano's full solution (CH4): When you reach the long horizontal h
 Beat the Club Apatheia encounter: In Sanctuary 2, when you reach Club Apatheia (the room with the GALLERY prophecy), interact with the sign in the middle to start the Wicabel/Organikk fight
 
 Interact with the Dark Sanctuary climbing trophy: In the room to the right of the TensionGem chest (before the big organ), there are 2 timed climbs. If you get below 6.3 and 10.3 seconds respectively (both climbs on the same save file), a trophy spawns at the bottom of the room. Interact with it.
-NOTE: The times are nerfed from the vanilla game because we considered it too difficult (it's normally 6.1 and 10.1 seconds).
+NOTE: The times are nerfed from the vanilla game because we considered it too difficult (it's normally 6.1 and 10.1 seconds)
+
+Find The Angel's prophecy panel: In Sanctuary 3, the room where orbs keep spawning around you, you can go through the hidden path and to the right. You will find the prophecy panel saying "THE ANGEL, BANISHED, WILL FINALLY MEET WITH ITS DESIRE.".

@@ -235,6 +235,42 @@ if (global.chat_typing)
 {
     if (!global.is_console)
     {
+        var len = array_length(chat_history);
+
+        if (len > 0)
+        {
+            if (scr_check_pressed(vk_up, gp_padu))
+            {
+                if (chat_history_index == -1)
+                    current_str = keyboard_string;
+                else
+                    chat_history[chat_history_index] = keyboard_string;
+
+                if (++chat_history_index >= len)
+                    chat_history_index = -1;
+
+                if (chat_history_index == -1)
+                    keyboard_string = current_str;
+                else
+                    keyboard_string = chat_history[chat_history_index];
+            }
+            else if (scr_check_pressed(vk_down, gp_padd))
+            {
+                if (chat_history_index == -1)
+                    current_str = keyboard_string;
+                else
+                    chat_history[chat_history_index] = keyboard_string;
+
+                if (--chat_history_index < -1)
+                    chat_history_index = len - 1;
+
+                if (chat_history_index == -1)
+                    keyboard_string = current_str;
+                else
+                    keyboard_string = chat_history[chat_history_index];
+            }
+        }
+
         if (keyboard_check(vk_control) && keyboard_check_pressed(ord("V")))
             keyboard_string += clipboard_get_text();
 
@@ -272,8 +308,10 @@ if (global.chat_typing)
 
         if (string_length(str) > 0)
         {
-            var split_string = string_split(string_lower(str), " ", true);
+            if (!global.is_console)
+                array_insert(init_chat_history, 0, str);
 
+            var split_string = string_split(string_lower(str), " ", true);
             switch (split_string[0])
             {
                 case "/color":
@@ -349,7 +387,10 @@ if (global.chat_typing)
                     break;
 
                 default:
-                    ossafe_http_post("https://bingosync.com/api/chat", "{ \"room\": \"" + global.room_id + "\", \"text\": \"" + str + "\" }");
+                    if (string_pos("/", split_string[0]) == 1)
+                        scr_chat_message(c_red, "That command doesn't exist.");
+                    else
+                        ossafe_http_post("https://bingosync.com/api/chat", "{ \"room\": \"" + global.room_id + "\", \"text\": \"" + str + "\" }");
                     break;
             }
         }
@@ -357,6 +398,8 @@ if (global.chat_typing)
         global.chat_typing = false;
         keyboard_clear(vk_enter);
         mystring = "";
+        chat_history = [];
+        chat_history_index = -1;
     }
 }
 

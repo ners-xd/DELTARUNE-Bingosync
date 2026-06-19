@@ -37,6 +37,7 @@ if (!global.chat_typing && !global.starring_goals)
                 }
 
                 keyboard_string = "";
+                chat_history = init_chat_history;
             }
         }
     }
@@ -63,6 +64,8 @@ else if (scr_check_pressed(vk_escape, global.input_g[5]))
     global.chat_typing = false;
     global.starring_goals = false;
     obj_time.mouse_visible = false;
+    chat_history = [];
+    chat_history_index = -1;
     keyboard_clear(vk_escape);
 }
 

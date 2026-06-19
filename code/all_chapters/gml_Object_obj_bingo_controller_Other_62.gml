@@ -89,7 +89,13 @@ try
 
                         array_sort(global.room_history, function(current, next)
                         {
-                            return (next.last_accessed - current.last_accessed) > 0;
+                            if (current.last_accessed > next.last_accessed)
+                                return -1;
+
+                            if (current.last_accessed < next.last_accessed)
+                                return 1;
+
+                            return 0;
                         });
                         scr_save_bingo_data();
                     }

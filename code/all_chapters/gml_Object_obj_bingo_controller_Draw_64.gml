@@ -299,12 +299,7 @@ if (global.chat_typing)
 
     if (keyboard_check_pressed(vk_enter) || mystring != "")
     {
-        var str;
-
-        if (global.is_console)
-            str = scr_escape_string(string_trim(mystring));
-        else
-            str = scr_escape_string(string_trim(keyboard_string));
+        var str = scr_escape_string(string_trim(global.is_console ? mystring : keyboard_string));
 
         if (string_length(str) > 0)
         {

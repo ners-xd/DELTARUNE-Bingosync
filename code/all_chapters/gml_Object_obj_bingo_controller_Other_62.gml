@@ -66,7 +66,6 @@ try
 
                     if (pos_end > 0)
                     {
-                        var room_name = scr_html_decode(string_copy(info, pos_start + search_start_len, pos_end - pos_start - search_start_len));
                         var arr_index = array_find_index_temp(global.room_history, function(element)
                         {
                             return element.room_id == global.room_id;
@@ -76,7 +75,7 @@ try
                         {
                             global.room_history[array_length(global.room_history)] = 
                             {
-                                name: room_name,
+                                name: scr_html_decode(string_copy(info, pos_start + search_start_len, pos_end - pos_start - search_start_len)),
                                 room_id: global.room_id,
                                 password: global.password,
                                 last_accessed: date_current_datetime()

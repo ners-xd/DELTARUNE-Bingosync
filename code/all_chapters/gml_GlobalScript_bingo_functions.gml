@@ -799,11 +799,11 @@ function scr_add_goal_buy()
     {
         with (obj_bingo_controller)
         {
-            if (global.gold < buy_update_money_amount
+            if (global.gold != buy_update_money_amount
             #if CHAPTER_3
-                || global.flag[1044] < buy_update_points_amount
+                || global.flag[1044] != buy_update_points_amount
             #elsif CHAPTER_5
-                || global.flag[1411] < buy_update_flowery_money_amount
+                || global.flag[1411] != buy_update_flowery_money_amount
             #endif
                 )
                 scr_add_goal_array(8, "shop_rooms", room_get_name(room));

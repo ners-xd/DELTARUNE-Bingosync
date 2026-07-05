@@ -61,7 +61,7 @@ Fill up your inventory with 12 consumables: Have 12 CONSUMABLE items in your inv
 
 Open the Balloon Chest (City Heights): In the giant City Heights room, after getting Noelle to step on the switch, go down and ride the teacups. Go back up and the forcefield which blocks a chest in the top-left corner is gone. Interact with it to release the balloons
 
-Get captured (CH1/CH2/CH3/CH5):
+Get captured (CH1, CH2, CH3, CH5):
     - CH1: Get captured by the Rudinn Rangers after the Forest chase sequence
     - CH2: Get captured by Queen in City Heights and get taken to your room in her mansion
     - CH3: Get captured by Tenna before starting the Doom Board segment
@@ -112,7 +112,7 @@ Get both chests on the Maus puzzle (Acid Lake): After the room in Acid Tunnel wi
 
 Find Ms. Pipis: When you hit a Pipis in the Snowgrave route, there is a 1/100 chance for each enemy to become Ms. Pipis. Get lucky
 
-Have Sans befriend Toriel (CH1/CH2/CH4):
+Have Sans befriend Toriel (CH1, CH2, CH4):
     - CH1: Talk to Sans at the end, pick "Friends" (right), then "My Mom" (right)
     - CH2: Trigger the cutscene in Sans's store at the end by going all the way left then back right
     - CH4: Reach Kris's house at the end

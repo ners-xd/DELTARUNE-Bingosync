@@ -23,7 +23,7 @@
     {"name": "Don't sleep to skip the start of a chapter", "type": ["misc2"]},
     {"name": "Crash the game", "type": ["ech2"]},
     {"name": "Go to the diner with Susie (CH4)", "type": ["eps1ch4"]},
-    {"name": "Have Sans befriend Toriel (CH1/CH2/CH4)", "type": ["misc3"]},
+    {"name": "Have Sans befriend Toriel (CH1, CH2, CH4)", "type": ["misc3"]},
     {"name": "Equip the White Ribbon (CH1/CH3)", "type": ["ech1"]},
     {"name": "Get 3 unique ribbons", "type": ["misc3"]},
     {"name": "Die in 3 different chapters", "type": ["kill"]},
@@ -107,7 +107,7 @@
     {"name": "Get the FreezeRing", "type": ["mcch2"]},
     {"name": "Build a duck in CH1 and CH5", "type": ["emultich"]},
     {"name": "Talk to Tropical Starwalker", "type": ["ech5"]},
-    {"name": "Get captured (CH1/CH2/CH3/CH5)", "type": ["misc3"]}
+    {"name": "Get captured (CH1, CH2, CH3, CH5)", "type": ["misc3"]}
   ],
   [
     {"name": "Beat the Rouxls fight (CH2/CH3)", "type": ["boss"]},

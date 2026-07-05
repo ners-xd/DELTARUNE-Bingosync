@@ -144,7 +144,7 @@
     {"name": "Take 4 photos (Board 2)", "type": ["mb2ch3"]},
     {"name": "Fully recruit an enemy in each chapter", "type": ["spare"]},
     {"name": "Recruit Miss Mizzle", "type": ["es1ch4"]},
-    {"name": "Beat the Seth + Aqua fight at the end of Cliffs", "type": ["mch5"]}
+    {"name": "Beat the Seth & Aqua fight at the end of Cliffs", "type": ["mch5"]}
   ],
   [
     {"name": "Get the BitterTear", "type": ["mch4"]},
@@ -194,7 +194,7 @@
     {"name": "Use Susie's healing spell (CH2)", "type": ["mcch2"]},
     {"name": "Finish any chapter", "type": ["lch1"]},
     {"name": "Collect 15 unique pink coins", "type": ["mch5"]},
-    {"name": "Collect all evidence before fighting Yellow & Blue", "type": ["mch5"]},
+    {"name": "Collect all evidence before fighting Blue & Yellow", "type": ["mch5"]},
     {"name": "Push off 10 Terakotas in the Fox Hunt", "type": ["mch5"]}
   ],
   [

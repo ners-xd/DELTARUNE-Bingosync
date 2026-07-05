@@ -199,7 +199,7 @@ Collect unique pink coins: These do not have to be gotten on the same save file,
 
 Defeat 5 bullet patterns (CH5): These do not have to be completed on the same save file, so long as they're all from different locations. A "bullet pattern" for this goal counts as one that makes the green border appear and disappear around the screen (i.e. Aqua's first bullet pattern after getting the Petal Feather)
 
-Collect all evidence before fighting Yellow & Blue: You need to have all these pieces of evidence in your inventory at the same time before reaching the Yellow & Blue fight:
+Collect all evidence before fighting Blue & Yellow: You need to have all these pieces of evidence in your inventory at the same time before reaching the Blue & Yellow fight:
     - YellowShred - bottom left of Yellow's room
     - BootOil - top of Yellow's room, above Shi
     - Scissors - top of Yellow's room, interact with the spark on the bridge
@@ -231,7 +231,7 @@ Get the Couch Pillow (CH4): If you had entered Ralsei's room in Castle Town, you
 
 Hit the golden Bullet Pattern: After beating Aqua's first tutorial bullet pattern, get out of platformer mode and leave and re-enter the room. Backtrack all the way to the left and hit the golden bullet pattern that spawns
 
-Beat 'Not An Enemy': In the CH5 Cliffs, when reaching the Seth + Aqua dash in the pink colored room, fail the challenge, exit platformer mode and go down. Interact with Shi, and say "I would not mind" (right). Leave and come back to encounter it
+Beat 'Not An Enemy': In the CH5 Cliffs, when reaching the Seth & Aqua dash in the pink colored room, fail the challenge, exit platformer mode and go down. Interact with Shi, and say "I would not mind" (right). Leave and come back to encounter it
 
 Interact with a Mantis (CH5): After completing the right side of Flower Castle, go back to the Cafe, go up to the Second Diner and interact with one of the mantises to the left/right of Aqua
 

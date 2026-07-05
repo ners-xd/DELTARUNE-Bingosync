@@ -795,26 +795,34 @@ function scr_add_goal_pink_coin()
 
 function scr_add_goal_buy()
 {
+    if (global.buy_frame_delay != -1)
+        exit;
+
+    with (obj_bingo_controller)
+    {
+        buy_update_money_amount = global.gold;
+    #if CHAPTER_3
+        buy_update_points_amount = global.flag[1044];
+    #elsif CHAPTER_5
+        buy_update_flowery_money_amount = global.flag[1411];
+    #endif
+    }
+
     call_later(1, time_source_units_frames, function()
     {
         with (obj_bingo_controller)
         {
-            if (global.gold != buy_update_money_amount
+            if (global.gold < buy_update_money_amount
             #if CHAPTER_3
-                || global.flag[1044] != buy_update_points_amount
+                || global.flag[1044] < buy_update_points_amount
             #elsif CHAPTER_5
-                || global.flag[1411] != buy_update_flowery_money_amount
+                || global.flag[1411] < buy_update_flowery_money_amount
             #endif
                 )
                 scr_add_goal_array(8, "shop_rooms", room_get_name(room));
-
-                buy_update_money_amount = global.gold;
-            #if CHAPTER_3
-                buy_update_points_amount = global.flag[1044];
-            #elsif CHAPTER_5
-                buy_update_flowery_money_amount = global.flag[1411];
-            #endif
         }
+
+        global.buy_frame_delay = -1;
     });
 }
 

@@ -65,7 +65,7 @@ if (ds_map_find_value(async_load, "id") == async_string)
 
             case nickname_button:
                 global.nickname = string_copy(string_trim(str), 1, 50);
-                clicked_button.text = "Nickname:" + (global.nickname == "" ? " [Empty]" : ("\n" + global.nickname));
+                clicked_button.text = "Name:" + (global.nickname == "" ? " [Empty]" : ("\n" + global.nickname));
                 break;
         }
 

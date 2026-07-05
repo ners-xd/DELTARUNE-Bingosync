@@ -6,9 +6,7 @@ if (!obj_time.internet)
     global.chat_typing = false;
     global.starring_goals = false;
     obj_time.mouse_visible = false;
-#if CHAPTER_2
     exception_unhandled_handler(undefined);
-#endif
     instance_destroy();
     exit;
 }

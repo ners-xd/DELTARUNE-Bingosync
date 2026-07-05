@@ -3,17 +3,21 @@
 switch(Data?.GeneralInfo?.DisplayName?.Content)
 {
     /*
-    Nintendo Switch Chapter 3 and 4 game.win files still
+    Nintendo Switch Chapter 3-5 game.win files still
     have the name DELTARUNE Chapter 1&2
     */
     case "DELTARUNE Chapter 1&2":
-        if(Data?.GameObjects?.ByName("obj_intro_ch3") != null)
+        if(Data?.GameObjects?.ByName("obj_intro_ch5") != null)
         {
-            BuildMod(3);
+            BuildMod(5);
         }
         else if(Data?.GameObjects?.ByName("obj_intro_ch4") != null)
         {
             BuildMod(4);
+        }
+        else if(Data?.GameObjects?.ByName("obj_intro_ch3") != null)
+        {
+            BuildMod(3);
         }
         else
         {

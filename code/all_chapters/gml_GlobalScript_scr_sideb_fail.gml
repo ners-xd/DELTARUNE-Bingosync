@@ -1,4 +1,4 @@
-/// PATCH .ignore if CHAPTER_1 || CHAPTER_3
+/// PATCH .ignore if CHAPTER_1 || CHAPTER_3 || CHAPTER_5
 
 /// BEFORE
         global.flag[916] = 1;

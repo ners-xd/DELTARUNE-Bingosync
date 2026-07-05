@@ -71,7 +71,7 @@ else if (scr_check_pressed(vk_escape, global.input_g[5]))
 
 if (global.gold != money_amount)
 {
-    if (global.gold >= 2000)
+    if (global.gold >= 5000)
         scr_add_goal_progress(0, 1);
 
     if (global.gold >= 3000)
@@ -79,6 +79,36 @@ if (global.gold != money_amount)
 
     money_amount = global.gold;
 }
+
+#if CHAPTER_5
+if (global.flag[1411] != flowery_money_amount)
+{
+    if (global.flag[1411] >= 250)
+        scr_add_goal_progress(153, 1);
+
+    flowery_money_amount = global.flag[1411];
+}
+#endif
+
+#if CHAPTER_4 || CHAPTER_5
+if (jack_playing != noone)
+{
+    if (!audio_is_playing(jack_sfx[jack_playing]))
+        jack_playing = noone;
+}
+else
+{
+    for (var i = 0; i < jack_sfx_len; i++)
+    {
+        if (audio_is_playing(jack_sfx[i]))
+        {
+            jack_playing = i;
+            scr_add_goal_progress(173, 1);
+            break;
+        }
+    }
+}
+#endif
 
 var save = false;
 

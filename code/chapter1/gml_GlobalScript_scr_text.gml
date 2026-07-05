@@ -20,3 +20,14 @@
 /// CODE
                 scr_add_goal_progress(37, 1);
 /// END
+
+/// AFTER
+                    scr_phoneadd(202);
+                }
+            }
+            
+            if (global.choice == 1)
+            {
+/// CODE
+                scr_add_goal_progress(82, 1);
+/// END

@@ -1,5 +1,5 @@
 /// PATCH
 
 /// PREPEND
-scr_add_goal_progress(7, 1);
+scr_add_goal_array(7, "deaths_chapters", "chapter3");
 /// END

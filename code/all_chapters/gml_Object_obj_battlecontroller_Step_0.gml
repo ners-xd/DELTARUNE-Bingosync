@@ -9,8 +9,8 @@
 /// END
 #endif
 
-/// BEFORE
-        if (noreturn == 0)
+/// AFTER
+        reset = 1;
 /// CODE
         if (!global.grazed_at_all)
             scr_add_goal_progress(133, 1);

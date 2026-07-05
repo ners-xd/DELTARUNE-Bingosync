@@ -62,7 +62,7 @@ function connect_to_room()
     }
     else if (global.nickname == "")
     {
-        error_show("No nickname set!");
+        error_show("No name set!");
     }
     else if (global.color == "")
     {
@@ -93,7 +93,7 @@ function draw_main_buttons()
         text = "Connect to room";
 
         if (global.room_id == "" || global.nickname == "" || global.color == "")
-            hover_text = "Connect to the room provided in the Room & User Info section.\nYou haven't set a room ID, nickname or color yet.";
+            hover_text = "Connect to the room provided in the Room & User Info section.\nYou haven't set a room ID, name or color yet.";
         else
             hover_text = "Connect to room " + global.room_id + " as\n" + global.nickname + " (" + global.color + ").";
 
@@ -113,7 +113,7 @@ function draw_main_buttons()
         y2 = y + 51;
         sprite = spr_room_user_info_icon;
         text = "Room & User Info";
-        hover_text = "Set your room ID / password, nickname and color here.";
+        hover_text = "Set your room ID / password, name and color here.";
 
         on_click = function()
         {
@@ -156,7 +156,10 @@ function draw_main_buttons()
                     obj_time.controller_used ? "Controller is based." : "Keyboard is based.",
                     obj_time.controller_used ? "Keyboard is not based." : "Controller is not based.",
                     "There's a friend inside me.",
-                    "There's a friend inside you."
+                    "There's a friend inside you.",
+                    "Don't forget to fight the dummy!",
+                    "jarona",
+                    "stingus"
                 );
                 date_set_timezone(timezone);
 
@@ -166,7 +169,7 @@ function draw_main_buttons()
                     draw_set_color(c_white);
                     draw_text_outline(width / 2, 40, "ROOM & USER INFO");
                     draw_set_font(fnt_main);
-                    draw_text_outline(width / 2, height - 205, "Nickname color:");
+                    draw_text_outline(width / 2, height - 205, "Name color:");
 
                     if (global.nickname != "" && global.color != "")
                     {
@@ -212,7 +215,7 @@ function draw_main_buttons()
                 {
                     x2 = x + 357;
                     y2 = y + 50;
-                    text = "Nickname:" + (global.nickname == "" ? " [Empty]" : ("\n" + global.nickname));
+                    text = "Name:" + (global.nickname == "" ? " [Empty]" : ("\n" + global.nickname));
 
                     on_click = function()
                     {
@@ -220,7 +223,7 @@ function draw_main_buttons()
                         obj_time.mouse_visible = false;
                         obj_bingo_setup.clicked_button = id;
                         obj_bingo_setup.mystring = "";
-                        obj_bingo_setup.async_string = get_string_async("Input your nickname (maximum 50 characters).", global.nickname);
+                        obj_bingo_setup.async_string = get_string_async("Input your name (maximum 50 characters).", global.nickname);
                     };
                 }
             }

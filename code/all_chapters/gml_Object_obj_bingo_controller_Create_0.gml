@@ -21,6 +21,29 @@ prev_interact = 0;
 mainchara_was_in_prev_room = false;
 command_list = "/color or /colour, /star, /autoconnect, /fogofwar, /quit";
 money_amount = global.gold;
+buy_update_money_amount = global.gold;
+
+#if CHAPTER_3
+buy_update_points_amount = global.flag[1044];
+#elsif CHAPTER_5
+flowery_money_amount = global.flag[1411];
+buy_update_flowery_money_amount = global.flag[1411];
+#endif
+
+#if CHAPTER_4 || CHAPTER_5
+jack_playing = noone;
+jack_sfx = [
+    snd_your_long, snd_your_long_jp
+
+    #if CHAPTER_4
+        , snd_takingtoolongtoolong, snd_taking_too_long_fast, snd_long_only, snd_taking_too_long_small_fast_jp, snd_taking_too_long_small,
+        snd_alt_takingtoolong, snd_taking_too_long_small_fast, snd_taking_too_long_small_jp, snd_taking_too_long_jp, snd_taking_too_long_fast_jp,
+        snd_long_only_jp, snd_taking_too_long, snd_takingtoolongtoolong_jp, snd_alt_takingtoolong_jp
+    #endif
+];
+jack_sfx_len = array_length(jack_sfx);
+#endif
+
 current_str = "";
 init_chat_history = [];
 chat_history = [];
@@ -30,6 +53,13 @@ global.goal_slot = array_create(25, "");
 global.goal_colors = array_create(25, "blank");
 global.room_seed = -1;
 global.room_lockout = "";
+
+exception_unhandled_handler(function(e)
+{
+    scr_add_goal_progress(58, 1);
+    show_message("Congratulations on crashing the game!\nHere's the error if you care:\n\n" + e.longMessage);
+    return 0;
+});
 
 if (obj_time.internet)
 {

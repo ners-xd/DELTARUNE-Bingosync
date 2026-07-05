@@ -4,6 +4,9 @@
 /// AFTER
             global.item[i] = arg0;
 /// CODE
+            scr_add_goal_array(155, "consumables_obtained", "consumable" + string(arg0));
+            scr_add_goal_buy();
+
             if (i == 11)
             {
                 scr_add_goal_progress(39, 1);
@@ -38,6 +41,9 @@
 /// CODE
     if (!noroom)
     {
+        scr_add_goal_array(155, "consumables_obtained", "consumable" + string(arg0));
+        scr_add_goal_buy();
+
         switch (arg0)
         {
             case 2:
@@ -51,6 +57,10 @@
 
             case 35:
                 scr_add_goal_progress(89, 1);
+                break;
+
+            case 65:
+                scr_add_goal_progress(108, 1);
                 break;
 
             case 63:

@@ -1,22 +1,28 @@
 /// PATCH
 
-/// REPLACE
-                substring = stringsetloc("THE \\cYROUXLS BLOCK\\cW!", "obj_board_pickup_slash_Step_0_gml_272_0");
-/// CODE
-                {
-                    substring = stringsetloc("THE \\cYROUXLS BLOCK\\cW!", "obj_board_pickup_slash_Step_0_gml_272_0");
-                    scr_add_goal_array(8, "shop_items", "rouxls");
-                }
-/// END
-
 /// AFTER
             msgset(0, yougot);
 /// CODE
-            if (room == room_board_1)
+            if (type == "key")
             {
-                if (instance_exists(obj_b1susiedig) && obj_b1susiedig.active && point_in_rectangle(obj_mainchara_board.x, obj_mainchara_board.y, 160, 80, 416, 256))
-                    scr_add_goal_progress(87, 1);
-                else if (instance_exists(obj_b1controls) && obj_b1controls.active && point_in_rectangle(obj_mainchara_board.x, obj_mainchara_board.y, 384, 196, 448, 256))
-                    scr_add_goal_progress(118, 1);
+                switch (room)
+                {
+                    case room_board_1:
+                        if (instance_exists(obj_b1spring) && obj_b1spring.active)
+                            scr_add_goal_array(87, "keys_obtained", "lancer_key");
+                        else if (instance_exists(obj_b1cactusfield2) && obj_b1cactusfield2.active)
+                            scr_add_goal_array(87, "keys_obtained", "cactus_key");
+                        else if (instance_exists(obj_b1susiedig) && obj_b1susiedig.active)
+                            scr_add_goal_array(87, "keys_obtained", "bomberman_key");
+                        else if (instance_exists(obj_b1controls) && obj_b1controls.active)
+                            scr_add_goal_array(87, "keys_obtained", "quiz_key");
+                        else if (instance_exists(obj_b1store) && obj_b1store.active)
+                            scr_add_goal_array(87, "keys_obtained", "shop_key");
+                        break;
+
+                    case room_board_2:
+                        scr_add_goal_array(87, "keys_obtained", "board2_key");
+                        break;
+                }
             }
 /// END

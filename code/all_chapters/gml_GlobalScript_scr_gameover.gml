@@ -1,8 +1,12 @@
 /// PATCH
 
 /// AFTER
+#if CHAPTER_1 || CHAPTER_2 || CHAPTER_3 || CHAPTER_4
 function scr_gameover()
+#else
+function scr_gameover(arg0 = true)
+#endif
 {
 /// CODE
-    scr_add_goal_progress(7, 1);
+    scr_add_goal_array(7, "deaths_chapters", "chapter" + string(global.chapter));
 /// END

@@ -8,4 +8,5 @@ if (global.is_console)
 
 ds_map_destroy(global.goal_indexes);
 ds_map_destroy(global.goal_vars_indexes);
+exception_unhandled_handler(undefined);
 instance_destroy();

@@ -45,7 +45,7 @@ class BingoLoader : UMPLoader
 
     public enum DR
     {
-        MaxChapter = 4
+        MaxChapter = 5
     }
 
     public string GetModVersion()

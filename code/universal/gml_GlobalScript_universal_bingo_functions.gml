@@ -13,7 +13,7 @@ function vanilla_file_copy(file_name)
     if (!global.is_console)
     {
         var vanilla_location = game_save_id + "../DELTARUNE/" + file_name;
-        
+
         if (file_exists(vanilla_location))
             file_copy(vanilla_location, file_name);
     }
@@ -30,6 +30,8 @@ function vanilla_file_copy(file_name)
         var possible_rooms = [room_intro, room_intro, room_legend];
     #elsif CHAPTER_4
         var possible_rooms = [room_intro_ch4, room_intro_ch4, room_legend];
+    #elsif CHAPTER_5
+        var possible_rooms = [room_intro_ch5, room_intro_ch5, room_legend];
     #endif
         var roomchoice = possible_rooms[0];
 
@@ -56,7 +58,7 @@ function scr_import_vanilla_files()
     if (global.is_console)
     {
         file_copy("Deltarune/deltarune.sav", "Deltarune/DELTARUNE_bingosync_mod.sav");
-        
+
         if (scr_is_switch_os())
             switch_save_data_commit();
 
@@ -76,7 +78,13 @@ function scr_import_vanilla_files()
             vanilla_file_copy("keyconfig_" + string(slot) + ".ini");
 
             for (var chapter = 1; chapter <= #DR.MaxChapter; chapter++)
-                vanilla_file_copy("filech" + string(chapter) + "_" + string(slot));
+            {
+                var save_file = "filech" + string(chapter) + "_" + string(slot);
+                vanilla_file_copy(save_file);
+
+                if (chapter >= 5)
+                    vanilla_file_copy(save_file + "_b");
+            }
         }
 
     #if !CHAPTER_SELECT
@@ -107,9 +115,12 @@ function scr_delete_save_files()
         {
             ini_section_delete(scr_ini_chapter(chapter, slot));
             var save_file = "filech" + string(chapter) + "_" + string(slot);
-            
+
             if (ossafe_file_exists(save_file))
                 ossafe_file_delete(save_file);
+
+            if (chapter >= 5 && ossafe_file_exists(save_file + "_b"))
+                ossafe_file_delete(save_file + "_b");
         }
     }
 

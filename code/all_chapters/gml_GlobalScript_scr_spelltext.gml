@@ -35,11 +35,11 @@
 #endif
 
 /// AFTER
-#if CHAPTER_1 || CHAPTER_2 || CHAPTER_3
-            if (global.mercymod[star] >= 100)
+#if CHAPTER_4
+            else if (global.mercymod[star] >= 100)
             {
 #else
-            else if (global.mercymod[star] >= 100)
+            if (global.mercymod[star] >= 100)
             {
 #endif
 /// CODE

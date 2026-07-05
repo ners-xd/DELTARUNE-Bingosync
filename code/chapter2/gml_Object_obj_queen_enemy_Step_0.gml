@@ -5,10 +5,7 @@
 /// CODE
     scr_add_goal_progress(15, 1);
     scr_add_goal_array(135, "bosses_fought", "queen");
-/// END
 
-/// BEFORE
-                idlesprite = spr_cutscene_25_queen_chair_shocked;
-/// CODE
-                scr_add_goal_progress(74, 1);
+    if (global.monsterhp[myself] > 0)
+        scr_add_goal_progress(74, 1);
 /// END

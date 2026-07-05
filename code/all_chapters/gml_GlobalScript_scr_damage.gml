@@ -1,5 +1,6 @@
 /// PATCH
 
+#if CHAPTER_1 || CHAPTER_2 || CHAPTER_3 || CHAPTER_4
 /// REPLACE
 function scr_damage()
 /// CODE
@@ -12,6 +13,27 @@ scr_damage_cache();
 if (singletarget)
     scr_add_hit();
 /// END
+#else
+/// REPLACE
+function scr_damage(arg0 = true)
+/// CODE
+function scr_damage(singletarget = true, diff_tdamage = true)
+/// END
+
+/// AFTER
+    if (global.inv < 0)
+    {
+/// CODE
+        if (singletarget)
+            scr_add_hit();
+/// END
+
+/// REPLACE
+        if (!arg0)
+/// CODE
+        if (!diff_tdamage)
+/// END
+#endif
 
 #if CHAPTER_4
 /// BEFORE

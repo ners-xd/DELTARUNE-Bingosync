@@ -21,6 +21,8 @@
             if (_lettergrade != "")
                 desiredletter = _lettergrade; // No idea why there's two variables for this but I'm putting them both just like in the original code, just in case I guess
 
-            if (desiredletter == "Z")
+            if (desiredletter == "Z" && boardnumber == 1)
                 scr_add_goal_progress(85, 1);
+            else if (desiredletter == "T")
+                scr_add_goal_progress(171, 1);
 /// END

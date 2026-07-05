@@ -768,12 +768,14 @@ function scr_add_goal_array(slot, arr_name, str)
 
 function scr_add_goal_spares(amount, include_pacify_only = false)
 {
-    scr_add_goal_progress(2, amount);
     scr_add_goal_progress(10, amount);
     scr_add_goal_progress(30, amount);
 
     if (include_pacify_only)
+    {
+        scr_add_goal_progress(2, amount);
         scr_add_goal_progress(80, amount);
+    }
 }
 
 function scr_add_goal_kills(amount)
@@ -781,6 +783,39 @@ function scr_add_goal_kills(amount)
     scr_add_goal_progress(3, amount);
     scr_add_goal_progress(16, amount);
     scr_add_goal_progress(31, amount);    
+}
+
+#if CHAPTER_5
+function scr_add_goal_pink_coin()
+{
+    for (var i = 145; i <= 147; i++)
+        scr_add_goal_array(i, "pink_coins", room_get_name(room) + "-" + string(x) + "-" + string(y));
+}
+#endif
+
+function scr_add_goal_buy()
+{
+    call_later(1, time_source_units_frames, function()
+    {
+        with (obj_bingo_controller)
+        {
+            if (global.gold < buy_update_money_amount
+            #if CHAPTER_3
+                || global.flag[1044] < buy_update_points_amount
+            #elsif CHAPTER_5
+                || global.flag[1411] < buy_update_flowery_money_amount
+            #endif
+                )
+                scr_add_goal_array(8, "shop_rooms", room_get_name(room));
+
+                buy_update_money_amount = global.gold;
+            #if CHAPTER_3
+                buy_update_points_amount = global.flag[1044];
+            #elsif CHAPTER_5
+                buy_update_flowery_money_amount = global.flag[1411];
+            #endif
+        }
+    });
 }
 
 function scr_add_goal_progress(slot, amount)

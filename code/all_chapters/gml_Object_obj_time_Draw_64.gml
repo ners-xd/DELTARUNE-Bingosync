@@ -30,7 +30,7 @@ if (room != ROOM_INITIALIZE && !instance_exists(obj_screen_loading) && global.hi
     draw_set_valign(fa_top);
     draw_set_font(fnt_mainbig);
     draw_set_color(c_yellow);
-    draw_text_outline(5, global.chat_typing ? (surface_get_height(application_surface) - 80) : (surface_get_height(application_surface) - 30), "Hits: " + string(global.hits));
+    draw_text_outline(2, global.chat_typing ? (surface_get_height(application_surface) - 90) : (surface_get_height(application_surface) - 30), "Hits: " + string(global.hits));
 }
 
 scr_set_temp_draw();

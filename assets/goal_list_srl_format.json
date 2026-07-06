@@ -15,7 +15,6 @@
   [
     {"name": "Complete 3 unique dojo challenges", "type": ["ech2"]},
     {"name": "Complete the Dummy tutorial", "type": ["ech1"]},
-    {"name": "Have $5000 at one time", "type": ["misc3"]},
     {"name": "Make someone go on stage with Pizzapants", "type": ["trch5"]},
     {"name": "Solve the CH5 Garden Box Puzzle without Ralsei's help", "type": ["ech5"]}
   ],
@@ -117,7 +116,8 @@
     {"name": "Get to the Tropic of Love", "type": ["mb2ch3"]},
     {"name": "Watch the Suselle Cutscene (Queen's Mansion)", "type": ["mmch2"]},
     {"name": "Defeat 5 bullet patterns (CH5)", "type": ["mch5"]},
-    {"name": "Win a battle in each chapter", "type": ["emultich"]}
+    {"name": "Win a battle in each chapter", "type": ["emultich"]},
+    {"name": "Have $5000 at one time", "type": ["misc3"]}
   ],
   [
     {"name": "Talk to the Green Swatchling", "type": ["mmch2"]},

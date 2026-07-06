@@ -4,7 +4,7 @@ See frozen Berdly when leaving Queen's basement: Wrong warp out of Queen's basem
 
 Crash the game: The fastest crash we currently know is: do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them. Tutorial: https://youtube.com/watch?v=HVMQFhg1T-s
 
-Wrong Warp into 15 unique rooms: Works in all chapters. Wrong warping into shops doesn't count
+Wrong Warp into 15 unique rooms: Works in all chapters. Wrong warping into shops doesn't count. Wrong warping in platformer mode doesn't count
 
 Have money at one time: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
 

@@ -212,6 +212,7 @@ Collect all evidence before fighting Blue & Yellow: You need to have all these p
 See 2 unique IMAGE_FRIENDs: They are seen in:
     - CH2: after going to the left of the room with the teacup in Queen's basement, go back right to see the door close, and back left
     - CH3:
+        - Beginning: during Ralsei's explanation about the Dark Worlds
         - Sword Board 1: after reaching MAX LV, go back to spawn, cut the trees to the left or right, enter the room and wait for the eyes or smile to appear (these do not count separately for the goal, they count as one)
         - ERAM Fight: after reaching phase 2, various FRIENDs will spawn
     - CH4:

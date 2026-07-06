@@ -3,6 +3,12 @@
 if (!board_done || !room_settings_done || !feed_done || !room_base_done)
     exit;
 
+if (room == ROOM_INITIALIZE && instance_exists(obj_initializer2))
+{
+    room_goto(obj_initializer2.roomchoice);
+    exit;
+}
+
 if (!global.chat_typing && !global.starring_goals)
 {
     if (scr_check_pressed(global.board_key, global.board_key_gp))

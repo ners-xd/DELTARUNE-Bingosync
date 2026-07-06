@@ -42,6 +42,9 @@ try
                 snd_free_all();
                 audio_stop_all();
 
+                if (global.is_console)
+                    application_surface_draw_enable(false);
+
                 if (global.room_id != global.last_connected_room)
                 {
                     var first_time = (global.last_connected_room == "");
@@ -58,12 +61,7 @@ try
                         scr_save_bingo_data();
                     }
                 }
-
-                if (global.is_console)
-                    application_surface_draw_enable(false);
-
-                room_goto(obj_initializer2.roomchoice);
-                exit;
+                break;
 
             case network_type_data:
                 var data = ds_map_find_value(async_load, "buffer");
@@ -108,7 +106,7 @@ try
                         scr_reset_bingo_data();
                         break;
                 }
-                exit;
+                break;
         }
     }
 }

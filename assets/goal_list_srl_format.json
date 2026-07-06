@@ -22,9 +22,7 @@
     {"name": "Don't sleep to skip the start of a chapter", "type": ["misc2"]},
     {"name": "Crash the game", "type": ["ech2"]},
     {"name": "Go to the diner with Susie (CH4)", "type": ["eps1ch4"]},
-    {"name": "Have Sans befriend Toriel (CH1, CH2, CH4)", "type": ["misc3"]},
     {"name": "Equip the White Ribbon (CH1/CH3)", "type": ["ech1"]},
-    {"name": "Get 3 unique ribbons", "type": ["misc3"]},
     {"name": "Die in 3 different chapters", "type": ["kill"]},
     {"name": "Obtain the Red Ribbon in the Dark Garden", "type": ["ech5"]}
   ],
@@ -42,7 +40,8 @@
     {"name": "Pacify 10 enemies", "type": ["spare"]},
     {"name": "Spare/Pacify Ponman", "type": ["ech1"]},
     {"name": "Get the Couch Pillow (CH4)", "type": ["ech4"]},
-    {"name": "Get 5 keys (CH3)", "type": ["eb1ch3"]}
+    {"name": "Get 5 keys (CH3)", "type": ["eb1ch3"]},
+    {"name": "Get 3 unique ribbons", "type": ["misc3"]}
   ],
   [
     {"name": "Donate D$1 (CH1/CH4)", "type": ["ech1"]},
@@ -94,7 +93,8 @@
     {"name": "Talk to Starwalker in the forest (CH1)", "type": ["mch1"]},
     {"name": "Get an egg (Original Source)", "type": ["misc1"]},
     {"name": "Get the Ice Key", "type": ["epb1ch3"]},
-    {"name": "Talk to Zenlooker", "type": ["ech5"]}
+    {"name": "Talk to Zenlooker", "type": ["ech5"]},
+    {"name": "Get the Tree Cake", "type": ["lch5"]}
   ],
   [
     {"name": "Abort Snowgrave after getting the FreezeRing", "type": ["exch2"]},
@@ -106,7 +106,8 @@
     {"name": "Get the FreezeRing", "type": ["mcch2"]},
     {"name": "Build a duck in CH1 and CH5", "type": ["emultich"]},
     {"name": "Talk to Tropical Starwalker", "type": ["ech5"]},
-    {"name": "Get captured (CH1, CH2, CH3, CH5)", "type": ["misc3"]}
+    {"name": "Get captured (CH1, CH2, CH3, CH5)", "type": ["misc3"]},
+    {"name": "Get massaged by Ferrol", "type": ["lmultich"]}
   ],
   [
     {"name": "Beat the Rouxls fight (CH2/CH3)", "type": ["boss"]},
@@ -133,6 +134,7 @@
   [
     {"name": "Get the Bed Inspector title (CH1)", "type": ["mch1"]},
     {"name": "Defeat Queen", "type": ["mmch2"]},
+    {"name": "Spare Queen", "type": ["lch2"]},
     {"name": "Obtain 5 unique armors", "type": ["misc1"]},
     {"name": "Trigger Milk on the 2nd K. Round fight", "type": ["lch1"]},
     {"name": "Use Dual Heal", "type": ["boss"]},
@@ -156,14 +158,14 @@
     {"name": "Get a Bromide", "type": ["mch5"]}
   ],
   [
-    {"name": "Get massaged by Ferrol", "type": ["lmultich"]},
     {"name": "Complete Jevil", "type": ["lch1"]},
     {"name": "Get a Shadow Crystal", "type": ["boss"]},
     {"name": "Find Ms. Pipis", "type": ["exch2"]},
     {"name": "Hit 3 Pipis", "type": ["exch2"]},
     {"name": "Finish Doom Board", "type": ["mb3ch3"]},
     {"name": "Interact with 20 save points", "type": ["mmultich"]},
-    {"name": "Collect the pink coin in Yellow's room", "type": ["mch5"]}
+    {"name": "Collect the pink coin in Yellow's room", "type": ["mch5"]},
+    {"name": "Collect 10 unique pink coins", "type": ["mch5"]}
   ],
   [
     {"name": "Complete the Susie bridge puzzle in TV World", "type": ["mch3"]},
@@ -175,7 +177,8 @@
     {"name": "Buy something from Spamton's shop", "type": ["mcch2"]},
     {"name": "Recruit Shuttah", "type": ["mch3"]},
     {"name": "Obtain 12 unique consumables", "type": ["misc2"]},
-    {"name": "Get an item from the donation fountain (CH4)", "type": ["lch4"]}
+    {"name": "Get an item from the donation fountain (CH4)", "type": ["lch4"]},
+    {"name": "Have Sans befriend Toriel (CH1, CH2, CH4)", "type": ["misc3"]}
   ],
   [
     {"name": "Get the Pipis item", "type": ["mch3"]},
@@ -183,8 +186,7 @@
     {"name": "Watch the Weird Route hospital cutscene (CH2)", "type": ["exch2"]},
     {"name": "Get the Shelter Key", "type": ["mb2ch3"]},
     {"name": "Beat the Club Apatheia encounter", "type": ["lch4"]},
-    {"name": "Place an egg in Hometown", "type": ["misc3"]},
-    {"name": "Collect 10 unique pink coins", "type": ["mch5"]}
+    {"name": "Place an egg in Hometown", "type": ["misc3"]}
   ],
   [
     {"name": "Get the Annoying Dog on Rouxls", "type": ["mch3"]},
@@ -193,9 +195,9 @@
     {"name": "Open the Balloon Chest (City Heights)", "type": ["mcch2"]},
     {"name": "Use Susie's healing spell (CH2)", "type": ["mcch2"]},
     {"name": "Finish any chapter", "type": ["lch1"]},
-    {"name": "Collect 15 unique pink coins", "type": ["mch5"]},
     {"name": "Collect all evidence before fighting Blue & Yellow", "type": ["mch5"]},
-    {"name": "Push off 10 Terakotas in the Fox Hunt", "type": ["mch5"]}
+    {"name": "Push off 10 Terakotas in the Fox Hunt", "type": ["mch5"]},
+    {"name": "Collect 15 unique pink coins", "type": ["mch5"]}
   ],
   [
     {"name": "Beat Fake Gerson", "type": ["lch4"]},
@@ -214,7 +216,6 @@
     {"name": "Beat Tenna", "type": ["lch3"]},
     {"name": "Beat Spamton NEO (Basement)", "type": ["lch2"]},
     {"name": "Defeat 2 shadow item holders", "type": ["boss"]},
-    {"name": "Get the Tree Cake", "type": ["lch5"]},
     {"name": "Kill a Titan Spawn", "type": ["lch4"]}
   ],
   [
@@ -222,7 +223,6 @@
     {"name": "Beat The Knight", "type": ["lch3"]},
     {"name": "Beat The Titan", "type": ["lch4"]},
     {"name": "Beat Flowery", "type": ["lch5"]},
-    {"name": "Beat Pink", "type": ["lch5"]},
-    {"name": "Spare Queen", "type": ["lch2"]}
+    {"name": "Beat Pink", "type": ["lch5"]}
   ]
 ]

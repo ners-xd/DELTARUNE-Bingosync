@@ -12,9 +12,7 @@
     if (!global.is_console)
         io_clear();
 
-    for (var i = 0; i < 100; i++)
-        global.tempflag[i] = 0;
-
+    global.tempflag = array_create(100, 0);
     scr_gamestart();
     room_goto(scr_get_starting_room());
 /// END

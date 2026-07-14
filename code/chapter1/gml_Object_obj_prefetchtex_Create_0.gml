@@ -34,7 +34,7 @@ if (global.is_console)
     if (scr_is_switch_os())
         texture_groups = ["Default", "ConsoleSwitch"];
 
-    texture_groups[array_length(texture_groups)] = "Console";
+    array_push(texture_groups, "Console");
 }
 
 var i = 0;

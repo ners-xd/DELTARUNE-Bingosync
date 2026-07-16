@@ -1,4 +1,4 @@
-/// PATCH .ignore if CHAPTER_4
+/// PATCH .ignore if CHAPTER_5
 
 /// REPLACE
     if (global.is_console)

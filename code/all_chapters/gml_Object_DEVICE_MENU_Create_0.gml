@@ -18,4 +18,4 @@ if (ossafe_file_exists("dr.ini"))
 MENU_NO = INITMENU;
 /// CODE
 // This is so you don't get sent to the completion data menu when you start the game
-// END
+/// END

@@ -789,7 +789,7 @@ function scr_add_goal_kills(amount)
 function scr_add_goal_pink_coin()
 {
     for (var i = 145; i <= 147; i++)
-        scr_add_goal_array(i, "pink_coins", room_get_name(room) + "-" + string(x) + "-" + string(y));
+        scr_add_goal_array(i, "pink_coins", room_get_name(room));
 }
 #endif
 
@@ -808,7 +808,7 @@ function scr_add_goal_buy()
     #endif
     }
 
-    call_later(1, time_source_units_frames, function()
+    global.buy_frame_delay = call_later(1, time_source_units_frames, function()
     {
         with (obj_bingo_controller)
         {

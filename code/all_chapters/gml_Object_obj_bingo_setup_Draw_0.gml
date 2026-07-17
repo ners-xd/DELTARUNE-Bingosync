@@ -3,11 +3,11 @@
 scr_get_temp_draw();
 draw_set_font(fnt_main);
 draw_sprite(spr_bingosync_menu, 0, 0, 0);
+draw_set_halign(fa_center);
+draw_set_valign(fa_middle);
 
 if (obj_time.newest_mod_version != "")
 {
-    draw_set_halign(fa_center);
-    draw_set_valign(fa_middle);
     draw_set_color(c_red);
 #if CHAPTER_1 || CHAPTER_2
     draw_text_outline(width / 2, 10, ">> Your mod is outdated. The latest release is " + obj_time.newest_mod_version + ". <<");
@@ -16,8 +16,6 @@ if (obj_time.newest_mod_version != "")
 #endif
 }
 
-draw_set_halign(fa_center);
-draw_set_valign(fa_middle);
 draw_set_color(status_color);
 draw_text_outline_ext(width / 2, height - 60, status_text, 15, width);
 bg_draw();

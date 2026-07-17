@@ -4,7 +4,7 @@
 function scr_interact()
 {
 /// CODE
-    var spr = variable_instance_exists(id, "marker") ? marker.sprite_index : sprite_index;
+    var spr = (variable_instance_exists(id, "marker") && marker > 0 && variable_instance_exists(marker, "sprite_index")) ? marker.sprite_index : sprite_index;
 
 #if CHAPTER_2
     if (spr == spr_treasurebox || spr == spr_queenart_treasure_middlepoint)

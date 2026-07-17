@@ -143,7 +143,7 @@ if (global.room_seed != -1)
     }
 
     draw_set_halign(fa_right);
-    draw_text_outline(text_x, final_y, "Seed: " + (board_revealed ? string(global.room_seed) : "Hidden") + " / " + global.room_lockout);
+    draw_text_outline(text_x, final_y, (fixed_board ? "Fixed Board / " : ("Seed: " + (board_revealed ? string(global.room_seed) : "Hidden") + " / ")) + global.room_lockout);
     var kb_key = scr_input_name(global.board_key);
     var gp_key = scr_input_name_gp(global.board_key_gp);
     var toggle_text = global.show_board ? "Hide board" : "Show board";
@@ -357,18 +357,64 @@ if (global.chat_typing)
                     break;
 
                 case "/fogofwar":
-                    if (!global.fog_of_war)
+                    var param = (array_length(split_string) > 1) ? split_string[1] : "";
+
+                    if (string_digits(param) == "")
                     {
-                        global.fog_of_war = true;
-                        scr_chat_message(c_yellow, "Fog of War mode enabled. You will only see tier 1 goals and goals around those that are marked.");
+                        if (param == "off")
+                        {
+                            if (global.fog_of_war == 0)
+                            {
+                                scr_chat_message(c_red, "Fog of War mode is already disabled.");
+                            }
+                            else
+                            {
+                                global.fog_of_war = 0;
+                                scr_chat_message(c_yellow, "Fog of War mode disabled.");
+                                scr_save_bingo_data();
+                            }
+                        }
+                        else
+                        {
+                            scr_chat_message(c_red, "Invalid argument. Type a number between 1 and 24 or off.");
+                        }
                     }
                     else
                     {
-                        global.fog_of_war = false;
-                        scr_chat_message(c_yellow, "Fog of War mode disabled.");
-                    }
+                        param = real(param);
 
-                    scr_save_bingo_data();
+                        if (param < 1 || param > 24)
+                        {
+                            scr_chat_message(c_red, "Invalid argument. Type a number between 1 and 24 or off.");
+                        }
+                        else if (param == global.fog_of_war)
+                        {
+                            scr_chat_message(c_red, "You already have Fog of War mode set to tier " + string(param) + ".");
+                        }
+                        else
+                        {
+                            var tier_str = "";
+
+                            switch (param)
+                            {
+                                case 1:
+                                    tier_str = "1";
+                                    break;
+
+                                case 2:
+                                    tier_str = "1&2";
+                                    break;
+
+                                default:
+                                    tier_str = "1-" + string(param);
+                                    break;
+                            }
+
+                            global.fog_of_war = param;
+                            scr_chat_message(c_yellow, "Fog of War mode enabled. You will only see tier " + tier_str + " goals and goals around those that are marked.");
+                            scr_save_bingo_data();
+                        }
+                    }
                     break;
 
                 case "/quit":

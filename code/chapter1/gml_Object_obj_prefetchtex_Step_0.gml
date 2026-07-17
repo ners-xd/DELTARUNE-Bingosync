@@ -5,7 +5,7 @@ if (prog < array_length(pages))
     texture_prefetch(pages[prog]);
     prog++;
 }
-else if (variable_global_exists("num_goals"))
+else if (variable_global_exists("num_goals") && variable_global_exists("srl_goals"))
 {
     loaded = true;
     global.prefetchtexload = true;

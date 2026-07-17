@@ -6,6 +6,7 @@ date_set_timezone(timezone_utc);
 start_timestamp = date_second_span(date_create_datetime(1970, 1, 2, 0, 0, 0), date_current_datetime());
 date_set_timezone(timezone);
 board_revealed = false;
+fixed_board = false;
 http_board = -1;
 http_room_settings = -1;
 http_feed = -1;

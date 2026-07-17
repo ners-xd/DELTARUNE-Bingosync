@@ -47,11 +47,16 @@ try
 
             case srl_list_request:
                 var info = json_parse(ds_map_find_value(async_load, "result"));
-                var len = array_length(info[0]);
-                global.tier1_goals = array_create(len, "");
+                var len = array_length(info);
+                global.srl_goals = array_create(len);
 
                 for (var i = 0; i < len; i++)
-                    global.tier1_goals[i] = string_lower(info[0][i].name);
+                {
+                    var inner_len = array_length(info[i]);
+
+                    for (var j = 0; j < inner_len; j++)
+                        global.srl_goals[i][j] = string_lower(info[i][j].name);
+                }
                 break;
 
             case update_check_request:

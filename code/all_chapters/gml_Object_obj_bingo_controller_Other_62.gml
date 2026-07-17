@@ -29,6 +29,7 @@ try
                 global.room_seed = info.settings.seed;
                 global.room_lockout = info.settings.lockout_mode;
                 board_revealed = !info.settings.hide_card;
+                fixed_board = (info.settings.variant_id == 18);
                 room_settings_done = true;
                 break;
 

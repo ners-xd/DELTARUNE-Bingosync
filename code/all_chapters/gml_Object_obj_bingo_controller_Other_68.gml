@@ -36,7 +36,7 @@ try
                 ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\" }");
                 http_room_settings = http_get("https://bingosync.com/room/" + global.room_id + "/room-settings");
                 http_feed = ossafe_http_get("https://bingosync.com/room/" + global.room_id + "/feed");
-                http_room_base = http_get("https://bingosync.com/room/" + global.room_id);
+                http_room_base = ossafe_http_get("https://bingosync.com/room/" + global.room_id);
                 draw_set_halign(fa_left);
                 draw_set_valign(fa_top);
                 snd_free_all();
@@ -91,13 +91,32 @@ try
                         break;
 
                     case "goal":
-                        if (global.show_goal_marks && !global.fog_of_war)
-                            scr_chat_message(c_white, json.player.name + (json.remove ? " cleared " : " marked ") + "\"" + json.square.name + "\".");
+                        if (global.show_goal_marks)
+                        {
+                            var str = json.player.name + (json.remove ? " cleared " : " marked ");
+                            var slot = string_digits(json.square.slot);
+
+                            if (scr_is_goal_visible(real(slot) - 1))
+                                str += ("\"" + json.square.name + "\".");
+                            else
+                                str += ("square #" + slot + ".");
+
+                            scr_chat_message(c_white, str);
+                        }
                         break;
 
                     case "new-card":
                         if (global.show_new_cards)
-                            scr_chat_message(c_yellow, json.player.name + " generated a new card (seed: " + (json.hide_card ? "hidden" : json.seed) + "). Your progress was reset.");
+                        {
+                            var str = json.player.name + " generated a new card ";
+
+                            if (string_ends_with(json.game, "Fixed Board"))
+                                str += "(fixed board). Your progress was reset.";
+                            else
+                                str += ("(seed: " + (json.hide_card ? "hidden" : json.seed) + "). Your progress was reset.");
+
+                            scr_chat_message(c_yellow, str);
+                        }
                         
                         global.room_seed = -1;
                         http_room_settings = http_get("https://bingosync.com/room/" + global.room_id + "/room-settings");

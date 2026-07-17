@@ -1,18 +1,5 @@
 /// IMPORT
 
-function array_contains_temp(array, value)
-{
-    var len = array_length(array);
-    
-    for (var i = 0; i < len; i++)
-    {
-        if (array[i] == value)
-            return true;
-    }
-    
-    return false;
-}
-
 function array_find_index_temp(array, check_function)
 {
     var len = array_length(array);
@@ -24,6 +11,24 @@ function array_find_index_temp(array, check_function)
     }
 
     return -1;
+}
+
+function scr_is_fow_starting_goal(name)
+{
+    name = string_lower(name);
+
+    for (var i = 0; i < global.fog_of_war; i++)
+    {
+        var len = array_length(global.srl_goals[i]);
+
+        for (var j = 0; j < len; j++)
+        {
+            if (global.srl_goals[i][j] == name)
+                return true;
+        }
+    }
+
+    return false;
 }
 
 function scr_pad_zero(value, amount)
@@ -447,7 +452,7 @@ function scr_is_goal_marked(slot)
 
 function scr_is_goal_visible(slot)
 {
-    if (!global.fog_of_war || scr_is_goal_marked(slot) || array_contains_temp(global.tier1_goals, string_lower(global.goal_name[slot])))
+    if (global.fog_of_war == 0 || scr_is_goal_marked(slot) || scr_is_fow_starting_goal(global.goal_name[slot]))
         return true;
 
     if (slot >= 5 && scr_is_goal_marked(slot - 5))
@@ -496,7 +501,7 @@ function scr_load_bingo_data()
     global.show_new_cards = true;
     global.hit_counter = false;
     global.show_other_colors = true;
-    global.fog_of_war = false;
+    global.fog_of_war = 0;
     global.room_history = [];
 
     if (file_exists(#GetBingoFile()))
@@ -538,7 +543,7 @@ function scr_load_bingo_data()
             if (variable_struct_exists(json.preferences, "show_chat")) global.show_chat = json.preferences.show_chat;
             if (variable_struct_exists(json.preferences, "show_board")) global.show_board = json.preferences.show_board;
             if (variable_struct_exists(json.preferences, "show_other_colors")) global.show_other_colors = json.preferences.show_other_colors;
-            if (variable_struct_exists(json.preferences, "fog_of_war")) global.fog_of_war = json.preferences.fog_of_war;
+            if (variable_struct_exists(json.preferences, "fog_of_war")) global.fog_of_war = clamp(json.preferences.fog_of_war, 0, 24);
         }
 
         if (variable_struct_exists(json, "keybinds"))

@@ -14,7 +14,7 @@ if (draw)
     draw_set_halign(fa_center);
     draw_set_valign(fa_middle);
     
-    if (variable_global_exists("num_goals") && variable_global_exists("tier1_goals"))
+    if (variable_global_exists("num_goals") && variable_global_exists("srl_goals"))
     {
         draw_set_color(c_lime);
         draw_text(320, vloc + 15, "Goal list retrieved!");

@@ -74,13 +74,13 @@ try
 
                         if (arr_index == -1)
                         {
-                            global.room_history[array_length(global.room_history)] = 
+                            array_push(global.room_history,
                             {
                                 name: scr_html_decode(string_copy(info, pos_start + search_start_len, pos_end - pos_start - search_start_len)),
                                 room_id: global.room_id,
                                 password: global.password,
                                 last_accessed: date_current_datetime()
-                            };
+                            });
                         }
                         else
                         {

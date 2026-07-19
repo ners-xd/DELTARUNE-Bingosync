@@ -28,7 +28,7 @@ Collect both bananas: Collect the bananas from Cyber City and the Acid Tunnel (t
 
 Get the Spin Cake (CH1): You get it by taking the broken cake piece from TopChef, having Malius fix it in the bake sale, and bringing the TopCake back to the chef
 
-Get massaged by Ferrol: In the room where you first see Shi in the Cliffs, go left, complete the climbing section, enter the room, interact with Ferrol and select "Massage" (right)
+Get massaged by Ferroll: In the room where you first see Shi in the Cliffs, go left, complete the climbing section, enter the room, interact with Ferroll and select "Massage" (right)
 
 Talk to Starwalker in the forest (CH1): Talk to Starwalker for the first time in the Scarlet Forest by hitting the bell at the end of the room and going back
 
@@ -36,7 +36,7 @@ Get the Dice Brace: In the room with the first Bloxer in CH1 there is a puzzle o
 
 Complete both Berdly encounters: They do NOT have to be on the same save file, but you have to complete both encounters separately, you can't do two of the same one
 
-Get 3 ReviveMints: Get 3 of the mints available throughout the game. They are in:
+Get 3 unique ReviveMints: Get 3 of the mints available throughout the game. They are in:
     - CH1: Forest, in the room with the scissor dancers you go down-left and there's a chest
     - CH1: Card Castle, in the room with the scissor dancers after the Head Hathies there's 3 paintings. Interact with all of them then open the chest that's down-left under the door shaped like a clover
     - CH2: Cyber Field, in the room with the Virovirokun that shoots arrows, there's a chest at the bottom of the room. Have the enemy shoot it, then open the chest

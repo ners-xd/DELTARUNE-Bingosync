@@ -9,7 +9,7 @@ switch (global.encounterno)
         else
             scr_add_goal_progress(91, 1);
 
-        scr_add_goal_array(102, "golden_sheets_found", room_get_name(room));
+        scr_add_goal_array(102, room_get_name(room));
         break;
 
     case 157:

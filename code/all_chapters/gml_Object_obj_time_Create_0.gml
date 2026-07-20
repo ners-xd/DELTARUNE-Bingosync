@@ -14,6 +14,10 @@ goal_list_request = -1;
 srl_list_request = -1;
 update_check_request = -1;
 newest_mod_version = "";
+
+#if !CHAPTER_1 && !CHAPTER_2 && !CHAPTER_3 && !CHAPTER_4
+    isfullscreen = false; // See all_chapters\obj_time_Draw_77
+#endif
 /// END
 
 #if !CHAPTER_1

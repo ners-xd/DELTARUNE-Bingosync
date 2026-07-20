@@ -5,6 +5,7 @@ var timezone = date_get_timezone();
 date_set_timezone(timezone_utc);
 start_timestamp = date_second_span(date_create_datetime(1970, 1, 2, 0, 0, 0), date_current_datetime());
 date_set_timezone(timezone);
+current_board_time = "00:00";
 board_revealed = false;
 fixed_board = false;
 http_board = -1;
@@ -20,7 +21,7 @@ mystring = "";
 update_colors = true;
 prev_interact = 0;
 mainchara_was_in_prev_room = false;
-command_list = "/color or /colour, /star, /autoconnect, /fogofwar, /quit";
+command_list = "/color or /colour, /star, /autoconnect, /fogofwar, /settings, /quit";
 money_amount = global.gold;
 buy_update_money_amount = global.gold;
 
@@ -40,6 +41,8 @@ jack_sfx = [
         , snd_takingtoolongtoolong, snd_taking_too_long_fast, snd_long_only, snd_taking_too_long_small_fast_jp, snd_taking_too_long_small,
         snd_alt_takingtoolong, snd_taking_too_long_small_fast, snd_taking_too_long_small_jp, snd_taking_too_long_jp, snd_taking_too_long_fast_jp,
         snd_long_only_jp, snd_taking_too_long, snd_takingtoolongtoolong_jp, snd_alt_takingtoolong_jp
+    #elsif CHAPTER_5
+        , snd_your, snd_your_jp, snd_lo, snd_lo_jp, snd_ol, snd_ol_jp, snd_ruoy, snd_ruoy_jp
     #endif
 ];
 jack_sfx_len = array_length(jack_sfx);
@@ -68,6 +71,6 @@ if (obj_time.internet)
     network_connect_raw_async(global.ws_client, "wss://sockets.bingosync.com/broadcast", 443);
     mus_volume(global.currentsong[1], 0, 8);
 
-    with (instance_create(0, 0, obj_fadeout))
+    with (instance_create_depth(0, 0, -16000, obj_fullscreen_fadeout))
         fadespeed = 0.16;
 }

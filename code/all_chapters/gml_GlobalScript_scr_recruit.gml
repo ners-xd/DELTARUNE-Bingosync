@@ -7,8 +7,8 @@
             if (global.flag[global.monstertype[myself] + 600] >= 1)
             {
                 global.flag[global.monstertype[myself] + 600] = 1;
-                scr_add_goal_array(71, "enemies_recruited", "enemy" + string(global.monstertype[myself]));
-                scr_add_goal_array(128, "recruit_chapters", "chapter" + string(global.chapter));
+                scr_add_goal_array(71, "enemy" + string(global.monstertype[myself]));
+                scr_add_goal_array(128, "chapter" + string(global.chapter));
 
 #if CHAPTER_3
                 if (global.monstertype[myself] == 55)

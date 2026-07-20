@@ -9,7 +9,7 @@
         {
 #endif
 /// CODE
-            scr_add_goal_array(130, "armors_obtained", "armor" + string(arg0));
+            scr_add_goal_array(130, "armor" + string(arg0));
             scr_add_goal_buy();
 
             switch (arg0)
@@ -27,7 +27,7 @@
                 case 26:
                 case 30:
                 case 33:
-                    scr_add_goal_array(84, "ribbons_obtained", "ribbon" + string(arg0));
+                    scr_add_goal_array(84, "ribbon" + string(arg0));
                     break;
             }
 /// END

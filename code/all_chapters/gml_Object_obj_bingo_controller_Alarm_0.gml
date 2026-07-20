@@ -3,6 +3,10 @@
 if (!obj_time.internet)
 {
     scr_chat_message(c_red, "Your internet connection has timed out! Restart the game to attempt a reconnection.");
+
+    with (obj_bingo_settings_screen)
+        instance_destroy();
+
     global.chat_typing = false;
     global.starring_goals = false;
     obj_time.mouse_visible = false;

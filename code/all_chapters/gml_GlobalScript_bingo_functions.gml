@@ -31,6 +31,11 @@ function scr_is_fow_starting_goal(name)
     return false;
 }
 
+function scr_bingo_paused()
+{
+    return (global.chat_typing || global.starring_goals || instance_exists(obj_bingo_settings_screen) || instance_exists(obj_fullscreen_fadeout));
+}
+
 function scr_pad_zero(value, amount)
 {
     var s = string(value);
@@ -741,12 +746,18 @@ function scr_goal_requirements(slot)
     return global.goal_progress[slot] >= global.goal_list[slot].max_progress;
 }
 
-function scr_add_goal_array(slot, arr_name, str)
+function scr_add_goal_array(slot, str)
 {
     if (global.ws_client == -1)
         exit;
 
-    var len = array_length(variable_global_get(arr_name));
+    var var_index = ds_map_find_value(global.goal_vars_indexes, string_lower(global.goal_list[slot].name));
+
+    if (is_undefined(var_index))
+        exit;
+
+    var arr_name = global.goal_custom_vars[var_index].name;
+    var len = global.goal_custom_vars[var_index].size;
     var value = "";
 
     for (var i = 0; i < len; i++)
@@ -794,7 +805,7 @@ function scr_add_goal_kills(amount)
 function scr_add_goal_pink_coin()
 {
     for (var i = 145; i <= 147; i++)
-        scr_add_goal_array(i, "pink_coins", room_get_name(room));
+        scr_add_goal_array(i, room_get_name(room));
 }
 #endif
 
@@ -824,7 +835,7 @@ function scr_add_goal_buy()
                 || global.flag[1411] < buy_update_flowery_money_amount
             #endif
                 )
-                scr_add_goal_array(8, "shop_rooms", room_get_name(room));
+                scr_add_goal_array(8, room_get_name(room));
         }
 
         global.buy_frame_delay = -1;

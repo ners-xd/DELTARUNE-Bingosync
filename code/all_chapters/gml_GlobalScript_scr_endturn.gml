@@ -15,7 +15,7 @@ function scr_endturn()
         {
             if (used_items[i] != "")
             {
-                scr_add_goal_array(72, "items_in_battle", used_items[i]);
+                scr_add_goal_array(72, used_items[i]);
                 used_items[i] = "";
             }
         }

@@ -70,7 +70,7 @@ if (obj_gamecontroller.gamepad_active == 1)
 if (obj_gamecontroller.gamepad_active == 1 && quicksaved != 2)
 #endif
 /// CODE
-if (!global.chat_typing && !global.starring_goals)
+if (!scr_bingo_paused())
 {
     if (room != ROOM_INITIALIZE && scr_check_pressed(global.toggle_chat_key, global.toggle_chat_key_gp))
     {

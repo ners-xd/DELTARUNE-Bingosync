@@ -128,18 +128,26 @@ if (global.room_seed != -1)
 {
     var text_x = (base_x + ((square_size + spacing) * grid_size)) - 1;
     var text_y = ((base_y + ((square_size + spacing) * grid_size)) - (2 * spacing)) + 2;
-    var text_y_offset = (instance_exists(obj_darkcontroller) && variable_global_exists("menuno") && global.menuno > -1) ? obj_darkcontroller.tp : 0;
+    var text_y_offset = 0;
+
+    if (instance_exists(obj_darkcontroller) && obj_darkcontroller.charcon > 0 && variable_global_exists("menuno") && global.menuno > -1)
+    {
+        text_y_offset = obj_darkcontroller.tp;
+
+    #if CHAPTER_5
+        if (global.flag[1312] > 0)
+            text_y_offset += 30;
+    #endif
+    }
+
     var final_y = global.show_board ? text_y : text_y_offset;
     draw_set_color(c_yellow);
     draw_set_valign(fa_top);
 
     if (global.show_board)
     {
-        var timezone = date_get_timezone();
-        date_set_timezone(timezone_utc);
         draw_set_halign(fa_left);
-        draw_text_outline(base_x, final_y, scr_format_seconds(date_second_span(date_create_datetime(1970, 1, 2, 0, 0, (global.last_card_timestamp == 0) ? (start_timestamp) : (global.last_card_timestamp - 86400)), date_current_datetime())));
-        date_set_timezone(timezone);
+        draw_text_outline(base_x, final_y, current_board_time);
     }
 
     draw_set_halign(fa_right);
@@ -299,14 +307,16 @@ if (global.chat_typing)
 
     if (keyboard_check_pressed(vk_enter) || mystring != "")
     {
-        var str = scr_escape_string(string_trim(global.is_console ? mystring : keyboard_string));
+        var str = string_trim(global.is_console ? mystring : keyboard_string);
 
         if (string_length(str) > 0)
         {
             if (!global.is_console)
                 array_insert(init_chat_history, 0, str);
 
+            str = scr_escape_string(str);
             var split_string = string_split(string_lower(str), " ", true);
+
             switch (split_string[0])
             {
                 case "/color":
@@ -417,8 +427,16 @@ if (global.chat_typing)
                     }
                     break;
 
+                case "/settings":
+                    if (!instance_exists(obj_bingo_settings_screen))
+                    {
+                        instance_create_depth(0, 0, -1, obj_bingo_settings_screen);
+                        scr_show_mouse_at((window_get_width() / 2) + 5, window_get_height() / 2);
+                    }
+                    break;
+
                 case "/quit":
-                    with (instance_create(0, 0, obj_fullscreen_fadeout))
+                    with (instance_create_depth(0, 0, -16000, obj_fullscreen_fadeout))
                         fadespeed = 0.16;
 
                     call_later(12, time_source_units_frames, function()

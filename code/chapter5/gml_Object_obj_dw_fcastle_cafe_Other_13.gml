@@ -24,5 +24,5 @@
             array_push(flowers_to_count, "orange");
 
         for (var i = 0; i < array_length(flowers_to_count); i++)
-            scr_add_goal_array(152, "cafe_hangouts", flowers_to_count[i]);
+            scr_add_goal_array(152, flowers_to_count[i]);
 /// END

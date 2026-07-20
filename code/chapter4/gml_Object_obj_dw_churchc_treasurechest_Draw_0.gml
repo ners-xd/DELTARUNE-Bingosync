@@ -10,7 +10,7 @@ if (con == 1)
         {
             if (array_length(ripples) > 0)
             {
-                scr_add_goal_array(154, "image_friends", "chapter4-churchc");
+                scr_add_goal_array(154, "chapter4-churchc");
                 obj_dw_churchc_treasurechest.saw_friend = true;
                 break;
             }

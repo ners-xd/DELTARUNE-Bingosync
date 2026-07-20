@@ -8,5 +8,5 @@ function scr_gameover(arg0 = true)
 #endif
 {
 /// CODE
-    scr_add_goal_array(7, "deaths_chapters", "chapter" + string(global.chapter));
+    scr_add_goal_array(7, "chapter" + string(global.chapter));
 /// END

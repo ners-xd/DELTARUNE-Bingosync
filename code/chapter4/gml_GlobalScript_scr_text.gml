@@ -6,7 +6,7 @@
                 if (can_afford)
                 {
 /// CODE
-                    scr_add_goal_array(8, "shop_rooms", room_get_name(room));
+                    scr_add_goal_array(8, room_get_name(room));
 /// END
 
 /// AFTER

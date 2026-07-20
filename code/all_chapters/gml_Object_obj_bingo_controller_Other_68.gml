@@ -15,10 +15,10 @@ try
                     network_destroy(global.ws_client);
                     global.ws_client = -1;
 
-                    if (instance_exists(obj_fadeout))
+                    if (instance_exists(obj_fullscreen_fadeout))
                     {
                         mus_volume(global.currentsong[1], 0.7, 8);
-                        instance_destroy(obj_fadeout);
+                        instance_destroy(obj_fullscreen_fadeout);
 
                         with (instance_create(0, 0, obj_fadein))
                             fadespeed = -0.16;
@@ -93,7 +93,7 @@ try
                     case "goal":
                         if (global.show_goal_marks)
                         {
-                            var str = json.player.name + (json.remove ? " cleared " : " marked ");
+                            var str = "[" + current_board_time + "] " + json.player.name + (json.remove ? " cleared " : " marked ");
                             var slot = string_digits(json.square.slot);
 
                             if (scr_is_goal_visible(real(slot) - 1))

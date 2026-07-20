@@ -4,7 +4,7 @@
 /// AFTER
             global.item[i] = arg0;
 /// CODE
-            scr_add_goal_array(155, "consumables_obtained", "consumable" + string(arg0));
+            scr_add_goal_array(155, "consumable" + string(arg0));
             scr_add_goal_buy();
 
             if (i == 11)
@@ -16,7 +16,7 @@
                 switch (arg0)
                 {
                     case 2:
-                        scr_add_goal_array(36, "revivemints_obtained", room_get_name(room));
+                        scr_add_goal_array(36, room_get_name(room));
                         break;
 
                     case 7:
@@ -41,14 +41,14 @@
 /// CODE
     if (!noroom)
     {
-        scr_add_goal_array(155, "consumables_obtained", "consumable" + string(arg0));
+        scr_add_goal_array(155, "consumable" + string(arg0));
         scr_add_goal_buy();
 
         switch (arg0)
         {
             case 2:
                 if (!global.fighting)
-                    scr_add_goal_array(36, "revivemints_obtained", room_get_name(room));
+                    scr_add_goal_array(36, room_get_name(room));
                 break;
 
             case 30:

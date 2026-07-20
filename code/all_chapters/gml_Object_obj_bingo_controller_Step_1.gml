@@ -3,13 +3,21 @@
 if (!board_done || !room_settings_done || !feed_done || !room_base_done)
     exit;
 
+var timezone = date_get_timezone();
+date_set_timezone(timezone_utc);
+current_board_time = scr_format_seconds(date_second_span(date_create_datetime(1970, 1, 2, 0, 0, (global.last_card_timestamp == 0) ? (start_timestamp) : (global.last_card_timestamp - 86400)), date_current_datetime()));
+date_set_timezone(timezone);
+
 if (room == ROOM_INITIALIZE && instance_exists(obj_initializer2))
 {
+    with (obj_fullscreen_fadeout)
+        instance_destroy();
+
     room_goto(obj_initializer2.roomchoice);
     exit;
 }
 
-if (!global.chat_typing && !global.starring_goals)
+if (!scr_bingo_paused())
 {
     if (scr_check_pressed(global.board_key, global.board_key_gp))
     {
@@ -67,12 +75,26 @@ if (!global.chat_typing && !global.starring_goals)
 }
 else if (scr_check_pressed(vk_escape, global.input_g[5]))
 {
-    global.chat_typing = false;
-    global.starring_goals = false;
-    obj_time.mouse_visible = false;
-    chat_history = [];
-    chat_history_index = -1;
-    keyboard_clear(vk_escape);
+    var can_close = true;
+
+    with (obj_bingo_settings_screen)
+    {
+        if (assigning_keybind != "")
+            can_close = false;
+    }
+
+    if (can_close)
+    {
+        with (obj_bingo_settings_screen)
+            instance_destroy();
+
+        global.chat_typing = false;
+        global.starring_goals = false;
+        obj_time.mouse_visible = false;
+        chat_history = [];
+        chat_history_index = -1;
+        keyboard_clear(vk_escape);
+    }
 }
 
 if (global.gold != money_amount)

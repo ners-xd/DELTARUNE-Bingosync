@@ -47,12 +47,6 @@ if (draw_close_x != -1 && draw_close_y != -1 && async_string == -1)
         draw_text_outline(draw_close_x, draw_close_y, "Press ESC or      to go back.");
         draw_sprite_ext(gp_key, 0, round((draw_close_x - (total_w / 2)) + string_width(before_text)), draw_close_y - 7, 1, 1, 0, c_ltgray, 1);
     }
-
-    if (assigning_keybind != "")
-    {
-        draw_set_color(c_yellow);
-        draw_text_outline(draw_close_x, draw_close_y - 25, "Listening...");
-    }
 }
 
 draw_set_halign(fa_right);

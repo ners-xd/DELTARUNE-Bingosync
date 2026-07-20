@@ -15,6 +15,9 @@ if (point_in_rectangle(obj_time.mousex, obj_time.mousey, x - outline_size, y - o
             status_color = other.hover_text_color;
             status_text = other.hover_text;
         }
+
+        with (obj_bingo_settings_screen)
+            error_text = "";
     }
 
     if (scr_check_mouse_pressed(mb_left, global.input_g[4]))
@@ -32,4 +35,7 @@ else if (hovering)
         if (status_text == other.hover_text)
             status_text = "";
     }
+
+    with (obj_bingo_settings_screen)
+        error_text = "";
 }

@@ -8,7 +8,7 @@
             switch (arg0)
             {
                 case 2:
-                    scr_add_goal_array(21, "eggs_obtained", "chapter" + string(global.chapter));
+                    scr_add_goal_array(21, "chapter" + string(global.chapter));
 
                 #if CHAPTER_2
                     if (room == room_dw_city_man)

@@ -335,7 +335,7 @@ if (global.chat_typing)
                     {
                         global.color = chosen_color;
                         scr_save_bingo_data();
-                        ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\" }");
+                        ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + scr_escape_string(global.room_id) + "\", \"color\": \"" + global.color + "\" }");
                     }
                     break;
 
@@ -449,7 +449,7 @@ if (global.chat_typing)
                     if (string_pos("/", split_string[0]) == 1)
                         scr_chat_message(c_red, "That command doesn't exist.");
                     else
-                        ossafe_http_post("https://bingosync.com/api/chat", "{ \"room\": \"" + global.room_id + "\", \"text\": \"" + str + "\" }");
+                        ossafe_http_post("https://bingosync.com/api/chat", "{ \"room\": \"" + scr_escape_string(global.room_id) + "\", \"text\": \"" + str + "\" }");
                     break;
             }
         }

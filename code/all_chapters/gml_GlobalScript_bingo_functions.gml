@@ -355,10 +355,14 @@ function scr_show_mouse_at(_x, _y)
 
 function scr_escape_string(str)
 {
+    if (string_pos("\"", str) == 0 && string_pos("\\", str) == 0)
+        return str;
+
     var escaped = "";
     var character = "";
+    var len = string_length(str);
 
-    for (var i = 1; i <= string_length(str); i++)
+    for (var i = 1; i <= len; i++)
     {
         character = string_char_at(str, i);
 
@@ -521,13 +525,13 @@ function scr_load_bingo_data()
         if (variable_struct_exists(json, "last_saved_room"))
         {
             if (variable_struct_exists(json.last_saved_room, "room_id"))
-                global.room_id = string_copy(scr_escape_string(string_trim(json.last_saved_room.room_id)), 1, 22);
+                global.room_id = string_copy(string_trim(json.last_saved_room.room_id), 1, 22);
 
             if (variable_struct_exists(json.last_saved_room, "password"))
-                global.password = scr_escape_string(json.last_saved_room.password);
+                global.password = json.last_saved_room.password;
 
             if (variable_struct_exists(json.last_saved_room, "nickname"))
-                global.nickname = string_copy(scr_escape_string(string_trim(json.last_saved_room.nickname)), 1, 50);
+                global.nickname = string_copy(string_trim(json.last_saved_room.nickname), 1, 50);
 
             if (variable_struct_exists(json.last_saved_room, "color"))
             {
@@ -734,7 +738,7 @@ function scr_mark_goal(slot)
             alarm[0] = 3 * room_speed;
         }
 
-        ossafe_http_post("https://bingosync.com/api/select", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\", \"slot\": \"" + string(slot) + "\", \"remove_color\": false }");
+        ossafe_http_post("https://bingosync.com/api/select", "{ \"room\": \"" + scr_escape_string(global.room_id) + "\", \"color\": \"" + global.color + "\", \"slot\": \"" + string(slot) + "\", \"remove_color\": false }");
     }
 }
 

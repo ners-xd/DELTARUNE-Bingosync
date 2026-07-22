@@ -64,7 +64,7 @@ if (!scr_bingo_paused())
         else
         {
             board_revealed = true;
-            ossafe_http_post("https://bingosync.com/api/revealed", "{ \"room\": \"" + global.room_id + "\" }");
+            ossafe_http_post("https://bingosync.com/api/revealed", "{ \"room\": \"" + scr_escape_string(global.room_id) + "\" }");
         }
     }
     else if (scr_check_pressed(global.color_hide_key, global.color_hide_key_gp))

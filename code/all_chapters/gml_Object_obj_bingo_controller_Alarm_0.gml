@@ -15,5 +15,5 @@ if (!obj_time.internet)
     exit;
 }
 
-http_board = http_get("https://bingosync.com/room/" + global.room_id + "/board");
+http_board = http_get("https://bingosync.com/room/" + scr_escape_string(global.room_id) + "/board");
 alarm[0] = 3 * room_speed;

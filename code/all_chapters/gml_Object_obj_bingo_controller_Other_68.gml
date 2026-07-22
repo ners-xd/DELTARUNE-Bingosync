@@ -33,10 +33,11 @@ try
                 network_send_raw(global.ws_client, buffer, 40);
                 buffer_delete(buffer);
                 event_perform(ev_alarm, 0);
-                ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + global.room_id + "\", \"color\": \"" + global.color + "\" }");
-                http_room_settings = http_get("https://bingosync.com/room/" + global.room_id + "/room-settings");
-                http_feed = ossafe_http_get("https://bingosync.com/room/" + global.room_id + "/feed");
-                http_room_base = ossafe_http_get("https://bingosync.com/room/" + global.room_id);
+                var escaped_room_id = scr_escape_string(global.room_id);
+                ossafe_http_post("https://bingosync.com/api/color", "{ \"room\": \"" + escaped_room_id + "\", \"color\": \"" + global.color + "\" }");
+                http_room_settings = http_get("https://bingosync.com/room/" + escaped_room_id + "/room-settings");
+                http_feed = ossafe_http_get("https://bingosync.com/room/" + escaped_room_id + "/feed");
+                http_room_base = ossafe_http_get("https://bingosync.com/room/" + escaped_room_id);
                 draw_set_halign(fa_left);
                 draw_set_valign(fa_top);
                 snd_free_all();
@@ -119,7 +120,7 @@ try
                         }
                         
                         global.room_seed = -1;
-                        http_room_settings = http_get("https://bingosync.com/room/" + global.room_id + "/room-settings");
+                        http_room_settings = http_get("https://bingosync.com/room/" + scr_escape_string(global.room_id) + "/room-settings");
                         event_perform(ev_alarm, 0);
                         global.last_card_timestamp = json.timestamp;
                         scr_reset_bingo_data();

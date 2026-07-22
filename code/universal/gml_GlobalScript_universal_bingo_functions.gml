@@ -97,7 +97,11 @@ function scr_import_vanilla_files()
 #if !CHAPTER_SELECT
     scr_84_init_localization();
 
-    if (room == PLACE_MENU)
+    if (room == PLACE_MENU
+    #if !CHAPTER_1
+        && !instance_exists(obj_fadeout)
+    #endif
+        )
     {
         snd_free_all();
         audio_stop_all();
@@ -134,7 +138,11 @@ function scr_delete_save_files()
     ossafe_ini_close();
     ossafe_savedata_save();
 
-    if (room == PLACE_MENU)
+    if (room == PLACE_MENU
+    #if !CHAPTER_1
+        && !instance_exists(obj_fadeout)
+    #endif
+        )
     {
         if (global.is_console)
         {

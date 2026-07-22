@@ -259,4 +259,9 @@ Get 5 keys (CH3):
         - One can be bought from the Pippins running the shop above Rouxls (found to the left of spawn) for 100 points
     - Sword Boards:
         - Ice Key
-        - Shelter Key.
+        - Shelter Key
+
+See the 'Thar she blows...' dialogue (CH1, CH4, CH5):
+    - CH1: After K. Round 2, immediately go to the right and interact with the crown before it goes off screen
+    - CH4: On the second double Guei encounter, get both of them to 100% mercy, do OldMan/Spare/Spare and interact with the cane before it goes off screen
+    - CH5: After digging up Yellow's burial spot, interact with the hat before it goes off screen.

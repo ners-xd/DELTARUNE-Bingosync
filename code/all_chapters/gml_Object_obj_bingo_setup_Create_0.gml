@@ -71,7 +71,7 @@ function connect_to_room()
     else
     {
         obj_time.mouse_visible = false;
-        httppost = http_post_string("https://bingosync.com/api/join-room", "{ \"room\": \"" + global.room_id + "\", \"nickname\": \"" + global.nickname + "\", \"password\": \"" + global.password + "\" }");
+        httppost = http_post_string("https://bingosync.com/api/join-room", "{ \"room\": \"" + scr_escape_string(global.room_id) + "\", \"nickname\": \"" + scr_escape_string(global.nickname) + "\", \"password\": \"" + scr_escape_string(global.password) + "\" }");
         status_color = c_yellow;
         status_text = "Please wait...";
     }
@@ -159,7 +159,11 @@ function draw_main_buttons()
                     "There's a friend inside you.",
                     "Don't forget to fight the dummy!",
                     "jarona",
-                    "stingus"
+                    "stingus",
+                    "sustingus",
+                    "Bingosync needs to add more name colors...",
+                    "I loved today's Wordle!",
+                    "I hated today's Wordle..."
                 );
                 date_set_timezone(timezone);
 

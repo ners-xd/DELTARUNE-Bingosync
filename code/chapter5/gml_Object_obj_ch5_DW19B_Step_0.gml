@@ -8,7 +8,7 @@
         scr_add_goal_progress(46, 1);
 /// END
 
-/// AFTER
+/// BEFORE
     if (global.choice == 0)
     {
 /// CODE

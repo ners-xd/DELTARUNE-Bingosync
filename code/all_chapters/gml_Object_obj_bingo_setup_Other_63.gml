@@ -49,8 +49,6 @@ if (ds_map_find_value(async_load, "id") == async_string)
                 str += chr(ch);
         }
 
-        str = scr_escape_string(str);
-
         switch (clicked_button)
         {
             case room_id_button:

@@ -1,26 +1,26 @@
 [
   [
-    {"name": "Complete 10 attacks without grazing bullets"},
     {"name": "Watch The Legend (Castle Town)"},
-    {"name": "Wrong Warp into 15 unique rooms"},
+    {"name": "Reach the Knight at the start of CH4"},
+    {"name": "Fuse an item (CH2+)"},
     {"name": "Obtain the Thatchet"}
   ],
   [
     {"name": "Hug Ralsei"},
-    {"name": "Reach the Knight at the start of CH4"},
-    {"name": "Fuse an item (CH2+)"},
     {"name": "Have 250 Flowery Dollars at one time"},
+    {"name": "Complete the Dummy tutorial"},
     {"name": "Develop Kooby"}
   ],
   [
     {"name": "Complete 3 unique dojo challenges"},
-    {"name": "Complete the Dummy tutorial"},
     {"name": "Make someone go on stage with Pizzapants"},
+    {"name": "Complete 10 attacks without grazing bullets"},
+    {"name": "Crash the game"},
     {"name": "Solve the CH5 Garden Box Puzzle without Ralsei's help"}
   ],
   [
     {"name": "Don't sleep to skip the start of a chapter"},
-    {"name": "Crash the game"},
+    {"name": "Wrong Warp into 15 unique rooms"},
     {"name": "Go to the diner with Susie (CH4)"},
     {"name": "Equip the White Ribbon (CH1/CH3)"},
     {"name": "Die in 3 different chapters"},
@@ -55,6 +55,7 @@
   [
     {"name": "Buy the RoyalPin from Swatch"},
     {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks"},
+    {"name": "Have $3000 at one time"},
     {"name": "Kill 10 enemies"},
     {"name": "Lose Tasque Manager"},
     {"name": "Pot Balance"},
@@ -77,7 +78,6 @@
     {"name": "Spare/Pacify 25 enemies"}
   ],
   [
-    {"name": "Have $3000 at one time"},
     {"name": "Find the third piano's full solution (CH4)"},
     {"name": "Get 2 gold items (CH3)"},
     {"name": "Get the Spin Cake (CH1)"},
@@ -117,7 +117,6 @@
     {"name": "Tell Jackenstein he's cute in the study"},
     {"name": "Get to the Tropic of Love"},
     {"name": "Watch the Suselle Cutscene (Queen's Mansion)"},
-    {"name": "Defeat 5 bullet patterns (CH5)"},
     {"name": "Win a battle in each chapter"},
     {"name": "Have $5000 at one time"}
   ],
@@ -136,6 +135,7 @@
     {"name": "Get the Bed Inspector title (CH1)"},
     {"name": "Defeat Queen"},
     {"name": "Spare Queen"},
+    {"name": "Defeat 5 bullet patterns (CH5)"},
     {"name": "Obtain 5 unique armors"},
     {"name": "Trigger Milk on the 2nd K. Round fight"},
     {"name": "Use Dual Heal"},
@@ -186,12 +186,12 @@
     {"name": "Find the 3 Golden Sheets"},
     {"name": "Watch the Weird Route hospital cutscene (CH2)"},
     {"name": "Get the Shelter Key"},
+    {"name": "Interact with 12 unique chests"},
     {"name": "Beat the Club Apatheia encounter"},
     {"name": "Place an egg in Hometown"}
   ],
   [
     {"name": "Get the Annoying Dog on Rouxls"},
-    {"name": "Interact with 12 unique chests"},
     {"name": "Lose Rabbick (CH3)"},
     {"name": "Open the Balloon Chest (City Heights)"},
     {"name": "Use Susie's healing spell (CH2)"},
@@ -201,7 +201,6 @@
     {"name": "Collect 15 unique pink coins"}
   ],
   [
-    {"name": "Beat Fake Gerson"},
     {"name": "Collect both bananas"},
     {"name": "Get the PrincessRibbon"},
     {"name": "Defeat 2 final bosses"},
@@ -214,6 +213,7 @@
     {"name": "Interact with a Mantis (CH5)"}
   ],
   [
+    {"name": "Beat Fake Gerson"},
     {"name": "Beat Tenna"},
     {"name": "Beat Spamton NEO (Basement)"},
     {"name": "Defeat 2 shadow item holders"},

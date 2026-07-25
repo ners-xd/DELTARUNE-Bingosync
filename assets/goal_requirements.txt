@@ -206,7 +206,7 @@ Collect all evidence before fighting Blue & Yellow: You need to have all these p
     - PerpBook - in the All Punishments Worse Than Burying room, take the book from Aqua and Seth, CAN ONLY BE TAKEN BEFORE MEETING BLUE
     - TrainPlan - same place as above, CAN ONLY BE TAKEN AFTER MEETING BLUE
     - RedSplatter - bottom of Yellow's room after meeting Blue, interact with the food coloring
-    - BlueString - in the room left of Blue and Yellow's doors, CAN ONLY BE TAKEN AFTER MEETING BLUE
+    - BlueString - in the room left of Blue and Yellow's doors, CAN ONLY BE TAKEN AFTER MEETING YELLOW
     - Egg & Dog - not necessary for this goal
 
 See 2 unique IMAGE_FRIENDs: They are seen in:

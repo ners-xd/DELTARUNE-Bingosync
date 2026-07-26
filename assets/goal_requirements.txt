@@ -59,7 +59,7 @@ Eat Moss: Found in:
 
 Fill up your inventory with 12 consumables: Have 12 CONSUMABLE items in your inventory
 
-Open the Balloon Chest (City Heights): In the giant City Heights room, after getting Noelle to step on the switch, go down and ride the teacups. Go back up and the forcefield which blocks a chest in the top-left corner is gone. Interact with it to release the balloons
+Open the Balloon Chest (City Heights): In the giant City Heights room, after getting Noelle to step on the switch, interact with the sign at the top, then go down and ride the teacups. Go back up and the forcefield which blocks a chest in the top-left corner is gone. Interact with it to release the balloons
 
 Get captured (CH1, CH2, CH3, CH5):
     - CH1: Get captured by the Rudinn Rangers after the Forest chase sequence

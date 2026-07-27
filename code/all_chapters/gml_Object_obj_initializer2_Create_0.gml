@@ -7,6 +7,13 @@ global.chat_color = array_create(array_length(global.chat_line), c_white);
 global.chat_typing = false;
 global.starring_goals = false;
 global.starred_goals = array_create(25, false);
+global.bingo_save_buffer = -1;
+
+global.start_current_time = current_time;
+var timezone = date_get_timezone();
+date_set_timezone(timezone_utc);
+global.start_timestamp = ((date_second_span(date_create_datetime(1970, 1, 2, 0, 0, 0), date_current_datetime()) + 86400) * 1000) - global.start_current_time;
+date_set_timezone(timezone);
 /// END
 
 #if CHAPTER_1 || CHAPTER_2

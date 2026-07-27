@@ -6,6 +6,11 @@ try
     {
         switch (ds_map_find_value(async_load, "id"))
         {
+            case timestamp_request:
+                global.start_timestamp = real(ds_map_find_value(async_load, "result"));
+                global.start_current_time = current_time;
+                break;
+
             case goal_list_request:
                 var info = json_parse(ds_map_find_value(async_load, "result"));
                 global.num_goals = array_length(info);

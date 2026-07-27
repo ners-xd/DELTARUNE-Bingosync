@@ -5,7 +5,7 @@ if (!board_done || !room_settings_done || !feed_done || !room_base_done)
 
 var timezone = date_get_timezone();
 date_set_timezone(timezone_utc);
-current_board_time = scr_format_seconds(date_second_span(date_create_datetime(1970, 1, 2, 0, 0, (global.last_card_timestamp == 0) ? (start_timestamp) : (global.last_card_timestamp - 86400)), date_current_datetime()));
+current_board_time = scr_format_ms(global.start_timestamp + current_time - global.start_current_time - (global.last_card_timestamp * 1000));
 date_set_timezone(timezone);
 
 if (room == ROOM_INITIALIZE && instance_exists(obj_initializer2))
@@ -33,8 +33,10 @@ if (!scr_bingo_paused())
         else
         {
             global.chat_typing = true;
+            keyboard_string = "";
+            keyboard_clear(global.chat_key);
 
-            if (global.is_console)
+            if (global.console_keyboard)
             {
                 mystring = "";
                 console_string = get_string_async("Typing in chat. Commands: " + command_list + ".", "");
@@ -50,7 +52,6 @@ if (!scr_bingo_paused())
                     global.input_pressed[i] = 0;
                 }
 
-                keyboard_string = "";
                 chat_history = init_chat_history;
             }
         }

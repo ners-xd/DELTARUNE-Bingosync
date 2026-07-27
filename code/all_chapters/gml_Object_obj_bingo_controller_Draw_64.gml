@@ -241,7 +241,7 @@ if (global.room_seed != -1)
 
 if (global.chat_typing)
 {
-    if (!global.is_console)
+    if (!global.console_keyboard)
     {
         var len = array_length(chat_history);
 
@@ -279,7 +279,9 @@ if (global.chat_typing)
             }
         }
 
-        if (keyboard_check(vk_control) && keyboard_check_pressed(ord("V")))
+        if (global.is_console)
+            keyboard_string += scr_key_to_char(ossafe_keyboard_lastkey());
+        else if (keyboard_check(vk_control) && keyboard_check_pressed(ord("V")))
             keyboard_string += clipboard_get_text();
 
         if (string_length(keyboard_string) > 100)
@@ -307,13 +309,11 @@ if (global.chat_typing)
 
     if (keyboard_check_pressed(vk_enter) || mystring != "")
     {
-        var str = string_trim(global.is_console ? mystring : keyboard_string);
+        var str = string_trim(global.console_keyboard ? mystring : keyboard_string);
 
         if (string_length(str) > 0)
         {
-            if (!global.is_console)
-                array_insert(init_chat_history, 0, str);
-
+            array_insert(init_chat_history, 0, str);
             str = scr_escape_string(str);
             var split_string = string_split(string_lower(str), " ", true);
 
@@ -446,7 +446,7 @@ if (global.chat_typing)
                     break;
 
                 default:
-                    if (string_pos("/", split_string[0]) == 1)
+                    if (string_starts_with(split_string[0], "/"))
                         scr_chat_message(c_red, "That command doesn't exist.");
                     else
                         ossafe_http_post("https://bingosync.com/api/chat", "{ \"room\": \"" + scr_escape_string(global.room_id) + "\", \"text\": \"" + str + "\" }");

@@ -2,9 +2,9 @@ Die in 3 different chapters: Normal game overs, Losing to Punch-Out, Giga Queen 
 
 See frozen Berdly when leaving Queen's basement: Wrong warp out of Queen's basement in CH2 and trigger the cutscene with Ralsei's glasses. You should see frozen Berdly in the top-left corner
 
-Crash the game: The fastest crash we currently know is: do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them. Tutorial: https://youtube.com/watch?v=HVMQFhg1T-s
-
-Wrong Warp into 15 unique rooms: Works in all chapters. Wrong warping into shops doesn't count. Wrong warping in platformer mode doesn't count
+Crash the game: The fastest crashes we currently know are:
+    - CH2: Do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them. Tutorial: https://youtube.com/watch?v=HVMQFhg1T-s
+    - CH5: Do Sheary Semi Skip but Spare during the first battle, before the second one starts
 
 Have money at one time: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
 

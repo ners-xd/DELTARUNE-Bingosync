@@ -5,6 +5,9 @@ internet = os_is_network_connected();
 
 if (internet)
 {
+    if (timestamp_request == -1)
+        timestamp_request = http_get("https://public-api.siyukatu.com/time.txt");
+
     if (goal_list_request == -1)
         goal_list_request = http_get("https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/" + #GetBranchName() + "/assets/goal_list.json");
 

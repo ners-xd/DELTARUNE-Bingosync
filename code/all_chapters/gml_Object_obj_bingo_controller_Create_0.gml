@@ -1,10 +1,6 @@
 /// IMPORT
 
 persistent = true;
-var timezone = date_get_timezone();
-date_set_timezone(timezone_utc);
-start_timestamp = date_second_span(date_create_datetime(1970, 1, 2, 0, 0, 0), date_current_datetime());
-date_set_timezone(timezone);
 current_board_time = "00:00";
 board_revealed = false;
 fixed_board = false;
@@ -44,7 +40,7 @@ jack_sfx = [
     #elsif CHAPTER_5
         , snd_your, snd_your_jp, snd_lo, snd_lo_jp, snd_ol, snd_ol_jp, snd_ruoy, snd_ruoy_jp
     #endif
-];
+]; // This isn't all of the voicelines but realistically you're GOING TO hear at least one of these in a playthrough
 jack_sfx_len = array_length(jack_sfx);
 #endif
 

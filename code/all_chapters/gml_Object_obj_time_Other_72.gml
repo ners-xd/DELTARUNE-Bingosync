@@ -1,6 +1,24 @@
 /// PATCH
 
 /// REPLACE
+if (ds_map_find_value(async_load, "id") == global.savedata_async_id)
+/// CODE
+var _id = ds_map_find_value(async_load, "id");
+
+if (_id == global.bingo_save_buffer)
+{
+    if (!ds_map_find_value(async_load, "status"))
+        scr_chat_message(c_red, "Couldn't save data to file!");
+    else if (scr_is_switch_os())
+        switch_save_data_commit();
+
+    buffer_delete(global.bingo_save_buffer);
+    global.bingo_save_buffer = -1;
+}
+else if (_id == global.savedata_async_id)
+/// END
+
+/// REPLACE
         else if (scr_is_switch_os())
         {
             switch_save_data_commit();

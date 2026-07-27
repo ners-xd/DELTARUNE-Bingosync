@@ -46,9 +46,9 @@ function scr_pad_zero(value, amount)
     return s;
 }
 
-function scr_format_seconds(amount)
+function scr_format_ms(amount)
 {
-    amount = max(0, round(amount));
+    amount = max(0, round(amount / 1000));
     var days = amount div 86400;
     var hours = (amount % 86400) div 3600;
     var minutes = (amount % 3600) div 60;
@@ -143,6 +143,47 @@ function scr_gamepad_lastkey()
     }
 
     return 0;
+}
+
+function scr_key_to_char(key)
+{
+    if (key == 0)
+        return "";
+
+    var shift = keyboard_check(vk_shift);
+
+    if (key >= ord("A") && key <= ord("Z"))
+    {
+        var c = chr(key);
+        return shift ? c : string_lower(c);
+    }
+
+    switch (key) // Consoles have different keycodes
+    {
+        case vk_space: return " ";
+        case ord("0"): case vk_numpad0: return shift ? ")" : "0";
+        case ord("1"): case vk_numpad1: return shift ? "!" : "1";
+        case ord("2"): case vk_numpad2: return shift ? "@" : "2";
+        case ord("3"): case vk_numpad3: return shift ? "#" : "3";
+        case ord("4"): case vk_numpad4: return shift ? "$" : "4";
+        case ord("5"): case vk_numpad5: return shift ? "%" : "5";
+        case ord("6"): case vk_numpad6: return shift ? "^" : "6";
+        case ord("7"): case vk_numpad7: return shift ? "&" : "7";
+        case ord("8"): case vk_numpad8: return shift ? "*" : "8";
+        case ord("9"): case vk_numpad9: return shift ? "(" : "9";
+        case 186: return shift ? ":" : ";";
+        case 107: case 187: return shift ? "+" : "=";
+        case 188: return shift ? "<" : ",";
+        case 109: case 189: return shift ? "_" : "-";
+        case 110: case 190: return shift ? ">" : ".";
+        case 111: case 191: return shift ? "?" : "/";
+        case 112: case 192: return shift ? "~" : "`";
+        case 219: return shift ? "{" : "[";
+        case 220: return shift ? "|" : "\\";
+        case 221: return shift ? "}" : "]";
+        case 222: return shift ? "\"" : "'";
+        default: return "";
+    }
 }
 
 // This function already exists in Chapter 2+ but we have to add it for Chapter 1
@@ -512,6 +553,7 @@ function scr_load_bingo_data()
     global.show_other_colors = true;
     global.fog_of_war = 0;
     global.room_history = [];
+    global.console_keyboard = global.is_console;
 
     if (file_exists(#GetBingoFile()))
     {
@@ -553,6 +595,7 @@ function scr_load_bingo_data()
             if (variable_struct_exists(json.preferences, "show_board")) global.show_board = json.preferences.show_board;
             if (variable_struct_exists(json.preferences, "show_other_colors")) global.show_other_colors = json.preferences.show_other_colors;
             if (variable_struct_exists(json.preferences, "fog_of_war")) global.fog_of_war = clamp(json.preferences.fog_of_war, 0, 24);
+            if (variable_struct_exists(json.preferences, "console_keyboard")) global.console_keyboard = json.preferences.console_keyboard;
         }
 
         if (variable_struct_exists(json, "keybinds"))
@@ -623,7 +666,6 @@ function scr_load_bingo_data()
 function scr_save_bingo_data()
 {
     var list = ds_list_create();
-    var file = file_text_open_write(#GetBingoFile());
     var data = {};
     data.room_history = global.room_history;
     data.last_saved_room = {};
@@ -644,6 +686,7 @@ function scr_save_bingo_data()
     data.preferences.autoconnect = global.autoconnect;
     data.preferences.show_other_colors = global.show_other_colors;
     data.preferences.fog_of_war = global.fog_of_war;
+    data.preferences.console_keyboard = global.console_keyboard;
     data.keybinds.board = global.board_key;
     data.keybinds.chat = global.chat_key;
     data.keybinds.reveal = global.reveal_key;
@@ -678,11 +721,11 @@ function scr_save_bingo_data()
     }
 
     ds_list_destroy(list);
-    file_text_write_string(file, json_stringify(data));
-    file_text_close(file);
-
-    if (scr_is_switch_os())
-        switch_save_data_commit();
+    var json_string = json_stringify(data);
+    var buffer = buffer_create(string_byte_length(json_string), buffer_fixed, 1);
+    buffer_write(buffer, buffer_text, json_string);
+    global.bingo_save_buffer = buffer_save_async(buffer, "../" + #GetBingoFile(), 0, buffer_get_size(buffer));
+    buffer_delete(buffer);
 }
 
 function scr_reset_bingo_data()

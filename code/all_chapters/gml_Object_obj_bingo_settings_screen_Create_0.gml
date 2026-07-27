@@ -158,7 +158,7 @@ with (card_toggle_button)
     {
         draw_on_top = function()
         {
-            draw_sprite_ext(gp_key, 0, ((x + x2) / 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
+            draw_sprite_ext(gp_key, 0, ((x + x2) div 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
         };
     }
 
@@ -186,7 +186,7 @@ with (chat_button)
     {
         draw_on_top = function()
         {
-            draw_sprite_ext(gp_key, 0, ((x + x2) / 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
+            draw_sprite_ext(gp_key, 0, ((x + x2) div 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
         };
     }
 
@@ -197,6 +197,25 @@ with (chat_button)
         obj_bingo_settings_screen.assigning_keybind = "chat_key";
         obj_time.mouse_visible = false;
     };
+
+    if (global.is_console)
+    {
+        x2 -= 103;
+
+        with (instance_create_depth(x2 + 6, y, depth, obj_bingoscreen_button))
+        {
+            x2 = x + 97;
+            y2 = other.y2;
+            text = "Use console\nkeyboard:\n" + (global.console_keyboard ? "Yes" : "No");
+
+            on_click = function()
+            {
+                global.console_keyboard = !global.console_keyboard;
+                scr_save_bingo_data();
+                text = "Use console\nkeyboard:\n" + (global.console_keyboard ? "Yes" : "No");
+            };
+        }
+    }
 }
 
 with (card_reveal_button)
@@ -214,7 +233,7 @@ with (card_reveal_button)
     {
         draw_on_top = function()
         {
-            draw_sprite_ext(gp_key, 0, ((x + x2) / 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
+            draw_sprite_ext(gp_key, 0, ((x + x2) div 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
         };
     }
 
@@ -242,7 +261,7 @@ with (chat_toggle_button)
     {
         draw_on_top = function()
         {
-            draw_sprite_ext(gp_key, 0, ((x + x2) / 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
+            draw_sprite_ext(gp_key, 0, ((x + x2) div 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
         };
     }
 
@@ -270,7 +289,7 @@ with (color_hide_button)
     {
         draw_on_top = function()
         {
-            draw_sprite_ext(gp_key, 0, ((x + x2) / 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
+            draw_sprite_ext(gp_key, 0, ((x + x2) div 2) - 6, y2 - sprite_get_height(gp_key) - 2, 1, 1, 0, hovering ? hover_color : c_white, 1);
         };
     }
 

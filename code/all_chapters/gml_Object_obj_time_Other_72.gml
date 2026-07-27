@@ -12,7 +12,6 @@ if (_id == global.bingo_save_buffer)
     else if (scr_is_switch_os())
         switch_save_data_commit();
 
-    buffer_delete(global.bingo_save_buffer);
     global.bingo_save_buffer = -1;
 }
 else if (_id == global.savedata_async_id)

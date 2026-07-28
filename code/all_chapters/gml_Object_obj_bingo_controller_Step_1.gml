@@ -3,9 +3,10 @@
 if (!board_done || !room_settings_done || !feed_done || !room_base_done)
     exit;
 
+var timestamp_offset = (global.last_card_timestamp == 0) ? (0) : (global.start_timestamp - (global.last_card_timestamp * 1000));
 var timezone = date_get_timezone();
 date_set_timezone(timezone_utc);
-current_board_time = scr_format_ms(global.start_timestamp + current_time - global.start_current_time - (global.last_card_timestamp * 1000));
+current_board_time = scr_format_ms(current_time - global.start_current_time + timestamp_offset);
 date_set_timezone(timezone);
 
 if (room == ROOM_INITIALIZE && instance_exists(obj_initializer2))

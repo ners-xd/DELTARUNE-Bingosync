@@ -10,8 +10,6 @@ switch (global.encounterno)
     case 83:
         if (global.flag[644] != 1)
             scr_add_goal_progress(61, 1);
-        else
-            scr_add_goal_spares(1); // Mauswheel spare workaround
         break;
 
     case 81:

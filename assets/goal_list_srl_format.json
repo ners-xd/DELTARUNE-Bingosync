@@ -39,7 +39,6 @@
     {"name": "Find the Among Us reference"},
     {"name": "Pacify 10 enemies"},
     {"name": "Spare/Pacify Ponman"},
-    {"name": "Get the Couch Pillow (CH4)"},
     {"name": "Get 5 keys (CH3)"},
     {"name": "Get 3 unique ribbons"},
     {"name": "See the 'Thar she blows...' dialogue (CH1, CH4, CH5)"}
@@ -111,6 +110,7 @@
     {"name": "Get massaged by Ferroll"}
   ],
   [
+    {"name": "Get the Couch Pillow (CH4)"},
     {"name": "Beat the Rouxls fight (CH2/CH3)"},
     {"name": "Eat Moss"},
     {"name": "Kill 20 enemies"},

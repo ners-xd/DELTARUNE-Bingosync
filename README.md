@@ -4,8 +4,8 @@
 
 # DELTARUNE Bingosync Mod
 <b>NOTE</b>: The non-Deltamod installations are only supported on:
-- Windows Chapters 1-5 (CH1 1.43 / CH2 1.49 / CH3 v0.0.103 / CH4 v0.0.108 / CH5 v0.0.250)
-- Switch Chapters 1-5 (CH1 1.31 / CH2 1.37 / CH3 v0.0.100 / CH4 v0.0.103 / CH5 v0.0.247).
+- Windows Chapters 1-5 (CH1 1.43 / CH2 1.52 / CH3 v0.0.105 / CH4 v0.0.110 / CH5 v0.0.253)
+- Switch Chapters 1-5 (CH1 1.31 / CH2 1.37 / CH3 v0.0.100 / CH4 v0.0.106 / CH5 v0.0.250).
 
 This mod connects your game to [Bingosync](https://bingosync.com) and it can automatically mark goals from:
 - [this list](https://raw.githubusercontent.com/ners-xd/deltarune-bingosync/refs/heads/ch1-5/assets/goal_list.json)

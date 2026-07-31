@@ -280,9 +280,18 @@ if (global.chat_typing)
         }
 
         if (global.is_console)
-            keyboard_string += scr_key_to_char(ossafe_keyboard_lastkey());
+        {
+            var lastkey = ossafe_keyboard_lastkey();
+
+            if (lastkey == vk_backspace)
+                keyboard_string = string_copy(keyboard_string, 1, string_length(keyboard_string) - 1); // string_delete with negative indexes does not work on this GameMaker version
+            else
+                keyboard_string += scr_key_to_char(lastkey);
+        }
         else if (keyboard_check(vk_control) && keyboard_check_pressed(ord("V")))
+        {
             keyboard_string += clipboard_get_text();
+        }
 
         if (string_length(keyboard_string) > 100)
             keyboard_string = string_copy(keyboard_string, 1, 100);

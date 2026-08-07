@@ -117,7 +117,7 @@
   {"name": "Interact with 12 unique chests", "mod_slot": 114, "mod_progress_threshold": 12, "mod_global_var_name": "chests_opened"},
   {"name": "Kill a Titan Spawn", "mod_slot": 115, "mod_progress_threshold": 1},
   {"name": "Show compassion to Ralsei", "mod_slot": 116, "mod_progress_threshold": 1},
-  {"name": "Take 4 photos (Board 2)", "mod_slot": 117, "mod_progress_threshold": 4, "mod_global_var_name": "board2_photos"},
+  {"name": "Take 4 unique shrine photos (Board 2)", "mod_slot": 117, "mod_progress_threshold": 4, "mod_global_var_name": "board2_photos"},
   {"name": "Sell a Glowshard", "mod_slot": 118, "mod_progress_threshold": 1},
   {"name": "Get B or better rank Susiezilla", "mod_slot": 119, "mod_progress_threshold": 1},
   {"name": "Find the Among Us reference", "mod_slot": 120, "mod_progress_threshold": 1},

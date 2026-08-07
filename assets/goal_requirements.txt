@@ -150,7 +150,12 @@ Defeat 3 bosses: The bosses who count for this are all of the above + Queen + th
 
 Show compassion to Ralsei: Say Yes to showing him compassion after Susie hops on him to grab the green book for Gerson
 
-Take 4 photos (Board 2): The bonus photo is from buying Lancer from the bottom right (take a picture of the price to bring it down to 9 POINTs) and bringing him up to the tunnel (right entrance in the spawn area). Take a photo of the green bath
+Take 4 unique shrine photos (Board 2): You need to take photos of:
+    - The cactus below the double Pippins encounter
+    - The flower torn in half (you can have either Kris or Ralsei take it)
+    - The red antlion
+    - The green bath near spawn, after buying Lancer from the bottom right (take a picture of the price to bring it down to 9 POINTs) and bringing him up to the location (the second door)
+    - THE PRE-SHUTTAH PHOTO DOES NOT COUNT, AS IT IS AFTER THE SHRINE SECTION
 
 Get B or better rank Susiezilla: Susiezilla is unlocked by going to the special A-rank room and paying the Pippins 500 POINTs. You need to finish the minigame with at least 400 points to get B-Rank
 

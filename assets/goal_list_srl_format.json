@@ -6,6 +6,7 @@
     {"name": "Obtain the Thatchet"}
   ],
   [
+    {"name": "Enter Ralsei's room"},
     {"name": "Hug Ralsei"},
     {"name": "Have 250 Flowery Dollars at one time"},
     {"name": "Complete the Dummy tutorial"},
@@ -27,10 +28,9 @@
     {"name": "Obtain the Red Ribbon in the Dark Garden"}
   ],
   [
-    {"name": "Enter Ralsei's room"},
+    {"name": "Have $3000 at one time"},
     {"name": "Kill 5 enemies"},
     {"name": "Beat the Lanino/Elnina rematch"},
-    {"name": "Complete any Lightners Live song"},
     {"name": "Show compassion to Ralsei"},
     {"name": "Watch Tenna's Feature Presentation"}
   ],
@@ -52,9 +52,11 @@
     {"name": "Sell a Glowshard"}
   ],
   [
+    {"name": "Get a Dog Dollar"},
+    {"name": "Eat Moss"},
+    {"name": "Have $5000 at one time"},
     {"name": "Buy the RoyalPin from Swatch"},
     {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks"},
-    {"name": "Have $3000 at one time"},
     {"name": "Kill 10 enemies"},
     {"name": "Lose Tasque Manager"},
     {"name": "Pot Balance"},
@@ -97,10 +99,10 @@
     {"name": "Get the Tree Cake"}
   ],
   [
+    {"name": "Complete any Lightners Live song"},
     {"name": "Abort Snowgrave after getting the FreezeRing"},
     {"name": "Complete both Berdly encounters"},
     {"name": "Fully recruit 3 different enemy types"},
-    {"name": "Get a Dog Dollar"},
     {"name": "Get both chests on the Maus puzzle (Acid Lake)"},
     {"name": "Get the ReviveDust"},
     {"name": "Get the FreezeRing"},
@@ -112,15 +114,14 @@
   [
     {"name": "Get the Couch Pillow (CH4)"},
     {"name": "Beat the Rouxls fight (CH2/CH3)"},
-    {"name": "Eat Moss"},
     {"name": "Kill 20 enemies"},
     {"name": "Tell Jackenstein he's cute in the study"},
     {"name": "Get to the Tropic of Love"},
     {"name": "Watch the Suselle Cutscene (Queen's Mansion)"},
-    {"name": "Win a battle in each chapter"},
-    {"name": "Have $5000 at one time"}
+    {"name": "Win a battle in each chapter"}
   ],
   [
+    {"name": "Take 4 unique shrine photos (Board 2)"},
     {"name": "Talk to the Green Swatchling"},
     {"name": "Recruit Werewerewire"},
     {"name": "Lose 3 recruited enemies"},
@@ -142,9 +143,9 @@
     {"name": "Beat 'Not An Enemy'"}
   ],
   [
+    {"name": "Beat Gerson"},
     {"name": "Defeat Giga Queen"},
     {"name": "Complete the normal Spamton encounter"},
-    {"name": "Take 4 photos (Board 2)"},
     {"name": "Fully recruit an enemy in each chapter"},
     {"name": "Recruit Miss Mizzle"},
     {"name": "Beat the Seth & Aqua fight at the end of Cliffs"}
@@ -170,7 +171,6 @@
   ],
   [
     {"name": "Complete the Susie bridge puzzle in TV World"},
-    {"name": "Beat Gerson"},
     {"name": "Defeat King"},
     {"name": "Beat Spamton NEO (Snowgrave)"},
     {"name": "Have a tea party with Gerson"},

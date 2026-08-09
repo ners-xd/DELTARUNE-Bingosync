@@ -665,67 +665,74 @@ function scr_load_bingo_data()
 
 function scr_save_bingo_data()
 {
-    var list = ds_list_create();
-    var data = {};
-    data.room_history = global.room_history;
-    data.last_saved_room = {};
-    data.preferences = {};
-    data.keybinds = {};
-    data.filters = {};
-    data.progress = {};
-    data.last_saved_room.room_id = global.room_id;
-    data.last_saved_room.password = global.password;
-    data.last_saved_room.nickname = global.nickname;
-    data.last_saved_room.color = global.color;
-    data.last_saved_room.starred_goals = global.starred_goals;
-    data.last_saved_room.last_card_timestamp = global.last_card_timestamp;
-    data.last_saved_room.last_connected_room = global.last_connected_room;
-    data.preferences.hit_counter = global.hit_counter;
-    data.preferences.show_chat = global.show_chat;
-    data.preferences.show_board = global.show_board;
-    data.preferences.autoconnect = global.autoconnect;
-    data.preferences.show_other_colors = global.show_other_colors;
-    data.preferences.fog_of_war = global.fog_of_war;
-    data.preferences.console_keyboard = global.console_keyboard;
-    data.keybinds.board = global.board_key;
-    data.keybinds.chat = global.chat_key;
-    data.keybinds.reveal = global.reveal_key;
-    data.keybinds.toggle_chat = global.toggle_chat_key;
-    data.keybinds.color_hide = global.color_hide_key;
-    data.keybinds.board_gp = global.board_key_gp;
-    data.keybinds.chat_gp = global.chat_key_gp;
-    data.keybinds.reveal_gp = global.reveal_key_gp;
-    data.keybinds.toggle_chat_gp = global.toggle_chat_key_gp;
-    data.keybinds.color_hide_gp = global.color_hide_key_gp;
-    data.filters.connections = global.show_connections;
-    data.filters.reveals = global.show_reveals;
-    data.filters.chats = global.show_chats;
-    data.filters.colors = global.show_colors;
-    data.filters.goal_marks = global.show_goal_marks;
-    data.filters.new_cards = global.show_new_cards;
-    data.progress.hits = global.hits;
-    data.progress.queued_goals = global.queued_goals;
+    if (global.bingo_saving)
+        exit;
 
-    for (var i = 0; i < array_length(global.goal_progress); i++)
-        ds_list_add(list, global.goal_progress[i]);
-    data.progress.general = ds_list_write(list);
-
-    for (var i = 0; i < array_length(global.goal_custom_vars); i++)
+    global.bingo_saving = true;
+    call_later(1, time_source_units_frames, function()
     {
-        ds_list_clear(list);
+        var list = ds_list_create();
+        var data = {};
+        data.room_history = global.room_history;
+        data.last_saved_room = {};
+        data.preferences = {};
+        data.keybinds = {};
+        data.filters = {};
+        data.progress = {};
+        data.last_saved_room.room_id = global.room_id;
+        data.last_saved_room.password = global.password;
+        data.last_saved_room.nickname = global.nickname;
+        data.last_saved_room.color = global.color;
+        data.last_saved_room.starred_goals = global.starred_goals;
+        data.last_saved_room.last_card_timestamp = global.last_card_timestamp;
+        data.last_saved_room.last_connected_room = global.last_connected_room;
+        data.preferences.hit_counter = global.hit_counter;
+        data.preferences.show_chat = global.show_chat;
+        data.preferences.show_board = global.show_board;
+        data.preferences.autoconnect = global.autoconnect;
+        data.preferences.show_other_colors = global.show_other_colors;
+        data.preferences.fog_of_war = global.fog_of_war;
+        data.preferences.console_keyboard = global.console_keyboard;
+        data.keybinds.board = global.board_key;
+        data.keybinds.chat = global.chat_key;
+        data.keybinds.reveal = global.reveal_key;
+        data.keybinds.toggle_chat = global.toggle_chat_key;
+        data.keybinds.color_hide = global.color_hide_key;
+        data.keybinds.board_gp = global.board_key_gp;
+        data.keybinds.chat_gp = global.chat_key_gp;
+        data.keybinds.reveal_gp = global.reveal_key_gp;
+        data.keybinds.toggle_chat_gp = global.toggle_chat_key_gp;
+        data.keybinds.color_hide_gp = global.color_hide_key_gp;
+        data.filters.connections = global.show_connections;
+        data.filters.reveals = global.show_reveals;
+        data.filters.chats = global.show_chats;
+        data.filters.colors = global.show_colors;
+        data.filters.goal_marks = global.show_goal_marks;
+        data.filters.new_cards = global.show_new_cards;
+        data.progress.hits = global.hits;
+        data.progress.queued_goals = global.queued_goals;
 
-        for (var j = 0; j < global.goal_custom_vars[i].size; j++)
-            ds_list_add(list, array_get(variable_global_get(global.goal_custom_vars[i].name), j));
+        for (var i = 0; i < array_length(global.goal_progress); i++)
+            ds_list_add(list, global.goal_progress[i]);
+        data.progress.general = ds_list_write(list);
 
-        variable_struct_set(data.progress, global.goal_custom_vars[i].name, ds_list_write(list));
-    }
+        for (var i = 0; i < array_length(global.goal_custom_vars); i++)
+        {
+            ds_list_clear(list);
 
-    ds_list_destroy(list);
-    var json_string = json_stringify(data);
-    var buffer = buffer_create(string_byte_length(json_string), buffer_fixed, 1);
-    buffer_write(buffer, buffer_text, json_string);
-    global.bingo_save_buffer = buffer_save_async(buffer, "../" + #GetBingoFile(), 0, buffer_get_size(buffer));
-    buffer_delete(buffer);
+            for (var j = 0; j < global.goal_custom_vars[i].size; j++)
+                ds_list_add(list, array_get(variable_global_get(global.goal_custom_vars[i].name), j));
+
+            variable_struct_set(data.progress, global.goal_custom_vars[i].name, ds_list_write(list));
+        }
+
+        ds_list_destroy(list);
+        var json_string = json_stringify(data);
+        var buffer = buffer_create(string_byte_length(json_string), buffer_fixed, 1);
+        buffer_write(buffer, buffer_text, json_string);
+        global.bingo_save_buffer = buffer_save_async(buffer, "../" + #GetBingoFile(), 0, buffer_get_size(buffer));
+        buffer_delete(buffer);
+    });
 }
 
 function scr_reset_bingo_data()
@@ -790,12 +797,12 @@ function scr_goal_requirements(slot)
     if (slot < 0 || slot >= global.num_goals)
         return false;
 
-    return global.goal_progress[slot] >= global.goal_list[slot].max_progress;
+    return (global.goal_progress[slot] >= global.goal_list[slot].max_progress);
 }
 
 function scr_add_goal_array(slot, str)
 {
-    if (global.ws_client == -1)
+    if (global.ws_client == -1 || slot < 0 || slot >= global.num_goals)
         exit;
 
     var var_index = ds_map_find_value(global.goal_vars_indexes, string_lower(global.goal_list[slot].name));
@@ -891,7 +898,7 @@ function scr_add_goal_buy()
 
 function scr_add_goal_progress(slot, amount)
 {
-    if (global.ws_client == -1)
+    if (global.ws_client == -1 || slot < 0 || slot >= global.num_goals)
         exit;
 
     global.goal_progress[slot] += amount;
@@ -944,6 +951,7 @@ function scr_add_hit()
     if (global.hits_frame_delay == -1)
     {
         global.prev_hits = global.hits;
+
         global.hits_frame_delay = call_later(1, time_source_units_frames, function()
         {
             global.hits = global.prev_hits + 1;

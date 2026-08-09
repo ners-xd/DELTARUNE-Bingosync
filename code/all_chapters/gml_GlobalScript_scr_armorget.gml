@@ -20,10 +20,16 @@
 
                 case 53:
                     scr_add_goal_progress(105, 1);
+                    scr_add_goal_array(84, "ribbon53");
+                    break;
+
+                case 9:
+                    scr_add_goal_progress(177, 1);
+                    scr_add_goal_array(84, "ribbon9");
+                    break;
 
                 case 3:
                 case 4:
-                case 9:
                 case 26:
                 case 30:
                 case 33:

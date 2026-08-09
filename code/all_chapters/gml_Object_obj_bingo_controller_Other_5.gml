@@ -3,7 +3,10 @@
 prev_interact = global.interact;
 
 #if CHAPTER_1 || CHAPTER_2 || CHAPTER_3 || CHAPTER_4
-    mainchara_was_in_prev_room = instance_exists(obj_mainchara);
+    mainchara_was_in_prev_room = instance_exists(obj_mainchara)
+    #if CHAPTER_3
+        && room != room_board_1 && room != room_board_2;
+    #endif
 #else
-    mainchara_was_in_prev_room = (instance_exists(obj_mainchara) || instance_exists(obj_plat_player));
+    mainchara_was_in_prev_room = (instance_exists(obj_mainchara) || instance_exists(obj_mainchara_dash) || instance_exists(obj_plat_player));
 #endif

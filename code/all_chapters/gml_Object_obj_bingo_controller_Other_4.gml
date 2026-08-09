@@ -9,7 +9,7 @@ if ((prev_interact == 0 || prev_interact == 5 || prev_interact == 6 || audio_is_
         && !instance_exists(obj_mainchara_board)
     #endif
 #else
-    && (instance_exists(obj_mainchara) || instance_exists(obj_plat_player) || string_starts_with(room_name, "room_shop"))
+    && (instance_exists(obj_mainchara) || instance_exists(obj_mainchara_dash) || instance_exists(obj_plat_player) || string_starts_with(room_name, "room_shop"))
 #endif
     )
     scr_add_goal_array(70, room_name);

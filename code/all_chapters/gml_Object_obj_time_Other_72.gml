@@ -13,6 +13,7 @@ if (_id == global.bingo_save_buffer)
         switch_save_data_commit();
 
     global.bingo_save_buffer = -1;
+    global.bingo_saving = false;
 }
 else if (_id == global.savedata_async_id)
 /// END

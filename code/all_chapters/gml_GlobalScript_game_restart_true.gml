@@ -3,6 +3,8 @@
 /// REPLACE
     game_restart();
 /// CODE
+    audio_stop_all();
+
     if (!instance_exists(obj_bingo_controller))
     {
         game_restart();

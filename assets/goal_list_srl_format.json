@@ -1,8 +1,9 @@
 [
   [
     {"name": "Watch The Legend (Castle Town)"},
-    {"name": "Reach the Knight at the start of CH4"},
     {"name": "Fuse an item (CH2+)"},
+    {"name": "Get the Power Croissant for Susie (Board 1)"},
+    {"name": "Reach the Knight at the start of CH4"},
     {"name": "Obtain the Thatchet"}
   ],
   [
@@ -48,6 +49,7 @@
     {"name": "Complete the GIASFELFEBREHBER puzzle"},
     {"name": "Complete the Hacker's side quest"},
     {"name": "Complete the spelling bee cutscene"},
+    {"name": "Hear a Jackenstein voiceline"},
     {"name": "Hit the golden Bullet Pattern"},
     {"name": "Sell a Glowshard"}
   ],
@@ -84,7 +86,6 @@
     {"name": "Get the Spin Cake (CH1)"},
     {"name": "Spend 1225 points at once in the B-Rank room"},
     {"name": "Beat Triple Rabbick"},
-    {"name": "Hear a Jackenstein voiceline"},
     {"name": "Buy an item in 5 different rooms"}
   ],
   [
@@ -143,6 +144,7 @@
     {"name": "Beat 'Not An Enemy'"}
   ],
   [
+    {"name": "Have a tea party with Gerson"},
     {"name": "Beat Gerson"},
     {"name": "Defeat Giga Queen"},
     {"name": "Complete the normal Spamton encounter"},
@@ -151,6 +153,8 @@
     {"name": "Beat the Seth & Aqua fight at the end of Cliffs"}
   ],
   [
+    {"name": "Use Susie's healing spell (CH2)"},
+    {"name": "Open the Balloon Chest (City Heights)"},
     {"name": "Get the BitterTear"},
     {"name": "Hit a baby car"},
     {"name": "Play MEGALOVANIA on the organ"},
@@ -173,7 +177,6 @@
     {"name": "Complete the Susie bridge puzzle in TV World"},
     {"name": "Defeat King"},
     {"name": "Beat Spamton NEO (Snowgrave)"},
-    {"name": "Have a tea party with Gerson"},
     {"name": "Talk to Lancer in the epilogue"},
     {"name": "Buy something from Spamton's shop"},
     {"name": "Recruit Shuttah"},
@@ -188,17 +191,15 @@
     {"name": "Get the Shelter Key"},
     {"name": "Interact with 12 unique chests"},
     {"name": "Beat the Club Apatheia encounter"},
-    {"name": "Place an egg in Hometown"}
+    {"name": "Place an egg in Hometown"},
+    {"name": "Obtain the TwinRibbon"}
   ],
   [
     {"name": "Get the Annoying Dog on Rouxls"},
     {"name": "Lose Rabbick (CH3)"},
-    {"name": "Open the Balloon Chest (City Heights)"},
-    {"name": "Use Susie's healing spell (CH2)"},
     {"name": "Finish any chapter"},
     {"name": "Collect all evidence before fighting Blue & Yellow"},
-    {"name": "Push off 10 Terakotas in the Fox Hunt"},
-    {"name": "Collect 15 unique pink coins"}
+    {"name": "Push off 10 Terakotas in the Fox Hunt"}
   ],
   [
     {"name": "Collect both bananas"},
@@ -217,7 +218,8 @@
     {"name": "Beat Tenna"},
     {"name": "Beat Spamton NEO (Basement)"},
     {"name": "Defeat 2 shadow item holders"},
-    {"name": "Kill a Titan Spawn"}
+    {"name": "Kill a Titan Spawn"},
+    {"name": "Collect 15 unique pink coins"}
   ],
   [
     {"name": "Beat ERAM"},

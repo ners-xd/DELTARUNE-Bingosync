@@ -7,6 +7,7 @@ global.ws_key = "{}";
 global.grazed_at_all = false;
 global.hits_frame_delay = -1;
 global.buy_frame_delay = -1;
+global.bingo_saving = false;
 #if CHAPTER_1
 global.clover_manual = false;
 #elsif CHAPTER_2

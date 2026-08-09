@@ -94,7 +94,11 @@ try
                     case "goal":
                         if (global.show_goal_marks)
                         {
-                            var str = "[" + current_board_time + "] " + json.player.name + (json.remove ? " cleared " : " marked ");
+                            var str = json.player.name + (json.remove ? " cleared " : " marked ");
+
+                            if (current_board_time != "00:00")
+                                str = "[" + current_board_time + "] " + str;
+
                             var slot = string_digits(json.square.slot);
 
                             if (scr_is_goal_visible(real(slot) - 1))

@@ -50,7 +50,7 @@ class BingoLoader : UMPLoader
 
     public string GetModVersion()
     {
-        return "\"3.10\"";
+        return "\"3.11\"";
     }
 
     public string GetBranchName()
@@ -74,12 +74,12 @@ void BuildMod(int chapter)
 
     if(chapter > 0)
         RunUMTScript(Path.Combine(scriptPath, "sprites/ImportGraphics.csx"));
-    
+
     // Import fnt_main from Chapter 1 into other chapters because for some reason the text acts really strange otherwise.
     // For example, the m/M and w/W letters on the board are shifted down-right IF you enter from Chapter Select and you're not on fullscreen.
     if(chapter > 1)
         RunUMTScript(Path.Combine(scriptPath, "fnt_main_ch1/ImportFonts.csx"));
-    
+
     loader.Load();
 
     List<UndertaleCode> toDump = Data.Code.Where(c => c.ParentEntry is null).ToList();

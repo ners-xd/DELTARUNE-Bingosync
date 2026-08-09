@@ -178,5 +178,5 @@
   {"name": "Collect the pink coin in Yellow's room", "mod_slot": 175, "mod_progress_threshold": 1},
   {"name": "See the 'Thar she blows...' dialogue (CH1, CH4, CH5)", "mod_slot": 176, "mod_progress_threshold": 1},
   {"name": "Obtain the TwinRibbon", "mod_slot": 177, "mod_progress_threshold": 1},
-  {"name": "Get the Power Croissant (Board 1)", "mod_slot": 178, "mod_progress_threshold": 1}
+  {"name": "Get the Power Croissant for Susie (Board 1)", "mod_slot": 178, "mod_progress_threshold": 1}
 ]

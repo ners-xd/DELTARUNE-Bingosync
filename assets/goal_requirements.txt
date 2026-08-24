@@ -207,7 +207,7 @@ Defeat 5 bullet patterns (CH5): These do not have to be completed on the same sa
 Collect all evidence before fighting Blue & Yellow: You need to have all these pieces of evidence in your inventory at the same time before reaching the Blue & Yellow fight:
     - YellowShred - bottom left of Yellow's room
     - BootOil - top of Yellow's room, above Shi
-    - Scissors - top of Yellow's room, interact with the spark on the bridge
+    - Scissors - top of Yellow's room, interact with the spark on the bridge, CAN ONLY BE TAKEN BEFORE MEETING BLUE
     - PerpBook - in the All Punishments Worse Than Burying room, take the book from Aqua and Seth, CAN ONLY BE TAKEN BEFORE MEETING BLUE
     - TrainPlan - same place as above, CAN ONLY BE TAKEN AFTER MEETING BLUE
     - RedSplatter - bottom of Yellow's room after meeting Blue, interact with the food coloring

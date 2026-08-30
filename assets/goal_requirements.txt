@@ -6,17 +6,17 @@ Crash the game: The fastest crashes we currently know are:
     - CH2: Do bagel overflow but intentionally mess it up so that you get other choicers and crash the game using them. Tutorial: https://youtube.com/watch?v=HVMQFhg1T-s
     - CH5: Do Sheary Semi Skip but Spare during the first battle, before the second one starts
 
-Have money at one time: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
+Have D$ (Dark Dollars) at one time: Have this amount of dark dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
 
-Have Flowery Dollars at one time: Have this amount of Flowery Dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
+Have F$ (Flowery Dollars) at one time: Have this amount of Flowery Dollars on the currently loaded save file. If the card was regenerated while you were in-game, you need to update your money amount to count the goal
 
-Get an egg (Original Source): Get an egg without doing the Bagel Overflow glitch
+Obtain an Egg (Original Source): Get an egg without doing the Bagel Overflow glitch
 
 Spare/Pacify enemies: Note that you have to press the Spare or Pacify buttons on the enemies for them to count (in other words, most bosses do not count because their fights end automatically. The only exception is Jevil since you have to manually pacify him)
 
 Kill enemies: Defeat enemies with violence (that's attacking until they run away or freezing. Bosses don't count. CH1 enemies count except for Lancer and C. Round).
 
-Get the Bed Inspector title (CH1): Go right instead of left in the room with the Head Hathys in CH1 and interact with every bed to get the Bed Inspector title
+Get the Bed Inspector title: Go right instead of left in the room with the Head Hathys in CH1 and interact with every bed to get the Bed Inspector title
 
 Buy an item from Seam and Rouxls: It doesn't matter in what chapter you do so, as long as you get something from both of the shopkeepers
 
@@ -26,23 +26,23 @@ Complete the Hacker's side quest: Get all 3 checkmarks in the Cyber Field and ta
 
 Collect both bananas: Collect the bananas from Cyber City and the Acid Tunnel (they do NOT have to be on the same save file, but you have to collect each of them, you can't collect two of the same one)
 
-Get the Spin Cake (CH1): You get it by taking the broken cake piece from TopChef, having Malius fix it in the bake sale, and bringing the TopCake back to the chef
+Get the SpinCake (CH1): You get it by taking the broken cake piece from TopChef, having Malius fix it in the bake sale, and bringing the TopCake back to the chef
 
 Get massaged by Ferroll: In the room where you first see Shi in the Cliffs, go left, complete the climbing section, enter the room, interact with Ferroll and select "Massage" (right)
 
 Talk to Starwalker in the forest (CH1): Talk to Starwalker for the first time in the Scarlet Forest by hitting the bell at the end of the room and going back
 
-Get the Dice Brace: In the room with the first Bloxer in CH1 there is a puzzle on the upper wall. The solution is Black, Red, Switch, Black, Switch. The room above has a chest with the Dice Brace in it
+Obtain the Dice Brace: In the room with the first Bloxer in CH1 there is a puzzle on the upper wall. The solution is Black, Red, Switch, Black, Switch. The room above has a chest with the Dice Brace in it
 
 Complete both Berdly encounters: They do NOT have to be on the same save file, but you have to complete both encounters separately, you can't do two of the same one
 
-Get 3 unique ReviveMints: Get 3 of the mints available throughout the game. They are in:
+Obtain 3 unique ReviveMints: Get 3 of the mints available throughout the game. They are in:
     - CH1: Forest, in the room with the scissor dancers you go down-left and there's a chest
     - CH1: Card Castle, in the room with the scissor dancers after the Head Hathies there's 3 paintings. Interact with all of them then open the chest that's down-left under the door shaped like a clover
     - CH2: Cyber Field, in the room with the Virovirokun that shoots arrows, there's a chest at the bottom of the room. Have the enemy shoot it, then open the chest
     - CH2: Queen's Mansion, in the first room with the fire-shooting paintings, go all the way down and there's a painting with a star on it. Interact with it and it transforms the painting on the left into a chest which you can open
     - CH3: Green Room, from Ramb if you get B or A rank in Board 1
-    - CH3: Green Room, by gambling in the B-rank room
+    - CH3: Green Room, by gambling in the B-Rank room
     - CH3: TV World, by properly completing the puzzle which requires the LancerController (the one that gets you to the egg quest), solution is (dig on the green dots): https://i.imgur.com/p24TP65.png
     - CH4: Right of Gerson's Study, the chest in the pink and green piano puzzle room
     - CH4: Using the Embezzle act on Mizzle (this only counts once)
@@ -67,13 +67,13 @@ Get captured (CH1, CH2, CH3, CH5):
     - CH3: Get captured by Tenna before starting the Doom Board segment
     - CH5: Get captured by Flowery after re-entering the Dark World
 
-Get a Lancer Cookie (CH1): You can get it in the Forest Bake Sale from his stand
+Buy a Lancer Cookie (CH1): You can get it in the Forest Bake Sale from his stand
 
 Build a pink duck (CH1): Build the thrash machine that has a duck head, body and shoes AND have all three parts colored with the pinkest pink there is (it is the 5th color from right to left - the goal also works if you're one color off)
 
 Watch the Suselle Cutscene (Queen's Mansion): Pick the left choice after the Rouxls fight when Ralsei wonders about what Susie is doing
 
-Get the ReviveDust: This item is found in the Acid Tunnel after defeating the Werewire found near the top of the room
+Obtain the ReviveDust: This item is found in the Acid Tunnel after defeating the Werewire found near the top of the room
 
 Talk to the Green Swatchling: After defeating Rouxls, do any of the 3 poses with Ralsei and go back left after getting Susie in your party. Talk to the Green Swatchling
 
@@ -88,7 +88,7 @@ Talk to Lancer in the epilogue: You either have to do the True Pacifist Ending i
 
 Build the cutest Thrash Machine: On the right side of the thrash machine creator there's a cuteness stat, the maximum of which is 3 stars (what you need for this goal). The cutest thrash machine consists of Flame Head, Plain Body and Sneak Shoes (any colors).
 
-Fully recruit 3 different enemy types: Recruit different TYPES of enemies in CH2+. They do NOT have to be on the same save file
+Fully recruit 3 different enemies: Recruit different TYPES of enemies in CH2+. They do NOT have to be on the same save file
 
 Use 5 unique items in battle: Progress for this goal counts once you end your turn
 
@@ -96,7 +96,7 @@ Hit a baby car: Get lucky in the room after Berdly 2 in Cyber City and have a ba
 
 Defeat Queen without frying Berdly's arm: Spare Berdly in Cyber Field, in Cyber City and in the Queen fight (by loosening the wire he's held by), all in one playthrough
 
-Equip White Ribbon (CH1/CH3):
+Equip a White Ribbon (CH1/CH3):
     - CH1: the Field's Maze of Death in a chest that's clearly visible when entering the room
     - CH3: the Green Room, from Ramb by getting S or T rank Board 2
 
@@ -106,20 +106,20 @@ Donate D$1 (CH1/CH4):
     - CH1: Talk to the Jigsawry in front of Seam's shop, go to the donation hole and donate One Dark Dollar
     - CH4: Donate at least One Dark Dollar to the water fountain in Sanctuary 1 (left of the Bibliox room above Gerson's study)
 
-Get both chests on the Maus puzzle (Acid Lake): After the room in Acid Tunnel with the house maze, there is a room where you can release the maice into 2 chests or 2 houses. Get both chests
+Open both chests on the Maus puzzle (Acid Lake): After the room in Acid Tunnel with the house maze, there is a room where you can release the maice into 2 chests or 2 houses. Get both chests
     - For the first chest, turn the first house blue
     - For the second chest, leave all the houses red
 
-Find Ms. Pipis: When you hit a Pipis in the Snowgrave route, there is a 1/100 chance for each enemy to become Ms. Pipis. Get lucky
+See Ms. Pipis: When you hit a Pipis in the Snowgrave route, there is a 1/100 chance for each enemy to become Ms. Pipis. Get lucky
 
 Have Sans befriend Toriel (CH1, CH2, CH4):
     - CH1: Talk to Sans at the end, pick "Friends" (right), then "My Mom" (right)
     - CH2: Trigger the cutscene in Sans's store at the end by going all the way left then back right
     - CH4: Reach Kris's house at the end
 
-Get to the Tropic of Love: Get to the Tropic of Love with the raft (go right immediately) and interact with the tree on the heart-shaped island
+Find the Tropic of Love: Get to the Tropic of Love with the raft in Board 2 (go right immediately) and interact with the tree on the heart-shaped island
 
-Get the Pipis item: Watch the bonus cutscene in CH3 found in the secret entrance in the bottom left of the second-to-last room of TV World (before the Rouxls battle) if you're starting from a fresh CH3 file OR don't have Spamton NEO defeated OR you're on Weird Route
+Obtain the Pipis item: Watch the bonus cutscene in CH3 found in the secret entrance in the bottom left of the second-to-last room of TV World (before the Rouxls battle) if you're starting from a fresh CH3 file OR don't have Spamton NEO defeated OR you're on Weird Route
 
 Play MEGALOVANIA on the organ: The notes are CL CL L DR (C = hold C/Ctrl, L = Left, D = Down, R = Right)
 
@@ -134,19 +134,19 @@ Have a tea party with Gerson: See above
 
 Enter Ralsei's room: You need to have watched the tea party cutscene in Kris & Susie's room first
 
-Get the PrincessRibbon: It's found in CH4 by completing the climbing challenge to the right of the Biblioxes room in Sanctuary 3
+Obtain the PrincessRBN: It's found in CH4 by completing the climbing challenge to the right of the Biblioxes room in Sanctuary 3
 
-Get 2 gold items (CH3): This is referring to the rare items you can get by gambling in the B rank room (Blue Ribbon, ExecBuffet, ReviveMint, TennaTie, TensionMax)
+Obtain 2 Gold Prizes from the Ball Machine: This is referring to the rare items you can get by gambling in the B-Rank room (Blue Ribbon, ExecBuffet, ReviveMint, TennaTie, TensionMax)
 
-Get the Tree Cake: Found by completing Hopschef and interacting with the bread in CH5
+Obtain the TreeCake: Found by completing Hopschef and interacting with the bread in CH5
 
-Get the BitterTear: Found by donating 2000-9998 D$ in the fountain or by embezzling Miss Mizzle
+Obtain a BitterTear: Found by donating 2000-9998 D$ in the fountain or by embezzling Miss Mizzle
 
 Defeat 2 shadow item holders: The bosses who count for this are Jevil, Spamton NEO (both variants count as the same boss), ERAM, The Knight and Hammer of Justice
 
 Defeat 2 final bosses: The bosses who count for this are King, Giga Queen, Snowgrave Spamton NEO, Tenna and Titan
 
-Defeat 3 bosses: The bosses who count for this are all of the above + Queen + the Mike trio
+Defeat 3 bosses: The bosses who count for this are all of the above + Queen + Mike
 
 Show compassion to Ralsei: Say Yes to showing him compassion after Susie hops on him to grab the green book for Gerson
 
@@ -157,11 +157,11 @@ Take 4 unique shrine photos (Board 2): You need to take photos of:
     - The green bath near spawn, after buying Lancer from the bottom right (take a picture of the price to bring it down to 9 POINTs) and bringing him up to the location (the second door)
     - THE PRE-SHUTTAH PHOTO DOES NOT COUNT, AS IT IS AFTER THE SHRINE SECTION
 
-Get B or better rank Susiezilla: Susiezilla is unlocked by going to the special A-rank room and paying the Pippins 500 POINTs. You need to finish the minigame with at least 400 points to get B-Rank
+Get B-Rank or higher on Susiezilla: Susiezilla is unlocked by going to the special A-Rank room and paying the Pippins 500 POINTs. You need to finish the minigame with at least 400 points to get B-Rank
 
 Find the Among Us reference: Inspect all the giftboxes in Noelle's house in the room with the vent
 
-Get a Dog Dollar: They are found in:
+Obtain a Dog Dollar: They are found in:
     - CH2: The room where Spamton's dumpster and the moss is. In Main Route it first brings you to the room with the dog that runs you over
     - CH3: Gambling
     - CH4: In Sanctuary 3 go back to Gerson's study, go through the upstairs center door and open the chest
@@ -171,9 +171,7 @@ Get the Annoying Dog on Rouxls: Wait for Lancer to be unlocked in the CH3 Rouxls
 
 Lose Rabbick (CH3): Have Ribbick fully recruited, then encounter the double Ribbick in the room with the trashcans. One of them will be disguised as a Rabbick, just attack them both
 
-Go to the diner with Susie (CH4): Have a seat with Susie at the diner in CH4's Light World (you need to have stolen Asriel's money from his nightstand first)
-
-Beat the Lanino/Elnina rematch: Beat the only available dojo challenge in CH4
+Watch the Diner cutscene: Have a seat with Susie at the diner in CH4's Light World (you need to have stolen Asriel's money from his nightstand first)
 
 Obtain 5 unique armors: Get this many UNIQUE armors. Note that the starting equipment does NOT count. You have to buy or find things
 
@@ -183,17 +181,17 @@ Tell Jackenstein he's cute in the study: After his fight you can find him in Ger
 
 Complete 10 attacks without grazing bullets: Do any 10 attacks without grazing any bullets (a.k.a without having the graze box show up around your soul). Green soul attacks and Jackenstein UNLEASH turns don't count for this goal at all
 
-Complete the Sweet Cap'n Cakes battle without skipping attacks: Complete the fight without having Kris dead and without dancing and damaging them in the same turn to skip attacks
+Defeat Sweet Cap'n Cakes without skipping attacks: Complete the fight without having Kris dead and without dancing and damaging them in the same turn to skip attacks
 
-Crash the console on the 000000 puzzle (CH3): After finishing TV World, go to the puzzle area next to the Green Room WITHOUT HAVING GOTTEN THE SHADOW MANTLE, turn on the console WITHOUT HAVING UNLOCKED THE DOOR, get the camera and take 8 photos
+Crash the console on the 000000 puzzle: After finishing TV World, go to the puzzle area next to the Green Room WITHOUT HAVING GOTTEN THE SHADOW MANTLE, turn on the console WITHOUT HAVING UNLOCKED THE DOOR, get the camera and take 8 photos
 
-Complete the Susie bridge puzzle in TV World: In the room with the 20 Shadowguys, go up, left and there will be a console puzzle. Solve it and step on the switch
+Complete the Susie bridge puzzle (TV World): In the room with the 20 Shadowguys, go up, left and there will be a console puzzle. Solve it and step on the switch
 
-Find the third piano's full solution (CH4): When you reach the long horizontal hallway below the third piano in Sanctuary 1, go left and right to find each half of the solution
+Find the Jackenstein piano's full solution: When you reach the long horizontal hallway below the third piano in Sanctuary 1, go left and right to find each half of the solution
 
-Beat the Club Apatheia encounter: In Sanctuary 2, when you reach Club Apatheia (the room with the GALLERY prophecy), interact with the sign in the middle to start the Wicabel/Organikk fight
+Defeat the Club Apatheia encounter: In Sanctuary 2, when you reach Club Apatheia (the room with the GALLERY prophecy), interact with the sign in the middle to start the Wicabel/Organikk fight
 
-Interact with the Dark Sanctuary climbing trophy (CH4): In the room to the right of the TensionGem chest (before the big organ), there are 2 timed climbs. If you get below 6.3 and 10.3 seconds respectively (both climbs on the same save file), a trophy spawns at the bottom of the room. Interact with it.
+Interact with the Dark Sanctuary climbing trophy: In the room to the right of the TensionGem chest (before the big organ), there are 2 timed climbs. If you get below 6.3 and 10.3 seconds respectively (both climbs on the same save file), a trophy spawns at the bottom of the room. Interact with it.
 NOTE: The times are nerfed from the vanilla game because we considered it too difficult (it's normally 6.1 and 10.1 seconds)
 
 Find The Angel's prophecy panel: In Sanctuary 3, the room where orbs keep spawning around you, you can go through the hidden path and to the right. You will find the prophecy panel saying "THE ANGEL, BANISHED, WILL FINALLY MEET WITH ITS DESIRE.".
@@ -202,7 +200,7 @@ Build a duck in CH1 and CH5: Build a full duck thrash machine in CH1 (any color)
 
 Collect unique pink coins: These do not have to be gotten on the same save file, so long as they're all from different locations
 
-Defeat 5 bullet patterns (CH5): These do not have to be completed on the same save file, so long as they're all from different locations. A "bullet pattern" for this goal counts as one that makes the green border appear and disappear around the screen (i.e. Aqua's first bullet pattern after getting the Petal Feather)
+Defeat 5 Bullet Patterns (CH5): These do not have to be completed on the same save file, so long as they're all from different locations. A "bullet pattern" for this goal counts as one that makes the green border appear and disappear around the screen (i.e. Aqua's first bullet pattern after getting the Petal Feather)
 
 Collect all evidence before fighting Blue & Yellow: You need to have all these pieces of evidence in your inventory at the same time before reaching the Blue & Yellow fight:
     - YellowShred - bottom left of Yellow's room
@@ -227,21 +225,19 @@ See 2 unique IMAGE_FRIENDs: They are seen in:
 
 Obtain the Thatchet: It is found in CH5, to the right of the room with the Shearys (you have to make the scissors cut the Floradinn, complete the watering puzzle, then open the chest)
 
-Get a Bromide: Two are found in CH5:
+Obtain a Bromide: Two are found in CH5:
     - BromideR: in Green's cafe in the castle, after buying all 4 items from the vending machine you will get the option to buy "My Secret"
     - BromideF: after the giant room where Ralsei casts fire magic, if you go all the way left you will find a platforming challenge, at the top of which will be a room with a bunch of painters (same location as the Dog Dollar). You can find it on the ground
 
-Obtain the Red Ribbon in the Dark Garden: After getting the watering can and reaching the room where you first meet Aqua, continue watering the path to the left and you will find an empty square. Fill it in to form a heart and open the chest that spawns
+Obtain the Red Ribbon (Dark Garden): After getting the watering can and reaching the room where you first meet Aqua, continue watering the path to the left and you will find an empty square. Fill it in to form a heart and open the chest that spawns
 
-Get the Couch Pillow (CH4): If you had entered Ralsei's room in Castle Town, you can interact with the couch found in the room with the second pre-Jackenstein piano solution (right side). Susie will take it to furnish his room
+Get the Couch Pillow: If you had entered Ralsei's room in Castle Town, you can interact with the couch found in the room with the second pre-Jackenstein piano solution (right side). Susie will take it to furnish his room
 
 Hit the golden Bullet Pattern: After beating Aqua's first tutorial bullet pattern, get out of platformer mode and leave and re-enter the room. Backtrack all the way to the left and hit the golden bullet pattern that spawns
 
-Beat 'Not An Enemy': In the CH5 Cliffs, when reaching the Seth & Aqua dash in the pink colored room, fail the challenge, exit platformer mode and go down. Interact with Shi, and say "I would not mind" (right). Leave and come back to encounter it
+Defeat 'Not An Enemy': In the CH5 Cliffs, when reaching the Seth & Aqua dash in the pink colored room, fail the challenge, exit platformer mode and go down. Interact with Shi, and say "I would not mind" (right). Leave and come back to encounter it
 
-Interact with a Mantis (CH5): After completing the right side of Flower Castle, go back to the Cafe, go up to the Second Diner and interact with one of the mantises to the left/right of Aqua
-
-Solve the CH5 Garden Box Puzzle without Ralsei's help: When you get the ability to, turn off Ralseis in the config menu and solve the box puzzle yourself
+Interact with a Mantis: After completing the right side of Flower Castle, go back to the Cafe, go up to the Second Diner and interact with one of the mantises to the left/right of Aqua
 
 Talk to Zenlooker: They're found in CH5:
     - Garden: to the right of Hopschef there's a platforming challenge. If you do it by ascending between the two vines they appear
@@ -249,11 +245,11 @@ Talk to Zenlooker: They're found in CH5:
 
 Develop Kooby: After getting the watering can, backtrack to the room below the Floradinns and the Red Ribbon chest and water Kooby
 
-Collect the pink coin in Yellow's room: In the room with Aqua and Seth where you can grap the PerpBook, enter platformer mode and go to the right. At the top of the bouncing challenge you will find the pink coin
+Collect the pink coin in the Punishment Room: In the room with Aqua and Seth where you can grap the PerpBook, enter platformer mode and go to the right. At the top of the bouncing challenge you will find the pink coin
 
 Buy an item in 5 different rooms: Note that the Chapter 3 boards count as one giant room each
 
-Get 5 keys (CH3):
+Obtain 5 keys (CH3):
     - Board 1:
         - One is dug out by Lancer in the spring to the far left
         - One can be bought from the store next to spawn for 250 points

@@ -1,231 +1,233 @@
 [
   [
-    {"name": "Watch The Legend (Castle Town)"},
-    {"name": "Fuse an item (CH2+)"},
-    {"name": "Get the Power Croissant for Susie (Board 1)"},
-    {"name": "Reach the Knight at the start of CH4"},
-    {"name": "Obtain the Thatchet"}
-  ],
-  [
-    {"name": "Enter Ralsei's room"},
-    {"name": "Hug Ralsei"},
-    {"name": "Have 250 Flowery Dollars at one time"},
-    {"name": "Complete the Dummy tutorial"},
-    {"name": "Develop Kooby"}
-  ],
-  [
-    {"name": "Complete 3 unique dojo challenges"},
-    {"name": "Make someone go on stage with Pizzapants"},
-    {"name": "Complete 10 attacks without grazing bullets"},
-    {"name": "Crash the game"},
-    {"name": "Solve the CH5 Garden Box Puzzle without Ralsei's help"}
-  ],
-  [
-    {"name": "Don't sleep to skip the start of a chapter"},
-    {"name": "Wrong Warp into 15 unique rooms"},
-    {"name": "Go to the diner with Susie (CH4)"},
-    {"name": "Equip the White Ribbon (CH1/CH3)"},
-    {"name": "Die in 3 different chapters"},
-    {"name": "Obtain the Red Ribbon in the Dark Garden"}
-  ],
-  [
-    {"name": "Have $3000 at one time"},
-    {"name": "Kill 5 enemies"},
-    {"name": "Beat the Lanino/Elnina rematch"},
-    {"name": "Show compassion to Ralsei"},
-    {"name": "Watch Tenna's Feature Presentation"}
-  ],
-  [
     {"name": "Fill up your inventory with 12 consumables"},
-    {"name": "Find the Among Us reference"},
-    {"name": "Pacify 10 enemies"},
-    {"name": "Spare/Pacify Ponman"},
-    {"name": "Get 5 keys (CH3)"},
-    {"name": "Get 3 unique ribbons"},
-    {"name": "See the 'Thar she blows...' dialogue (CH1, CH4, CH5)"}
+    {"name": "Fuse an item (CH2+)"},
+    {"name": "Obtain the Power Croissant"},
+    {"name": "Reach the Knight at the start of CH4"},
+    {"name": "Enter Ralsei's room"},
+    {"name": "Kill 5 enemies", "types": ["kills"]}
   ],
   [
-    {"name": "Donate D$1 (CH1/CH4)"},
-    {"name": "Complete the GIASFELFEBREHBER puzzle"},
-    {"name": "Complete the Hacker's side quest"},
-    {"name": "Complete the spelling bee cutscene"},
-    {"name": "Hear a Jackenstein voiceline"},
-    {"name": "Hit the golden Bullet Pattern"},
-    {"name": "Sell a Glowshard"}
+    {"name": "Make someone go on stage with Pizzapants"},
+    {"name": "Have D$3000 at one time", "types": ["darkdollars"]},
+    {"name": "Kill 10 enemies", "types": ["kills"]},
+    {"name": "Pacify 10 enemies", "types": ["pacifies"]},
+    {"name": "Complete the Dummy tutorial"},
+    {"name": "Develop Kooby"},
+    {"name": "Hug Ralsei"}
   ],
   [
-    {"name": "Get a Dog Dollar"},
-    {"name": "Eat Moss"},
-    {"name": "Have $5000 at one time"},
-    {"name": "Buy the RoyalPin from Swatch"},
-    {"name": "Complete the Sweet Cap'n Cakes battle without skipping attacks"},
-    {"name": "Kill 10 enemies"},
-    {"name": "Lose Tasque Manager"},
-    {"name": "Pot Balance"},
-    {"name": "Get T-Rank on Board 1 or 2"}
-  ],
-  [
-    {"name": "Get the Dice Brace"},
-    {"name": "Lose Mauswheel"},
-    {"name": "Spare Clover without using the Manual (CH1)"},
-    {"name": "Pacify 15 enemies"},
-    {"name": "Spare/Pacify 15 enemies"},
-    {"name": "Get Z-Rank on Board 1"}
-  ],
-  [
-    {"name": "Beat the Mike trio"},
-    {"name": "Recruit the Watercooler"},
-    {"name": "Get a Lancer Cookie (CH1)"},
+    {"name": "Crash the game"},
+    {"name": "Complete 10 attacks without grazing bullets"},
     {"name": "Use 5 unique items in battle"},
-    {"name": "Get the ThornRing"},
-    {"name": "Spare/Pacify 25 enemies"}
+    {"name": "Obtain 5 keys (CH3)"},
+    {"name": "Have F$250 at one time"},
+    {"name": "Spare/Pacify 15 enemies", "types": ["spares"]},
+    {"name": "Pacify 15 enemies", "types": ["pacifies"]}
   ],
   [
-    {"name": "Find the third piano's full solution (CH4)"},
-    {"name": "Get 2 gold items (CH3)"},
-    {"name": "Get the Spin Cake (CH1)"},
-    {"name": "Spend 1225 points at once in the B-Rank room"},
-    {"name": "Beat Triple Rabbick"},
-    {"name": "Buy an item in 5 different rooms"}
+    {"name": "Wrong Warp into 15 unique rooms"},
+
+    {"name": "Don't sleep to skip the start of a chapter"},
+    {"name": "Obtain the Thatchet"},
+    {"name": "Find the Among Us reference"},
+    {"name": "Complete 3 unique dojo challenges"},
+    {"name": "Equip a White Ribbon (CH1/CH3)"},
+    {"name": "Watch The Legend (Castle Town)"},
+    {"name": "Watch the Diner cutscene"}
   ],
   [
-    {"name": "Get 3 unique ReviveMints"},
-    {"name": "Get B or better rank Susiezilla"},
-    {"name": "Build the cutest Thrash Machine"},
-    {"name": "Build a pink duck (CH1)"},
-    {"name": "Talk to Starwalker in the forest (CH1)"},
-    {"name": "Get an egg (Original Source)"},
-    {"name": "Get the Ice Key"},
-    {"name": "Talk to Zenlooker"},
-    {"name": "Get the Tree Cake"}
+    {"name": "Complete the GIASFELFEBREHBER puzzle"},
+    {"name": "Fully recruit 3 different enemies"},
+    {"name": "Die in 3 different chapters"},
+    {"name": "Complete the Lanino&Elnina dojo challenge"},
+    {"name": "Show compassion to Ralsei"},
+    {"name": "Watch the spelling bee cutscene"},
+    {"name": "Pot Balance"}
   ],
   [
+    {"name": "Watch Tenna's Feature Presentation"},
+    {"name": "Donate D$1 (CH1/CH4)"},
+    {"name": "Sell a Glowshard"},
+    {"name": "Solve the CH5 Garden Box Puzzle with Ralseis off"},
+    {"name": "Defeat Sweet Cap'n Cakes without skipping attacks"},
+    {"name": "Have D$5000 at one time", "types": ["darkdollars"]},
+    {"name": "Complete the Hacker's side quest"}
+  ],
+  [
+    {"name": "Lose Tasque Manager"},
+    {"name": "See the 'Thar she blows...' dialogue (CH1, CH4, CH5)"},
+    {"name": "Kill 20 enemies", "types": ["kills"]},
+    {"name": "Spare/Pacify Ponman"},
+    {"name": "Buy a RoyalPin from Swatch"},
+    {"name": "Lose 3 fully recruited enemies"},
+    {"name": "Spare/Pacify 25 enemies", "types": ["spares"]}
+  ],
+  [
+    {"name": "Eat Moss"},
+    {"name": "Get T-Rank on Board 1 or 2"},
+    {"name": "Lose Mauswheel"},
+    {"name": "Recruit Watercooler"},
+    {"name": "Obtain 2 Gold Prizes from the Ball Machine"},
+    {"name": "Obtain a Dog Dollar"},
+    {"name": "Spend 1225 points at once on the Ball Machine"}
+  ],
+  [
+    {"name": "Hear a Jackenstein voiceline"},
+    {"name": "Obtain the Red Ribbon (Dark Garden)"},
+    {"name": "Get Z-Rank on Board 1"},
+    {"name": "Buy an item in 5 different rooms"},
+    {"name": "Obtain 3 unique ribbons"},
+    {"name": "Obtain the ThornRing"},
+    {"name": "Obtain the Dice Brace"}
+  ],
+  [
+    {"name": "Find the Tropic of Love"},
+    {"name": "Find the Jackenstein piano's full solution"},
+    {"name": "Obtain 5 unique armors"},
+    {"name": "Open both chests on the Maus puzzle (Acid Lake)"},
+    {"name": "Obtain an Egg (Original Source)", "types": ["eggs"]},
+    {"name": "Buy a Lancer Cookie (CH1)"},
+    {"name": "Spare Clover without using the Manual (CH1)"},
+    {"name": "Obtain the ReviveDust"}
+  ],
+  [
+    {"name": "Defeat Rouxls (CH2/CH3)"},
+    {"name": "Defeat Mike"},
+    {"name": "Obtain the Ice Key"},
+    {"name": "Open 12 unique chests"},
+    {"name": "Lose Shuttah"},
     {"name": "Complete any Lightners Live song"},
-    {"name": "Abort Snowgrave after getting the FreezeRing"},
-    {"name": "Complete both Berdly encounters"},
-    {"name": "Fully recruit 3 different enemy types"},
-    {"name": "Get both chests on the Maus puzzle (Acid Lake)"},
-    {"name": "Get the ReviveDust"},
-    {"name": "Get the FreezeRing"},
-    {"name": "Build a duck in CH1 and CH5"},
+    {"name": "Hit the golden Bullet Pattern"},
+    {"name": "Get B-Rank or higher on Susiezilla"}
+  ],
+  [
+    {"name": "Hit a baby car"},
+    {"name": "Build a pink duck (CH1)", "types": ["ducks"]},
+    {"name": "Build the cutest Thrash Machine"},
+    {"name": "Obtain 12 unique consumables"},
+    {"name": "Talk to Starwalker in the forest (CH1)"},
+    {"name": "Take 4 unique shrine photos (Board 2)"},
+    {"name": "Talk to Zenlooker"},
+    {"name": "Obtain 3 unique ReviveMints"}
+  ],
+  [
+    {"name": "Obtain the TreeCake"},
+    {"name": "Talk to the Green Swatchling"},
     {"name": "Talk to Tropical Starwalker"},
+    {"name": "Obtain the SpinCake (CH1)"},
+    {"name": "Defeat Triple Rabbick"},
     {"name": "Get captured (CH1, CH2, CH3, CH5)"},
+    {"name": "Tell Jackenstein he's cute in the study"},
+    {"name": "Defeat Spamton (Cyber City)"}
+  ],
+  [
+    {"name": "Build a duck in CH1 and CH5", "types": ["ducks"]},
+    {"name": "Win a battle in each chapter"},
+    {"name": "Defeat both Berdly encounters"},
+    {"name": "Obtain 5 unique weapons"},
+    {"name": "Reach the Ice Door without the Ice Key (CH3)"},
+    {"name": "Recruit Werewerewire"},
+    {"name": "Watch the Suselle Cutscene (Queen's Mansion)"},
     {"name": "Get massaged by Ferroll"}
   ],
   [
-    {"name": "Get the Couch Pillow (CH4)"},
-    {"name": "Beat the Rouxls fight (CH2/CH3)"},
-    {"name": "Kill 20 enemies"},
-    {"name": "Tell Jackenstein he's cute in the study"},
-    {"name": "Get to the Tropic of Love"},
-    {"name": "Watch the Suselle Cutscene (Queen's Mansion)"},
-    {"name": "Win a battle in each chapter"}
-  ],
-  [
-    {"name": "Take 4 unique shrine photos (Board 2)"},
-    {"name": "Talk to the Green Swatchling"},
-    {"name": "Recruit Werewerewire"},
-    {"name": "Lose 3 recruited enemies"},
-    {"name": "Obtain 5 unique weapons"},
-    {"name": "Lose Shuttah"},
-    {"name": "Get an egg in 2 different chapters"},
-    {"name": "Interact with the Dark Sanctuary climbing trophy (CH4)"},
-    {"name": "Collect 5 unique pink coins"},
-    {"name": "See 2 unique IMAGE_FRIENDs"}
-  ],
-  [
-    {"name": "Get the Bed Inspector title (CH1)"},
-    {"name": "Defeat Queen"},
-    {"name": "Spare Queen"},
-    {"name": "Defeat 5 bullet patterns (CH5)"},
-    {"name": "Obtain 5 unique armors"},
-    {"name": "Trigger Milk on the 2nd K. Round fight"},
+    {"name": "Obtain the FreezeRing"},
     {"name": "Use Dual Heal"},
-    {"name": "Beat 'Not An Enemy'"}
-  ],
-  [
-    {"name": "Have a tea party with Gerson"},
-    {"name": "Beat Gerson"},
-    {"name": "Defeat Giga Queen"},
-    {"name": "Complete the normal Spamton encounter"},
-    {"name": "Fully recruit an enemy in each chapter"},
+    {"name": "Abort Snowgrave after obtaining the FreezeRing"},
+    {"name": "Collect both bananas"},
+    {"name": "Obtain a BitterTear"},
     {"name": "Recruit Miss Mizzle"},
-    {"name": "Beat the Seth & Aqua fight at the end of Cliffs"}
+    {"name": "Collect 5 unique pink coins", "types": ["pinkcoins"]},
+    {"name": "Have a tea party with Gerson"}
   ],
   [
-    {"name": "Use Susie's healing spell (CH2)"},
-    {"name": "Open the Balloon Chest (City Heights)"},
-    {"name": "Get the BitterTear"},
-    {"name": "Hit a baby car"},
-    {"name": "Play MEGALOVANIA on the organ"},
-    {"name": "Reach the Ice Door without the Ice Key (CH3)"},
-    {"name": "Defeat 3 bosses"},
-    {"name": "Recruit Terakota"},
-    {"name": "Get a Bromide"}
-  ],
-  [
-    {"name": "Complete Jevil"},
-    {"name": "Get a Shadow Crystal"},
-    {"name": "Find Ms. Pipis"},
-    {"name": "Hit 3 Pipis"},
-    {"name": "Finish Doom Board"},
-    {"name": "Interact with 20 unique save points"},
-    {"name": "Collect the pink coin in Yellow's room"},
-    {"name": "Collect 10 unique pink coins"}
-  ],
-  [
-    {"name": "Complete the Susie bridge puzzle in TV World"},
-    {"name": "Defeat King"},
-    {"name": "Beat Spamton NEO (Snowgrave)"},
-    {"name": "Talk to Lancer in the epilogue"},
     {"name": "Buy something from Spamton's shop"},
-    {"name": "Recruit Shuttah"},
-    {"name": "Obtain 12 unique consumables"},
-    {"name": "Get an item from the donation fountain (CH4)"},
-    {"name": "Have Sans befriend Toriel (CH1, CH2, CH4)"}
+    {"name": "Defeat Queen"},
+    {"name": "Open the Balloon Chest (City Heights)"},
+    {"name": "Play MEGALOVANIA on the organ"},
+    {"name": "See 2 unique IMAGE_FRIENDs"},
+    {"name": "Spare Queen"},
+    {"name": "Use UltimatHeal"},
+    {"name": "Interact with the Dark Sanctuary climbing trophy"}
   ],
   [
-    {"name": "Get the Pipis item"},
-    {"name": "Find the 3 Golden Sheets"},
-    {"name": "Watch the Weird Route hospital cutscene (CH2)"},
-    {"name": "Get the Shelter Key"},
-    {"name": "Interact with 12 unique chests"},
-    {"name": "Beat the Club Apatheia encounter"},
-    {"name": "Place an egg in Hometown"},
-    {"name": "Obtain the TwinRibbon"}
+    {"name": "Defeat 'Not An Enemy'"},
+    {"name": "Complete Doom Board"},
+    {"name": "Hit 3 Pipis"},
+    {"name": "Defeat Seth & Aqua at the end of Cliffs"},
+    {"name": "See Ms. Pipis"},
+    {"name": "Obtain an Egg in 2 different chapters", "types": ["eggs"]},
+    {"name": "Defeat 5 Bullet Patterns (CH5)"}
   ],
   [
-    {"name": "Get the Annoying Dog on Rouxls"},
+    {"name": "Defeat Gerson"},
+    {"name": "Obtain a Shadow Crystal"},
+    {"name": "Defeat Giga Queen"},
+    {"name": "Get the Bed Inspector title"},
+    {"name": "Complete the Susie bridge puzzle (TV World)"},
+    {"name": "Obtain an item from the donation fountain"},
+    {"name": "Fully recruit an enemy in each chapter"}
+  ],
+  [
+    {"name": "Obtain a Bromide"},
+    {"name": "Obtain the Shelter Key"},
+    {"name": "Fully recruit Shuttah"},
+    {"name": "Trigger Milk on the 2nd K. Round fight"},
+    {"name": "Interact with 20 unique save points"},
+    {"name": "Recruit Terakota"},
+    {"name": "Find the 3 Golden Sheets"}
+  ],
+  [
+    {"name": "Obtain the Pipis item"},
     {"name": "Lose Rabbick (CH3)"},
-    {"name": "Finish any chapter"},
-    {"name": "Collect all evidence before fighting Blue & Yellow"},
+    {"name": "Defeat the Club Apatheia encounter"},
+    {"name": "Find The Angel's prophecy panel"},
+    {"name": "Obtain the PrincessRBN"},
+    {"name": "Have Sans befriend Toriel (CH1, CH2, CH4)"},
+    {"name": "Place an Egg in Hometown"}
+  ],
+  [
+    {"name": "Defeat Spamton NEO (Snowgrave)"},
+    {"name": "Defeat Jevil"},
+    {"name": "Defeat King"},
+    {"name": "Get the Annoying Dog on Rouxls"},
+    {"name": "Obtain the Couch Pillow"},
     {"name": "Push off 10 Terakotas in the Fox Hunt"}
   ],
   [
-    {"name": "Collect both bananas"},
-    {"name": "Get the PrincessRibbon"},
-    {"name": "Defeat 2 final bosses"},
-    {"name": "Get the TripTicket"},
-    {"name": "Crash the console on the 000000 puzzle (CH3)"},
+    {"name": "Talk to Lancer in the epilogue"},
+    {"name": "Collect the pink coin in the Punishment Room"},
     {"name": "See frozen Berdly when leaving Queen's basement"},
-    {"name": "Find The Angel's prophecy panel"},
-    {"name": "Hang out in the cafe with 3 different flowers"},
+    {"name": "Watch the Weird Route hospital cutscene"},
+    {"name": "Collect all evidence before fighting Blue & Yellow"},
+    {"name": "Complete any chapter"}
+  ],
+  [
     {"name": "Complete a side in Flower Castle"},
-    {"name": "Interact with a Mantis (CH5)"}
+
+    {"name": "Collect 10 unique pink coins", "types": ["pinkcoins"]},
+    {"name": "Crash the console on the 000000 puzzle"},
+    {"name": "Obtain the TwinRibbon"},
+    {"name": "Interact with a Mantis"},
+    {"name": "Obtain the TripTicket"},
+    {"name": "Hang out in the cafe with 3 different flowers"}
   ],
   [
-    {"name": "Beat Fake Gerson"},
-    {"name": "Beat Tenna"},
-    {"name": "Beat Spamton NEO (Basement)"},
-    {"name": "Defeat 2 shadow item holders"},
+    {"name": "Defeat Fake Gerson"},
+    {"name": "Defeat 3 bosses"},
+    {"name": "Defeat Spamton NEO (Basement)"},
+    {"name": "Defeat Tenna"},
     {"name": "Kill a Titan Spawn"},
-    {"name": "Collect 15 unique pink coins"}
+    {"name": "Collect 15 unique pink coins", "types": ["pinkcoins"]}
   ],
   [
-    {"name": "Beat ERAM"},
-    {"name": "Beat The Knight"},
-    {"name": "Beat The Titan"},
-    {"name": "Beat Flowery"},
-    {"name": "Beat Pink"}
+    {"name": "Defeat the Knight"},
+    {"name": "Defeat the Titan"},
+    {"name": "Defeat 2 final bosses"},
+    {"name": "Defeat ERAM"},
+    {"name": "Defeat 2 shadow item holders"},
+    {"name": "Defeat Flowery"},
+    {"name": "Defeat Pink"}
   ]
 ]

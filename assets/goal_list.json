@@ -2,7 +2,6 @@
   {"name": "Die in 3 different chapters", "mod_slot": 7, "mod_progress_threshold": 3, "mod_global_var_name": "deaths_chapters"},
   {"name": "See frozen Berdly when leaving Queen's basement", "mod_slot": 49, "mod_progress_threshold": 1},
   {"name": "Crash the game", "mod_slot": 58, "mod_progress_threshold": 1},
-  {"name": "Wrong Warp into 15 unique rooms", "mod_slot": 70, "mod_progress_threshold": 15, "mod_global_var_name": "wrong_warps"},
   {"name": "Get Z-Rank on Board 1", "mod_slot": 85, "mod_progress_threshold": 1},
 
   {"name": "Have $5000 at one time", "mod_slot": 0, "mod_progress_threshold": 1},
@@ -165,7 +164,6 @@
   {"name": "Get the Couch Pillow (CH4)", "mod_slot": 162, "mod_progress_threshold": 1},
   {"name": "Hit the golden Bullet Pattern", "mod_slot": 163, "mod_progress_threshold": 1},
   {"name": "Beat 'Not An Enemy'", "mod_slot": 164, "mod_progress_threshold": 1},
-  {"name": "Complete a side in Flower Castle", "mod_slot": 165, "mod_progress_threshold": 1},
   {"name": "Make someone go on stage with Pizzapants", "mod_slot": 166, "mod_progress_threshold": 1},
   {"name": "Interact with a Mantis (CH5)", "mod_slot": 167, "mod_progress_threshold": 1},
   {"name": "Solve the CH5 Garden Box Puzzle without Ralsei's help", "mod_slot": 168, "mod_progress_threshold": 1},

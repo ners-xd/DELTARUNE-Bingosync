@@ -1,4 +1,7 @@
 [
+  {"name": "Wrong Warp into 15 unique rooms", "mod_slot": 70, "mod_progress_threshold": 15, "mod_global_var_name": "wrong_warps"},
+  {"name": "Complete a side in Flower Castle", "mod_slot": 165, "mod_progress_threshold": 1},
+
   {"name": "Die in 3 different chapters", "mod_slot": 7, "mod_progress_threshold": 3, "mod_global_var_name": "deaths_chapters"},
   {"name": "See frozen Berdly when leaving Queen's basement", "mod_slot": 49, "mod_progress_threshold": 1},
   {"name": "Crash the game", "mod_slot": 58, "mod_progress_threshold": 1},

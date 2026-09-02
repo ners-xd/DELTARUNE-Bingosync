@@ -94,7 +94,7 @@
   [
     {"name": "Defeat Rouxls (CH2/CH3)"},
     {"name": "Defeat Mike"},
-    {"name": "Obtain the Ice Key"},
+    {"name": "Obtain the Ice Key", "types": ["icekey"]},
     {"name": "Open 12 unique chests"},
     {"name": "Lose Shuttah"},
     {"name": "Complete any Lightners Live song"},
@@ -126,7 +126,7 @@
     {"name": "Win a battle in each chapter"},
     {"name": "Defeat both Berdly encounters"},
     {"name": "Obtain 5 unique weapons"},
-    {"name": "Reach the Ice Door without the Ice Key (CH3)", "types": ["postsword1"]},
+    {"name": "Reach the Ice Door without the Ice Key (CH3)", "types": ["icekey", "shelterkey", "eram"]},
     {"name": "Recruit Werewerewire"},
     {"name": "Watch the Suselle Cutscene (Queen's Mansion)"},
     {"name": "Get massaged by Ferroll"}
@@ -171,7 +171,7 @@
   ],
   [
     {"name": "Obtain a Bromide"},
-    {"name": "Obtain the Shelter Key", "types": ["postsword1"]},
+    {"name": "Obtain the Shelter Key", "types": ["shelterkey"]},
     {"name": "Fully recruit Shuttah"},
     {"name": "Trigger Milk on the 2nd K. Round fight"},
     {"name": "Interact with 20 unique save points"},
@@ -225,7 +225,7 @@
     {"name": "Defeat the Knight"},
     {"name": "Defeat the Titan"},
     {"name": "Defeat 2 final bosses"},
-    {"name": "Defeat ERAM", "types": ["postsword1"]},
+    {"name": "Defeat ERAM", "types": ["eram"]},
     {"name": "Defeat 2 shadow item holders"},
     {"name": "Defeat Flowery"},
     {"name": "Defeat Pink"}

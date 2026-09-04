@@ -84,16 +84,16 @@
   [
     {"name": "Find the Tropic of Love"},
     {"name": "Find the Jackenstein piano's full solution"},
+    {"name": "Obtain 5 unique weapons"},
     {"name": "Obtain 5 unique armors"},
     {"name": "Open both chests on the Maus puzzle (Acid Lake)"},
-    {"name": "Obtain an Egg (Original Source)", "types": ["eggs"]},
     {"name": "Buy a Lancer Cookie (CH1)"},
     {"name": "Spare Clover without using the Manual (CH1)"},
     {"name": "Obtain the ReviveDust"}
   ],
   [
+    {"name": "Obtain an Egg (Original Source)", "types": ["eggs"]},
     {"name": "Defeat Rouxls (CH2/CH3)"},
-    {"name": "Defeat Mike"},
     {"name": "Obtain the Ice Key", "types": ["icekey"]},
     {"name": "Open 12 unique chests"},
     {"name": "Lose Shuttah"},
@@ -102,38 +102,38 @@
     {"name": "Get B-Rank or higher on Susiezilla"}
   ],
   [
+    {"name": "Defeat Mike"},
     {"name": "Hit a baby car"},
     {"name": "Build a pink duck (CH1)", "types": ["ducks"]},
     {"name": "Build the cutest Thrash Machine"},
     {"name": "Obtain 12 unique consumables"},
     {"name": "Talk to Starwalker in the forest (CH1)"},
     {"name": "Take 4 unique shrine photos (Board 2)"},
-    {"name": "Talk to Zenlooker"},
     {"name": "Obtain 3 unique ReviveMints"}
   ],
   [
-    {"name": "Obtain the TreeCake"},
+    {"name": "Use Dual Heal"},
+    {"name": "Talk to Zenlooker"},
     {"name": "Talk to the Green Swatchling"},
     {"name": "Talk to Tropical Starwalker"},
-    {"name": "Obtain the SpinCake (CH1)"},
     {"name": "Defeat Triple Rabbick"},
     {"name": "Get captured (CH1, CH2, CH3, CH5)"},
     {"name": "Tell Jackenstein he's cute in the study"},
     {"name": "Defeat Spamton (Cyber City)"}
   ],
   [
+    {"name": "Obtain the SpinCake (CH1)"},
+    {"name": "Obtain the TreeCake"},
     {"name": "Build a duck in CH1 and CH5", "types": ["ducks"]},
     {"name": "Win a battle in each chapter"},
     {"name": "Defeat both Berdly encounters"},
-    {"name": "Obtain 5 unique weapons"},
     {"name": "Reach the Ice Door without the Ice Key (CH3)", "types": ["icekey", "shelterkey", "eram"]},
     {"name": "Recruit Werewerewire"},
-    {"name": "Watch the Suselle Cutscene (Queen's Mansion)"},
-    {"name": "Get massaged by Ferroll"}
+    {"name": "Watch the Suselle Cutscene (Queen's Mansion)"}
   ],
   [
+    {"name": "Get massaged by Ferroll"},
     {"name": "Obtain the FreezeRing"},
-    {"name": "Use Dual Heal"},
     {"name": "Abort Snowgrave after obtaining the FreezeRing"},
     {"name": "Collect both bananas"},
     {"name": "Obtain a BitterTear"},
@@ -152,11 +152,11 @@
     {"name": "Interact with the Dark Sanctuary climbing trophy"}
   ],
   [
+    {"name": "Find the 3 Golden Sheets"},
     {"name": "Defeat 'Not An Enemy'"},
     {"name": "Complete Doom Board"},
     {"name": "Hit 3 Pipis"},
     {"name": "Defeat Seth & Aqua at the end of Cliffs"},
-    {"name": "See Ms. Pipis"},
     {"name": "Obtain an Egg in 2 different chapters", "types": ["eggs"]},
     {"name": "Defeat 5 Bullet Patterns (CH5)"}
   ],
@@ -170,13 +170,13 @@
     {"name": "Fully recruit an enemy in each chapter"}
   ],
   [
+    {"name": "See Ms. Pipis"},
     {"name": "Obtain a Bromide"},
     {"name": "Obtain the Shelter Key", "types": ["shelterkey"]},
     {"name": "Fully recruit Shuttah"},
     {"name": "Trigger Milk on the 2nd K. Round fight"},
     {"name": "Interact with 20 unique save points"},
-    {"name": "Recruit Terakota"},
-    {"name": "Find the 3 Golden Sheets"}
+    {"name": "Recruit Terakota"}
   ],
   [
     {"name": "Obtain the Pipis item"},

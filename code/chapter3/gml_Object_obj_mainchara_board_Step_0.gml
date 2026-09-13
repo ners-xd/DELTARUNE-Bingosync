@@ -11,7 +11,8 @@ if (!(instance_exists(obj_b2bombfun) && obj_b2bombfun.active))
         if (myhealth <= 0)
         {
 /// CODE
-            scr_add_goal_array(7, "chapter3");
+            if (name == "kris")
+                scr_add_goal_array(7, "chapter3");
 /// END
 
 /// REPLACE

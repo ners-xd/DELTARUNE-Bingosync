@@ -1,4 +1,4 @@
-Die in 3 different chapters: Normal game overs, Losing to Punch-Out, Giga Queen and in the CH3 boards count as dying
+Die in 3 different chapters: Normal game overs, losing to Punch-Out, losing to Giga Queen and dying in the CH3 boards as Kris count for this goal
 
 See frozen Berdly when leaving Queen's basement: Wrong warp out of Queen's basement in CH2 and trigger the cutscene with Ralsei's glasses. You should see frozen Berdly in the top-left corner
 
@@ -52,7 +52,7 @@ Obtain 3 unique ReviveMints: Get 3 of the mints available throughout the game. T
 
 Eat Moss: Found in:
     - CH1: Top right of the cell you're in after the forest chase
-    - CH2: The room where you get the ThornRing in Snowgrave, interact with it on the top left while on Main Route
+    - CH2: The room where you get the ThornRing in the Weird Route, interact with it on the top left while on Main Route
     - CH3: Board 2 after exiting the room with the antlions, it's right above the room transition (you'll see the green on the wall)
     - CH4: The really long hallway that brings you to the egg room, it's at the very end of it
     - CH5: Mandatory cutscene after entering the Dark World for the second time
@@ -110,7 +110,7 @@ Open both chests on the Maus puzzle (Acid Lake): After the room in Acid Tunnel w
     - For the first chest, turn the first house blue
     - For the second chest, leave all the houses red
 
-See Ms. Pipis: When you hit a Pipis in the Snowgrave route, there is a 1/100 chance for each enemy to become Ms. Pipis. Get lucky
+Find Ms. Pipis: When you hit a Pipis in the Weird Route, there is a 1/100 chance for each enemy to become Ms. Pipis. Get lucky
 
 Have Sans befriend Toriel (CH1, CH2, CH4):
     - CH1: Talk to Sans at the end, pick "Friends" (right), then "My Mom" (right)
@@ -119,7 +119,7 @@ Have Sans befriend Toriel (CH1, CH2, CH4):
 
 Find the Tropic of Love: Get to the Tropic of Love with the raft in Board 2 (go right immediately) and interact with the tree on the heart-shaped island
 
-Obtain the Pipis item: Watch the bonus cutscene in CH3 found in the secret entrance in the bottom left of the second-to-last room of TV World (before the Rouxls battle) if you're starting from a fresh CH3 file OR don't have Spamton NEO defeated OR you're on Weird Route
+Obtain the Pipis item: Watch the bonus cutscene in CH3 found in the secret entrance in the bottom left of the second-to-last room of TV World (before the Rouxls battle) if you're starting from a fresh CH3 file OR don't have Spamton NEO defeated OR you're on the Weird Route
 
 Play MEGALOVANIA on the organ: The notes are CL CL L DR (C = hold C/Ctrl, L = Left, D = Down, R = Right)
 
@@ -144,7 +144,7 @@ Obtain a BitterTear: Found by donating 2000-9998 D$ in the fountain or by embezz
 
 Defeat 2 shadow item holders: The bosses who count for this are Jevil, Spamton NEO (both variants count as the same boss), ERAM, The Knight and Hammer of Justice
 
-Defeat 2 final bosses: The bosses who count for this are King, Giga Queen, Snowgrave Spamton NEO, Tenna and Titan
+Defeat 2 final bosses: The bosses who count for this are King, Giga Queen, Weird Route Spamton NEO, Tenna and Titan
 
 Defeat 3 bosses: The bosses who count for this are all of the above + Queen + Mike
 
@@ -159,9 +159,7 @@ Take 4 unique shrine photos (Board 2): You need to take photos of:
 
 Get B-Rank or higher on Susiezilla: Susiezilla is unlocked by going to the special A-Rank room and paying the Pippins 500 POINTs. You need to finish the minigame with at least 400 points to get B-Rank
 
-Find the Among Us reference: Inspect all the giftboxes in Noelle's house in the room with the vent
-
-Obtain a Dog Dollar: They are found in:
+Obtain a DogDollar: They are found in:
     - CH2: The room where Spamton's dumpster and the moss is. In Main Route it first brings you to the room with the dog that runs you over
     - CH3: Gambling
     - CH4: In Sanctuary 3 go back to Gerson's study, go through the upstairs center door and open the chest
@@ -171,7 +169,7 @@ Get the Annoying Dog on Rouxls: Wait for Lancer to be unlocked in the CH3 Rouxls
 
 Lose Rabbick (CH3): Have Ribbick fully recruited, then encounter the double Ribbick in the room with the trashcans. One of them will be disguised as a Rabbick, just attack them both
 
-Watch the Diner cutscene: Have a seat with Susie at the diner in CH4's Light World (you need to have stolen Asriel's money from his nightstand first)
+Watch the diner cutscene (CH4): Have a seat with Susie at the diner in CH4's Light World (you need to have stolen Asriel's money from his nightstand first)
 
 Obtain 5 unique armors: Get this many UNIQUE armors. Note that the starting equipment does NOT count. You have to buy or find things
 
@@ -194,13 +192,13 @@ Defeat the Club Apatheia encounter: In Sanctuary 2, when you reach Club Apatheia
 Interact with the Dark Sanctuary climbing trophy: In the room to the right of the TensionGem chest (before the big organ), there are 2 timed climbs. If you get below 6.3 and 10.3 seconds respectively (both climbs on the same save file), a trophy spawns at the bottom of the room. Interact with it.
 NOTE: The times are nerfed from the vanilla game because we considered it too difficult (it's normally 6.1 and 10.1 seconds)
 
-Find The Angel's prophecy panel: In Sanctuary 3, the room where orbs keep spawning around you, you can go through the hidden path and to the right. You will find the prophecy panel saying "THE ANGEL, BANISHED, WILL FINALLY MEET WITH ITS DESIRE.".
+Find the Angel's prophecy panel: In Sanctuary 3, the room where orbs keep spawning around you, you can go through the hidden path and to the right. You will find the prophecy panel saying "THE ANGEL, BANISHED, WILL FINALLY MEET WITH ITS DESIRE.".
 
 Build a duck in CH1 and CH5: Build a full duck thrash machine in CH1 (any color) and give Susie a full duck fit in CH5's Castle Town
 
 Collect unique pink coins: These do not have to be gotten on the same save file, so long as they're all from different locations
 
-Defeat 5 Bullet Patterns (CH5): These do not have to be completed on the same save file, so long as they're all from different locations. A "bullet pattern" for this goal counts as one that makes the green border appear and disappear around the screen (i.e. Aqua's first bullet pattern after getting the Petal Feather)
+Defeat 5 unique Bullet Patterns (CH5): These do not have to be completed on the same save file, so long as they're all from different locations. A "bullet pattern" for this goal counts as one that makes the green border appear and disappear around the screen (i.e. Aqua's first bullet pattern after getting the Petal Feather)
 
 Collect all evidence before fighting Blue & Yellow: You need to have all these pieces of evidence in your inventory at the same time before reaching the Blue & Yellow fight:
     - YellowShred - bottom left of Yellow's room
@@ -225,19 +223,24 @@ See 2 unique IMAGE_FRIENDs: They are seen in:
 
 Obtain the Thatchet: It is found in CH5, to the right of the room with the Shearys (you have to make the scissors cut the Floradinn, complete the watering puzzle, then open the chest)
 
-Obtain a Bromide: Two are found in CH5:
+Observe a Bromide: Two are found in CH5:
     - BromideR: in Green's cafe in the castle, after buying all 4 items from the vending machine you will get the option to buy "My Secret"
-    - BromideF: after the giant room where Ralsei casts fire magic, if you go all the way left you will find a platforming challenge, at the top of which will be a room with a bunch of painters (same location as the Dog Dollar). You can find it on the ground
+    - BromideF: after the giant room where Ralsei casts fire magic, if you go all the way left you will find a platforming challenge, at the top of which will be a room with a bunch of painters (same location as the Dog Dollar). You can find it on the ground.
+    Use either one in your KEY ITEMS menu
 
 Obtain the Red Ribbon (Dark Garden): After getting the watering can and reaching the room where you first meet Aqua, continue watering the path to the left and you will find an empty square. Fill it in to form a heart and open the chest that spawns
 
-Get the Couch Pillow: If you had entered Ralsei's room in Castle Town, you can interact with the couch found in the room with the second pre-Jackenstein piano solution (right side). Susie will take it to furnish his room
+Have Kris take out their soul:
+    - CH1: Ending
+    - CH2: Bathroom sink cutscene or when they make the fountain
+    - CH4: When attempting to get the shelter code from the guitar or in the ending
+    - CH5: Right before entering the Flower King dark world
 
 Hit the golden Bullet Pattern: After beating Aqua's first tutorial bullet pattern, get out of platformer mode and leave and re-enter the room. Backtrack all the way to the left and hit the golden bullet pattern that spawns
 
-Defeat 'Not An Enemy': In the CH5 Cliffs, when reaching the Seth & Aqua dash in the pink colored room, fail the challenge, exit platformer mode and go down. Interact with Shi, and say "I would not mind" (right). Leave and come back to encounter it
+Defeat 'Not an Enemy': In the CH5 Cliffs, when reaching the Seth & Aqua dash in the pink colored room, fail the challenge, exit platformer mode and go down. Interact with Shi, and say "I would not mind" (right). Leave and come back to encounter it
 
-Interact with a Mantis: After completing the right side of Flower Castle, go back to the Cafe, go up to the Second Diner and interact with one of the mantises to the left/right of Aqua
+Talk to a Mantis: After completing the right side of Flower Castle, go back to the Cafe, go up to the Second Diner and interact with one of the mantises to the left/right of Aqua
 
 Talk to Zenlooker: They're found in CH5:
     - Garden: to the right of Hopschef there's a platforming challenge. If you do it by ascending between the two vines they appear
@@ -269,4 +272,11 @@ See the 'Thar she blows...' dialogue (CH1, CH4, CH5):
 
 Obtain the TwinRibbon: You can either:
     - Get the Pink Ribbon in CH2, finish the Cyber World, go to Castle Town and use it + Ralsei's default White Ribbon to fuse it
-    - Get the Pink Ribbon and White Ribbon in CH3 by finishing both boards with a S/T-Rank, finish the chapter, then fuse it in CH4's Castle Town.
+    - Get the Pink Ribbon and White Ribbon in CH3 by finishing both boards with a S/T-Rank, finish the chapter, then fuse it in CH4's Castle Town
+
+Pet Kawkaw in the overworld: After completing the left side of Flower Castle, backtrack to the room with the yellow gun encounter, go all the way to the left and act on the Kawkaw
+
+Turn on every Santa in Noelle's house:
+    - There are 3 in the main room (2 downstairs, 1 upstairs)
+    - There's 1 small one in the basement
+    - There are 2 small ones in Dess's closet.

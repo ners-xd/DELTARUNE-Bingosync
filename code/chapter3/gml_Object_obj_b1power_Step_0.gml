@@ -8,5 +8,5 @@
         if (timer == 10)
         {
 /// CODE
-            scr_add_goal_progress(178, 1);
+            scr_add_goal_progress(165, 1);
 /// END

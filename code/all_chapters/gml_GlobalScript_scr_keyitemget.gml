@@ -39,10 +39,5 @@
                         scr_add_goal_progress(149, 1);
                     break;
             #endif
-
-                case 24:
-                case 33:
-                    scr_add_goal_progress(160, 1);
-                    break;
             }
 /// END

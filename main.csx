@@ -50,7 +50,7 @@ class BingoLoader : UMPLoader
 
     public string GetModVersion()
     {
-        return "\"3.11\"";
+        return "\"3.12\"";
     }
 
     public string GetBranchName()

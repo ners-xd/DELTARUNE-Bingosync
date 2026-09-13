@@ -649,14 +649,14 @@ function draw_main_buttons()
 
             with (obj_bingo_setup)
             {
-                draw_close_x = (((width / 2) - 150) + (width / 2) + 150) / 2;
+                draw_close_x = (((width / 2) - 155) + (width / 2) + 155) / 2;
                 draw_close_y = (height / 2) + 110;
                 status_text = "";
 
                 bg_draw = function()
                 {
-                    var _x1 = (width / 2) - 150;
-                    var _x2 = (width / 2) + 150;
+                    var _x1 = (width / 2) - 155;
+                    var _x2 = (width / 2) + 155;
                     var _y1 = (height / 2) - 120;
                     var _y2 = (height / 2) + 120;
                     draw_set_color(c_white);
@@ -676,7 +676,7 @@ function draw_main_buttons()
                     draw_set_color(c_ltgray);
                     draw_text(draw_close_x, _y1 + 120, "- Goal list -");
                     draw_set_color(c_white);
-                    draw_text(draw_close_x, _y1 + 135, "Tadyman, Chistosito, Trinky44, devek1");
+                    draw_text(draw_close_x, _y1 + 135, "Tadyman, Chistosito, Trinky44, devek1, asheevee");
                     draw_set_color(c_ltgray);
                     draw_text(draw_close_x, _y1 + 165, "- Switch version testing -");
                     draw_set_color(c_white);

@@ -1,5 +1,6 @@
 [
   [
+    {"name": "Interact with every dust pile (CH1)"},
     {"name": "Fill up your inventory with 12 consumables"},
     {"name": "Fuse an item (CH2+)"},
     {"name": "Obtain the Power Croissant"},
@@ -8,33 +9,31 @@
     {"name": "Kill 5 enemies", "types": ["kills"]}
   ],
   [
+    {"name": "Have Kris take out their soul"},
     {"name": "Make someone go on stage with Pizzapants"},
     {"name": "Have D$3000 at one time", "types": ["darkdollars"]},
     {"name": "Kill 10 enemies", "types": ["kills"]},
     {"name": "Pacify 10 enemies", "types": ["pacifies"]},
-    {"name": "Complete the Dummy tutorial"},
     {"name": "Develop Kooby"},
     {"name": "Hug Ralsei"}
   ],
   [
+    {"name": "Complete the Dummy tutorial"},
     {"name": "Crash the game"},
     {"name": "Complete 10 attacks without grazing bullets"},
     {"name": "Use 5 unique items in battle"},
-    {"name": "Obtain 5 keys (CH3)"},
     {"name": "Have F$250 at one time"},
     {"name": "Spare/Pacify 15 enemies", "types": ["spares"]},
     {"name": "Pacify 15 enemies", "types": ["pacifies"]}
   ],
   [
-    {"name": "Wrong Warp into 15 unique rooms"},
-
+    {"name": "Obtain 5 keys (CH3)"},
     {"name": "Don't sleep to skip the start of a chapter"},
     {"name": "Obtain the Thatchet"},
-    {"name": "Find the Among Us reference"},
     {"name": "Complete 3 unique dojo challenges"},
     {"name": "Equip a White Ribbon (CH1/CH3)"},
-    {"name": "Watch The Legend (Castle Town)"},
-    {"name": "Watch the Diner cutscene"}
+    {"name": "Watch the Legend (Castle Town)"},
+    {"name": "Watch the diner cutscene (CH4)"}
   ],
   [
     {"name": "Complete the GIASFELFEBREHBER puzzle"},
@@ -64,36 +63,38 @@
     {"name": "Spare/Pacify 25 enemies", "types": ["spares"]}
   ],
   [
+    {"name": "Turn on every Santa in Noelle's house"},
     {"name": "Eat Moss"},
     {"name": "Get T-Rank on Board 1 or 2"},
     {"name": "Lose Mauswheel"},
     {"name": "Recruit Watercooler"},
     {"name": "Obtain 2 Gold Prizes from the Ball Machine"},
-    {"name": "Obtain a Dog Dollar"},
-    {"name": "Spend 1225 points at once on the Ball Machine"}
+    {"name": "Obtain a DogDollar"},
+    {"name": "Obtain the Red Ribbon (Dark Garden)"},
+    {"name": "Use the machine in the 1225 POINTs room"}
   ],
   [
     {"name": "Hear a Jackenstein voiceline"},
-    {"name": "Obtain the Red Ribbon (Dark Garden)"},
     {"name": "Get Z-Rank on Board 1"},
     {"name": "Buy an item in 5 different rooms"},
     {"name": "Obtain 3 unique ribbons"},
+    {"name": "Find the Jackenstein piano's full solution"},
     {"name": "Obtain the ThornRing"},
     {"name": "Obtain the Dice Brace"}
   ],
   [
     {"name": "Find the Tropic of Love"},
-    {"name": "Find the Jackenstein piano's full solution"},
     {"name": "Obtain 5 unique weapons"},
     {"name": "Obtain 5 unique armors"},
     {"name": "Open both chests on the Maus puzzle (Acid Lake)"},
     {"name": "Buy a Lancer Cookie (CH1)"},
     {"name": "Spare Clover without using the Manual (CH1)"},
+    {"name": "Defeat Rouxls (CH2/CH3)"},
     {"name": "Obtain the ReviveDust"}
   ],
   [
+    {"name": "Leave Noelle's house"},
     {"name": "Obtain an Egg (Original Source)", "types": ["eggs"]},
-    {"name": "Defeat Rouxls (CH2/CH3)"},
     {"name": "Obtain the Ice Key", "types": ["icekey"]},
     {"name": "Open 12 unique chests"},
     {"name": "Lose Shuttah"},
@@ -134,7 +135,7 @@
   [
     {"name": "Get massaged by Ferroll"},
     {"name": "Obtain the FreezeRing"},
-    {"name": "Abort Snowgrave after obtaining the FreezeRing"},
+    {"name": "Abort the Weird Route after obtaining the FreezeRing"},
     {"name": "Collect both bananas"},
     {"name": "Obtain a BitterTear"},
     {"name": "Recruit Miss Mizzle"},
@@ -153,12 +154,12 @@
   ],
   [
     {"name": "Find the 3 Golden Sheets"},
-    {"name": "Defeat 'Not An Enemy'"},
+    {"name": "Defeat 'Not an Enemy'"},
     {"name": "Complete Doom Board"},
     {"name": "Hit 3 Pipis"},
     {"name": "Defeat Seth & Aqua at the end of Cliffs"},
     {"name": "Obtain an Egg in 2 different chapters", "types": ["eggs"]},
-    {"name": "Defeat 5 Bullet Patterns (CH5)"}
+    {"name": "Defeat 5 unique Bullet Patterns (CH5)"}
   ],
   [
     {"name": "Defeat Gerson"},
@@ -170,8 +171,8 @@
     {"name": "Fully recruit an enemy in each chapter"}
   ],
   [
-    {"name": "See Ms. Pipis"},
-    {"name": "Obtain a Bromide"},
+    {"name": "Find Ms. Pipis"},
+    {"name": "Observe a Bromide"},
     {"name": "Obtain the Shelter Key", "types": ["shelterkey"]},
     {"name": "Fully recruit Shuttah"},
     {"name": "Trigger Milk on the 2nd K. Round fight"},
@@ -181,18 +182,17 @@
   [
     {"name": "Obtain the Pipis item"},
     {"name": "Lose Rabbick (CH3)"},
-    {"name": "Defeat the Club Apatheia encounter"},
-    {"name": "Find The Angel's prophecy panel"},
+    {"name": "Find the Angel's prophecy panel"},
     {"name": "Obtain the PrincessRBN"},
     {"name": "Have Sans befriend Toriel (CH1, CH2, CH4)"},
     {"name": "Place an Egg in Hometown"}
   ],
   [
-    {"name": "Defeat Spamton NEO (Snowgrave)"},
+    {"name": "Defeat the Club Apatheia encounter"},
+    {"name": "Defeat Spamton NEO (Weird Route)"},
     {"name": "Defeat Jevil"},
     {"name": "Defeat King"},
     {"name": "Get the Annoying Dog on Rouxls"},
-    {"name": "Obtain the Couch Pillow"},
     {"name": "Push off 10 Terakotas in the Fox Hunt"}
   ],
   [
@@ -204,16 +204,15 @@
     {"name": "Complete any chapter"}
   ],
   [
-    {"name": "Complete a side in Flower Castle"},
-
     {"name": "Collect 10 unique pink coins", "types": ["pinkcoins"]},
     {"name": "Crash the console on the 000000 puzzle"},
     {"name": "Obtain the TwinRibbon"},
-    {"name": "Interact with a Mantis"},
+    {"name": "Talk to a Mantis"},
     {"name": "Obtain the TripTicket"},
     {"name": "Hang out in the cafe with 3 different flowers"}
   ],
   [
+    {"name": "Pet Kawkaw in the overworld"},
     {"name": "Defeat Fake Gerson"},
     {"name": "Defeat 3 bosses"},
     {"name": "Defeat Spamton NEO (Basement)"},

@@ -8,10 +8,23 @@
         c_var_instance(id, "end_chapter_goal", true);
 /// END
 
+/// BEFORE
+    c_wait(45);
+    c_imagespeed(0);
+/// CODE
+    c_var_instance(id, "soul_goal", true);
+/// END
+
 /// APPEND
 if (end_chapter_goal && instance_exists(obj_dialoguer) && obj_dialoguer.active && !instance_exists(obj_writer))
 {
     end_chapter_goal = false;
     scr_add_goal_progress(13, 1);
+}
+
+if (soul_goal)
+{
+    soul_goal = false;
+    scr_add_goal_progress(162, 1);
 }
 /// END

@@ -24,7 +24,7 @@
                     break;
 
                 case 9:
-                    scr_add_goal_progress(177, 1);
+                    scr_add_goal_progress(70, 1);
                     scr_add_goal_array(84, "ribbon9");
                     break;
 

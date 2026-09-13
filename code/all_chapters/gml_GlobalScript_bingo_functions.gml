@@ -15,6 +15,9 @@ function array_find_index_temp(array, check_function)
 
 function scr_is_fow_starting_goal(name)
 {
+    if (global.fog_of_war == 25)
+        return false;
+
     name = string_lower(name);
 
     for (var i = 0; i < global.fog_of_war; i++)
@@ -502,7 +505,7 @@ function scr_is_goal_marked(slot)
 
 function scr_is_goal_visible(slot)
 {
-    if (global.fog_of_war == 0 || scr_is_goal_marked(slot) || scr_is_fow_starting_goal(global.goal_name[slot]))
+    if (global.fog_of_war == 0 || (global.fog_of_war == 25 && slot == 12) || scr_is_goal_marked(slot) || scr_is_fow_starting_goal(global.goal_name[slot]))
         return true;
 
     if (slot >= 5 && scr_is_goal_marked(slot - 5))
@@ -594,7 +597,7 @@ function scr_load_bingo_data()
             if (variable_struct_exists(json.preferences, "show_chat")) global.show_chat = json.preferences.show_chat;
             if (variable_struct_exists(json.preferences, "show_board")) global.show_board = json.preferences.show_board;
             if (variable_struct_exists(json.preferences, "show_other_colors")) global.show_other_colors = json.preferences.show_other_colors;
-            if (variable_struct_exists(json.preferences, "fog_of_war")) global.fog_of_war = clamp(json.preferences.fog_of_war, 0, 24);
+            if (variable_struct_exists(json.preferences, "fog_of_war")) global.fog_of_war = clamp(json.preferences.fog_of_war, 0, 25);
             if (variable_struct_exists(json.preferences, "console_keyboard")) global.console_keyboard = json.preferences.console_keyboard;
         }
 

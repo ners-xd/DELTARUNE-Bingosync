@@ -380,22 +380,37 @@ if (global.chat_typing)
 
                     if (string_digits(param) == "")
                     {
-                        if (param == "off")
+                        switch (param)
                         {
-                            if (global.fog_of_war == 0)
-                            {
-                                scr_chat_message(c_red, "Fog of War mode is already disabled.");
-                            }
-                            else
-                            {
-                                global.fog_of_war = 0;
-                                scr_chat_message(c_yellow, "Fog of War mode disabled.");
-                                scr_save_bingo_data();
-                            }
-                        }
-                        else
-                        {
-                            scr_chat_message(c_red, "Invalid argument. Type a number between 1 and 24 or off.");
+                            case "off":
+                                if (global.fog_of_war == 0)
+                                {
+                                    scr_chat_message(c_red, "Fog of War mode is already disabled.");
+                                }
+                                else
+                                {
+                                    global.fog_of_war = 0;
+                                    scr_chat_message(c_yellow, "Fog of War mode disabled.");
+                                    scr_save_bingo_data();
+                                }
+                                break;
+
+                            case "middle":
+                                if (global.fog_of_war == 25)
+                                {
+                                    scr_chat_message(c_red, "You already have Fog of War mode set to the middle square.");
+                                }
+                                else
+                                {
+                                    global.fog_of_war = 25;
+                                    scr_chat_message(c_yellow, "Fog of War mode enabled. You will only see the middle square and goals around those that are marked.");
+                                    scr_save_bingo_data();
+                                }
+                                break;
+
+                            default:
+                                scr_chat_message(c_red, "Invalid argument. Type a number between 1 and 24, middle or off.");
+                                break;
                         }
                     }
                     else
@@ -404,7 +419,7 @@ if (global.chat_typing)
 
                         if (param < 1 || param > 24)
                         {
-                            scr_chat_message(c_red, "Invalid argument. Type a number between 1 and 24 or off.");
+                            scr_chat_message(c_red, "Invalid argument. Type a number between 1 and 24, middle or off.");
                         }
                         else if (param == global.fog_of_war)
                         {

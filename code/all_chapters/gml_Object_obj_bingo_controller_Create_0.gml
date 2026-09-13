@@ -15,33 +15,32 @@ room_base_done = false;
 console_string = -1;
 mystring = "";
 update_colors = true;
-prev_interact = 0;
-mainchara_was_in_prev_room = false;
 command_list = "/color or /colour, /star, /autoconnect, /fogofwar, /settings, /quit";
 money_amount = global.gold;
 buy_update_money_amount = global.gold;
 
 #if CHAPTER_3
-buy_update_points_amount = global.flag[1044];
+    buy_update_points_amount = global.flag[1044];
 #elsif CHAPTER_5
-flowery_money_amount = global.flag[1411];
-buy_update_flowery_money_amount = global.flag[1411];
+    flowery_money_amount = global.flag[1411];
+    buy_update_flowery_money_amount = global.flag[1411];
 #endif
 
 #if CHAPTER_4 || CHAPTER_5
-jack_playing = noone;
-jack_sfx = [
-    snd_your_long, snd_your_long_jp
+    jack_playing = noone;
+    jack_sfx = [
+        snd_your_long, snd_your_long_jp
 
-    #if CHAPTER_4
-        , snd_takingtoolongtoolong, snd_taking_too_long_fast, snd_long_only, snd_taking_too_long_small_fast_jp, snd_taking_too_long_small,
-        snd_alt_takingtoolong, snd_taking_too_long_small_fast, snd_taking_too_long_small_jp, snd_taking_too_long_jp, snd_taking_too_long_fast_jp,
-        snd_long_only_jp, snd_taking_too_long, snd_takingtoolongtoolong_jp, snd_alt_takingtoolong_jp
-    #elsif CHAPTER_5
-        , snd_your, snd_your_jp, snd_lo, snd_lo_jp, snd_ol, snd_ol_jp, snd_ruoy, snd_ruoy_jp
-    #endif
-]; // This isn't all of the voicelines but realistically you're GOING TO hear at least one of these in a playthrough
-jack_sfx_len = array_length(jack_sfx);
+        #if CHAPTER_4
+            , snd_takingtoolongtoolong, snd_taking_too_long_fast, snd_long_only, snd_taking_too_long_small_fast_jp, snd_taking_too_long_small,
+            snd_alt_takingtoolong, snd_taking_too_long_small_fast, snd_taking_too_long_small_jp, snd_taking_too_long_jp, snd_taking_too_long_fast_jp,
+            snd_long_only_jp, snd_taking_too_long, snd_takingtoolongtoolong_jp, snd_alt_takingtoolong_jp,
+            snd_your_too_bright, snd_your_too_bright_jp
+        #elsif CHAPTER_5
+            , snd_your, snd_your_jp, snd_lo, snd_lo_jp, snd_ol, snd_ol_jp, snd_ruoy, snd_ruoy_jp
+        #endif
+    ]; // This isn't all of the voicelines but realistically you're GOING TO hear at least one of these in a playthrough
+    jack_sfx_len = array_length(jack_sfx);
 #endif
 
 current_str = "";

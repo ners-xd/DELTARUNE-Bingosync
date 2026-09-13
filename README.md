@@ -41,7 +41,8 @@ A hit counts as an avoidable loss of HP in battle or in the overworld, including
     - Taking damage in the Chapter 2 basement teacup ride
     - Taking damage to the first part of The Knight's sword corridor attack. The part where the swords get launched in random areas counts as a separate hit
     - Taking damage to Balthizard's clouds that only come up when at least one other enemy is in the battle
-    - Taking damage to Jackenstein when he catches up to you.
+    - Taking damage to Jackenstein when he catches up to you
+    - Taking damage to Ferroll's massage.
 
 # Contributing
 How to contribute to the mod:
@@ -56,6 +57,6 @@ How to contribute to the mod:
 - Coding:
     - Main mod: Chistosito, NERS
     - Hit counter: marti005
-- Goal list: Tadyman, Chistosito, Trinky44, devek1
+- Goal list: Tadyman, Chistosito, Trinky44, devek1, asheevee
 - Switch version testing: Tadyman
 - UMP: nhaar.

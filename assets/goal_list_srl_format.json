@@ -70,8 +70,7 @@
     {"name": "Recruit Watercooler"},
     {"name": "Obtain 2 Gold Prizes from the Ball Machine"},
     {"name": "Obtain a DogDollar"},
-    {"name": "Obtain the Red Ribbon (Dark Garden)"},
-    {"name": "Use the machine in the 1225 POINTs room"}
+    {"name": "Obtain the Red Ribbon (Dark Garden)"}
   ],
   [
     {"name": "Hear a Jackenstein voiceline"},
@@ -80,7 +79,8 @@
     {"name": "Obtain 3 unique ribbons"},
     {"name": "Find the Jackenstein piano's full solution"},
     {"name": "Obtain the ThornRing"},
-    {"name": "Obtain the Dice Brace"}
+    {"name": "Obtain the Dice Brace"},
+    {"name": "Use the machine in the 1225 POINTs room"}
   ],
   [
     {"name": "Find the Tropic of Love"},
